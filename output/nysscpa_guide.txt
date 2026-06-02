@@ -1,0 +1,28 @@
+======================================================================
+NYSSCPA FIND-A-CPA DIRECTORY — MANUAL SEARCH GUIDE
+======================================================================
+
+URL: https://www.nysscpa.org/find-a-cpa
+
+STEP-BY-STEP:
+  1. Open the URL above
+  2. In 'County', select: Kings (= Brooklyn)
+  3. In 'Services', check: Payroll, Accounting/Auditing, Bookkeeping
+  4. Click Search
+  5. For each result, record: Name, Firm, Phone, Website, Address
+  6. Export to output/nysscpa_manual.csv
+
+DEVTOOLS TIP (find the API endpoint):
+  1. Open Chrome DevTools → Network tab → filter 'XHR'
+  2. Perform a search on the site
+  3. Look for a request to /api/ or /search/
+  4. Copy the request URL and payload
+  5. Update NYSSCPA_API_URL in src/nysscpa_scraper.py
+
+COLUMNS TO CAPTURE:
+  - Member Name
+  - Firm Name
+  - Phone
+  - Website
+  - City, ZIP
+  - Services (note if Payroll is listed)

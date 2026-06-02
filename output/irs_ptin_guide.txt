@@ -1,0 +1,117 @@
+======================================================================
+IRS TAX PREPARER DIRECTORY — MANUAL SEARCH GUIDE
+======================================================================
+
+URL: https://irs.treasury.gov/rpo/rpo.jsf
+
+The IRS directory requires manual interaction due to JSF form state.
+Follow these steps for each Brooklyn ZIP code:
+
+STEP-BY-STEP:
+  1. Open the URL above in Chrome or Firefox
+  2. Under 'Search by ZIP code', enter one of the ZIPs below
+  3. Set Search Radius to: 1 mile
+  4. Under 'Credential/Select All' check: CPA, EA
+  5. Click Search
+  6. Export or copy results to output/irs_ptin_manual.csv
+  7. Repeat for each ZIP
+
+BROOKLYN ZIP CODES TO SEARCH:
+  01. 11201
+  02. 11202
+  03. 11203
+  04. 11204
+  05. 11205
+  06. 11206
+  07. 11207
+  08. 11208
+  09. 11209
+  10. 11210
+  11. 11211
+  12. 11212
+  13. 11213
+  14. 11214
+  15. 11215
+  16. 11216
+  17. 11217
+  18. 11218
+  19. 11219
+  20. 11220
+  21. 11221
+  22. 11222
+  23. 11223
+  24. 11224
+  25. 11225
+  26. 11226
+  27. 11228
+  28. 11229
+  29. 11230
+  30. 11231
+  31. 11232
+  32. 11233
+  33. 11234
+  34. 11235
+  35. 11236
+  36. 11237
+  37. 11238
+  38. 11239
+  39. 11241
+  40. 11242
+  41. 11243
+  42. 11244
+  43. 11245
+  44. 11247
+  45. 11248
+  46. 11249
+  47. 11251
+  48. 11252
+  49. 11254
+  50. 11255
+  51. 11256
+
+COLUMNS TO CAPTURE:
+  - Last Name, First Name
+  - Credential (CPA / EA / etc.)
+  - Business Name
+  - City, State, ZIP
+
+──────────────────────────────────────────────────────────────────────
+SELENIUM AUTOMATION SKELETON (Python)
+──────────────────────────────────────────────────────────────────────
+  If you want to automate this, install: pip install selenium webdriver-manager
+
+  from selenium import webdriver
+  from selenium.webdriver.common.by import By
+  from selenium.webdriver.support.ui import WebDriverWait, Select
+  from selenium.webdriver.support import expected_conditions as EC
+  import time, csv
+
+  driver = webdriver.Chrome()
+  driver.get('https://irs.treasury.gov/rpo/rpo.jsf')
+
+  for zip_code in BROOKLYN_ZIPS:
+      # Fill ZIP field
+      zip_input = WebDriverWait(driver, 10).until(
+          EC.presence_of_element_located((By.ID, 'searchForm:zip')))
+      zip_input.clear()
+      zip_input.send_keys(zip_code)
+
+      # Set radius to 1 mile
+      radius_select = Select(driver.find_element(By.ID, 'searchForm:distance'))
+      radius_select.select_by_value('1')
+
+      # Click CPA checkbox
+      cpa_cb = driver.find_element(By.XPATH, "//label[contains(text(),'CPA')]")
+      if not cpa_cb.is_selected(): cpa_cb.click()
+
+      # Submit
+      driver.find_element(By.ID, 'searchForm:searchButton').click()
+      time.sleep(2)
+
+      # Scrape results table
+      rows = driver.find_elements(By.CSS_SELECTOR, '#resultsTable tbody tr')
+      for row in rows:
+          cells = row.find_elements(By.TAG_NAME, 'td')
+          # Process cells...
+
+  driver.quit()

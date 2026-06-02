@@ -1,0 +1,122 @@
+======================================================================
+LINKEDIN PROSPECTING GUIDE — BROOKLYN ACCOUNTING/PAYROLL FIRMS
+======================================================================
+
+REQUIREMENTS:
+  - Must be logged into LinkedIn
+  - Sales Navigator queries require a Sales Navigator license
+  - Export manually to CSV using the template in output/linkedin_manual_template.csv
+
+──────────────────────────────────────────────────────────────────────
+1. STANDARD COMPANY SEARCHES (no Sales Nav needed)
+──────────────────────────────────────────────────────────────────────
+When reviewing results, filter by:
+  • Company size: 1–10 employees
+  • Industry: Accounting
+  • Flag any company description mentioning: payroll, Gusto,
+    QuickBooks, Paychex, AMS, Heartland
+
+  [01] Company Search: accounting in Brooklyn
+       https://www.linkedin.com/search/results/companies/?keywords=accounting%20Brooklyn%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [02] Company Search: bookkeeping in Brooklyn
+       https://www.linkedin.com/search/results/companies/?keywords=bookkeeping%20Brooklyn%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [03] Company Search: payroll in Brooklyn
+       https://www.linkedin.com/search/results/companies/?keywords=payroll%20Brooklyn%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [04] Company Search: CPA in Brooklyn
+       https://www.linkedin.com/search/results/companies/?keywords=CPA%20Brooklyn%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [05] Company Search: accounting in Williamsburg
+       https://www.linkedin.com/search/results/companies/?keywords=accounting%20Williamsburg%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [06] Company Search: bookkeeping in Williamsburg
+       https://www.linkedin.com/search/results/companies/?keywords=bookkeeping%20Williamsburg%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [07] Company Search: payroll in Williamsburg
+       https://www.linkedin.com/search/results/companies/?keywords=payroll%20Williamsburg%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [08] Company Search: CPA in Williamsburg
+       https://www.linkedin.com/search/results/companies/?keywords=CPA%20Williamsburg%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [09] Company Search: accounting in Park Slope
+       https://www.linkedin.com/search/results/companies/?keywords=accounting%20Park%20Slope%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [10] Company Search: bookkeeping in Park Slope
+       https://www.linkedin.com/search/results/companies/?keywords=bookkeeping%20Park%20Slope%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [11] Company Search: payroll in Park Slope
+       https://www.linkedin.com/search/results/companies/?keywords=payroll%20Park%20Slope%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+  [12] Company Search: CPA in Park Slope
+       https://www.linkedin.com/search/results/companies/?keywords=CPA%20Park%20Slope%20New%20York&origin=SWITCH_SEARCH_VERTICAL
+
+──────────────────────────────────────────────────────────────────────
+2. PEOPLE SEARCHES (find decision-makers directly)
+──────────────────────────────────────────────────────────────────────
+  [01] People: CPA + payroll in Brooklyn
+       https://www.linkedin.com/search/results/people/?keywords=CPA%20payroll%20Brooklyn&geoUrn=%5B%22103886785%22%5D&origin=FACETED_SEARCH
+       NOTE: Look for owners/partners at small firms. Check About section for payroll mentions.
+
+  [02] People: accountant + payroll in Brooklyn
+       https://www.linkedin.com/search/results/people/?keywords=accountant%20payroll%20Brooklyn&geoUrn=%5B%22103886785%22%5D&origin=FACETED_SEARCH
+       NOTE: Look for owners/partners at small firms. Check About section for payroll mentions.
+
+  [03] People: bookkeeper + payroll in Brooklyn
+       https://www.linkedin.com/search/results/people/?keywords=bookkeeper%20payroll%20Brooklyn&geoUrn=%5B%22103886785%22%5D&origin=FACETED_SEARCH
+       NOTE: Look for owners/partners at small firms. Check About section for payroll mentions.
+
+  [04] People: owner + payroll in Brooklyn
+       https://www.linkedin.com/search/results/people/?keywords=owner%20payroll%20Brooklyn&geoUrn=%5B%22103886785%22%5D&origin=FACETED_SEARCH
+       NOTE: Look for owners/partners at small firms. Check About section for payroll mentions.
+
+  [05] People: principal + payroll in Brooklyn
+       https://www.linkedin.com/search/results/people/?keywords=principal%20payroll%20Brooklyn&geoUrn=%5B%22103886785%22%5D&origin=FACETED_SEARCH
+       NOTE: Look for owners/partners at small firms. Check About section for payroll mentions.
+
+  [06] People: founder + payroll in Brooklyn
+       https://www.linkedin.com/search/results/people/?keywords=founder%20payroll%20Brooklyn&geoUrn=%5B%22103886785%22%5D&origin=FACETED_SEARCH
+       NOTE: Look for owners/partners at small firms. Check About section for payroll mentions.
+
+──────────────────────────────────────────────────────────────────────
+3. SALES NAVIGATOR QUERIES (copy/paste into Sales Nav search)
+──────────────────────────────────────────────────────────────────────
+  [1] Industry:"Accounting" Geography:"Brooklyn, New York" Headcount:"1-10" Founded:"2015 to Present"
+
+  [2] Industry:"Financial Services" Keywords:"payroll" Geography:"Brooklyn, New York" Headcount:"1-10"
+
+  [3] Industry:"Accounting" Keywords:"Gusto OR QuickBooks OR Paychex" Geography:"Brooklyn, New York"
+
+  [4] Industry:"Accounting" Keywords:"bookkeeping payroll" Geography:"Brooklyn, New York" Founded:"2015 to Present"
+
+──────────────────────────────────────────────────────────────────────
+4. COMPETITOR SIGNAL SEARCHES (highest priority leads)
+──────────────────────────────────────────────────────────────────────
+These firms are already doing payroll with a named competitor.
+They're your warmest leads for a switch pitch.
+
+  [1] Competitor signal: Gusto
+       https://www.linkedin.com/search/results/companies/?keywords=Gusto%20Brooklyn%20accounting
+       NOTE: Firms that mention Gusto are actively doing payroll — high priority.
+
+  [2] Competitor signal: Paychex
+       https://www.linkedin.com/search/results/companies/?keywords=Paychex%20Brooklyn%20accounting
+       NOTE: Firms that mention Paychex are actively doing payroll — high priority.
+
+  [3] Competitor signal: QuickBooks Payroll
+       https://www.linkedin.com/search/results/companies/?keywords=QuickBooks%20Payroll%20Brooklyn%20accounting
+       NOTE: Firms that mention QuickBooks Payroll are actively doing payroll — high priority.
+
+  [4] Competitor signal: AMS payroll
+       https://www.linkedin.com/search/results/companies/?keywords=AMS%20payroll%20Brooklyn%20accounting
+       NOTE: Firms that mention AMS payroll are actively doing payroll — high priority.
+
+──────────────────────────────────────────────────────────────────────
+5. MANUAL ENTRY TEMPLATE
+──────────────────────────────────────────────────────────────────────
+  → See: output/linkedin_manual_template.csv
+  Columns: Name, LinkedIn URL, Firm Name, City, Employee Count,
+           Founded Year, Payroll Mentioned, Competitor Detected,
+           Email (if shown), Notes
+
