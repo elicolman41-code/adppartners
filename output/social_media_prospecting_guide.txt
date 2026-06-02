@@ -1,0 +1,404 @@
+======================================================================
+SOCIAL MEDIA PROSPECTING GUIDE — BROOKLYN ACCOUNTING/PAYROLL FIRMS
+======================================================================
+
+This guide covers 5 platforms: Instagram, Facebook, Google Business
+Profiles, Nextdoor, and Yelp. Each has different signals and tactics.
+
+PRIORITY ORDER (based on signal quality):
+  1. Google Business Profiles — review mining for payroll mentions
+  2. Facebook Groups — self-promoting accountants in business groups
+  3. Yelp Reviews — competitor software mentions
+  4. Instagram — secondary; best for younger/tech-forward firms
+  5. Nextdoor — niche but highly local; small but warm leads
+
+──────────────────────────────────────────────────────────────────────
+1. GOOGLE BUSINESS PROFILES (highest signal)
+──────────────────────────────────────────────────────────────────────
+
+GOOGLE BUSINESS PROFILE — REVIEW MINING GUIDE
+─────────────────────────────────────────────────────────
+This is one of the highest-signal research tactics available without API access.
+Reviews and owner responses often explicitly mention payroll services.
+
+WHAT TO LOOK FOR IN REVIEWS:
+  • "they handle our payroll" → confirmed payroll client
+  • "QuickBooks payroll setup" → competitor detected
+  • "switched from Gusto" → competitor + switcher mentality
+  • "payroll taxes" / "941" / "W-2" → active payroll processing
+  • "highly recommend for payroll" → business owner testimonial
+
+WHAT TO LOOK FOR IN OWNER RESPONSES:
+  • "we offer full-service payroll" → confirmed payroll service
+  • "our payroll team" → has dedicated payroll staff
+  • Any competitor brand name mentioned
+
+HOW TO MINE EFFICIENTLY (10 minutes per neighborhood):
+  1. Open Google Maps URL for the neighborhood
+  2. Click the first 3–5 accounting/CPA listings
+  3. Click "Reviews" tab → Ctrl+F → search "payroll"
+  4. If found, note: firm name, phone, website, # payroll reviews
+  5. Check Google Business Profile for: hours, employees listed, founded date
+
+BROWSER AUTOMATION OPTION (if you want to batch this):
+  Use browser DevTools → Console → paste this snippet on a Google Maps results page:
+  ─────────────────────────────────────────────────────────
+  // Extracts visible listing names + ratings from Google Maps results panel
+  [...document.querySelectorAll('[role="feed"] .fontHeadlineSmall')].map(el => el.textContent)
+  ─────────────────────────────────────────────────────────
+  This gives you all firm names on the current page instantly.
+
+RECORD TO: output/google_manual.csv
+
+
+SEARCH URLS BY NEIGHBORHOOD:
+
+  [01] Google Maps: accountant in Williamsburg
+       https://www.google.com/maps/search/accountant+Williamsburg+Brooklyn+NY/
+
+  [02] Google Maps: CPA in Williamsburg
+       https://www.google.com/maps/search/CPA+Williamsburg+Brooklyn+NY/
+
+  [03] Google Maps: bookkeeper in Williamsburg
+       https://www.google.com/maps/search/bookkeeper+Williamsburg+Brooklyn+NY/
+
+  [04] Google Maps: payroll services in Williamsburg
+       https://www.google.com/maps/search/payroll+services+Williamsburg+Brooklyn+NY/
+
+  [05] Google Maps: tax preparer in Williamsburg
+       https://www.google.com/maps/search/tax+preparer+Williamsburg+Brooklyn+NY/
+
+  [06] Google Maps: accountant in Park Slope
+       https://www.google.com/maps/search/accountant+Park+Slope+Brooklyn+NY/
+
+  [07] Google Maps: CPA in Park Slope
+       https://www.google.com/maps/search/CPA+Park+Slope+Brooklyn+NY/
+
+  [08] Google Maps: bookkeeper in Park Slope
+       https://www.google.com/maps/search/bookkeeper+Park+Slope+Brooklyn+NY/
+
+  [09] Google Maps: payroll services in Park Slope
+       https://www.google.com/maps/search/payroll+services+Park+Slope+Brooklyn+NY/
+
+  [10] Google Maps: tax preparer in Park Slope
+       https://www.google.com/maps/search/tax+preparer+Park+Slope+Brooklyn+NY/
+
+  [11] Google Maps: accountant in Bay Ridge
+       https://www.google.com/maps/search/accountant+Bay+Ridge+Brooklyn+NY/
+
+  [12] Google Maps: CPA in Bay Ridge
+       https://www.google.com/maps/search/CPA+Bay+Ridge+Brooklyn+NY/
+
+  [13] Google Maps: bookkeeper in Bay Ridge
+       https://www.google.com/maps/search/bookkeeper+Bay+Ridge+Brooklyn+NY/
+
+  [14] Google Maps: payroll services in Bay Ridge
+       https://www.google.com/maps/search/payroll+services+Bay+Ridge+Brooklyn+NY/
+
+  [15] Google Maps: tax preparer in Bay Ridge
+       https://www.google.com/maps/search/tax+preparer+Bay+Ridge+Brooklyn+NY/
+
+  [16] Google Maps: accountant in Crown Heights
+       https://www.google.com/maps/search/accountant+Crown+Heights+Brooklyn+NY/
+
+  [17] Google Maps: CPA in Crown Heights
+       https://www.google.com/maps/search/CPA+Crown+Heights+Brooklyn+NY/
+
+  [18] Google Maps: bookkeeper in Crown Heights
+       https://www.google.com/maps/search/bookkeeper+Crown+Heights+Brooklyn+NY/
+
+  [19] Google Maps: payroll services in Crown Heights
+       https://www.google.com/maps/search/payroll+services+Crown+Heights+Brooklyn+NY/
+
+  [20] Google Maps: tax preparer in Crown Heights
+       https://www.google.com/maps/search/tax+preparer+Crown+Heights+Brooklyn+NY/
+
+──────────────────────────────────────────────────────────────────────
+2. FACEBOOK PAGES & GROUPS
+──────────────────────────────────────────────────────────────────────
+
+FACEBOOK OUTREACH APPROACH
+─────────────────────────────────────────
+HIGH-VALUE TACTIC — Brooklyn Business Groups:
+
+1. Join: "Brooklyn Small Business Owners", "Brooklyn Entrepreneurs",
+   "NYC Accountants Network", local Chamber of Commerce groups
+
+2. Search within the group for: "payroll", "bookkeeping", "CPA", "accountant"
+   — You'll find posts from business owners ASKING for recommendations
+   — You'll find accountants ANSWERING and promoting themselves
+
+3. When you find an accountant active in a group:
+   a. Look at their personal or business page
+   b. Check the About section for phone, website, email
+   c. See what services they list / whether payroll is mentioned
+
+4. DM approach (Facebook Messenger):
+   "Hi [Name], I found your page through the Brooklyn Business Owners group.
+   I work with accounting firms in Brooklyn on a program that's helped a few
+   firms here turn their payroll clients into a meaningful income stream.
+   Would it be worth a 10-minute call?"
+
+KEY FACEBOOK DATA TO CAPTURE:
+  - Page name
+  - Website URL
+  - Phone (often in About section)
+  - Services listed
+  - Review count + rating
+  - Last post date
+  - Whether payroll is mentioned anywhere
+
+RECORD TO: output/facebook_manual.csv
+
+
+SEARCH URLS:
+
+  [01] Facebook Pages: accountant brooklyn
+       https://www.facebook.com/search/pages/?q=accountant+brooklyn
+       NOTE: Filter to Pages. Look for About section — phone, website, services. Check if they mention payroll.
+
+  [02] Facebook Pages: CPA brooklyn
+       https://www.facebook.com/search/pages/?q=CPA+brooklyn
+       NOTE: Filter to Pages. Look for About section — phone, website, services. Check if they mention payroll.
+
+  [03] Facebook Pages: bookkeeper brooklyn
+       https://www.facebook.com/search/pages/?q=bookkeeper+brooklyn
+       NOTE: Filter to Pages. Look for About section — phone, website, services. Check if they mention payroll.
+
+  [04] Facebook Pages: payroll services brooklyn
+       https://www.facebook.com/search/pages/?q=payroll+services+brooklyn
+       NOTE: Filter to Pages. Look for About section — phone, website, services. Check if they mention payroll.
+
+  [05] Facebook Pages: tax preparer brooklyn
+       https://www.facebook.com/search/pages/?q=tax+preparer+brooklyn
+       NOTE: Filter to Pages. Look for About section — phone, website, services. Check if they mention payroll.
+
+  [06] Facebook Pages: accounting firm brooklyn
+       https://www.facebook.com/search/pages/?q=accounting+firm+brooklyn
+       NOTE: Filter to Pages. Look for About section — phone, website, services. Check if they mention payroll.
+
+  [07] Facebook Group: Brooklyn business owners
+       https://www.facebook.com/search/groups/?q=Brooklyn+business+owners
+       NOTE: Join the group. Look for accountants/bookkeepers answering questions. They're advertising themselves — reach out directly.
+
+  [08] Facebook Group: Brooklyn small business
+       https://www.facebook.com/search/groups/?q=Brooklyn+small+business
+       NOTE: Join the group. Look for accountants/bookkeepers answering questions. They're advertising themselves — reach out directly.
+
+  [09] Facebook Group: Brooklyn entrepreneurs
+       https://www.facebook.com/search/groups/?q=Brooklyn+entrepreneurs
+       NOTE: Join the group. Look for accountants/bookkeepers answering questions. They're advertising themselves — reach out directly.
+
+  [10] Facebook Group: Brooklyn networking
+       https://www.facebook.com/search/groups/?q=Brooklyn+networking
+       NOTE: Join the group. Look for accountants/bookkeepers answering questions. They're advertising themselves — reach out directly.
+
+  [11] Facebook Group: NYC accountants
+       https://www.facebook.com/search/groups/?q=NYC+accountants
+       NOTE: Join the group. Look for accountants/bookkeepers answering questions. They're advertising themselves — reach out directly.
+
+  [12] Facebook Group: NYC bookkeepers
+       https://www.facebook.com/search/groups/?q=NYC+bookkeepers
+       NOTE: Join the group. Look for accountants/bookkeepers answering questions. They're advertising themselves — reach out directly.
+
+  [13] Facebook Group: Brooklyn Chamber of Commerce
+       https://www.facebook.com/search/groups/?q=Brooklyn+Chamber+of+Commerce
+       NOTE: Join the group. Look for accountants/bookkeepers answering questions. They're advertising themselves — reach out directly.
+
+  [14] Google → Facebook: brooklyn accountant
+       https://www.google.com/search?q=site%3Afacebook.com+brooklyn+accountant
+       NOTE: No login needed. Google indexes public Facebook pages.
+
+  [15] Google → Facebook: brooklyn CPA payroll
+       https://www.google.com/search?q=site%3Afacebook.com+brooklyn+CPA+payroll
+       NOTE: No login needed. Google indexes public Facebook pages.
+
+  [16] Google → Facebook: brooklyn bookkeeper
+       https://www.google.com/search?q=site%3Afacebook.com+brooklyn+bookkeeper
+       NOTE: No login needed. Google indexes public Facebook pages.
+
+──────────────────────────────────────────────────────────────────────
+3. YELP REVIEW MINING
+──────────────────────────────────────────────────────────────────────
+  Yelp reviewers frequently name specific software ('they use Gusto',
+  'great with QuickBooks payroll'). These are warm signals.
+
+SEARCH URLS:
+
+  [01] Yelp: accountants in Brooklyn
+       https://www.yelp.com/search?find_desc=accountant&find_loc=Brooklyn%2C+NY
+
+  [02] Yelp: bookkeepers in Brooklyn
+       https://www.yelp.com/search?find_desc=bookkeeper&find_loc=Brooklyn%2C+NY
+
+  [03] Yelp: accountants in Williamsburg, Brooklyn
+       https://www.yelp.com/search?find_desc=accountant&find_loc=Williamsburg%2C+Brooklyn%2C+NY
+
+  [04] Yelp: bookkeepers in Williamsburg, Brooklyn
+       https://www.yelp.com/search?find_desc=bookkeeper&find_loc=Williamsburg%2C+Brooklyn%2C+NY
+
+  [05] Yelp: accountants in Park Slope, Brooklyn
+       https://www.yelp.com/search?find_desc=accountant&find_loc=Park+Slope%2C+Brooklyn%2C+NY
+
+  [06] Yelp: bookkeepers in Park Slope, Brooklyn
+       https://www.yelp.com/search?find_desc=bookkeeper&find_loc=Park+Slope%2C+Brooklyn%2C+NY
+
+  [07] Yelp: accountants in Bay Ridge, Brooklyn
+       https://www.yelp.com/search?find_desc=accountant&find_loc=Bay+Ridge%2C+Brooklyn%2C+NY
+
+  [08] Yelp: bookkeepers in Bay Ridge, Brooklyn
+       https://www.yelp.com/search?find_desc=bookkeeper&find_loc=Bay+Ridge%2C+Brooklyn%2C+NY
+
+  [09] Yelp: accountants in Flatbush, Brooklyn
+       https://www.yelp.com/search?find_desc=accountant&find_loc=Flatbush%2C+Brooklyn%2C+NY
+
+  [10] Yelp: bookkeepers in Flatbush, Brooklyn
+       https://www.yelp.com/search?find_desc=bookkeeper&find_loc=Flatbush%2C+Brooklyn%2C+NY
+
+  [11] Yelp: accountants in Crown Heights, Brooklyn
+       https://www.yelp.com/search?find_desc=accountant&find_loc=Crown+Heights%2C+Brooklyn%2C+NY
+
+  [12] Yelp: bookkeepers in Crown Heights, Brooklyn
+       https://www.yelp.com/search?find_desc=bookkeeper&find_loc=Crown+Heights%2C+Brooklyn%2C+NY
+
+──────────────────────────────────────────────────────────────────────
+4. INSTAGRAM
+──────────────────────────────────────────────────────────────────────
+
+INSTAGRAM OUTREACH APPROACH
+─────────────────────────────────────────
+1. Find the firm's Instagram profile (use URLs above)
+2. Check their bio for: phone, website, services listed
+3. Look at recent posts — do they mention payroll, tax season, QuickBooks?
+4. If they have a business profile, their email is often in the bio
+5. DM message template:
+
+   "Hi [First Name], I saw your profile and noticed you work with payroll
+   clients in Brooklyn. I work with a few firms in the area on a program
+   that's been generating some meaningful extra income — and in some cases,
+   a one-time payout. Would a quick 10-minute call make sense?"
+
+WHAT TO CAPTURE per Instagram profile:
+  - Handle (@username)
+  - Full name / firm name
+  - Bio text (screenshot it)
+  - Phone number (if listed)
+  - Website link
+  - Email (if listed under "Contact")
+  - Follower count (proxy for firm size/activity)
+  - Last post date (is this firm active?)
+
+RECORD TO: output/instagram_manual.csv (see template)
+
+
+HASHTAG + SEARCH URLS:
+
+  [01] Instagram hashtag: #brooklynaccountant
+       https://www.instagram.com/explore/tags/brooklynaccountant/
+
+  [02] Instagram hashtag: #brooklyncpa
+       https://www.instagram.com/explore/tags/brooklyncpa/
+
+  [03] Instagram hashtag: #brooklynbookkeeper
+       https://www.instagram.com/explore/tags/brooklynbookkeeper/
+
+  [04] Instagram hashtag: #brooklynbusiness
+       https://www.instagram.com/explore/tags/brooklynbusiness/
+
+  [05] Instagram hashtag: #brooklyntax
+       https://www.instagram.com/explore/tags/brooklyntax/
+
+  [06] Instagram hashtag: #nycaccountant
+       https://www.instagram.com/explore/tags/nycaccountant/
+
+  [07] Instagram hashtag: #nyccpa
+       https://www.instagram.com/explore/tags/nyccpa/
+
+  [08] Instagram hashtag: #nycbookkeeper
+       https://www.instagram.com/explore/tags/nycbookkeeper/
+
+  [09] Instagram hashtag: #smallbusinessbrooklyn
+       https://www.instagram.com/explore/tags/smallbusinessbrooklyn/
+
+  [10] Instagram hashtag: #brooklynsmallbusiness
+       https://www.instagram.com/explore/tags/brooklynsmallbusiness/
+
+  [11] Instagram hashtag: #payrollservices
+       https://www.instagram.com/explore/tags/payrollservices/
+
+  [12] Instagram hashtag: #accountingfirm
+       https://www.instagram.com/explore/tags/accountingfirm/
+
+  [13] Instagram hashtag: #bookkeepingservices
+       https://www.instagram.com/explore/tags/bookkeepingservices/
+
+  [14] Instagram hashtag: #cpafirm
+       https://www.instagram.com/explore/tags/cpafirm/
+
+  [15] Instagram hashtag: #taxprep
+       https://www.instagram.com/explore/tags/taxprep/
+
+  [16] Instagram hashtag: #brooklynentrepreneur
+       https://www.instagram.com/explore/tags/brooklynentrepreneur/
+
+  [17] Google → Instagram: brooklyn accountant
+       https://www.google.com/search?q=site%3Ainstagram.com+%22brooklyn+accountant%22
+
+  [18] Google → Instagram: brooklyn CPA
+       https://www.google.com/search?q=site%3Ainstagram.com+%22brooklyn+CPA%22
+
+  [19] Google → Instagram: brooklyn bookkeeper
+       https://www.google.com/search?q=site%3Ainstagram.com+%22brooklyn+bookkeeper%22
+
+  [20] Google → Instagram: brooklyn payroll services
+       https://www.google.com/search?q=site%3Ainstagram.com+%22brooklyn+payroll+services%22
+
+──────────────────────────────────────────────────────────────────────
+5. NEXTDOOR
+──────────────────────────────────────────────────────────────────────
+
+NEXTDOOR PROSPECTING APPROACH
+─────────────────────────────────────────
+Nextdoor is underused for B2B prospecting but it's highly valuable in Brooklyn
+because small business owners frequently ask neighbors for accountant/bookkeeper
+recommendations — and local accountants reply to promote themselves.
+
+URL: https://nextdoor.com
+
+1. CREATE A FREE PERSONAL ACCOUNT if you don't have one
+   - Use your Brooklyn address (or a Brooklyn ZIP code)
+
+2. SEARCH WITHIN NEXTDOOR:
+   - Search: "accountant", "bookkeeper", "CPA", "payroll", "tax"
+   - Filter to: "Posts" and "Recommendations"
+
+3. WHAT YOU'RE LOOKING FOR:
+   - Posts by business owners asking "who does payroll for small businesses?"
+   - Replies by local accountants self-promoting
+   - "Business" profile listings in the Neighborhood Favorites section
+
+4. WHAT TO CAPTURE per lead:
+   - First and last name of the accountant
+   - Firm name (if mentioned)
+   - Phone number (sometimes in replies)
+   - Website (sometimes linked)
+   - Neighborhood they serve
+
+5. OUTREACH:
+   Nextdoor has a direct message feature. Keep it ultra-local:
+   "Hi [Name], I found your recommendation in the [neighborhood] Nextdoor
+   group. I work with accounting firms in Brooklyn on a program that's been
+   generating real income for firms like yours. Would you be open to a
+   10-minute call?"
+
+RECORD TO: output/nextdoor_manual.csv
+
+
+──────────────────────────────────────────────────────────────────────
+MANUAL ENTRY TEMPLATES
+──────────────────────────────────────────────────────────────────────
+  All social media leads should be entered into:
+  → output/social_media_manual.csv
+
+  Then run: python src/main.py --input-csv output/social_media_manual.csv
+  This will score them and merge them into your master list.

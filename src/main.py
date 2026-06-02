@@ -5,12 +5,15 @@ Usage:
     python src/main.py [--skip-google] [--skip-yelp] [--skip-dos]
                        [--skip-nysscpa] [--skip-scoring]
                        [--input-csv PATH]
+                       [--sf-existing PATH]   ← your Salesforce export CSV
+                       [--prompt "Firm Name"] ← generate research prompt for one firm
 
 Steps:
     1. Lead discovery (Google Maps, Yelp, NYC DOS, NYSSCPA)
     2. Deduplication
-    3. Website scoring
-    4. Export (CSV + guides)
+    3. Salesforce dedup (remove already-owned leads)
+    4. Website scoring
+    5. Export (CSV + guides + social media guide + ranked target list)
 
 Set your API keys in config/.env before running.
 """
@@ -45,6 +48,14 @@ def parse_args():
     parser.add_argument("--skip-scoring", action="store_true", help="Skip website scoring (faster)")
     parser.add_argument("--input-csv", type=str, default=None,
                         help="Load existing leads from CSV instead of scraping")
+    parser.add_argument("--sf-existing", type=str, default=None,
+                        help="Path to your Salesforce export CSV (to remove already-owned leads)")
+    parser.add_argument("--prompt", type=str, default=None,
+                        help='Generate a deep research prompt for one firm. E.g.: --prompt "Brooklyn CPA LLC"')
+    parser.add_argument("--prompt-website", type=str, default="",
+                        help="Website for --prompt firm")
+    parser.add_argument("--prompt-phone", type=str, default="",
+                        help="Phone for --prompt firm")
     parser.add_argument("--your-name", type=str, default=os.getenv("YOUR_NAME", "[Your Name]"))
     parser.add_argument("--your-email", type=str, default=os.getenv("YOUR_EMAIL", "[Your Email]"))
     parser.add_argument("--your-phone", type=str, default=os.getenv("YOUR_PHONE", "[Your Phone]"))
@@ -64,6 +75,12 @@ def load_csv_leads(path: str) -> list[dict]:
 
 
 def run(args):
+    # Single-firm prompt mode — generate and exit
+    if args.prompt:
+        from firm_research_prompt import print_firm_prompt
+        print_firm_prompt(args.prompt, args.prompt_website, args.prompt_phone)
+        return
+
     ensure_output_dir()
 
     print("\n" + "=" * 60)
@@ -124,6 +141,27 @@ def run(args):
     print("\n[Step 1g] Deduplicating leads...")
     unique_leads = deduplicate(all_raw_leads) if all_raw_leads else []
 
+    # ── SALESFORCE DEDUP ─────────────────────────────────────────────────────
+    sf_existing_path = args.sf_existing or os.path.join(
+        os.path.dirname(__file__), "../config/salesforce_existing.csv"
+    )
+    if os.path.exists(sf_existing_path):
+        from salesforce_dedup import load_salesforce_existing, filter_existing_sf_leads, enrich_from_salesforce
+        sf_records = load_salesforce_existing(sf_existing_path)
+        if sf_records and unique_leads:
+            net_new, already_in_sf = filter_existing_sf_leads(unique_leads, sf_records)
+            # Write the "already in SF" list separately — useful for re-scoring known leads
+            if already_in_sf:
+                enriched_sf = enrich_from_salesforce(already_in_sf, sf_records)
+                from exporter import write_csv, MASTER_COLUMNS
+                already_cols = MASTER_COLUMNS + ["sf_status", "sf_owner", "sf_last_activity"]
+                write_csv("already_in_salesforce.csv", enriched_sf, already_cols)
+            unique_leads = net_new
+            print(f"[SF Dedup] Working with {len(unique_leads)} net-new leads.")
+    else:
+        print(f"[SF Dedup] No Salesforce export found at {sf_existing_path}")
+        print("           Export your Salesforce accounts and save to config/salesforce_existing.csv")
+
     # Save raw deduplicated leads before scoring
     raw_path = os.path.join(os.path.dirname(__file__), "../output/raw_leads_pre_scoring.json")
     with open(raw_path, "w") as f:
@@ -156,13 +194,28 @@ def run(args):
     }
 
     if scored_leads:
+        # Apply deep-research priority re-ranking
+        from firm_research_prompt import generate_ranked_target_list
+        scored_leads = generate_ranked_target_list(scored_leads)
+
         export_master_leads(scored_leads)
         export_priority_a(scored_leads)
         export_salesforce(scored_leads)
         export_outreach_sequences(scored_leads, your_info)
 
+        # Export top 25 ranked targets as a quick-hit list
+        top25 = scored_leads[:25]
+        from exporter import write_csv, MASTER_COLUMNS
+        top25_cols = MASTER_COLUMNS + ["research_priority_score", "research_signals",
+                                        "sf_status", "sf_owner"]
+        write_csv("top25_priority_targets.csv", top25, top25_cols)
+
     export_linkedin_template()
     export_guides()
+
+    # Social media guide
+    from social_media import generate_social_media_report
+    generate_social_media_report(output_dir="output")
 
     if scored_leads:
         report = export_summary_report(scored_leads)

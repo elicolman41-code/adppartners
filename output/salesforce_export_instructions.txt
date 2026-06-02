@@ -1,0 +1,64 @@
+HOW TO EXPORT YOUR 86 SALESFORCE ACCOUNTANTS
+══════════════════════════════════════════════════════════
+
+This file tells you exactly how to pull your existing Salesforce list so the
+system can automatically remove those 86 firms from any new lead list you run.
+
+─────────────────────────────────────────────────────────
+OPTION A: Export from Salesforce Accounts (if they're Accounts)
+─────────────────────────────────────────────────────────
+1. Log into Salesforce
+2. Go to: Accounts tab → click the list view dropdown → "All Accounts"
+   (or whatever view has your 86 accountant accounts)
+3. Select all records (checkbox at top)
+4. Click the gear icon (⚙) → Export → Export Selected
+5. Choose: CSV (UTF-8)
+6. Include fields: Account Name, Phone, Website, Billing Zip/Postal Code
+   (add Owner Name, Last Activity Date if available)
+7. Save the file as: config/salesforce_existing.csv
+
+─────────────────────────────────────────────────────────
+OPTION B: Export from Salesforce Leads (if they're Leads)
+─────────────────────────────────────────────────────────
+1. Go to: Leads tab → All Open Leads (or your accountant list view)
+2. Select all → gear icon → Export
+3. Choose: CSV (UTF-8)
+4. Include fields: First Name, Last Name, Company, Phone, Website,
+   Postal Code, Lead Owner, Last Activity Date
+5. Save as: config/salesforce_existing.csv
+
+─────────────────────────────────────────────────────────
+OPTION C: Create a Salesforce Report (most flexible)
+─────────────────────────────────────────────────────────
+1. Go to: Reports → New Report → Accounts (or Leads)
+2. Add filter: Industry = Accounting (or however you've tagged them)
+3. Add columns: Name, Phone, Website, Billing Zip, Owner, Last Activity
+4. Click Run → Export → CSV
+5. Save as: config/salesforce_existing.csv
+
+─────────────────────────────────────────────────────────
+AFTER SAVING THE FILE:
+─────────────────────────────────────────────────────────
+Run the system — it will automatically read this file and remove
+any matching firms from your new lead list.
+
+  python src/main.py --skip-scoring
+
+Or with explicit path:
+
+  python src/main.py --sf-existing config/salesforce_existing.csv --skip-scoring
+
+The system will output:
+  output/master_leads.csv           ← net new leads only
+  output/already_in_salesforce.csv  ← your 86 existing leads, re-scored
+  output/top25_priority_targets.csv ← top 25 net new leads to call first
+
+─────────────────────────────────────────────────────────
+FIELD MAPPING (how we match your SF records to new leads)
+─────────────────────────────────────────────────────────
+Match method 1: Phone number (normalized 10-digit)
+Match method 2: Website domain (e.g. "smithcpa.com")
+Match method 3: Fuzzy firm name (≥85% similarity) in same ZIP code
+
+Any firm that matches any of those three is removed from the new lead list
+and written to already_in_salesforce.csv instead.
