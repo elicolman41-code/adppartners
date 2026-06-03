@@ -6,8 +6,19 @@ Three tracks:
   Track 2 — Revenue Share pitch (Priority B, referral angle)
   Track 3 — Cold/Unknown (Priority C, single curiosity email)
 
-All templates use [First Name], [Firm Name], [Neighborhood] as merge fields.
+All templates use [First Name], [Firm Name], [Neighborhood], [Competitor] as merge fields.
 Subject line variants are provided for A/B testing.
+
+CORE PITCH (all tracks):
+  "You're probably recommending Gusto to your clients. ADP can match that price —
+  and we pay you a lot more than Gusto does for every client you send our way.
+  Most people in your position have never heard that."
+
+[Competitor] merge field should be set to:
+  - "Gusto" for Xero/cloud-native firms (Brooklyn Fi, BusinessHQ, SDO CPA)
+  - "QuickBooks Payroll" for QB-heavy firms (BIT Accounting, Brooklyn CPA, ClearPath CFO)
+  - "Gusto or QuickBooks" for mixed/unknown signals
+  - Skip the competitor angle for staffing agencies — use cost/efficiency framing instead.
 """
 
 from typing import NamedTuple
@@ -142,27 +153,27 @@ TRACK_2_EMAIL_1 = EmailTemplate(
     day=1,
     channel="email",
     subject_variants=[
-        "earning more from your existing clients",
-        "quick question, [First Name]",
-        "passive income from clients you already have",
+        "you're probably recommending [Competitor]. ADP pays more.",
+        "[First Name] — same price for your clients, more money for you",
+        "quick question about your [Competitor] referrals",
     ],
     body="""\
 Hi [First Name],
 
-I partner with accounting firms in Brooklyn on a program where they earn \
-ongoing revenue from clients they're already working with — just by referring \
-payroll to us.
-
-I know that's vague, so I'll be direct: depending on your client base, that can \
-add up to real money without changing how you work.
+You're probably recommending [Competitor] to your small business clients. \
+ADP can match that price — and we pay you a lot more than [Competitor] does \
+for every client you send our way. Most people in your position have never \
+heard that.
 
 Worth a quick conversation this week?
 
 [Your Name]
 [Your Phone] | [Your Email]""",
     notes=(
-        "Frame as income generation, not a sell. "
-        "'clients you already have' is the key phrase — zero new effort implied."
+        "SHORT AND DIRECT. Lead with the Gusto/QB competitor comparison — that's the hook. "
+        "Set [Competitor] based on the firm's known tech stack: 'Gusto' for Xero/cloud firms, "
+        "'QuickBooks Payroll' for QB-heavy firms, 'Gusto or QuickBooks' for unknown. "
+        "Do NOT lead with compliance or enterprise value — lead with money."
     ),
 )
 
@@ -173,13 +184,15 @@ TRACK_2_FOLLOWUP_DM = EmailTemplate(
     channel="linkedin_dm",
     subject_variants=[],
     body="""\
-Hi [First Name] — sent you an email earlier this week. I work with firms like \
-[Firm Name] on a referral program where you earn ongoing revenue share from \
-payroll clients. Some firms in Brooklyn are pulling in an extra $10–30k a year \
-from clients they already serve. Happy to explain in 10 minutes if you're open to it.""",
+Hi [First Name] — sent you an email a couple days ago. Short version: if you're \
+recommending [Competitor] for payroll, ADP matches the price for your clients \
+and pays you significantly more per referral. Some [Neighborhood] firms are \
+adding $10–30k a year just by switching where they refer. Happy to explain in \
+10 minutes.""",
     notes=(
-        "Give the $10–30k/year range for revenue share. "
-        "Anchor it to their existing clients — no cold outreach required from them."
+        "Keep the competitor name front and center — that's the hook that got them "
+        "to read the first email. Reinforce: same price for clients, more money for you. "
+        "Give the $10–30k/year range to make it concrete."
     ),
 )
 
@@ -253,28 +266,26 @@ TRACK_3_EMAIL_1 = EmailTemplate(
     channel="email",
     subject_variants=[
         "quick question for [Firm Name]",
-        "something I wanted to run by you",
-        "[First Name] — worth 2 minutes?",
+        "[First Name] — do you recommend Gusto or QuickBooks to clients?",
+        "worth 2 minutes?",
     ],
     body="""\
 Hi [First Name],
 
-I work with accounting and bookkeeping firms in Brooklyn and I've been \
-connecting with practices about a program that's been a good fit for some firms \
-and not a fit at all for others.
+Quick question: when your small business clients need payroll, are you pointing \
+them toward Gusto or QuickBooks?
 
-Before I explain it, I'd rather ask: does your firm handle any payroll for \
-clients, or is that outside your scope?
+If so, I'd love two minutes to explain why ADP pays significantly more for those \
+referrals — while matching the same price your clients would pay elsewhere.
 
-If it's not a fit, totally fine — I appreciate the honesty. If it is, I'd \
-love two minutes to explain.
+Fit or not a fit?
 
 [Your Name]
 [Your Phone] | [Your Email]""",
     notes=(
-        "The question at the end is the entire strategy. "
-        "Getting them to say 'yes we do payroll' qualifies them automatically. "
-        "Even a 'no' is useful — you can remove them from the list."
+        "The question at the end is still the strategy — but now it's Gusto/QB-anchored. "
+        "If they say 'yes we recommend Gusto' you have a qualified lead immediately. "
+        "If they say 'no' you can still ask what they recommend. Keep it to 3 sentences."
     ),
 )
 
@@ -324,6 +335,7 @@ def render_template(template: EmailTemplate, merge_fields: dict) -> dict:
         text = text.replace("[First Name]", merge_fields.get("first_name", "there"))
         text = text.replace("[Firm Name]", merge_fields.get("firm_name", "your firm"))
         text = text.replace("[Neighborhood]", merge_fields.get("neighborhood", "Brooklyn"))
+        text = text.replace("[Competitor]", merge_fields.get("competitor", "Gusto"))
         text = text.replace("[Your Name]", merge_fields.get("your_name", "[Your Name]"))
         text = text.replace("[Your Phone]", merge_fields.get("your_phone", "[Your Phone]"))
         text = text.replace("[Your Email]", merge_fields.get("your_email", "[Your Email]"))
