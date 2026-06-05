@@ -94,11 +94,36 @@ ADP OFFERINGS — KEY POINTS
   • ADP Marketplace — partner-built AI agents that integrate and automate
     across the entire employee lifecycle (launched March 2026)
 
+  ACCOUNTANT CONNECT — FREE PORTAL FOR PARTNERS
+  • Free platform built specifically for accountants and advisors
+  • 80,000+ accountants already using it
+  • One dashboard to see ALL your ADP clients — payroll data, reports,
+    workforce metrics, all in one place
+  • Client analytics — compare payroll data, turnover rates, earnings
+    trends across your entire book at once
+  • Compensation benchmarking powered by ADP DataCloud — real data
+    from 1.1M companies to advise clients on market rates
+  • Industry insights and business valuations built in (BizEquity —
+    143-point business valuation tool, free for partners)
+  • CPE credits and tax research tools included at no cost
+  • One portal replaces multiple logins across multiple clients
+
+  QUICKBOOKS INTEGRATION — GENERAL LEDGER & CHART OF ACCOUNTS
+  • Native integration — no third-party connector needed
+  • ADP RUN automatically pulls in the QuickBooks Online
+    chart of accounts once connected
+  • Map payroll items directly to QBO accounts — wages, taxes,
+    deductions all flow into the right GL buckets automatically
+  • Every time payroll runs, the journal entry posts to QuickBooks
+    automatically — no manual entry, no reconciliation headaches
+  • Included in all four RUN packages — not an add-on
+  • For a firm that does both tax and payroll advising, this means
+    the books stay clean without any extra work on their end
+
   PARTNER PROGRAM
   • Refer 3 clients → earn 25% of their monthly ADP invoice
   • Refer 5 clients → jumps to 50%, paid retroactively on the first 3
   • Ongoing residual payments as long as clients stay — not a one-time fee
-  • Accountant Connect — one portal to see all client data, reports, benchmarks
 
 THE REVENUE SHARE ANGLE
 ━━━━━━━━━━━━━━━━━━━━━━━
