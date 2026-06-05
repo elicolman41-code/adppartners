@@ -1,190 +1,223 @@
+================================================================================
 MRE CONSULTING & INSURANCE — Matthew R. Epstein
-mrecai.com | (929) 919-3574 | Great Neck, NY
+mrecai.com  |  (929) 919-3574  |  Great Neck, NY
 ================================================================================
 
 WHO HE IS
-  • President, MRE Consulting & Insurance LLC — solo operator, he IS the firm
+  • Solo operator — Matthew IS the firm, one decision maker
+  • Goldman Sachs + PwC background — thinks like an institutional buyer,
+    evaluates deals on structure and ROI, not emotion
   • LinkedIn title: "AI-Driven Financial Strategist" — this is his identity
-  • Goldman Sachs + PwC background — evaluates deals like an institutional buyer
   • Contributor to Accounting Today — building a public thought-leader profile
   • 180+ clients, 4.9/5 rating, 99 Yelp reviews — loyal, active client base
   • Brands himself as one-stop: Tax + Insurance + AI
-  • NO confirmed payroll partner — door is wide open
+  • NO confirmed payroll partner — completely open
 
-THE FIT
-  He's already the trusted advisor for 180+ small business owners.
-  They're asking him about payroll. He has no answer right now.
-  ADP's partner program turns that gap into a recurring revenue line —
-  and it fits the AI-forward brand he's spent years building.
+HIS THREE PILLARS TODAY
+  1. Tax Strategy — planning and prep for businesses and individuals
+  2. Insurance Consulting — commercial and personal, risk assessment
+  3. AI Automation — process automation for small business clients
 
-DISCOVERY — QUESTIONS TO ASK
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  The goal is to understand where his clients are hitting walls
-  and where he sees MRE going. Let him paint the picture.
-  You're listening for gaps ADP fills.
+  The gap: his clients need payroll, HR, and benefits.
+  He has no answer for them right now.
 
-  ON CLIENT GROWTH
-  • "When your clients come to you, are most of them trying to grow
-    the business — hiring, expanding — or are they mostly trying to
-    get their existing operations under control?"
+================================================================================
+PART 1 — DISCOVERY
+Ask these before anything else. His answers tell you exactly
+which ADP offering to lead with and how to frame it.
+================================================================================
 
-  • "When a client starts growing and adding headcount, what does
-    that conversation look like with you? Do you help them think
-    through the infrastructure side — payroll, HR — or is that
-    usually outside the scope of what you're doing together?"
+UNDERSTANDING HIS CLIENTS AND THEIR GROWTH
 
-  • "Have you had clients outgrow what their current setup can
-    handle? What breaks first — payroll, compliance, benefits?"
+  "When your clients come to you — are most of them trying to
+   grow the business, add people, expand — or are they more
+   focused on getting what they already have under control?"
 
-  • "What's the biggest operational headache your clients come
-    to you with right now outside of tax?"
+  "When a client starts growing and hiring, does that conversation
+   come to you? Do they loop you in on the infrastructure side —
+   payroll, HR setup — or do they usually figure that out on their own?"
 
-  ON EXPANDING HIS SERVICE OFFERINGS
-  • "You're positioned as one-stop right now for tax, insurance,
-    and AI. Is payroll a natural next step you've thought about,
-    or has it not been on the radar?"
+  "Have you had a client outgrow their current setup and come back
+   to you with problems? What broke first — payroll, compliance, benefits?"
 
-  • "If you could add one service that your clients keep asking
-    for that you're not currently delivering, what would it be?"
+  "What's the biggest operational headache your clients bring to
+   you outside of tax right now?"
 
-  • "A lot of advisors your size are looking at ways to deepen
-    the relationship with existing clients rather than just adding
-    new ones. Is that something you're thinking about too?"
+  "When a client is making a real business decision — hiring their
+   first employee, opening a second location, taking on investors —
+   are you in that room?"
 
-  ON INTEGRATION + CURRENT PROCESS
-  • "Right now when you're working with a business client across
-    tax and insurance — how connected are those two conversations?
-    Are you pulling from the same data or are they siloed?"
+UNDERSTANDING HIS SERVICE GAPS
 
-  • "What tools are you using internally to manage your client
-    work? QuickBooks, anything else?"
+  "You're positioned as one-stop for tax, insurance, and AI.
+   Is payroll something you've thought about adding, or has it
+   not come up?"
 
-  • "When your clients are on different systems — their own
-    accounting software, payroll, insurance — does the
-    disconnection ever create headaches for you on the tax side?"
+  "If you could add one service your clients keep asking for
+   that you're not delivering today, what would it be?"
 
-  • "If payroll data flowed automatically into the books you're
-    already working with for tax prep, would that change how
-    much time you spend cleaning things up at year end?"
+  "Are you currently earning anything when a client asks you
+   about payroll and you point them somewhere — through Gusto,
+   QuickBooks, or anyone else?"
 
-  ON STRATEGIC ADVISORY
-  • "Beyond the transactional work — tax prep, insurance policies —
-    are your clients coming to you for strategic advice on where
-    to take the business? Or is it more reactive?"
+  "A lot of advisors your size are focused on going deeper with
+   existing clients rather than just chasing new ones. Is that
+   where you're headed too, or is the priority still volume?"
 
-  • "Do you see yourself moving more into the advisory role over
-    time, or is the core model always going to be service-based?"
+UNDERSTANDING INTEGRATION AND CURRENT PROCESS
 
-  • "When a client is making a big decision — hiring their first
-    employee, opening a second location — are you in that
-    conversation?"
+  "What does your workflow look like when you're managing a
+   client across both tax and insurance — are you pulling from
+   the same data set or are those two conversations totally
+   separate?"
 
-ADP OFFERINGS — KEY POINTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━
+  "What tools are you running internally — QuickBooks, anything else?"
 
-  PAYROLL (RUN Powered by ADP)
-  • #1 rated payroll on G2 for small business — 900,000+ clients
-  • Auto-calculates, deducts, and files all federal, state, local taxes
-  • Creates and e-files W-2s and 1099s directly with the IRS
-  • AI error detection catches mistakes before payroll runs (~30 min saved/cycle)
-  • RUN & DONE — fully automated recurring payroll, set and forget
+  "When your clients are on different systems for accounting,
+   payroll, insurance — does that disconnection create headaches
+   for you when you're doing their taxes?"
 
-  HR
-  • Built-in recruiting via ZipRecruiter — posts to 100+ job boards
-  • Onboarding, employee handbooks, compliance training in platform
-  • 24/7 live HR support from actual HR professionals (not a chatbot)
-  • Time tracking, overtime management, worker classification tools
+  "If payroll data flowed directly into the books automatically —
+   no manual entry — would that change how much cleanup work
+   you're doing at year end?"
 
-  BENEFITS
-  • Health insurance, retirement plans, flexible pay — all in one place
-  • Full benefits administration built in — no third-party juggling
-  • Employee discount programs included
+UNDERSTANDING HIS STRATEGIC VISION
 
-  AI (ADP Assist)
-  • Payroll anomaly detection — flags errors before they run
-  • Conversational analytics — ask a question, get a chart instantly
-  • AI agents that execute multi-step HR and payroll workflows autonomously
-  • Benchmarks from 1.1 million companies — deepest workforce dataset available
-  • ADP Marketplace — partner-built AI agents that integrate and automate
-    across the entire employee lifecycle (launched March 2026)
+  "Beyond the day-to-day service work — tax prep, policies —
+   are clients coming to you for strategic advice on the business
+   itself? Or is it mostly reactive?"
 
-  ACCOUNTANT CONNECT — FREE PORTAL FOR PARTNERS
-  • Free platform built specifically for accountants and advisors
-  • 80,000+ accountants already using it
-  • One dashboard to see ALL your ADP clients — payroll data, reports,
-    workforce metrics, all in one place
-  • Client analytics — compare payroll data, turnover rates, earnings
-    trends across your entire book at once
-  • Compensation benchmarking powered by ADP DataCloud — real data
-    from 1.1M companies to advise clients on market rates
-  • Industry insights and business valuations built in (BizEquity —
-    143-point business valuation tool, free for partners)
-  • CPE credits and tax research tools included at no cost
-  • One portal replaces multiple logins across multiple clients
+  "Where do you see MRE in two or three years — more clients,
+   deeper services, or both?"
 
-  QUICKBOOKS INTEGRATION — GENERAL LEDGER & CHART OF ACCOUNTS
-  • Native integration — no third-party connector needed
-  • ADP RUN automatically pulls in the QuickBooks Online
-    chart of accounts once connected
-  • Map payroll items directly to QBO accounts — wages, taxes,
-    deductions all flow into the right GL buckets automatically
-  • Every time payroll runs, the journal entry posts to QuickBooks
-    automatically — no manual entry, no reconciliation headaches
-  • Included in all four RUN packages — not an add-on
-  • For a firm that does both tax and payroll advising, this means
-    the books stay clean without any extra work on their end
+  "The one-stop positioning — is that something you're actively
+   marketing, or does it just come up naturally in conversation?"
 
-  PEO — ADP TOTALSOURCE (THE FULL INTEGRATION STORY)
-  This is where everything comes together in one place.
-  For a client who wants to hand off the entire back office —
-  payroll, benefits, HR, compliance, workers' comp — TotalSource
-  is the answer. And for Matthew, it's the strongest referral
-  he can make because it eliminates every operational headache
-  his clients have at once.
+================================================================================
+PART 2 — WHERE ADP FITS
+Once you know his answers, here is how to position each piece.
+================================================================================
 
-  • Payroll, tax filing, HR, benefits, and workers' comp —
-    all under one roof, one platform, one relationship
-  • Dedicated HR Business Partner (HRBP) assigned to each client —
-    a real person who handles day-to-day HR so the business owner doesn't
-  • Large-group benefits buying power from 722,000+ worksite employees —
-    small businesses get Fortune 500-level health and retirement plans
-    they could never access on their own
-  • Workers' comp coverage + claims administration handled by ADP —
-    not just a policy referral, fully managed
+IF HIS CLIENTS ARE GROWING AND HIRING
+→ Lead with RUN + TotalSource
+
+  His growing clients need payroll set up correctly from day one.
+  Right now they're figuring it out themselves or using something
+  that won't scale. ADP RUN is built for exactly this — the
+  business that just hired its first or fifth employee and needs
+  payroll, tax filing, and compliance handled automatically.
+
+  For clients ready to hand off the whole back office:
+  TotalSource puts payroll, HR, benefits, and compliance under
+  one roof so the owner can focus on the business. Matthew
+  can tell a growing client: "ADP handles all of it. One call."
+  That is a service he can offer today without doing any of
+  the work himself.
+
+IF HIS CLIENTS ARE HITTING OPERATIONAL WALLS
+→ Lead with TotalSource PEO
+
+  When a business owner is drowning in HR questions, compliance
+  issues, and payroll errors, TotalSource is the answer:
+
+  • Dedicated HR Business Partner assigned to each client —
+    a real person handling day-to-day HR so the owner doesn't
+  • Payroll, tax filing, HR, benefits, workers' comp —
+    one platform, one relationship, nothing falls through the cracks
   • Clients save an average of 30% of their time on HR tasks
-  • Covers all 50 states — most PEOs can't say that
-  • IRS-certified and ESAC-approved — one of only 4% of PEOs with
-    that designation. That matters to a Goldman/PwC-trained buyer.
-  • Top-rated mobile app — employees and owners manage everything
-    from their phone
-  • ADP MyLife Advisors — dedicated phone support for employees,
-    so the business owner isn't fielding HR questions all day
+  • Fortune 500-level health and retirement benefits —
+    small businesses get large-group buying power they can't
+    access on their own (722,000+ worksite employees in the pool)
+  • IRS-certified and ESAC-approved — one of only 4% of PEOs
+    with that designation
+  • Covers all 50 states
 
-  WHY THIS MATTERS FOR MATTHEW SPECIFICALLY:
-  His clients are small business owners who trust him with their
-  taxes, insurance, and financial decisions. TotalSource means he
-  can tell them: "ADP handles your payroll, your HR, your benefits,
-  and your compliance. All of it. One platform." That IS the
-  one-stop solution he's been pitching for his own brand —
-  but for his clients' operations.
+IF INTEGRATION IS THE PAIN POINT
+→ Lead with QuickBooks GL sync + Accountant Connect
 
-  PARTNER PROGRAM
+  QuickBooks Integration (native — no third-party connector):
+  • ADP RUN pulls in the QBO chart of accounts automatically
+  • Every payroll run posts the journal entry directly to QuickBooks
+  • Wages, taxes, deductions all land in the right GL buckets
+  • No manual entry, no year-end cleanup, books are always current
+  • Included in all RUN packages — not an add-on
+
+  Accountant Connect (free for Matthew):
+  • One portal for all his ADP clients — payroll data, reports,
+    workforce metrics, everything in one place
+  • Replaces logging into multiple systems for multiple clients
+  • Client analytics — compare earnings trends, turnover, headcount
+    across his entire book at once
+  • Compensation benchmarking from ADP DataCloud — real market data
+    from 1.1M companies so he can advise clients on what to pay
+  • BizEquity business valuation tool built in — 143-point valuation
+    he can pull for any client conversation
+  • CPE credits and tax research tools included at no cost
+  • 80,000+ accountants already on the platform
+
+IF HE WANTS TO EXPAND HIS SERVICE OFFERINGS
+→ Lead with the partner program + the full stack
+
+  Right now Matthew offers three pillars. With ADP he can add a fourth
+  — payroll — without hiring anyone, building anything, or doing any
+  of the service work himself. It's fully passive recurring revenue.
+
+  The revenue structure:
   • Refer 3 clients → earn 25% of their monthly ADP invoice
   • Refer 5 clients → jumps to 50%, paid retroactively on the first 3
-  • Ongoing residual payments as long as clients stay — not a one-time fee
+  • Ongoing residual payments as long as clients stay
+  • Not a one-time fee — recurring every month
 
-THE REVENUE SHARE ANGLE
-━━━━━━━━━━━━━━━━━━━━━━━
-  • ADP's partner program pays recurring monthly revenue per client
-  • Not a one-time referral fee — recurring
-  • Pays significantly more than Gusto's partner program
-  • For a firm with 180+ clients, even 20-30% converting to ADP
-    referrals is a material new revenue line
-  • Matthew decides everything — no committee. Build the personal
-    case and the business case at the same time.
+  What that means for 180+ clients:
+  Even if 20% of his book has employees on payroll —
+  that's 36 clients. At 36 referrals he's earning 50% residuals
+  on all of them, every month, indefinitely.
+  He does the introduction once. ADP does the rest.
 
-ONE QUESTION TO OPEN WITH
-  "When your clients come to you needing payroll,
-   what are you typically pointing them toward right now?"
+IF HE IS STRATEGIC-ADVISORY FOCUSED
+→ Lead with Accountant Connect data + ADP Assist AI
 
+  If Matthew sees himself as a strategic advisor — not just a service
+  provider — ADP gives him the data to back that up:
+
+  • Compensation benchmarks from 1.1M companies to advise on hiring
+  • Workforce trend analytics to flag issues before clients see them
+  • ADP Assist AI — conversational analytics, anomaly detection,
+    real-time workforce insights clients can actually use
+  • AI agents that automate multi-step payroll and HR workflows
+    (launched March 2026) — fits his AI brand positioning exactly
+  • When he's in the room for a client's big decision, he has data
+    other advisors don't have access to
+
+================================================================================
+PART 3 — THE PITCH IN PLAIN TERMS
+================================================================================
+
+  Matthew brands himself as a one-stop solution.
+  Right now that means tax, insurance, and AI.
+
+  His clients trust him. When they have a problem —
+  including payroll, HR, and benefits — they ask him.
+  Today he has no answer. He points them somewhere and
+  earns nothing. Or he doesn't point them anywhere at all.
+
+  ADP closes the loop on his brand promise:
+  Tax ✓  Insurance ✓  AI ✓  Payroll / HR / Benefits → ADP
+
+  He doesn't have to deliver the service. He makes the
+  introduction. ADP handles the client. He earns recurring
+  revenue every month and his clients get the full one-stop
+  experience he's been promising.
+
+  The deeper value: his clients grow. Growing clients need more
+  from him. When ADP is handling their payroll and HR cleanly,
+  they come back to Matthew for the next level of advice —
+  strategy, planning, expansion. That is a deeper relationship,
+  not just a referral fee.
+
+================================================================================
+CONTACT
+  Phone:    (929) 919-3574
+  LinkedIn: linkedin.com/in/mrepstein
+  Website:  mrecai.com
 ================================================================================
