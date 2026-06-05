@@ -17,44 +17,88 @@ THE FIT
   ADP's partner program turns that gap into a recurring revenue line —
   and it fits the AI-forward brand he's spent years building.
 
-ADP AS AN AI-FORWARD COMPANY
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Matthew calls himself an AI-Driven Financial Strategist.
-  He needs to be recommending AI-forward tools — not legacy payroll.
-  Here's what separates ADP:
+DISCOVERY QUESTIONS — UNDERSTAND HIS BUSINESS FIRST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Don't pitch until you know the answers to these.
+  Let him talk. The more he explains, the more you understand
+  exactly where the money is.
 
-  • ADP Assist — AI agents that automate payroll, HR, compliance tasks.
-    Not a chatbot. Actual agentic AI that takes action on multi-step
-    workflows, validates data, flags exceptions, and executes — with
-    human oversight built in.
+  ON HIS CLIENT BASE
+  • "Of your 180+ clients, what's the split between businesses
+    with actual employees versus solo operators or investors?
+    I'm trying to understand where the payroll opportunity lives."
 
-  • Payroll anomaly detection — AI automatically catches errors before
-    payroll runs. Early adopters saving up to 30 minutes per pay cycle.
-    His clients will notice that. Their previous platform didn't do that.
+  • "What industries are most of your business clients in?
+    Retail, professional services, restaurants — or more mixed?"
 
-  • Conversational analytics — clients can ask "how are my labor costs
-    trending?" and get charts and insights in seconds. No accountant
-    needed to pull a report. That's the AI story he's been telling about
-    his own practice — applied to payroll.
+  • "Are most of your clients Long Island-based, or do you have
+    a decent chunk in the city too?"
 
-  • Real-time workforce data from 1.1 million companies across 140+
-    countries. ADP's AI benchmarks are built on the largest private
-    payroll dataset in the world. Gusto can't touch that.
+  ON PAYROLL TODAY
+  • "When a client of yours is setting up payroll for the first time,
+    what does that conversation look like — are you involved in that
+    decision or do they usually figure it out on their own?"
 
-  • ADP Marketplace AI agents (launched March 2026) — partner-built AI
-    agents that plug into ADP and automate HR, payroll, talent, and
-    compliance workflows. The platform is an ecosystem, not a product.
+  • "Are you currently earning anything on payroll referrals —
+    through any platform at all?"
 
-  • Automated tax filings + compliance monitoring — ADP files
-    automatically and monitors regulatory changes in real time.
-    For a tax advisor, that's a sell that writes itself.
+  • "Have you ever had a client come back to you frustrated with
+    their payroll provider? What was the issue?"
 
-  THE LINE:
-  "Gusto is a good product. But when your clients ask you what payroll
-   system you recommend, do you want to say Gusto — or do you want to
-   say the platform that's running AI agents across 1.1 million
-   companies and saving businesses 30 minutes every pay cycle?
-   One of those answers fits your brand. The other one doesn't."
+  ON HIS AI POSITIONING
+  • "The AI angle in your brand — how are you actually delivering
+    that to clients right now? Is it tools you're using internally,
+    or are you helping them implement AI in their own operations?"
+
+  • "When you're pitching a new client on MRE, what does the
+    AI piece of the conversation sound like?"
+
+  ON HIS GROWTH GOALS
+  • "You've built something real here — 180+ clients, active reviews,
+    strong brand. Where are you trying to take it over the next
+    couple of years? More clients, deeper services, or both?"
+
+  • "Is the one-stop positioning something you're actively marketing,
+    or does it come up more organically when clients ask?"
+
+  • "If you added a payroll revenue line that was fully passive —
+    no service work on your end — does that fit what you're
+    building, or does it feel like noise?"
+
+ADP OFFERINGS — KEY POINTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  PAYROLL (RUN Powered by ADP)
+  • #1 rated payroll on G2 for small business — 900,000+ clients
+  • Auto-calculates, deducts, and files all federal, state, local taxes
+  • Creates and e-files W-2s and 1099s directly with the IRS
+  • AI error detection catches mistakes before payroll runs (~30 min saved/cycle)
+  • RUN & DONE — fully automated recurring payroll, set and forget
+
+  HR
+  • Built-in recruiting via ZipRecruiter — posts to 100+ job boards
+  • Onboarding, employee handbooks, compliance training in platform
+  • 24/7 live HR support from actual HR professionals (not a chatbot)
+  • Time tracking, overtime management, worker classification tools
+
+  BENEFITS
+  • Health insurance, retirement plans, flexible pay — all in one place
+  • Full benefits administration built in — no third-party juggling
+  • Employee discount programs included
+
+  AI (ADP Assist)
+  • Payroll anomaly detection — flags errors before they run
+  • Conversational analytics — ask a question, get a chart instantly
+  • AI agents that execute multi-step HR and payroll workflows autonomously
+  • Benchmarks from 1.1 million companies — deepest workforce dataset available
+  • ADP Marketplace — partner-built AI agents that integrate and automate
+    across the entire employee lifecycle (launched March 2026)
+
+  PARTNER PROGRAM
+  • Refer 3 clients → earn 25% of their monthly ADP invoice
+  • Refer 5 clients → jumps to 50%, paid retroactively on the first 3
+  • Ongoing residual payments as long as clients stay — not a one-time fee
+  • Accountant Connect — one portal to see all client data, reports, benchmarks
 
 THE REVENUE SHARE ANGLE
 ━━━━━━━━━━━━━━━━━━━━━━━
