@@ -170,6 +170,7 @@ def main():
         ('non_accountant_targets.csv', 'Non-Accountant Partners'),
         ('never_referring_ranked.csv', 'Salesforce — Never Referring'),
         ('previously_referring_ranked.csv', 'Salesforce — Previously Referring'),
+        ('agent_research_new_finds.csv', 'Multi-Agent Deep Research'),
     ]
 
     all_firms = []
