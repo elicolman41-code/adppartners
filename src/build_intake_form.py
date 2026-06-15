@@ -214,14 +214,6 @@ def build_story(styles, client_name, first_check, last_run_label):
         "Connecticut state income tax (CT-941) and state unemployment "
         "(UC-2 / UC-5A) for both quarters.", None, styles))
 
-    story.append(section_rule())
-    story.append(Paragraph(
-        "<i>Note: your template listed NYS-45 (New York). This client is in "
-        "Connecticut, so state filings above use the CT equivalents — please "
-        "confirm.</i>", ParagraphStyle(
-            "note", fontName="Helvetica-Oblique", fontSize=8.5,
-            textColor=SLATE, leading=12)))
-
     return story
 
 
