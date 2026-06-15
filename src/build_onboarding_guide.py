@@ -257,265 +257,108 @@ def build_story(styles, client_name, go_live, quarter, prepared_by):
     story.append(NextPageTemplate("body"))
     story.append(PageBreak())
 
-    # ---- WELCOME + HOW TO USE ----
-    story.append(Paragraph("Welcome — here's what to expect", styles["H1"]))
+    # ---- WHAT WE NEED ----
+    story.append(Paragraph("What we need from you", styles["H1"]))
     story.append(Paragraph(
-        "Switching payroll providers mid-year sounds daunting, but it comes "
-        "down to one thing: handing us a complete and accurate picture of your "
-        "company, your people, and what's already been paid this year. This "
-        "guide breaks that into plain-English checklists. Work through each "
-        "section, gather the documents, and we'll handle the rest of the build.",
-        styles["Lead"]))
-
+        "To finish your ADP setup we only need two things: your "
+        "<b>year-to-date payroll balances</b> and your <b>employee "
+        "information</b>. Both export straight out of Paycor. Because we're "
+        "switching mid-year, the balances are what keep your W-2s and "
+        "Connecticut tax filings correct at year-end.", styles["Lead"]))
     story.append(callout(
-        "The single most important step",
-        "Because we're switching at the start of %s — not on January 1 — "
-        "your <b>year-to-date payroll totals</b> have to carry over so W-2s and "
-        "quarterly tax filings come out correct at year-end. The reports you "
-        "pull out of Paycor (Section 2) are the backbone of the whole setup. "
-        "Pull them <b>before</b> your Paycor access is turned off." % quarter,
+        "Pull these from Paycor before your access ends",
+        "Once you give notice, your Paycor login can be turned off quickly. "
+        "Export the reports below now — as Excel/CSV and PDF — and send them "
+        "through the secure link we provide. Don't email Social Security or "
+        "bank numbers in plain text.",
         styles))
-    story.append(Spacer(1, 10))
 
-    story.append(Paragraph("How to use this guide", styles["H2"]))
-    story.append(ListFlowable(
-        [
-            ListItem(Paragraph(
-                "Each section is a checklist. Tick items off as you collect them.",
-                styles["Body"]), value="1"),
-            ListItem(Paragraph(
-                "Anything you can't find, just flag it — we'll help you track it down.",
-                styles["Body"]), value="2"),
-            ListItem(Paragraph(
-                "Send everything through the secure link we provide. Don't email "
-                "Social Security numbers or bank details in plain text.",
-                styles["Body"]), value="3"),
-        ],
-        bulletType="1", leftIndent=18))
+    story.append(Spacer(1, 14))
 
-    story.append(section_rule())
-
-    # ---- TIMELINE ----
-    story.append(Paragraph("Your switch-over timeline", styles["H1"]))
+    # ---- 1. BALANCES ----
+    story.append(Paragraph("1.  Year-to-date balances", styles["H1"]))
     story.append(Paragraph(
-        "A clean cutover means the last Paycor run and the first ADP run line "
-        "up with no gap and no overlap. Here's the rough sequence:",
+        "One report covers most of this: in Paycor, run a <b>Year-to-Date "
+        "(YTD) earnings &amp; deductions summary by employee</b> for the "
+        "current calendar year through your last Paycor pay date. For each "
+        "employee we need:", styles["Body"]))
+    story.append(checklist([
+        "Gross wages YTD, broken out by earning type (regular, OT, bonus)",
+        "Pre-tax deductions YTD (401k, health, HSA/FSA, etc.)",
+        "Post-tax deductions YTD",
+        "Employer contributions YTD (401k match, etc.)",
+        "Federal income tax withheld YTD",
+        "Social Security and Medicare withheld YTD (employee + employer)",
+        "Connecticut income tax withheld YTD",
+        "CT Paid Family &amp; Medical Leave withheld YTD (0.5% employee)",
+        "Net pay YTD",
+    ], styles))
+    story.append(Spacer(1, 10))
+    story.append(Paragraph("Also send (to confirm the totals tie out)", styles["H2"]))
+    story.append(checklist([
+        "Most recent payroll register from Paycor",
+        "Quarterly returns already filed this year (Form 941 + CT returns)",
+        "Tax deposit / liability history for the year",
+    ], styles))
+    story.append(Spacer(1, 8))
+    story.append(callout(
+        "These have to match to the penny",
+        "We load each employee's balances into ADP exactly as Paycor reported "
+        "them, then verify the company totals match before your first run. "
+        "Accurate balances now = clean W-2s in January.",
+        styles, accent=colors.HexColor("#2E7D32")))
+
+    story.append(PageBreak())
+
+    # ---- 2. EMPLOYEE INFORMATION ----
+    story.append(Paragraph("2.  Employee information", styles["H1"]))
+    story.append(Paragraph(
+        "A complete record for everyone paid this year — including anyone who "
+        "has since left, since they still receive a W-2. The Paycor "
+        "<b>employee roster export</b> has most of these fields already.",
         styles["Body"]))
-    story.append(data_table(
-        ["When", "What happens", "Who"],
-        [
-            ["3–4 weeks out", "Gather company, tax, and employee info (this guide)", "You"],
-            ["2–3 weeks out", "Pull year-to-date reports from Paycor", "You"],
-            ["2 weeks out", "We build your ADP company, employees, and YTD balances", "ADP"],
-            ["1–2 weeks out", "Parallel review — we verify totals match Paycor", "Together"],
-            ["Final Paycor run", "Run your last payroll on Paycor as normal", "You"],
-            ["%s" % go_live, "First payroll on ADP — go live", "Together"],
-            ["After go-live", "Confirm tax agencies are pointed to ADP", "ADP"],
-        ],
-        styles, col_widths=[1.25 * inch, 3.9 * inch, 0.95 * inch]))
-    story.append(Spacer(1, 8))
-    story.append(callout(
-        "Why quarter-start timing helps you",
-        "Going live at the start of %s means ADP files clean, full-quarter tax "
-        "returns from day one. It avoids splitting a single quarter between two "
-        "providers, which is the most common source of year-end tax headaches." % quarter,
-        styles, accent=colors.HexColor("#2E7D32")))
-
-    story.append(PageBreak())
-
-    # ---- SECTION 1: COMPANY INFO ----
-    story.append(Paragraph("1.  Company information", styles["H1"]))
-    story.append(Paragraph(
-        "The legal foundation of your payroll account. Most of this lives on "
-        "your formation documents, prior tax filings, or in Paycor's company "
-        "setup screens.", styles["Body"]))
-    story.append(checklist([
-        "Legal business name (exactly as registered with the IRS)",
-        "DBA / trade name, if you use one",
-        "Federal Employer Identification Number (FEIN / EIN)",
-        "Business structure (LLC, S-corp, C-corp, sole prop, partnership)",
-        "Legal / mailing address and all physical work locations",
-        "Primary contact for payroll (name, title, email, phone)",
-        "Owner / signer name and title (authorizes bank debits & tax filings)",
-        "NAICS or industry code",
-        "Number of employees (and 1099 contractors, if any)",
-    ], styles))
-
-    story.append(Spacer(1, 10))
-    # ---- SECTION 1b: TAX ACCOUNTS ----
-    story.append(Paragraph("Federal & state tax accounts", styles["H2"]))
-    story.append(Paragraph(
-        "ADP files and deposits your payroll taxes, so we need every active "
-        "tax account ID and rate. Missing a state ID is the #1 cause of "
-        "setup delays.", styles["Body"]))
-    story.append(data_table(
-        ["Tax account", "What we need"],
-        [
-            ["Federal EIN", "9-digit IRS number + deposit frequency (monthly / semiweekly)"],
-            ["State withholding", "State income-tax account ID for each state you have employees in"],
-            ["State unemployment (SUI/SUTA)", "Account ID + your current-year experience rate (%)"],
-            ["Local / city taxes", "Any local income or occupational tax IDs (varies by location)"],
-            ["Power of Attorney", "Some states need a signed POA so ADP can file — we'll send forms"],
-        ],
-        styles, col_widths=[2.0 * inch, 4.1 * inch]))
-    story.append(Spacer(1, 8))
-    story.append(callout(
-        "Don't have your state rates handy?",
-        "Your SUI rate changes yearly and is on the rate notice the state mails "
-        "you each winter. It's also visible in Paycor under your tax setup. "
-        "Send us a screenshot if you're unsure — wrong rates mean wrong deposits.",
-        styles))
-
-    story.append(PageBreak())
-
-    # ---- SECTION 2: PAYCOR REPORTS (the critical one) ----
-    story.append(Paragraph("2.  Pull these reports from Paycor", styles["H1"]))
-    story.append(callout(
-        "Do this while you still have Paycor access",
-        "Once you give notice, your login can be shut off quickly. Export and "
-        "save these reports now — as PDF and Excel/CSV where possible. They "
-        "are how we rebuild your year-to-date numbers in ADP.",
-        styles))
-    story.append(Spacer(1, 10))
-    story.append(Paragraph(
-        "In Paycor, most of these live under <b>Reports</b> → <b>Payroll</b> "
-        "and <b>Reports</b> → <b>Tax</b>. Pull them for the current calendar "
-        "year through your last Paycor pay date.", styles["Body"]))
-    story.append(checklist([
-        "<b>Payroll register</b> for every pay date this calendar year",
-        "<b>Year-to-date (YTD) earnings &amp; deductions</b> summary by employee",
-        "<b>Quarterly tax returns</b> already filed this year (Form 941 + state)",
-        "<b>Tax deposit / liability history</b> for the year",
-        "<b>W-2 preview</b> or last year's W-2s and W-3",
-        "<b>Employee roster</b> export with all demographic fields",
-        "<b>Deduction &amp; benefit setup</b> report (what's withheld and how)",
-        "<b>PTO / accrual balances</b> as of your last run",
-        "<b>Contractor / 1099 payment</b> totals, if you pay any",
-        "<b>Garnishment / wage-order</b> documents and balances, if any",
-    ], styles))
-    story.append(Spacer(1, 8))
-    story.append(callout(
-        "What “year-to-date” has to include",
-        "For each employee: gross wages, each earning type (regular, OT, bonus), "
-        "pre-tax and post-tax deductions, employer contributions, and every tax "
-        "withheld (federal, Social Security, Medicare, state, local). These totals "
-        "must match Paycor to the penny before we go live.",
-        styles, accent=colors.HexColor("#2E7D32")))
-
-    story.append(PageBreak())
-
-    # ---- SECTION 3: EMPLOYEE INFO ----
-    story.append(Paragraph("3.  Employee information", styles["H1"]))
-    story.append(Paragraph(
-        "We need a complete record for every active employee (and anyone paid "
-        "this year who has since left — they still get a W-2). Most of this "
-        "exports straight from the Paycor employee roster.", styles["Body"]))
     story.append(data_table(
         ["Category", "Details needed"],
         [
             ["Identity", "Full legal name, SSN, date of birth, home address"],
-            ["Contact", "Personal email and phone (for self-service onboarding)"],
-            ["Job", "Title, hire date, department / location, full- or part-time"],
+            ["Contact", "Personal email and phone"],
+            ["Job", "Title, hire date, location, full- or part-time"],
             ["Pay", "Pay rate, salary or hourly, standard hours, pay frequency"],
-            ["Tax setup", "Federal &amp; state W-4 elections (filing status, allowances)"],
-            ["Direct deposit", "Bank routing &amp; account number, account type, splits"],
+            ["Tax setup", "Federal W-4 and Connecticut CT-W4 elections"],
+            ["Direct deposit", "Bank routing &amp; account number, account type, any splits"],
             ["Status", "Active, on leave, or terminated this year (with term date)"],
         ],
         styles, col_widths=[1.4 * inch, 4.7 * inch]))
-    story.append(Spacer(1, 10))
-    story.append(Paragraph("Supporting documents to collect", styles["H2"]))
-    story.append(checklist([
-        "Signed Form W-4 (federal) and state equivalent for each employee",
-        "Form I-9 and work authorization on file",
-        "Voided check or bank letter for each direct-deposit account",
-        "Any existing offer letters or comp-change records, if handy",
-    ], styles))
     story.append(Spacer(1, 8))
     story.append(callout(
-        "Make onboarding easier on yourself",
-        "ADP can invite employees to enter their own address, W-4, and direct "
-        "deposit through secure self-service. If you'd rather not collect bank "
-        "details yourself, tell us — we'll turn that on.",
+        "Let employees enter their own details",
+        "ADP can invite each employee to enter their address, W-4/CT-W4, and "
+        "direct deposit through secure self-service — so you don't have to "
+        "collect bank info yourself. Just say the word and we'll turn it on.",
         styles))
 
-    story.append(PageBreak())
+    story.append(Spacer(1, 14))
 
-    # ---- SECTION 4: PAY POLICIES, DEDUCTIONS, BANKING ----
-    story.append(Paragraph("4.  Pay setup, deductions & banking", styles["H1"]))
-
-    story.append(Paragraph("Pay schedule & policies", styles["H2"]))
-    story.append(checklist([
-        "Pay frequency (weekly, bi-weekly, semi-monthly, monthly)",
-        "Pay period start/end dates and check dates for the rest of the year",
-        "Overtime rules and any shift differentials",
-        "PTO / sick / vacation accrual policies and current balances",
-        "Holiday pay and bonus practices",
-    ], styles))
-
-    story.append(Paragraph("Deductions & benefits", styles["H2"]))
-    story.append(checklist([
-        "Health / dental / vision premiums (employee &amp; employer share)",
-        "Retirement plan (401k/IRA): provider, match formula, deferral amounts",
-        "HSA / FSA contributions",
-        "Garnishments or child-support orders (with case numbers and balances)",
-        "Any other recurring pre-tax or post-tax deductions",
-    ], styles))
-
-    story.append(Paragraph("Banking & funding", styles["H2"]))
-    story.append(checklist([
-        "Business bank account that funds payroll (routing + account number)",
-        "Voided business check or bank verification letter",
-        "Name &amp; title of person authorized to approve ACH debits",
-        "Workers' comp policy details (if using pay-as-you-go integration)",
-    ], styles))
-    story.append(Spacer(1, 8))
-    story.append(callout(
-        "General-ledger mapping (optional but worth it)",
-        "If you want payroll to flow neatly into QuickBooks, Xero, or another "
-        "accounting system, send your chart of accounts or current GL mapping. "
-        "We'll line up the export so your bookkeeper's life gets easier.",
-        styles))
-
-    story.append(PageBreak())
-
-    # ---- MASTER CHECKLIST ----
-    story.append(Paragraph("Quick master checklist", styles["H1"]))
+    # ---- CONNECTICUT ACCOUNTS ----
+    story.append(Paragraph("Connecticut tax accounts", styles["H1"]))
     story.append(Paragraph(
-        "A one-page summary you can print and work through. Detail for each "
-        "item is in the sections above.", styles["Lead"]))
-
-    story.append(Paragraph("Company & tax", styles["H2"]))
-    story.append(checklist([
-        "Legal name, EIN, entity type, addresses, payroll contact",
-        "State withholding + SUI account IDs and current SUI rate",
-        "Local tax IDs and any Power-of-Attorney forms signed",
-    ], styles))
-    story.append(Paragraph("From Paycor (before access ends)", styles["H2"]))
-    story.append(checklist([
-        "YTD payroll register + earnings/deductions by employee",
-        "Filed quarterly returns (941 + state) and deposit history",
-        "Employee roster export, deduction setup, PTO balances",
-    ], styles))
-    story.append(Paragraph("Employees", styles["H2"]))
-    story.append(checklist([
-        "Identity, pay, and W-4 details for every employee paid this year",
-        "Direct-deposit info (or opt into employee self-service)",
-        "W-4, I-9, and voided checks on file",
-    ], styles))
-    story.append(Paragraph("Pay setup & banking", styles["H2"]))
-    story.append(checklist([
-        "Pay frequency, schedule, OT and PTO policies",
-        "Benefits, retirement, and garnishment details",
-        "Funding bank account + voided check + authorized signer",
-    ], styles))
+        "So ADP can file and deposit your Connecticut taxes, send these "
+        "account numbers (they're in your Paycor tax setup):", styles["Body"]))
+    story.append(data_table(
+        ["Account", "What we need"],
+        [
+            ["Federal EIN", "9-digit IRS number"],
+            ["CT withholding (DRS)", "Connecticut Tax Registration Number + deposit frequency"],
+            ["CT unemployment (CTDOL)", "Registration number + current-year contribution rate (%)"],
+            ["CT Paid Leave", "CT Paid Leave Authority registration (0.5% employee deduction)"],
+        ],
+        styles, col_widths=[1.9 * inch, 4.2 * inch]))
 
     story.append(section_rule())
-    story.append(Paragraph("Questions along the way?", styles["H2"]))
+    story.append(Paragraph("Questions?", styles["H2"]))
     story.append(Paragraph(
-        "You don't have to figure this out alone. If anything on these lists is "
-        "unclear or hard to find, reach out and we'll walk through it with you. "
-        "The more complete the information up front, the smoother your first "
-        "ADP payroll will run.", styles["Body"]))
+        "If anything here is unclear or hard to find in Paycor, reach out and "
+        "we'll walk through it with you.", styles["Body"]))
     story.append(Spacer(1, 6))
     story.append(Paragraph(
         "<b>%s</b>" % prepared_by, ParagraphStyle(
