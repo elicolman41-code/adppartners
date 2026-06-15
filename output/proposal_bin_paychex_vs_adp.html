@@ -39,7 +39,8 @@
   }
   .brandrow{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;}
   .logo{
-    font-size:30px;font-weight:800;letter-spacing:-1px;color:var(--adp-red);
+    font-size:24px;font-weight:800;letter-spacing:-.5px;color:var(--adp-red);
+    white-space:nowrap;
   }
   .logo span{color:var(--dark);}
   .doc-type{
@@ -122,7 +123,9 @@
   @media print{
     body{background:#fff;font-size:12px;}
     .page{box-shadow:none;margin:0;max-width:none;padding:0.4in 0.5in;}
-    section{page-break-inside:avoid;}
+    table{page-break-inside:avoid;}
+    h2{page-break-after:avoid;}
+    .yr{page-break-after:avoid;}
     .summary{page-break-inside:avoid;}
     h2{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
     th.adp,td.adp,.callout,.summary .big,.total-row td{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
