@@ -171,6 +171,7 @@ def main():
         ('never_referring_ranked.csv', 'Salesforce — Never Referring'),
         ('previously_referring_ranked.csv', 'Salesforce — Previously Referring'),
         ('agent_research_new_finds.csv', 'Multi-Agent Deep Research'),
+        ('agent_research_round2.csv', 'Round 2 — Book-Sale + Tech-Forward COIs'),
     ]
 
     all_firms = []
@@ -199,6 +200,14 @@ def main():
         'citipayrollservices': 94,              # IS a payroll bureau — textbook Grid target
         'jeanclaudedenisincometax': 96,         # Haitian community institution, 44 years, explicit payroll
         'mcbtax': 92,                           # Haitian directory listed x2, explicit payroll
+        # --- Round 2: Track 1 book-sale candidates (old + large book = high buyout value) ---
+        'richardjgirasole': 91,                 # ~1,500 clients, 44 yrs, owner ~65+ — prime Grid buyout
+        'irwinkaufmancpa': 86,                  # solo since 1980, personally handles all clients
+        'taxtownofbrooklyn': 83,                # est. 1985, AOL email = retirement signal, payroll confirmed
+        'arthurisaacson': 78,                   # est. 1986, Borough Park, payroll confirmed, micro firm
+        'gersteinstaxservice': 76,              # family-owned since 1978, owner-named solo book
+        'abrahamschwartz': 74,                  # est. 1985, Midwood Orthodox, PPP-confirmed payroll
+        'katzkatzcpa': 73,                      # Phil Katz ~40 yrs, payroll & HR confirmed
     }
     for firm in deduped:
         key = re.sub(r'[^a-z0-9]', '', firm['Firm Name'].lower())[:30]
