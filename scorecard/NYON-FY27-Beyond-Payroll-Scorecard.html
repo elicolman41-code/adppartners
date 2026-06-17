@@ -733,16 +733,13 @@ function deltaStr(d,type){ return d===0?'—':(d>0?'+':'')+fmtField(Math.abs(d),
 
 function renderCompare(){
   const html=PRODUCTS.map(p=>{
-    let totG26=0, totA26=0, totFy27=0;
+    let totA26=0, totFy27=0;
     const rows=p.metrics.map(m=>{
-      const g26=DATA26.goals[p.key][m.k], a26=DATA26.actuals[p.key][m.k], fy27v=ytd(p.key,m.k);
-      if(m.type==='usd'){ totG26+=num(g26); totA26+=num(a26); totFy27+=num(fy27v); }
+      const a26=DATA26.actuals[p.key][m.k], fy27v=ytd(p.key,m.k);
+      if(m.type==='usd'){ totA26+=num(a26); totFy27+=num(fy27v); }
       const delta=num(fy27v)-num(a26);
       return `<tr>
         <td>${m.label}</td>
-        <td><input class="cmp-inp" type="text" inputmode="decimal"
-          data-fgoal="${p.key}|${m.k}" data-type="${m.type}"
-          value="${g26?fmtField(g26,m.type):''}" placeholder="0"></td>
         <td><input class="cmp-inp" type="text" inputmode="decimal"
           data-fact="${p.key}|${m.k}" data-type="${m.type}"
           value="${a26?fmtField(a26,m.type):''}" placeholder="0"></td>
@@ -753,7 +750,6 @@ function renderCompare(){
     const totDelta=totFy27-totA26;
     const totRow=`<tr class="cmp-tot">
       <td>Total Revenue</td>
-      <td id="cmptg-${p.key}">${fmtUSD(totG26)}</td>
       <td id="cmpta-${p.key}">${fmtUSD(totA26)}</td>
       <td class="fy27v" id="cmptfy-${p.key}">${fmtUSD(totFy27)}</td>
       <td class="${deltaClass(totDelta)}" id="cmptd-${p.key}">${deltaStr(totDelta,'usd')}</td>
@@ -761,22 +757,13 @@ function renderCompare(){
     return `<div class="cmp-section">
       <div class="cmp-sec-head ${p.key}">${p.icon} ${p.name} — ${p.sub}</div>
       <table class="cmp-tbl">
-        <thead><tr><th>Metric</th><th>FY26 Goal</th><th>FY26 Actual</th><th>FY27 YTD</th><th>Δ vs FY26 Actual</th></tr></thead>
+        <thead><tr><th>Metric</th><th>FY26 Actual</th><th>FY27 YTD</th><th>Δ vs FY26</th></tr></thead>
         <tbody>${rows}${totRow}</tbody>
       </table>
     </div>`;
   }).join('');
   document.getElementById('cmpContent').innerHTML=html;
 
-  document.querySelectorAll('[data-fgoal]').forEach(inp=>{
-    const [pk,mk]=inp.dataset.fgoal.split('|'), t=inp.dataset.type;
-    inp.addEventListener('focus',e=>{ const v=DATA26.goals[pk][mk]; e.target.value=v?String(v):''; e.target.select(); });
-    inp.addEventListener('blur',e=>{
-      DATA26.goals[pk][mk]=parseField(e.target.value,t);
-      e.target.value=DATA26.goals[pk][mk]?fmtField(DATA26.goals[pk][mk],t):'';
-      saveAssocData(currentAssoc); recalcCompare();
-    });
-  });
   document.querySelectorAll('[data-fact]').forEach(inp=>{
     const [pk,mk]=inp.dataset.fact.split('|'), t=inp.dataset.type;
     inp.addEventListener('focus',e=>{ const v=DATA26.actuals[pk][mk]; e.target.value=v?String(v):''; e.target.select(); });
@@ -791,16 +778,15 @@ function renderCompare(){
 // Patches only read-only delta/total cells — never rebuilds inputs, preserves focus.
 function recalcCompare(){
   PRODUCTS.forEach(p=>{
-    let totG26=0, totA26=0, totFy27=0;
+    let totA26=0, totFy27=0;
     p.metrics.forEach(m=>{
       const a26=DATA26.actuals[p.key][m.k], fy27v=ytd(p.key,m.k);
-      if(m.type==='usd'){ totG26+=num(DATA26.goals[p.key][m.k]); totA26+=num(a26); totFy27+=num(fy27v); }
+      if(m.type==='usd'){ totA26+=num(a26); totFy27+=num(fy27v); }
       const delta=num(fy27v)-num(a26);
       const dc=document.getElementById(`cmpd-${p.key}-${m.k}`);
       if(dc){ dc.className=deltaClass(delta); dc.textContent=deltaStr(delta,m.type); }
     });
     const totDelta=totFy27-totA26;
-    const tg=document.getElementById(`cmptg-${p.key}`); if(tg) tg.textContent=fmtUSD(totG26);
     const ta=document.getElementById(`cmpta-${p.key}`); if(ta) ta.textContent=fmtUSD(totA26);
     const td=document.getElementById(`cmptd-${p.key}`);
     if(td){ td.className=deltaClass(totDelta); td.textContent=deltaStr(totDelta,'usd'); }
