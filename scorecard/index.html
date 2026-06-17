@@ -3,600 +3,553 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FY27 NYON Beyond Payroll Scorecard</title>
+<title>FY27 NYON Associate Beyond Payroll Scorecard</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --navy:#0d1b3e;
-  --navy2:#142254;
-  --teal:#1aaf8b;
-  --teal2:#13866a;
+  --navy-deep:#091228;
+  --navy-mid:#13234f;
+  --navy-card:#16294f;
+  --teal:#3ec8a0;
+  --teal-dark:#1f9d7a;
   --green:#2ecc71;
-  --gold:#f0c040;
+  --green-row:#3bb389;
   --white:#ffffff;
-  --light:#e8edf5;
-  --gray:#a0aec0;
-  --red:#e74c3c;
+  --light:#dfe7f2;
+  --gray:#9fb0c8;
+  --grid-line:#24375f;
+  --gold:#f0c040;
 }
-body{background:#0a1428;color:var(--white);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;min-height:100vh}
-input{background:transparent;border:none;color:var(--white);font-family:inherit;text-align:center;width:100%}
-input:focus{outline:2px solid var(--teal);border-radius:3px;background:#ffffff15}
-input[type=text]{text-align:left}
-input::placeholder{color:#4a6080}
+html,body{background:#070d1c;color:var(--white);font-family:'Segoe UI',system-ui,-apple-system,sans-serif}
+.sheet{max-width:1540px;margin:0 auto;background:var(--navy-deep);border:1px solid #1c2c50}
+input{font-family:inherit;border:none;background:transparent;color:inherit}
+input:focus{outline:none}
+input::placeholder{color:#5a6e8c}
+.num-input{text-align:center;width:100%;color:var(--teal);font-weight:600}
+.num-input:focus{background:#ffffff18;border-radius:3px;outline:1px solid var(--teal)}
+.goal-input{text-align:center;width:100%;color:var(--white);font-weight:600}
+.goal-input:focus{background:#ffffff18;border-radius:3px;outline:1px solid var(--gold)}
 
-/* ── HEADER ── */
-.header{background:linear-gradient(135deg,#0a1428 0%,#142254 50%,#0a1428 100%);border-bottom:3px solid var(--teal);padding:0}
-.header-top{display:flex;align-items:center;gap:20px;padding:18px 28px}
-.logo{font-size:36px;font-weight:900;color:var(--white);letter-spacing:-1px;line-height:1}
-.logo span{display:block;font-size:10px;font-weight:400;letter-spacing:3px;color:var(--teal);margin-top:2px}
-.divider{width:3px;height:60px;background:var(--teal);border-radius:2px}
-.header-title{flex:1}
-.header-title h1{font-size:28px;font-weight:900;color:var(--teal);letter-spacing:.5px;line-height:1.1}
-.header-title h1 em{color:var(--white);font-style:normal}
-.header-sub{display:flex;gap:20px;padding:8px 28px 12px;border-top:1px solid #1e3060}
-.header-sub span{font-size:10px;letter-spacing:2px;color:var(--gray);text-transform:uppercase}
-.header-sub span::before{content:"★ ";color:var(--teal)}
-.meta-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--teal);border-top:1px solid var(--teal)}
-.meta-item{background:#0d1b3e;padding:10px 16px;display:flex;align-items:center;gap:10px}
-.meta-item .ico{font-size:16px}
-.meta-item label{font-size:9px;color:var(--teal);text-transform:uppercase;letter-spacing:1px;display:block}
-.meta-item input{font-size:13px;font-weight:600;border-bottom:1px solid #2a3a60;padding:2px 0}
+/* ───────── HEADER ───────── */
+.header{position:relative;overflow:hidden;background:linear-gradient(110deg,#0a1531 0%,#15294f 55%,#0a1733 100%)}
+.skyline{position:absolute;top:0;right:0;bottom:0;width:48%;opacity:.45;pointer-events:none;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='760' height='230' viewBox='0 0 760 230' preserveAspectRatio='xMaxYMax slice'><g fill='%231d3a66'><rect x='40' y='120' width='34' height='110'/><rect x='80' y='90' width='30' height='140'/><rect x='116' y='140' width='26' height='90'/><rect x='150' y='60' width='32' height='170'/><rect x='190' y='110' width='28' height='120'/><rect x='226' y='150' width='24' height='80'/><rect x='258' y='80' width='34' height='150'/><rect x='300' y='40' width='30' height='190'/><rect x='338' y='130' width='26' height='100'/><rect x='372' y='100' width='30' height='130'/><rect x='410' y='150' width='24' height='80'/><rect x='442' y='70' width='36' height='160'/><rect x='486' y='110' width='28' height='120'/><rect x='522' y='150' width='26' height='80'/><rect x='556' y='30' width='34' height='200'/><rect x='598' y='95' width='30' height='135'/><rect x='636' y='135' width='26' height='95'/><rect x='670' y='80' width='32' height='150'/><rect x='710' y='120' width='30' height='110'/></g><g fill='%232a4d80'><rect x='304' y='40' width='10' height='190'/><rect x='560' y='30' width='10' height='200'/></g></svg>") no-repeat right bottom;
+  background-size:cover}
+.header-inner{position:relative;z-index:2;display:flex;align-items:center;gap:22px;padding:20px 30px 14px}
+.logo{flex-shrink:0}
+.logo .nyon{font-size:42px;font-weight:900;letter-spacing:-1px;line-height:.9;color:#fff}
+.logo .tag{font-size:9px;letter-spacing:5px;color:var(--teal);margin-top:3px;font-weight:600}
+.vdiv{width:2px;align-self:stretch;background:var(--teal);margin:4px 0}
+.title-block{flex:1}
+.title-block h1{font-size:33px;font-weight:900;line-height:1.04;letter-spacing:.5px;text-transform:uppercase}
+.title-block h1 .fy{color:var(--teal)}
+.title-block h1 .wt{color:#fff}
+.stars{color:var(--teal);font-size:13px;letter-spacing:6px;margin-top:6px;text-align:center}
+.tagline{position:relative;z-index:2;display:flex;justify-content:center;gap:34px;padding:0 30px 16px;flex-wrap:wrap}
+.tagline span{font-size:11px;letter-spacing:2px;color:#c7d3e6;text-transform:uppercase;font-weight:500}
+.tagline span+span::before{content:"•";color:var(--teal);margin-right:34px}
 
-/* ── TABS ── */
-.tabs{display:flex;background:#0a1428;border-bottom:2px solid var(--teal);padding:0 28px;gap:4px;margin-top:0}
-.tab{padding:12px 28px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;border-radius:6px 6px 0 0;color:var(--gray);transition:all .15s;border:1px solid transparent;border-bottom:none}
-.tab.active{background:var(--teal);color:var(--white);border-color:var(--teal)}
-.tab:hover:not(.active){background:#1e3060;color:var(--white)}
+/* ───────── META BAR ───────── */
+.meta{display:grid;grid-template-columns:1.4fr 1.2fr 1fr 1.2fr;gap:0;background:#0c1a3a;border-top:1px solid #1d2f57;border-bottom:1px solid #1d2f57}
+.meta-cell{display:flex;align-items:center;gap:10px;padding:11px 22px;border-right:1px solid #1d2f57}
+.meta-cell:last-child{border-right:none}
+.meta-ico{width:26px;height:26px;border-radius:5px;background:#15294f;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;color:var(--teal)}
+.meta-cell .lab{font-size:10px;font-weight:700;letter-spacing:1px;color:#cdd8ea;text-transform:uppercase;white-space:nowrap}
+.meta-cell .lab.tl{color:var(--teal)}
+.meta-cell input{font-size:13px;font-weight:600;border-bottom:1px solid #2b3f66;min-width:90px;padding:1px 0}
+.meta-fixed{font-size:13px;font-weight:700;color:#fff;white-space:nowrap}
+.meta-fixed.tl{color:var(--teal)}
 
-/* ── PANELS ── */
-.panel{display:none;padding:24px 28px}
-.panel.active{display:block}
+/* ───────── BODY PADDING ───────── */
+.body{padding:18px 18px 0}
 
-/* ── MONTH SELECTOR ── */
-.month-nav{display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
-.month-nav label{font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:1px}
-.month-btns{display:flex;gap:4px;flex-wrap:wrap}
-.mbtn{padding:6px 14px;border-radius:5px;border:1px solid #1e3060;background:#0d1b3e;color:var(--gray);font-size:12px;font-weight:600;cursor:pointer;transition:all .15s}
-.mbtn.active{background:var(--teal);color:var(--white);border-color:var(--teal)}
-.mbtn:hover:not(.active){border-color:var(--teal);color:var(--white)}
+/* ───────── PRODUCT CARDS ───────── */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:18px}
+.pcard{background:#0e1c3e;border:1px solid #20335c;border-radius:14px;padding:16px 16px 18px}
+.pcard-head{display:flex;align-items:center;gap:13px;margin-bottom:12px}
+.pcard-ic{width:50px;height:50px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#1d3b5c,#0c1c38);border:2px solid var(--teal);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.pcard-ic.green{border-color:var(--green)}
+.pcard-name h2{font-size:27px;font-weight:900;letter-spacing:.5px;line-height:1}
+.pcard-name h2.teal{color:#cfe0f2}
+.pcard-name h2.greenh{color:#cfe0f2}
+.pcard-name p{font-size:9.5px;letter-spacing:1.5px;color:var(--gray);text-transform:uppercase;margin-top:3px}
+.pcard-name .uline{height:2px;width:60%;background:var(--teal);margin-top:5px;border-radius:2px}
+.pcard.peo .uline{background:var(--green)}
 
-/* ── PRODUCT CARDS ── */
-.cards-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
-.pcard{background:#0d1b3e;border:1px solid #1e3060;border-radius:12px;overflow:hidden}
-.pcard-header{background:linear-gradient(135deg,#142254,#0d1b3e);padding:14px 18px;display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--teal)}
-.pcard-icon{width:44px;height:44px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-.pcard-title h3{font-size:20px;font-weight:900;color:var(--teal);line-height:1}
-.pcard-title p{font-size:9px;color:var(--gray);letter-spacing:2px;text-transform:uppercase;margin-top:2px}
-.pcard-table{width:100%;border-collapse:collapse}
-.pcard-table th{background:#142254;font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--teal);padding:8px 12px;text-align:center}
-.pcard-table th:first-child{text-align:left}
-.pcard-table td{padding:9px 12px;border-bottom:1px solid #1a2a4a;font-size:13px;text-align:center}
-.pcard-table td:first-child{text-align:left;color:var(--gray);font-size:12px}
-.pcard-table tr:last-child td{border-bottom:none}
-.goal-cell{color:var(--white);font-weight:600}
-.actual-cell input{color:var(--teal);font-weight:700;font-size:14px}
-.pcard-gauge{padding:14px 18px;text-align:center;border-top:1px solid #1a2a4a}
-.gauge-label{font-size:9px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
-.progress-bar-wrap{display:flex;align-items:center;gap:8px;margin-top:8px}
-.progress-bar-wrap span{font-size:9px;color:var(--gray)}
-.progress-bar{flex:1;height:8px;background:#1a2a4a;border-radius:4px;overflow:hidden}
-.progress-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--teal),var(--green));transition:width .4s}
-.gauge-pct{font-size:26px;font-weight:900;color:var(--teal)}
+.mtable{width:100%;border-collapse:collapse;margin-bottom:6px}
+.mtable thead th{font-size:10px;font-weight:700;letter-spacing:.5px;color:#fff;text-transform:uppercase;padding:7px 8px;background:#16294d;text-align:center;border:1px solid #24375f}
+.pcard.peo .mtable thead th{background:#1f9d5f}
+.pcard.peo .mtable thead th:first-child{background:#1f9d5f}
+.mtable thead th:first-child{text-align:left}
+.mtable tbody td{font-size:13px;padding:7px 8px;border:1px solid #24375f;text-align:center;background:#0b1730}
+.mtable tbody td:first-child{text-align:left;color:#c3d0e6;font-weight:500}
+.mtable .goal-c{color:#fff;font-weight:600}
+.mtable .ytd-c{color:var(--teal);font-weight:700}
 
-/* ── GOAL INPUTS IN MODAL ── */
-.goal-section{background:#0d1b3e;border:1px solid #1e3060;border-radius:12px;padding:18px;margin-bottom:16px}
-.goal-section h3{font-size:13px;font-weight:700;color:var(--teal);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
-.goal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
-.goal-field{display:flex;flex-direction:column;gap:4px}
-.goal-field label{font-size:10px;color:var(--gray);text-transform:uppercase;letter-spacing:.5px}
-.goal-field input{background:#142254;border:1px solid #1e3060;border-radius:6px;padding:8px 10px;color:var(--white);font-size:13px;font-weight:600;text-align:left}
-.goal-field input:focus{outline:2px solid var(--teal);border-color:var(--teal)}
+/* gauge */
+.gauge-wrap{display:flex;align-items:center;gap:16px;margin-top:14px}
+.gauge{position:relative;width:108px;height:60px;flex-shrink:0}
+.gauge svg{display:block}
+.gauge .gpct{position:absolute;bottom:2px;left:0;right:0;text-align:center;font-size:22px;font-weight:900;color:var(--teal)}
+.gauge-cap{font-size:8.5px;letter-spacing:.5px;color:var(--gray);text-transform:uppercase;text-align:center;margin-top:1px;line-height:1.2}
+.prog{flex:1}
+.prog-lab{font-size:9px;letter-spacing:1px;color:#c3d0e6;text-transform:uppercase;text-align:center;margin-bottom:7px;font-weight:600}
+.prog-track{height:11px;background:#0a1730;border:1px solid #2a3f66;border-radius:6px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--teal-dark),var(--green));border-radius:6px;width:0;transition:width .35s ease}
+.prog-ticks{display:flex;justify-content:space-between;margin-top:5px}
+.prog-ticks span{font-size:9px;color:var(--gray)}
 
-/* ── YTD PANEL ── */
-.ytd-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
-.ytd-card{background:#0d1b3e;border:1px solid #1e3060;border-radius:12px;padding:20px;text-align:center}
-.ytd-card .ytd-label{font-size:10px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
-.ytd-card .ytd-val{font-size:32px;font-weight:900;color:var(--teal)}
-.ytd-card .ytd-sub{font-size:11px;color:var(--gray);margin-top:4px}
+/* ───────── LOWER GRID ───────── */
+.lower{display:grid;grid-template-columns:1.42fr 1fr;gap:16px;padding-bottom:18px}
 
-.revenue-summary{background:#0d1b3e;border:1px solid var(--teal);border-radius:12px;overflow:hidden;margin-bottom:20px}
-.revenue-summary-header{background:linear-gradient(135deg,#142254,#0d1b3e);padding:14px 20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--teal);border-bottom:2px solid var(--teal)}
-.rev-table{width:100%;border-collapse:collapse}
-.rev-table th{background:#142254;font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--teal);padding:10px 16px;text-align:center}
-.rev-table th:first-child{text-align:left}
-.rev-table td{padding:12px 16px;border-bottom:1px solid #1a2a4a;font-size:14px;text-align:center}
-.rev-table td:first-child{text-align:left;font-weight:600;color:var(--white)}
-.rev-table tr:last-child td{border-bottom:none;background:#142254;font-weight:700;font-size:15px}
-.rev-table tr:last-child td:first-child{color:var(--teal)}
-.pct-pill{display:inline-flex;align-items:center;justify-content:center;width:52px;height:28px;border-radius:14px;font-size:11px;font-weight:700}
-.pct-0{background:#1a2a4a;color:var(--gray)}
-.pct-low{background:#7f1d1d40;color:#f87171}
-.pct-mid{background:#78350f40;color:#fcd34d}
-.pct-good{background:#14532d40;color:#4ade80}
-.pct-great{background:#1e3a8a40;color:#93c5fd}
+/* monthly scorecard */
+.msc{background:#0b1730;border:1px solid #20335c;border-radius:12px;overflow:hidden}
+.msc-head{display:flex;align-items:center;gap:9px;padding:11px 15px;background:#0c1a3a;border-bottom:1px solid #20335c}
+.msc-head .ic{color:var(--teal)}
+.msc-head h3{font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#fff}
+.msc-scroll{overflow-x:auto}
+.grid-tbl{width:100%;border-collapse:collapse;min-width:760px}
+.grid-tbl th{font-size:10px;font-weight:700;color:#fff;padding:7px 6px;background:#15294d;text-align:center;border:1px solid #24375f;white-space:nowrap}
+.grid-tbl th.metric-h{text-align:left;padding-left:14px;min-width:96px}
+.grid-tbl td{border:1px solid #1f3157;padding:0;text-align:center}
+.grid-tbl td.mlabel{font-size:11px;color:#c3d0e6;padding:5px 8px 5px 22px;text-align:left;background:#0b1730;white-space:nowrap}
+.grid-tbl td .num-input{padding:5px 2px;font-size:11.5px}
+.sec-row td{background:#2f9f78 !important;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;text-align:left;padding:5px 14px}
+.sec-row.ret td{background:#2f9f78 !important}
+.sec-row.peo td{background:#176b9e !important}
+.sec-row.mas td{background:#5a4fc9 !important}
+.grid-tbl td.rev-label{font-weight:600;color:#dfe7f2}
 
-/* ── MONTHLY GRID TABLE ── */
-.monthly-grid{background:#0d1b3e;border:1px solid #1e3060;border-radius:12px;overflow:hidden;margin-bottom:20px}
-.monthly-grid-header{background:linear-gradient(135deg,#142254,#0d1b3e);padding:14px 20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--teal);border-bottom:2px solid var(--teal)}
-.mgrid-wrap{overflow-x:auto}
-.mgrid{width:100%;border-collapse:collapse;min-width:900px}
-.mgrid th{background:#142254;font-size:9px;text-transform:uppercase;letter-spacing:1px;color:var(--teal);padding:8px 10px;text-align:center;white-space:nowrap}
-.mgrid th.left{text-align:left}
-.mgrid td{padding:7px 10px;border-bottom:1px solid #1a2a4a;text-align:center;font-size:12px}
-.mgrid td.left{text-align:left;color:var(--gray);font-size:11px}
-.mgrid td input{color:var(--teal);font-size:12px;font-weight:600}
-.mgrid .section-row td{background:#0a1428;color:var(--teal);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:6px 10px}
-.mgrid .total-row td{background:#142254;font-weight:700;color:var(--white)}
-.mgrid .total-row td input{color:#fcd34d;font-weight:700}
+/* revenue summary */
+.rsum{background:#0b1730;border:1px solid #20335c;border-radius:12px;overflow:hidden;align-self:start}
+.rsum-head{padding:12px 16px;background:#0c1a3a;border-bottom:2px solid var(--teal);text-align:center}
+.rsum-head h3{font-size:14px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#fff}
+.rtable{width:100%;border-collapse:collapse}
+.rtable th{font-size:10px;font-weight:700;color:#cdd8ea;text-transform:uppercase;letter-spacing:.5px;padding:10px 12px;background:#13244a;border:1px solid #24375f;text-align:center}
+.rtable th:first-child{text-align:left}
+.rtable td{padding:13px 12px;border:1px solid #1f3157;font-size:13px;text-align:center;background:#0d1a36}
+.rtable td:first-child{text-align:left;font-weight:600;color:#dfe7f2}
+.rtable .goalc{color:#fff}
+.rtable .actc{color:var(--teal);font-weight:700}
+.rtable .total-row td{background:#2f9f78;font-weight:800;font-size:14px;color:#fff;border-color:#2f9f78}
+.rtable .total-row td:first-child{color:#fff}
+.minigauge{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;position:relative}
+.minigauge svg{position:absolute;top:0;left:0}
+.minigauge span{font-size:10px;font-weight:800;color:#fff;z-index:2}
 
-/* ── BOTTOM BAR ── */
-.footer-bar{display:flex;justify-content:space-around;background:#0d1b3e;border-top:2px solid var(--teal);padding:14px 28px;margin-top:24px;flex-wrap:wrap;gap:10px}
-.footer-item{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--gray)}
-.footer-item .fi{width:32px;height:32px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:14px}
-.nyon-brand{font-size:18px;font-weight:900;color:var(--white);font-style:italic}
-.nyon-brand span{color:var(--teal)}
+/* ───────── FOOTER ───────── */
+.footer{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#0c1a3a;border-top:2px solid var(--teal);padding:15px 30px;flex-wrap:wrap}
+.foot-items{display:flex;gap:30px;flex-wrap:wrap}
+.foot-item{display:flex;align-items:center;gap:11px}
+.foot-item .fic{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:16px}
+.foot-item span{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#dfe7f2}
+.foot-sep{width:1px;height:30px;background:#2a3f66}
+.foot-brand{font-size:21px;font-weight:800;font-style:italic;color:#fff;font-family:'Segoe Script','Brush Script MT',cursive}
+.foot-brand b{color:var(--teal);font-weight:800}
 
-/* ── SAVE BADGE ── */
-.save-badge{position:fixed;bottom:20px;right:20px;background:var(--teal);color:var(--white);padding:8px 16px;border-radius:20px;font-size:11px;font-weight:700;opacity:0;transition:opacity .3s;pointer-events:none;z-index:100}
-.save-badge.show{opacity:1}
+/* save toast */
+.toast{position:fixed;bottom:22px;right:22px;background:var(--teal);color:#06281f;padding:9px 18px;border-radius:20px;font-size:12px;font-weight:800;opacity:0;transform:translateY(8px);transition:.3s;pointer-events:none;z-index:99}
+.toast.show{opacity:1;transform:translateY(0)}
 
-/* Responsive */
-@media(max-width:900px){
-  .cards-row{grid-template-columns:1fr}
-  .ytd-summary{grid-template-columns:1fr 1fr}
-  .header-title h1{font-size:18px}
+/* toolbar */
+.toolbar{display:flex;justify-content:flex-end;gap:8px;padding:10px 18px 0}
+.tbtn{background:#15294d;border:1px solid #2a3f66;color:#cdd8ea;font-size:11px;font-weight:700;padding:6px 14px;border-radius:6px;cursor:pointer;letter-spacing:.5px}
+.tbtn:hover{border-color:var(--teal);color:#fff}
+.tbtn.danger:hover{border-color:#e74c3c;color:#ff8b7a}
+
+@media(max-width:1100px){
+  .cards{grid-template-columns:1fr}
+  .lower{grid-template-columns:1fr}
+  .title-block h1{font-size:24px}
 }
 </style>
 </head>
 <body>
+<div class="sheet">
 
-<!-- HEADER -->
-<div class="header">
-  <div class="header-top">
-    <div class="logo">NYON<span>New York or Nowhere</span></div>
-    <div class="divider"></div>
-    <div class="header-title">
-      <h1><em>FY27</em> NYON Associate<br>Beyond Payroll Scorecard</h1>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="skyline"></div>
+    <div class="header-inner">
+      <div class="logo">
+        <div class="nyon">NYON</div>
+        <div class="tag">NEW YORK OR NOWHERE</div>
+      </div>
+      <div class="vdiv"></div>
+      <div class="title-block">
+        <h1><span class="fy">FY27</span> <span class="wt">NYON ASSOCIATE</span><br><span class="wt">BEYOND PAYROLL SCORECARD</span></h1>
+        <div class="stars">★ ★ ★ ★</div>
+      </div>
     </div>
-  </div>
-  <div class="header-sub">
-    <span>Driving Growth Beyond Payroll</span>
-    <span>Building Enterprise Value</span>
-    <span>Expanding Client Solutions</span>
-  </div>
-  <div class="meta-bar">
-    <div class="meta-item"><span class="ico">👤</span><div><label>Associate Name</label><input type="text" id="assocName" placeholder="Enter name…"></div></div>
-    <div class="meta-item"><span class="ico">👥</span><div><label>Team</label><input type="text" id="teamName" placeholder="Enter team…"></div></div>
-    <div class="meta-item"><span class="ico">📅</span><div><label>Calendar Year</label><div style="font-size:13px;font-weight:700;padding:2px 0">FY27</div></div></div>
-    <div class="meta-item"><span class="ico">🎯</span><div><label>Focus</label><div style="font-size:12px;font-weight:700;color:var(--teal);padding:2px 0">GROW BEYOND PAYROLL</div></div></div>
-  </div>
-</div>
-
-<!-- TABS -->
-<div class="tabs">
-  <div class="tab active" onclick="switchTab('goals')">⚙️ Set Goals</div>
-  <div class="tab" onclick="switchTab('monthly')">📅 Monthly Entry</div>
-  <div class="tab" onclick="switchTab('ytd')">📊 Year to Date</div>
-</div>
-
-<!-- ══════════════════════════════════════
-     TAB 1 — SET GOALS
-═══════════════════════════════════════ -->
-<div class="panel active" id="panel-goals">
-  <p style="color:var(--gray);font-size:12px;margin-bottom:16px">Set your FY27 annual goals for each product. These populate the YTD comparison.</p>
-
-  <div class="goal-section">
-    <h3>📈 Retirement — Annual Goals</h3>
-    <div class="goal-grid">
-      <div class="goal-field"><label>Leads Goal</label><input type="number" id="g-ret-leads" placeholder="0" min="0"></div>
-      <div class="goal-field"><label>Revenue Goal ($)</label><input type="number" id="g-ret-revenue" placeholder="0" min="0"></div>
+    <div class="tagline">
+      <span>Driving Growth Beyond Payroll</span>
+      <span>Building Enterprise Value</span>
+      <span>Expanding Client Solutions</span>
     </div>
   </div>
 
-  <div class="goal-section">
-    <h3>🤝 PEO — Annual Goals</h3>
-    <div class="goal-grid">
-      <div class="goal-field"><label>Leads Goal</label><input type="number" id="g-peo-leads" placeholder="0" min="0"></div>
-      <div class="goal-field"><label>EO's Goal</label><input type="number" id="g-peo-eos" placeholder="0" min="0"></div>
-      <div class="goal-field"><label>BRETS Goal</label><input type="number" id="g-peo-brets" placeholder="0" min="0"></div>
-      <div class="goal-field"><label>Proposals Goal</label><input type="number" id="g-peo-proposals" placeholder="0" min="0"></div>
-      <div class="goal-field"><label>Revenue Goal ($)</label><input type="number" id="g-peo-revenue" placeholder="0" min="0"></div>
+  <!-- META BAR -->
+  <div class="meta">
+    <div class="meta-cell"><div class="meta-ico">👤</div><div class="lab">Associate Name:</div><input type="text" id="assocName" placeholder="________________"></div>
+    <div class="meta-cell"><div class="meta-ico">👥</div><div class="lab">Team:</div><input type="text" id="teamName" placeholder="________________"></div>
+    <div class="meta-cell"><div class="meta-ico">📅</div><div class="lab">Calendar Year:</div><div class="meta-fixed">FY27</div></div>
+    <div class="meta-cell"><div class="meta-ico">🎯</div><div class="lab">Focus:</div><div class="meta-fixed tl">GROW BEYOND PAYROLL</div></div>
+  </div>
+
+  <div class="toolbar">
+    <button class="tbtn" onclick="window.print()">🖨 Print / PDF</button>
+    <button class="tbtn danger" onclick="resetAll()">↺ Reset</button>
+  </div>
+
+  <div class="body">
+
+    <!-- PRODUCT CARDS -->
+    <div class="cards" id="cards"></div>
+
+    <!-- LOWER: monthly grid + revenue summary -->
+    <div class="lower">
+      <div class="msc">
+        <div class="msc-head"><span class="ic">📅</span><h3>Monthly Scorecard</h3></div>
+        <div class="msc-scroll">
+          <table class="grid-tbl" id="gridTbl"></table>
+        </div>
+      </div>
+
+      <div class="rsum">
+        <div class="rsum-head"><h3>FY27 Beyond Payroll Revenue Summary</h3></div>
+        <table class="rtable">
+          <thead><tr><th>Category</th><th>Goal (FY27)</th><th>YTD Actual</th><th>% to Goal</th></tr></thead>
+          <tbody id="rsumBody"></tbody>
+        </table>
+      </div>
     </div>
+
   </div>
 
-  <div class="goal-section">
-    <h3>💼 MAS — Annual Goals</h3>
-    <div class="goal-grid">
-      <div class="goal-field"><label>Leads Goal</label><input type="number" id="g-mas-leads" placeholder="0" min="0"></div>
-      <div class="goal-field"><label>Revenue Goal ($)</label><input type="number" id="g-mas-revenue" placeholder="0" min="0"></div>
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="foot-items">
+      <div class="foot-item"><div class="fic">🎯</div><span>Identify Opportunities</span></div>
+      <div class="foot-item"><div class="fic">🤝</div><span>Create Introductions</span></div>
+      <div class="foot-item"><div class="fic">📈</div><span>Generate Revenue</span></div>
+      <div class="foot-item"><div class="fic">🏆</div><span>Deepen Partnerships</span></div>
     </div>
-  </div>
-
-  <button onclick="saveGoals()" style="background:var(--teal);color:#fff;border:none;padding:12px 32px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;margin-top:4px">Save Goals →</button>
-</div>
-
-<!-- ══════════════════════════════════════
-     TAB 2 — MONTHLY ENTRY
-═══════════════════════════════════════ -->
-<div class="panel" id="panel-monthly">
-
-  <div class="month-nav">
-    <label>Select Month:</label>
-    <div class="month-btns" id="monthBtns"></div>
-  </div>
-
-  <!-- PRODUCT CARDS -->
-  <div class="cards-row" id="monthlyCards"></div>
-
-</div>
-
-<!-- ══════════════════════════════════════
-     TAB 3 — YEAR TO DATE
-═══════════════════════════════════════ -->
-<div class="panel" id="panel-ytd">
-
-  <!-- Revenue Summary -->
-  <div class="revenue-summary">
-    <div class="revenue-summary-header">FY27 Beyond Payroll Revenue Summary</div>
-    <table class="rev-table">
-      <thead><tr><th style="text-align:left">Category</th><th>Goal (FY27)</th><th>YTD Actual</th><th>% to Goal</th></tr></thead>
-      <tbody id="revSummaryBody"></tbody>
-    </table>
-  </div>
-
-  <!-- Top stat cards -->
-  <div class="ytd-summary" id="ytdTopCards"></div>
-
-  <!-- Monthly grid -->
-  <div class="monthly-grid">
-    <div class="monthly-grid-header">Monthly Scorecard — All Metrics</div>
-    <div class="mgrid-wrap">
-      <table class="mgrid" id="monthlyGridTable"></table>
-    </div>
+    <div class="foot-sep"></div>
+    <div class="foot-brand"><b>New York</b> or Nowhere</div>
   </div>
 
 </div>
 
-<!-- FOOTER -->
-<div class="footer-bar">
-  <div class="footer-item"><div class="fi">🎯</div>Identify Opportunities</div>
-  <div class="footer-item"><div class="fi">🤝</div>Create Introductions</div>
-  <div class="footer-item"><div class="fi">📈</div>Generate Revenue</div>
-  <div class="footer-item"><div class="fi">🏆</div>Deepen Partnerships</div>
-  <div class="nyon-brand"><span>New York</span> or Nowhere</div>
-</div>
-
-<div class="save-badge" id="saveBadge">✓ Saved</div>
+<div class="toast" id="toast">✓ Saved</div>
 
 <script>
 const MONTHS = ['JUL','AUG','SEP','OCT','NOV','DEC','JAN','FEB','MAR','APR','MAY','JUN'];
-const STORAGE_KEY = 'nyon_scorecard_fy27';
+const STORAGE_KEY = 'nyon_fy27_scorecard_v2';
 
-// Data schema
-let DATA = {
-  assocName:'', teamName:'',
-  goals: {
-    ret: {leads:0, revenue:0},
-    peo: {leads:0, eos:0, brets:0, proposals:0, revenue:0},
-    mas: {leads:0, revenue:0}
-  },
-  monthly: {} // monthly[month][product][metric] = value
-};
+// Product / metric definitions — single source of truth
+const PRODUCTS = [
+  { key:'ret', name:'RETIREMENT', sub:'Retirement Solutions', icon:'📈', accent:'teal',
+    metrics:[ {k:'leads',label:'Leads',type:'num'}, {k:'revenue',label:'Revenue',type:'usd'} ] },
+  { key:'peo', name:'PEO', sub:'Professional Employer Organization', icon:'👥', accent:'green',
+    metrics:[ {k:'leads',label:'Leads',type:'num'}, {k:'eos',label:"EO's",type:'num'},
+              {k:'brets',label:'BRETS',type:'num'}, {k:'proposals',label:'Proposals',type:'num'},
+              {k:'revenue',label:'Revenue',type:'usd'} ] },
+  { key:'mas', name:'MAS', sub:'Major Accounts Services', icon:'🤝', accent:'teal',
+    metrics:[ {k:'leads',label:'Leads',type:'num'}, {k:'revenue',label:'Revenue',type:'usd'} ] },
+];
 
-// Init monthly data
-MONTHS.forEach(m => {
-  DATA.monthly[m] = {
-    ret: {leads:0, revenue:0},
-    peo: {leads:0, eos:0, brets:0, proposals:0, revenue:0},
-    mas: {leads:0, revenue:0}
-  };
-});
+// ── State ──
+let DATA = blankData();
 
-let activeMonth = MONTHS[0];
-
-// ── Load / Save ──
-function loadData() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
-    if(saved) {
-      DATA = saved;
-      // Ensure all months exist
-      MONTHS.forEach(m => {
-        if(!DATA.monthly[m]) DATA.monthly[m] = {
-          ret:{leads:0,revenue:0},
-          peo:{leads:0,eos:0,brets:0,proposals:0,revenue:0},
-          mas:{leads:0,revenue:0}
-        };
-      });
-    }
-  } catch(e){}
+function blankData(){
+  const d = { assocName:'', teamName:'', goals:{}, monthly:{} };
+  PRODUCTS.forEach(p=>{
+    d.goals[p.key] = {};
+    p.metrics.forEach(m=> d.goals[p.key][m.k]=0 );
+  });
+  MONTHS.forEach(mo=>{
+    d.monthly[mo] = {};
+    PRODUCTS.forEach(p=>{
+      d.monthly[mo][p.key] = {};
+      p.metrics.forEach(m=> d.monthly[mo][p.key][m.k]=0 );
+    });
+  });
+  return d;
 }
 
-function saveData() {
+function loadData(){
+  try{
+    const raw = JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
+    if(!raw) return;
+    // merge defensively so schema changes never break
+    DATA.assocName = raw.assocName||'';
+    DATA.teamName = raw.teamName||'';
+    PRODUCTS.forEach(p=>{
+      p.metrics.forEach(m=>{
+        if(raw.goals && raw.goals[p.key] && raw.goals[p.key][m.k]!=null)
+          DATA.goals[p.key][m.k] = num(raw.goals[p.key][m.k]);
+      });
+    });
+    MONTHS.forEach(mo=>{
+      PRODUCTS.forEach(p=>{
+        p.metrics.forEach(m=>{
+          if(raw.monthly && raw.monthly[mo] && raw.monthly[mo][p.key] && raw.monthly[mo][p.key][m.k]!=null)
+            DATA.monthly[mo][p.key][m.k] = num(raw.monthly[mo][p.key][m.k]);
+        });
+      });
+    });
+  }catch(e){ console.warn('load failed',e); }
+}
+
+let saveTimer=null;
+function saveData(){
   DATA.assocName = document.getElementById('assocName').value;
   DATA.teamName = document.getElementById('teamName').value;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA));
-  const badge = document.getElementById('saveBadge');
-  badge.classList.add('show');
-  setTimeout(()=>badge.classList.remove('show'), 1800);
+  clearTimeout(saveTimer);
+  const t=document.getElementById('toast');
+  t.classList.add('show');
+  saveTimer=setTimeout(()=>t.classList.remove('show'),1400);
 }
 
-function autoSave() { saveData(); }
+// ── Helpers ──
+function num(v){ const n=parseFloat(v); return isFinite(n)?n:0; }
+function ytd(prodKey, metricKey){
+  let s=0;
+  MONTHS.forEach(mo=> s += num(DATA.monthly[mo][prodKey][metricKey]) );
+  return s;
+}
+function fmtUSD(n){
+  n = num(n);
+  return '$'+n.toLocaleString('en-US',{maximumFractionDigits:0});
+}
+function fmtNum(n){
+  n = num(n);
+  return n.toLocaleString('en-US',{maximumFractionDigits:0});
+}
+function pct(actual, goal){
+  goal = num(goal);
+  if(goal<=0) return 0;
+  return Math.round((num(actual)/goal)*100);
+}
+function clampPct(p){ return Math.max(0, Math.min(100, p)); }
 
-// ── Tab switching ──
-function switchTab(t) {
-  document.querySelectorAll('.tab').forEach((el,i)=>el.classList.toggle('active',['goals','monthly','ytd'][i]===t));
-  document.querySelectorAll('.panel').forEach(el=>el.classList.remove('active'));
-  document.getElementById('panel-'+t).classList.add('active');
-  if(t==='monthly') renderMonthly();
-  if(t==='ytd') renderYTD();
-  if(t==='goals') loadGoalInputs();
+// ── Half-circle gauge SVG ──
+function halfGauge(pctVal){
+  const p = clampPct(pctVal)/100;
+  const cx=54, cy=54, r=44;
+  // angles measured from the left (180deg) sweeping CCW over the TOP to the right (0deg).
+  // y is negated (cy - r*sin) so the arc rises above the centre line.
+  const start=Math.PI, end=Math.PI*(1-p);
+  const x1=cx+r*Math.cos(start), y1=cy-r*Math.sin(start);
+  const x2=cx+r*Math.cos(end),   y2=cy-r*Math.sin(end);
+  const large = 0; // a half-circle never needs the large-arc flag for these sub-180 spans
+  const bgX=cx+r*Math.cos(0), bgY=cy-r*Math.sin(0);
+  const fillPath = p>0 ? `<path d="M ${x1} ${y1} A ${r} ${r} 0 ${large} 0 ${x2} ${y2}" fill="none" stroke="#3ec8a0" stroke-width="8" stroke-linecap="round"/>` : '';
+  return `<svg width="108" height="62" viewBox="0 0 108 62">
+    <path d="M ${x1} ${y1} A ${r} ${r} 0 0 0 ${bgX} ${bgY}" fill="none" stroke="#15294d" stroke-width="8" stroke-linecap="round"/>
+    ${fillPath}
+  </svg>`;
 }
 
-// ── GOALS TAB ──
-function loadGoalInputs() {
-  const g = DATA.goals;
-  document.getElementById('g-ret-leads').value = g.ret.leads||'';
-  document.getElementById('g-ret-revenue').value = g.ret.revenue||'';
-  document.getElementById('g-peo-leads').value = g.peo.leads||'';
-  document.getElementById('g-peo-eos').value = g.peo.eos||'';
-  document.getElementById('g-peo-brets').value = g.peo.brets||'';
-  document.getElementById('g-peo-proposals').value = g.peo.proposals||'';
-  document.getElementById('g-peo-revenue').value = g.peo.revenue||'';
-  document.getElementById('g-mas-leads').value = g.mas.leads||'';
-  document.getElementById('g-mas-revenue').value = g.mas.revenue||'';
+// ── Circular mini gauge (revenue summary) ──
+function circleGauge(pctVal){
+  const p = clampPct(pctVal);
+  const r=20, c=2*Math.PI*r, off=c*(1-p/100);
+  return `<svg width="46" height="46" viewBox="0 0 46 46">
+    <circle cx="23" cy="23" r="${r}" fill="none" stroke="#0d2a22" stroke-width="5"/>
+    <circle cx="23" cy="23" r="${r}" fill="none" stroke="#fff" stroke-width="5"
+      stroke-dasharray="${c}" stroke-dashoffset="${off}" stroke-linecap="round"
+      transform="rotate(-90 23 23)"/>
+  </svg>`;
 }
 
-function saveGoals() {
-  DATA.goals.ret.leads = parseFloat(document.getElementById('g-ret-leads').value)||0;
-  DATA.goals.ret.revenue = parseFloat(document.getElementById('g-ret-revenue').value)||0;
-  DATA.goals.peo.leads = parseFloat(document.getElementById('g-peo-leads').value)||0;
-  DATA.goals.peo.eos = parseFloat(document.getElementById('g-peo-eos').value)||0;
-  DATA.goals.peo.brets = parseFloat(document.getElementById('g-peo-brets').value)||0;
-  DATA.goals.peo.proposals = parseFloat(document.getElementById('g-peo-proposals').value)||0;
-  DATA.goals.peo.revenue = parseFloat(document.getElementById('g-peo-revenue').value)||0;
-  DATA.goals.mas.leads = parseFloat(document.getElementById('g-mas-leads').value)||0;
-  DATA.goals.mas.revenue = parseFloat(document.getElementById('g-mas-revenue').value)||0;
-  saveData();
-  alert('Goals saved! Switch to Monthly Entry or Year to Date to see them reflected.');
-}
-
-// ── MONTHLY TAB ──
-function buildMonthBtns() {
-  const container = document.getElementById('monthBtns');
-  container.innerHTML = MONTHS.map(m=>
-    `<button class="mbtn${m===activeMonth?' active':''}" onclick="selectMonth('${m}')">${m}</button>`
-  ).join('');
-}
-
-function selectMonth(m) {
-  activeMonth = m;
-  buildMonthBtns();
-  renderMonthly();
-}
-
-function renderMonthly() {
-  buildMonthBtns();
-  const g = DATA.goals;
-  const md = DATA.monthly[activeMonth];
-
-  // YTD actual for progress gauge
-  const ytdRet = ytdSum('ret');
-  const ytdPeo = ytdSum('peo');
-  const ytdMas = ytdSum('mas');
-
-  const products = [
-    {
-      key:'ret', icon:'📈', title:'RETIREMENT', sub:'Retirement Solutions',
-      goal: g.ret,
-      metrics: [
-        {key:'leads', label:'Leads', fmt:'num'},
-        {key:'revenue', label:'Revenue', fmt:'usd'},
-      ],
-      ytd: ytdRet,
-      goalRev: g.ret.revenue
-    },
-    {
-      key:'peo', icon:'🤝', title:'PEO', sub:'Professional Employer Organization',
-      goal: g.peo,
-      metrics: [
-        {key:'leads', label:'Leads', fmt:'num'},
-        {key:'eos', label:"EO's", fmt:'num'},
-        {key:'brets', label:'BRETS', fmt:'num'},
-        {key:'proposals', label:'Proposals', fmt:'num'},
-        {key:'revenue', label:'Revenue', fmt:'usd'},
-      ],
-      ytd: ytdPeo,
-      goalRev: g.peo.revenue
-    },
-    {
-      key:'mas', icon:'💼', title:'MAS', sub:'Major Accounts Services',
-      goal: g.mas,
-      metrics: [
-        {key:'leads', label:'Leads', fmt:'num'},
-        {key:'revenue', label:'Revenue', fmt:'usd'},
-      ],
-      ytd: ytdMas,
-      goalRev: g.mas.revenue
-    }
-  ];
-
-  document.getElementById('monthlyCards').innerHTML = products.map(p => {
-    const pct = p.goalRev > 0 ? Math.min(100, Math.round((p.ytd.revenue / p.goalRev)*100)) : 0;
-    const rows = p.metrics.map(m => {
-      const gv = p.goal[m.key]||0;
-      const av = md[p.key][m.key]||0;
-      const gDisp = m.fmt==='usd' ? '$'+fmtNum(gv) : fmtNum(gv);
+// ── Render product cards ──
+function renderCards(){
+  document.getElementById('cards').innerHTML = PRODUCTS.map(p=>{
+    const rows = p.metrics.map(m=>{
+      const g = DATA.goals[p.key][m.k];
+      const a = ytd(p.key, m.k);
+      const gDisp = m.type==='usd'? fmtUSD(g): fmtNum(g);
+      const aDisp = m.type==='usd'? fmtUSD(a): fmtNum(a);
       return `<tr>
         <td>${m.label}</td>
-        <td class="goal-cell">${gDisp}</td>
-        <td class="actual-cell"><input type="number" min="0" step="${m.fmt==='usd'?'0.01':'1'}"
-          value="${av||''}" placeholder="0"
-          onchange="updateMonthly('${activeMonth}','${p.key}','${m.key}',this.value)"
-          oninput="updateMonthly('${activeMonth}','${p.key}','${m.key}',this.value)"></td>
+        <td class="goal-c">
+          <input class="goal-input" type="text" inputmode="decimal"
+            data-goal="${p.key}.${m.k}" data-type="${m.type}"
+            value="${gDisp}" />
+        </td>
+        <td class="ytd-c" id="ytd-${p.key}-${m.k}">${aDisp}</td>
       </tr>`;
     }).join('');
 
-    return `<div class="pcard">
-      <div class="pcard-header">
-        <div class="pcard-icon">${p.icon}</div>
-        <div class="pcard-title"><h3>${p.title}</h3><p>${p.sub}</p></div>
+    const rev = ytd(p.key,'revenue');
+    const revGoal = DATA.goals[p.key].revenue;
+    const pVal = pct(rev, revGoal);
+
+    return `<div class="pcard ${p.key}">
+      <div class="pcard-head">
+        <div class="pcard-ic ${p.accent==='green'?'green':''}">${p.icon}</div>
+        <div class="pcard-name">
+          <h2 class="${p.accent==='green'?'greenh':'teal'}">${p.name}</h2>
+          <p>${p.sub}</p>
+          <div class="uline"></div>
+        </div>
       </div>
-      <table class="pcard-table">
+      <table class="mtable">
         <thead><tr><th>Metric</th><th>Goal (FY27)</th><th>YTD Actual</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
-      <div class="pcard-gauge">
-        <div class="gauge-pct" id="gauge-pct-${p.key}">${pct}%</div>
-        <div class="gauge-label">YTD Revenue Progress</div>
-        <div class="progress-bar-wrap">
-          <span>0%</span>
-          <div class="progress-bar"><div class="progress-fill" id="gauge-bar-${p.key}" style="width:${pct}%"></div></div>
-          <span>100%</span>
+      <div class="gauge-wrap">
+        <div>
+          <div class="gauge">${halfGauge(pVal)}<div class="gpct" id="gpct-${p.key}">${pVal}%</div></div>
+          <div class="gauge-cap">Revenue Goal<br>Achieved</div>
+        </div>
+        <div class="prog">
+          <div class="prog-lab">YTD Revenue Progress</div>
+          <div class="prog-track"><div class="prog-fill" id="pfill-${p.key}" style="width:${clampPct(pVal)}%"></div></div>
+          <div class="prog-ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
         </div>
       </div>
     </div>`;
   }).join('');
-}
 
-function updateMonthly(month, product, metric, val) {
-  DATA.monthly[month][product][metric] = parseFloat(val)||0;
-  // Update gauge
-  updateGauge(product);
-  autoSave();
-}
-
-function updateGauge(product) {
-  const ytd = ytdSum(product);
-  const goalRev = DATA.goals[product].revenue||0;
-  const pct = goalRev > 0 ? Math.min(100, Math.round((ytd.revenue / goalRev)*100)) : 0;
-  const barEl = document.getElementById('gauge-bar-'+product);
-  const pctEl = document.getElementById('gauge-pct-'+product);
-  if(barEl) barEl.style.width = pct+'%';
-  if(pctEl) pctEl.textContent = pct+'%';
-}
-
-// ── YTD TAB ──
-function ytdSum(product) {
-  const totals = {};
-  MONTHS.forEach(m => {
-    const md = DATA.monthly[m][product];
-    Object.keys(md).forEach(k => {
-      totals[k] = (totals[k]||0) + (parseFloat(md[k])||0);
+  // wire goal inputs
+  document.querySelectorAll('[data-goal]').forEach(inp=>{
+    inp.addEventListener('focus', e=>{
+      const [pk,mk]=e.target.dataset.goal.split('.');
+      const v = DATA.goals[pk][mk];
+      e.target.value = v? String(v):'';
+      e.target.select();
+    });
+    inp.addEventListener('blur', e=>{
+      const [pk,mk]=e.target.dataset.goal.split('.');
+      const t=e.target.dataset.type;
+      DATA.goals[pk][mk]=num(e.target.value.replace(/[$,]/g,''));
+      e.target.value = t==='usd'? fmtUSD(DATA.goals[pk][mk]) : fmtNum(DATA.goals[pk][mk]);
+      recalcAll(); saveData();
+    });
+    inp.addEventListener('input', e=>{
+      const [pk,mk]=e.target.dataset.goal.split('.');
+      DATA.goals[pk][mk]=num(e.target.value.replace(/[$,]/g,''));
+      recalcAll();
     });
   });
-  return totals;
 }
 
-function pctClass(p) {
-  if(p===0) return 'pct-0';
-  if(p<25) return 'pct-low';
-  if(p<75) return 'pct-mid';
-  if(p<100) return 'pct-good';
-  return 'pct-great';
+// ── Render monthly grid ──
+function renderGrid(){
+  let head = '<thead><tr><th class="metric-h">Metric</th>';
+  MONTHS.forEach(mo=> head+=`<th>${mo}</th>` );
+  head+='</tr></thead>';
+
+  let body='<tbody>';
+  PRODUCTS.forEach(p=>{
+    body += `<tr class="sec-row ${p.key}"><td colspan="${MONTHS.length+1}">${p.name}</td></tr>`;
+    p.metrics.forEach(m=>{
+      body += `<tr><td class="mlabel">${m.label}</td>`;
+      MONTHS.forEach(mo=>{
+        const v = DATA.monthly[mo][p.key][m.k];
+        const disp = v? (m.type==='usd'? v : v) : '';
+        body += `<td><input class="num-input" type="text" inputmode="decimal"
+          data-cell="${mo}.${p.key}.${m.k}" data-type="${m.type}"
+          value="${disp===''?'':(m.type==='usd'?'$'+fmtNum(v):fmtNum(v))}"></td>`;
+      });
+      body+='</tr>';
+    });
+  });
+  body+='</tbody>';
+  document.getElementById('gridTbl').innerHTML = head+body;
+
+  document.querySelectorAll('[data-cell]').forEach(inp=>{
+    inp.addEventListener('focus', e=>{
+      const [mo,pk,mk]=e.target.dataset.cell.split('.');
+      const v=DATA.monthly[mo][pk][mk];
+      e.target.value = v? String(v):'';
+      e.target.select();
+    });
+    inp.addEventListener('blur', e=>{
+      const [mo,pk,mk]=e.target.dataset.cell.split('.');
+      const t=e.target.dataset.type;
+      const val=num(e.target.value.replace(/[$,]/g,''));
+      DATA.monthly[mo][pk][mk]=val;
+      e.target.value = val? (t==='usd'?'$'+fmtNum(val):fmtNum(val)) : '';
+      recalcAll(); saveData();
+    });
+    inp.addEventListener('input', e=>{
+      const [mo,pk,mk]=e.target.dataset.cell.split('.');
+      DATA.monthly[mo][pk][mk]=num(e.target.value.replace(/[$,]/g,''));
+      recalcAll();
+    });
+  });
 }
 
-function renderYTD() {
-  const g = DATA.goals;
-  const retYTD = ytdSum('ret');
-  const peoYTD = ytdSum('peo');
-  const masYTD = ytdSum('mas');
-
-  const totalGoalRev = (g.ret.revenue||0)+(g.peo.revenue||0)+(g.mas.revenue||0);
-  const totalActRev = (retYTD.revenue||0)+(peoYTD.revenue||0)+(masYTD.revenue||0);
-  const totalPct = totalGoalRev>0?Math.min(100,Math.round((totalActRev/totalGoalRev)*100)):0;
-
-  // Revenue summary table
-  const rows = [
-    {cat:'Retirement Revenue', goal:g.ret.revenue, act:retYTD.revenue},
-    {cat:'PEO Revenue', goal:g.peo.revenue, act:peoYTD.revenue},
-    {cat:'MAS Revenue', goal:g.mas.revenue, act:masYTD.revenue},
-    {cat:'TOTAL BEYOND PAYROLL REVENUE', goal:totalGoalRev, act:totalActRev, total:true},
-  ];
-  document.getElementById('revSummaryBody').innerHTML = rows.map(r => {
-    const pct = r.goal>0?Math.min(100,Math.round((r.act/r.goal)*100)):0;
-    return `<tr${r.total?' class="total-row"':''}>
-      <td>${r.cat}</td>
-      <td>$${fmtNum(r.goal)}</td>
-      <td style="color:var(--teal);font-weight:700">$${fmtNum(r.act)}</td>
-      <td><span class="pct-pill ${pctClass(pct)}">${pct}%</span></td>
+// ── Render revenue summary ──
+function renderRevSummary(){
+  let totGoal=0, totAct=0;
+  let rows = PRODUCTS.map(p=>{
+    const g=DATA.goals[p.key].revenue, a=ytd(p.key,'revenue'), pv=pct(a,g);
+    totGoal+=num(g); totAct+=num(a);
+    const labelMap={ret:'Retirement Revenue',peo:'PEO Revenue',mas:'MAS Revenue'};
+    return `<tr>
+      <td class="rev-label">${labelMap[p.key]}</td>
+      <td class="goalc">${fmtUSD(g)}</td>
+      <td class="actc">${fmtUSD(a)}</td>
+      <td><div class="minigauge">${circleGauge(pv)}<span>${pv}%</span></div></td>
     </tr>`;
   }).join('');
 
-  // Top stat cards
-  const totalLeads = (retYTD.leads||0)+(peoYTD.leads||0)+(masYTD.leads||0);
-  const totalLeadsGoal = (g.ret.leads||0)+(g.peo.leads||0)+(g.mas.leads||0);
-  const monthsWithData = MONTHS.filter(m => {
-    const d = DATA.monthly[m];
-    return (d.ret.revenue||0)+(d.peo.revenue||0)+(d.mas.revenue||0) > 0;
-  }).length;
-  document.getElementById('ytdTopCards').innerHTML = `
-    <div class="ytd-card">
-      <div class="ytd-label">Total YTD Revenue</div>
-      <div class="ytd-val">$${fmtNum(totalActRev)}</div>
-      <div class="ytd-sub">of $${fmtNum(totalGoalRev)} goal — ${totalPct}%</div>
-    </div>
-    <div class="ytd-card">
-      <div class="ytd-label">Total YTD Leads</div>
-      <div class="ytd-val">${fmtNum(totalLeads)}</div>
-      <div class="ytd-sub">of ${fmtNum(totalLeadsGoal)} goal</div>
-    </div>
-    <div class="ytd-card">
-      <div class="ytd-label">Active Months</div>
-      <div class="ytd-val">${monthsWithData}</div>
-      <div class="ytd-sub">of 12 months in FY27</div>
-    </div>
-  `;
+  const totPv=pct(totAct,totGoal);
+  rows += `<tr class="total-row">
+    <td>TOTAL BEYOND PAYROLL REVENUE</td>
+    <td>${fmtUSD(totGoal)}</td>
+    <td>${fmtUSD(totAct)}</td>
+    <td><div class="minigauge">${circleGauge(totPv)}<span>${totPv}%</span></div></td>
+  </tr>`;
 
-  // Monthly grid table
-  const products = [
-    {key:'ret', label:'RETIREMENT', metrics:[{k:'leads',l:'Leads'},{k:'revenue',l:'Revenue',usd:true}]},
-    {key:'peo', label:'PEO', metrics:[{k:'leads',l:'Leads'},{k:'eos',l:"EO's"},{k:'brets',l:'BRETS'},{k:'proposals',l:'Proposals'},{k:'revenue',l:'Revenue',usd:true}]},
-    {key:'mas', label:'MAS', metrics:[{k:'leads',l:'Leads'},{k:'revenue',l:'Revenue',usd:true}]},
-  ];
+  document.getElementById('rsumBody').innerHTML = rows;
+}
 
-  let thead = '<thead><tr><th class="left">Metric</th>';
-  MONTHS.forEach(m => { thead+=`<th>${m}</th>`; });
-  thead+='<th style="color:#fcd34d">TOTAL</th></tr></thead>';
-
-  let tbody = '<tbody>';
-  products.forEach(p => {
-    tbody += `<tr class="section-row"><td colspan="${14}">${p.label}</td></tr>`;
-    p.metrics.forEach(met => {
-      const tot = MONTHS.reduce((s,m)=>s+(parseFloat(DATA.monthly[m][p.key][met.k])||0),0);
-      tbody += `<tr><td class="left">${met.l}</td>`;
-      MONTHS.forEach(m => {
-        const v = DATA.monthly[m][p.key][met.k]||0;
-        const disp = met.usd ? (v?'$'+fmtNum(v):'') : (v||'');
-        tbody += `<td style="color:${v?'var(--teal)':'#2a3a5a'}">${disp||'—'}</td>`;
-      });
-      const totDisp = met.usd ? '$'+fmtNum(tot) : fmtNum(tot);
-      tbody += `<td style="color:#fcd34d;font-weight:700">${totDisp}</td></tr>`;
+// ── Recalc (lightweight, no full re-render of inputs) ──
+function recalcAll(){
+  // product card YTD cells + gauges
+  PRODUCTS.forEach(p=>{
+    p.metrics.forEach(m=>{
+      const a=ytd(p.key,m.k);
+      const el=document.getElementById(`ytd-${p.key}-${m.k}`);
+      if(el) el.textContent = m.type==='usd'? fmtUSD(a): fmtNum(a);
     });
+    const pv=pct(ytd(p.key,'revenue'), DATA.goals[p.key].revenue);
+    const gp=document.getElementById('gpct-'+p.key);
+    const gw=document.querySelector(`#gpct-${p.key}`)?.parentElement;
+    if(gp) gp.textContent = pv+'%';
+    if(gw) gw.querySelector('svg').outerHTML = halfGauge(pv); // redraw arc
+    const pf=document.getElementById('pfill-'+p.key);
+    if(pf) pf.style.width = clampPct(pv)+'%';
   });
-  tbody += '</tbody>';
-
-  document.getElementById('monthlyGridTable').innerHTML = thead+tbody;
+  renderRevSummary();
 }
 
-// ── Helpers ──
-function fmtNum(n) {
-  if(!n) return '0';
-  if(n>=1000000) return (n/1000000).toFixed(1)+'M';
-  if(n>=1000) return n.toLocaleString();
-  return String(n);
+// ── Reset ──
+function resetAll(){
+  if(!confirm('Clear all goals and monthly entries? This cannot be undone.')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  DATA = blankData();
+  document.getElementById('assocName').value='';
+  document.getElementById('teamName').value='';
+  renderCards(); renderGrid(); renderRevSummary();
 }
-
-// ── Sync meta fields ──
-document.getElementById('assocName').addEventListener('input', autoSave);
-document.getElementById('teamName').addEventListener('input', autoSave);
 
 // ── Boot ──
 loadData();
 document.getElementById('assocName').value = DATA.assocName||'';
 document.getElementById('teamName').value = DATA.teamName||'';
-loadGoalInputs();
-buildMonthBtns();
+document.getElementById('assocName').addEventListener('input', saveData);
+document.getElementById('teamName').addEventListener('input', saveData);
+renderCards();
+renderGrid();
+renderRevSummary();
 </script>
 </body>
 </html>
