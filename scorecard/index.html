@@ -325,6 +325,7 @@ function parseMoney(raw){
   if(raw==null) return 0;
   let s = String(raw).replace(/[$,\s]/g,'');
   if(s==='' || s==='.' || s==='-') return 0;
+  if(!/^\d*\.?\d*$/.test(s)) return 0;        // reject junk / multi-dot / negatives / 1e3
   const hasDot = s.indexOf('.')!==-1;
   let n = parseFloat(s);
   if(!isFinite(n) || n<0) return 0;
@@ -334,7 +335,9 @@ function parseMoney(raw){
 // Counts are literal whole numbers, no shorthand.
 function parseCount(raw){
   if(raw==null) return 0;
-  let s = String(raw).replace(/[,\s]/g,'');
+  let s = String(raw).replace(/[$,\s]/g,'');
+  if(s==='' || s==='.' || s==='-') return 0;
+  if(!/^\d*\.?\d*$/.test(s)) return 0;        // reject junk / negatives
   let n = parseFloat(s);
   if(!isFinite(n) || n<0) return 0;
   return Math.round(n);
@@ -383,15 +386,14 @@ function circleGauge(pctVal, dark){
 }
 
 // ─────────── LIVE PREVIEW ───────────
-let previewTimer=null;
+function esc(s){ return String(s).replace(/[<>&]/g, c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c])); }
 function showPreview(ctx, raw, type){
   const el=document.getElementById('entryPreview');
   const val=parseField(raw, type);
   const rawTrim=String(raw).trim();
   if(rawTrim===''){ el.classList.remove('show'); return; }
-  el.innerHTML = `<span class="ep-ctx">${ctx}</span><span class="ep-raw">${rawTrim} =</span> <span class="ep-val">${fmtField(val,type)}</span>`;
+  el.innerHTML = `<span class="ep-ctx">${esc(ctx)}</span><span class="ep-raw">${esc(rawTrim)} =</span> <span class="ep-val">${fmtField(val,type)}</span>`;
   el.classList.add('show');
-  clearTimeout(previewTimer);
 }
 function hidePreview(){ const el=document.getElementById('entryPreview'); el.classList.remove('show'); }
 
@@ -441,6 +443,7 @@ function renderCards(){
 }
 
 // ─────────── MONTH PICKER ───────────
+// Built once at boot; applyColHighlight only toggles the active state (no rebuild/churn).
 function renderPicker(){
   const el=document.getElementById('mpick');
   el.innerHTML = `<span class="ql">Quick fill month:</span>` + MONTHS.map((mo,i)=>
@@ -451,12 +454,14 @@ function renderPicker(){
   });
 }
 function applyColHighlight(){
-  renderPicker();
-  document.querySelectorAll('#gridTbl th, #gridTbl td').forEach(c=> c.classList.remove('col-active'));
+  // update active picker button without rebuilding the picker
+  document.querySelectorAll('#mpick button').forEach(b=>
+    b.classList.toggle('active', parseInt(b.dataset.col)===activeCol));
+  document.querySelectorAll('#gridTbl .col-active').forEach(c=> c.classList.remove('col-active'));
   // +1 because first column is the metric label
   document.querySelectorAll(`#gridTbl tr`).forEach(tr=>{
-    const cells=tr.children; const idx=activeCol+1;
-    if(cells[idx]) cells[idx].classList.add('col-active');
+    const cell=tr.children[activeCol+1];
+    if(cell) cell.classList.add('col-active');
   });
 }
 
@@ -474,9 +479,10 @@ function renderGrid(){
     p.metrics.forEach((m,mi)=>{
       const zebra = (mi%2===1)?'zebra':'';
       body += `<tr class="${zebra}"><td class="mlabel">${m.label}</td>`;
+      const imode = m.type==='usd' ? 'decimal' : 'numeric';
       MONTHS.forEach((mo,ci)=>{
         const v=DATA.monthly[mo][p.key][m.k];
-        body += `<td><input class="num-input" type="text" inputmode="decimal"
+        body += `<td><input class="num-input" type="text" inputmode="${imode}"
           aria-label="${p.name} ${m.label} ${mo}"
           data-cell="${mo}.${p.key}.${m.k}" data-type="${m.type}"
           data-rc="${rowIndex}-${ci}"
@@ -506,13 +512,19 @@ function renderGrid(){
       e.target.value=val?fmtField(val,t):''; hidePreview(); recalcAll(); saveData();
     });
     inp.addEventListener('keydown', e=>{
-      if(e.key==='Enter'){
+      // Enter and Tab both move DOWN the column (matches the on-screen hint and the
+      // "fill one month fast" flow). Shift+Tab moves up.
+      if(e.key==='Enter' || e.key==='Tab'){
         e.preventDefault();
         const [r,c]=e.target.dataset.rc.split('-').map(Number);
-        let next=document.querySelector(`[data-rc="${r+1}-${c}"]`);
-        if(!next){ // wrap to top of next column
-          const nc=(c+1)%MONTHS.length;
-          next=document.querySelector(`[data-rc="0-${nc}"]`);
+        const up = e.shiftKey && e.key==='Tab';
+        let next;
+        if(up){
+          next=document.querySelector(`[data-rc="${r-1}-${c}"]`);
+          if(!next){ const pc=(c-1+MONTHS.length)%MONTHS.length; next=document.querySelector(`[data-rc="${totalRows-1}-${pc}"]`); }
+        }else{
+          next=document.querySelector(`[data-rc="${r+1}-${c}"]`);
+          if(!next){ const nc=(c+1)%MONTHS.length; next=document.querySelector(`[data-rc="0-${nc}"]`); }
         }
         if(next){ next.focus(); }
       }
@@ -595,7 +607,7 @@ function resetAll(){
   DATA=blankData(); activeCol=0;
   document.getElementById('assocName').value='';
   document.getElementById('teamName').value='';
-  renderCards(); renderGrid(); renderRevSummary();
+  renderCards(); renderPicker(); renderGrid(); renderRevSummary();
 }
 
 // ─────────── BOOT ───────────
@@ -605,6 +617,7 @@ document.getElementById('teamName').value=DATA.teamName||'';
 document.getElementById('assocName').addEventListener('blur', saveData);
 document.getElementById('teamName').addEventListener('blur', saveData);
 renderCards();
+renderPicker();
 renderGrid();
 renderRevSummary();
 </script>
