@@ -170,6 +170,31 @@ input::placeholder{color:#a9b6cc}
 
 /* ── COMPARE VIEW ── */
 #compareView{display:none;padding:18px 22px 24px}
+.cmp-grid-wrap{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:18px;box-shadow:var(--shadow)}
+.cmp-grid-head{padding:13px 18px;background:linear-gradient(110deg,#0a1531,#16295a);color:#fff;display:flex;align-items:center;gap:12px}
+.cmp-grid-head h3{font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;flex:1}
+.cmp-grid-head .cmp-yr-badge{font-size:11px;font-weight:800;background:var(--gold);color:#fff;padding:3px 10px;border-radius:20px;letter-spacing:.5px}
+.cmp-mtabs{display:flex;background:var(--cell);border-bottom:1px solid var(--line);overflow-x:auto;padding:0 8px}
+.cmp-mtabs::-webkit-scrollbar{height:3px}
+.cmp-mtab{flex-shrink:0;background:none;border:none;border-bottom:3px solid transparent;color:var(--ink-soft);font-size:11px;font-weight:700;padding:10px 13px;cursor:pointer;white-space:nowrap;transition:.12s;margin-bottom:-1px}
+.cmp-mtab:hover{color:var(--navy)}
+.cmp-mtab.active{color:var(--gold);border-bottom-color:var(--gold);background:#fff}
+.cmp-scroll{overflow-x:auto}
+.cmp-grid-tbl{width:100%;border-collapse:collapse;min-width:820px}
+.cmp-grid-tbl th{font-size:10px;font-weight:800;color:var(--ink-soft);padding:9px 6px;background:var(--cell);text-align:center;white-space:nowrap;border-bottom:1px solid var(--line)}
+.cmp-grid-tbl th.metric-h{text-align:left;padding-left:16px;min-width:96px}
+.cmp-grid-tbl th.col-active26{background:#5a3e00;color:#ffd580;border-radius:6px 6px 0 0}
+.cmp-grid-tbl td{padding:0;text-align:center;border-bottom:1px solid var(--line-soft)}
+.cmp-grid-tbl td.mlabel{font-size:11.5px;color:var(--ink);font-weight:600;padding:6px 8px 6px 24px;text-align:left;white-space:nowrap;background:#fff}
+.cmp-grid-tbl td.col-active26{background:#fffbf0}
+.cmp-grid-tbl td .num-input26{padding:8px 2px;font-size:12.5px;text-align:center;width:100%;color:#5a3e00;font-weight:700;border-radius:4px;cursor:pointer}
+.cmp-grid-tbl td .num-input26:hover{background:#fff8e6}
+.cmp-grid-tbl td .num-input26:focus{background:#fff;outline:2px solid var(--gold);box-shadow:0 0 0 3px rgba(200,144,26,.15);cursor:text}
+.cmp-grid-tbl tbody tr.zebra td.mlabel,.cmp-grid-tbl tbody tr.zebra td:not(.col-active26){background:#fcfdff}
+.cmp-grid-tbl .sec-row td{font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;text-align:left;padding:6px 16px;color:#fff}
+.cmp-grid-tbl .sec-row.ret td{background:var(--teal)}
+.cmp-grid-tbl .sec-row.peo td{background:var(--blue)}
+.cmp-grid-tbl .sec-row.mas td{background:var(--purple)}
 .cmp-intro{text-align:center;margin-bottom:22px}
 .cmp-intro h2{font-size:20px;font-weight:900;color:var(--navy);letter-spacing:.3px}
 .cmp-intro p{font-size:12px;color:var(--ink-soft);margin-top:5px}
@@ -313,8 +338,18 @@ input::placeholder{color:#a9b6cc}
 <div id="compareView">
   <div class="cmp-intro">
     <h2>FY26 vs FY27 Comparison</h2>
-    <p>Enter FY26 goals and actuals below. FY27 YTD pulls live from the scorecard. Data saves per associate.</p>
+    <p>Enter FY26 actuals month-by-month below, then see the full year-over-year summary. Data saves per associate.</p>
   </div>
+  <!-- FY26 monthly entry grid -->
+  <div class="cmp-grid-wrap">
+    <div class="cmp-grid-head">
+      <h3>FY26 Monthly Data Entry</h3>
+      <span class="cmp-yr-badge">FY26</span>
+    </div>
+    <div class="cmp-mtabs" id="cmpMtabs"></div>
+    <div class="cmp-scroll"><table class="cmp-grid-tbl" id="cmpGrid26"></table></div>
+  </div>
+  <!-- Year-over-year summary -->
   <div id="cmpContent"></div>
 </div>
 
@@ -380,8 +415,8 @@ function blankData(){
   return d;
 }
 function blankData26(){
-  const d = { goals:{}, actuals:{} };
-  PRODUCTS.forEach(p=>{ d.goals[p.key]={}; d.actuals[p.key]={}; p.metrics.forEach(m=>{ d.goals[p.key][m.k]=0; d.actuals[p.key][m.k]=0; }); });
+  const d = { monthly:{} };
+  MONTHS.forEach(mo=>{ d.monthly[mo]={}; PRODUCTS.forEach(p=>{ d.monthly[mo][p.key]={}; p.metrics.forEach(m=> d.monthly[mo][p.key][m.k]=0); }); });
   return d;
 }
 
@@ -419,6 +454,7 @@ function esc(s){ return String(s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','
 // MATH
 // ═══════════════════════════════════════════════
 function ytd(pk,mk){ let s=0; MONTHS.forEach(mo=> s+=num(DATA.monthly[mo][pk][mk])); return s; }
+function ytd26(pk,mk){ let s=0; MONTHS.forEach(mo=> s+=num(DATA26.monthly[mo][pk][mk])); return s; }
 function pct(actual,goal){ goal=num(goal); if(goal<=0) return 0; return Math.round((num(actual)/goal)*100); }
 function clampPct(p){ return Math.max(0,Math.min(100,p)); }
 
@@ -448,10 +484,10 @@ function loadAssocData(name){
   try{
     const r26=JSON.parse(localStorage.getItem(fy26Key(name))||'null');
     if(r26){
-      PRODUCTS.forEach(p=> p.metrics.forEach(m=>{
-        if(r26.goals&&r26.goals[p.key]&&r26.goals[p.key][m.k]!=null) DATA26.goals[p.key][m.k]=num(r26.goals[p.key][m.k]);
-        if(r26.actuals&&r26.actuals[p.key]&&r26.actuals[p.key][m.k]!=null) DATA26.actuals[p.key][m.k]=num(r26.actuals[p.key][m.k]);
-      }));
+      MONTHS.forEach(mo=> PRODUCTS.forEach(p=> p.metrics.forEach(m=>{
+        if(r26.monthly&&r26.monthly[mo]&&r26.monthly[mo][p.key]&&r26.monthly[mo][p.key][m.k]!=null)
+          DATA26.monthly[mo][p.key][m.k]=num(r26.monthly[mo][p.key][m.k]);
+      })));
     }
   }catch(e){ console.warn('fy26 load',e); }
 }
@@ -731,64 +767,148 @@ function renderRevSummary(){
 function deltaClass(d){ return d>0?'dpos':d<0?'dneg':'dzro'; }
 function deltaStr(d,type){ return d===0?'—':(d>0?'+':'')+fmtField(Math.abs(d),type); }
 
+// ── FY26 monthly entry grid ──────────────────────
+let activeCol26 = 0;
+
+function renderCmpPicker(){
+  const el=document.getElementById('cmpMtabs');
+  el.innerHTML=MONTHS.map((mo,i)=>
+    `<button class="cmp-mtab${i===activeCol26?' active':''}" data-col26="${i}">${mo}</button>`).join('');
+  el.querySelectorAll('button').forEach(b=>{
+    b.addEventListener('click',()=>{
+      activeCol26=parseInt(b.dataset.col26); applyCmpColHighlight();
+      const first=document.querySelector(`[data-rc26="0-${activeCol26}"]`); if(first) first.focus();
+    });
+  });
+}
+
+function applyCmpColHighlight(){
+  document.querySelectorAll('#cmpMtabs .cmp-mtab').forEach(b=>
+    b.classList.toggle('active',parseInt(b.dataset.col26)===activeCol26));
+  document.querySelectorAll('#cmpGrid26 .col-active26').forEach(c=>c.classList.remove('col-active26'));
+  document.querySelectorAll('#cmpGrid26 tr').forEach(tr=>{
+    const cell=tr.children[activeCol26+1]; if(cell) cell.classList.add('col-active26');
+  });
+}
+
+function renderCmpGrid26(){
+  let head='<thead><tr><th class="metric-h">Metric</th>';
+  MONTHS.forEach((mo,i)=> head+=`<th>${mo}</th>`);
+  head+='<th>FY TOTAL</th></tr></thead>';
+  let rowIndex=0, body='<tbody>';
+  PRODUCTS.forEach(p=>{
+    body+=`<tr class="sec-row ${p.key}"><td colspan="${MONTHS.length+2}">${p.name} &nbsp;·&nbsp; ${p.sub}</td></tr>`;
+    p.metrics.forEach((m,mi)=>{
+      const imode=m.type==='usd'?'decimal':'numeric';
+      body+=`<tr class="${mi%2===1?'zebra':''}"><td class="mlabel">${m.label}</td>`;
+      MONTHS.forEach((mo,ci)=>{
+        const v=DATA26.monthly[mo][p.key][m.k];
+        body+=`<td><input class="num-input26" type="text" inputmode="${imode}"
+          aria-label="FY26 ${p.name} ${m.label} ${mo}"
+          data-cell26="${mo}.${p.key}.${m.k}" data-type="${m.type}"
+          data-rc26="${rowIndex}-${ci}"
+          value="${v?fmtField(v,m.type):''}" placeholder="–"></td>`;
+      });
+      body+=`<td class="fy27v" id="cg26tot-${p.key}-${m.k}">${fmtField(ytd26(p.key,m.k),m.type)}</td>`;
+      body+='</tr>'; rowIndex++;
+    });
+  });
+  body+='</tbody>';
+  document.getElementById('cmpGrid26').innerHTML=head+body;
+  const totalRows=rowIndex;
+
+  document.querySelectorAll('[data-cell26]').forEach(inp=>{
+    const [mo,pk,mk]=inp.dataset.cell26.split('.'), t=inp.dataset.type;
+    const prod=PRODUCTS.find(x=>x.key===pk), met=prod.metrics.find(x=>x.k===mk);
+    inp.addEventListener('focus',e=>{
+      const v=DATA26.monthly[mo][pk][mk]; e.target.value=v?String(v):''; e.target.select();
+      const ci=parseInt(e.target.dataset.rc26.split('-')[1]);
+      if(ci!==activeCol26){ activeCol26=ci; applyCmpColHighlight(); }
+    });
+    inp.addEventListener('input',e=>{
+      DATA26.monthly[mo][pk][mk]=parseField(e.target.value,t);
+      showPreview('FY26 '+mo+' · '+prod.name+' '+met.label,e.target.value,t);
+    });
+    inp.addEventListener('blur',e=>{
+      const val=parseField(e.target.value,t); DATA26.monthly[mo][pk][mk]=val;
+      e.target.value=val?fmtField(val,t):''; hidePreview();
+      // update the row total cell
+      const tot=document.getElementById(`cg26tot-${pk}-${mk}`);
+      if(tot) tot.textContent=fmtField(ytd26(pk,mk),t);
+      saveAssocData(currentAssoc); recalcCompare();
+    });
+    inp.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key==='Tab'){
+        e.preventDefault();
+        const [r,c]=e.target.dataset.rc26.split('-').map(Number);
+        const up=e.shiftKey&&e.key==='Tab';
+        let next;
+        if(up){
+          next=document.querySelector(`[data-rc26="${r-1}-${c}"]`);
+          if(!next){ const pc=(c-1+MONTHS.length)%MONTHS.length; next=document.querySelector(`[data-rc26="${totalRows-1}-${pc}"]`); }
+        } else {
+          next=document.querySelector(`[data-rc26="${r+1}-${c}"]`);
+          if(!next){ const nc=(c+1)%MONTHS.length; next=document.querySelector(`[data-rc26="0-${nc}"]`); }
+        }
+        if(next) next.focus();
+      }
+    });
+  });
+  applyCmpColHighlight();
+}
+
+// ── Year-over-year summary ────────────────────────
 function renderCompare(){
+  renderCmpPicker();
+  renderCmpGrid26();
+
+  // Summary table: FY26 annual total vs FY27 YTD vs delta, per product
   const html=PRODUCTS.map(p=>{
     let totA26=0, totFy27=0;
     const rows=p.metrics.map(m=>{
-      const a26=DATA26.actuals[p.key][m.k], fy27v=ytd(p.key,m.k);
+      const a26=ytd26(p.key,m.k), fy27v=ytd(p.key,m.k);
       if(m.type==='usd'){ totA26+=num(a26); totFy27+=num(fy27v); }
       const delta=num(fy27v)-num(a26);
       return `<tr>
         <td>${m.label}</td>
-        <td><input class="cmp-inp" type="text" inputmode="decimal"
-          data-fact="${p.key}|${m.k}" data-type="${m.type}"
-          value="${a26?fmtField(a26,m.type):''}" placeholder="0"></td>
-        <td class="fy27v" id="cmpfy-${p.key}-${m.k}">${fmtField(fy27v,m.type)}</td>
-        <td class="${deltaClass(delta)}" id="cmpd-${p.key}-${m.k}">${deltaStr(delta,m.type)}</td>
+        <td id="csum26-${p.key}-${m.k}">${fmtField(a26,m.type)}</td>
+        <td class="fy27v" id="csum27-${p.key}-${m.k}">${fmtField(fy27v,m.type)}</td>
+        <td class="${deltaClass(delta)}" id="csumd-${p.key}-${m.k}">${deltaStr(delta,m.type)}</td>
       </tr>`;
     }).join('');
     const totDelta=totFy27-totA26;
     const totRow=`<tr class="cmp-tot">
       <td>Total Revenue</td>
-      <td id="cmpta-${p.key}">${fmtUSD(totA26)}</td>
-      <td class="fy27v" id="cmptfy-${p.key}">${fmtUSD(totFy27)}</td>
-      <td class="${deltaClass(totDelta)}" id="cmptd-${p.key}">${deltaStr(totDelta,'usd')}</td>
+      <td id="cstot26-${p.key}">${fmtUSD(totA26)}</td>
+      <td class="fy27v" id="cstot27-${p.key}">${fmtUSD(totFy27)}</td>
+      <td class="${deltaClass(totDelta)}" id="cstoтd-${p.key}">${deltaStr(totDelta,'usd')}</td>
     </tr>`;
     return `<div class="cmp-section">
       <div class="cmp-sec-head ${p.key}">${p.icon} ${p.name} — ${p.sub}</div>
       <table class="cmp-tbl">
-        <thead><tr><th>Metric</th><th>FY26 Actual</th><th>FY27 YTD</th><th>Δ vs FY26</th></tr></thead>
+        <thead><tr><th>Metric</th><th>FY26 Total</th><th>FY27 YTD</th><th>Δ vs FY26</th></tr></thead>
         <tbody>${rows}${totRow}</tbody>
       </table>
     </div>`;
   }).join('');
   document.getElementById('cmpContent').innerHTML=html;
-
-  document.querySelectorAll('[data-fact]').forEach(inp=>{
-    const [pk,mk]=inp.dataset.fact.split('|'), t=inp.dataset.type;
-    inp.addEventListener('focus',e=>{ const v=DATA26.actuals[pk][mk]; e.target.value=v?String(v):''; e.target.select(); });
-    inp.addEventListener('blur',e=>{
-      DATA26.actuals[pk][mk]=parseField(e.target.value,t);
-      e.target.value=DATA26.actuals[pk][mk]?fmtField(DATA26.actuals[pk][mk],t):'';
-      saveAssocData(currentAssoc); recalcCompare();
-    });
-  });
 }
 
-// Patches only read-only delta/total cells — never rebuilds inputs, preserves focus.
+// Patches summary read-only cells after FY26 edits — preserves input focus.
 function recalcCompare(){
   PRODUCTS.forEach(p=>{
     let totA26=0, totFy27=0;
     p.metrics.forEach(m=>{
-      const a26=DATA26.actuals[p.key][m.k], fy27v=ytd(p.key,m.k);
+      const a26=ytd26(p.key,m.k), fy27v=ytd(p.key,m.k);
       if(m.type==='usd'){ totA26+=num(a26); totFy27+=num(fy27v); }
       const delta=num(fy27v)-num(a26);
-      const dc=document.getElementById(`cmpd-${p.key}-${m.k}`);
+      const s26=document.getElementById(`csum26-${p.key}-${m.k}`); if(s26) s26.textContent=fmtField(a26,m.type);
+      const dc=document.getElementById(`csumd-${p.key}-${m.k}`);
       if(dc){ dc.className=deltaClass(delta); dc.textContent=deltaStr(delta,m.type); }
     });
     const totDelta=totFy27-totA26;
-    const ta=document.getElementById(`cmpta-${p.key}`); if(ta) ta.textContent=fmtUSD(totA26);
-    const td=document.getElementById(`cmptd-${p.key}`);
+    const t26=document.getElementById(`cstot26-${p.key}`); if(t26) t26.textContent=fmtUSD(totA26);
+    const td=document.getElementById(`cstoтd-${p.key}`);
     if(td){ td.className=deltaClass(totDelta); td.textContent=deltaStr(totDelta,'usd'); }
   });
 }
