@@ -8,155 +8,186 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --navy:#0d1b3e;
-  --navy-deep:#091228;
-  --navy-mid:#13234f;
-  --navy-card:#16294f;
-  --teal:#3ec8a0;
-  --teal-dark:#1f9d7a;
-  --green:#2ecc71;
-  --green-row:#3bb389;
-  --white:#ffffff;
-  --light:#dfe7f2;
-  --gray:#9fb0c8;
-  --grid-line:#24375f;
-  --gold:#f0c040;
+  --teal:#1aa884;
+  --teal-bright:#23c39a;
+  --green:#27ae60;
+  --green-bright:#2ecc71;
+  --blue:#2b6cb0;
+  --purple:#6b5bd1;
+  --ink:#1a2740;
+  --ink-soft:#5a6b86;
+  --line:#dde5f0;
+  --line-soft:#eef2f8;
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --cell:#f8fafd;
+  --cell-edit:#eef6f3;
+  --gold:#c8901a;
+  --shadow:0 1px 3px rgba(20,40,80,.08),0 1px 2px rgba(20,40,80,.04);
+  --shadow-lg:0 4px 16px rgba(20,40,80,.10);
 }
-html,body{background:#070d1c;color:var(--white);font-family:'Segoe UI',system-ui,-apple-system,sans-serif}
-.sheet{max-width:1540px;margin:0 auto;background:var(--navy-deep);border:1px solid #1c2c50}
+html,body{background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.sheet{max-width:1540px;margin:0 auto;background:var(--bg)}
 input{font-family:inherit;border:none;background:transparent;color:inherit}
 input:focus{outline:none}
-input::placeholder{color:#5a6e8c}
-.num-input{text-align:center;width:100%;color:var(--teal);font-weight:600}
-.num-input:focus{background:#ffffff18;border-radius:3px;outline:1px solid var(--teal)}
-.goal-input{text-align:center;width:100%;color:var(--white);font-weight:600}
-.goal-input:focus{background:#ffffff18;border-radius:3px;outline:1px solid var(--gold)}
+input::placeholder{color:#a9b6cc}
 
-/* ───────── HEADER ───────── */
-.header{position:relative;overflow:hidden;background:linear-gradient(110deg,#0a1531 0%,#15294f 55%,#0a1733 100%)}
-.skyline{position:absolute;top:0;right:0;bottom:0;width:48%;opacity:.45;pointer-events:none;
-  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='760' height='230' viewBox='0 0 760 230' preserveAspectRatio='xMaxYMax slice'><g fill='%231d3a66'><rect x='40' y='120' width='34' height='110'/><rect x='80' y='90' width='30' height='140'/><rect x='116' y='140' width='26' height='90'/><rect x='150' y='60' width='32' height='170'/><rect x='190' y='110' width='28' height='120'/><rect x='226' y='150' width='24' height='80'/><rect x='258' y='80' width='34' height='150'/><rect x='300' y='40' width='30' height='190'/><rect x='338' y='130' width='26' height='100'/><rect x='372' y='100' width='30' height='130'/><rect x='410' y='150' width='24' height='80'/><rect x='442' y='70' width='36' height='160'/><rect x='486' y='110' width='28' height='120'/><rect x='522' y='150' width='26' height='80'/><rect x='556' y='30' width='34' height='200'/><rect x='598' y='95' width='30' height='135'/><rect x='636' y='135' width='26' height='95'/><rect x='670' y='80' width='32' height='150'/><rect x='710' y='120' width='30' height='110'/></g><g fill='%232a4d80'><rect x='304' y='40' width='10' height='190'/><rect x='560' y='30' width='10' height='200'/></g></svg>") no-repeat right bottom;
+/* ───────── HEADER (stays premium navy) ───────── */
+.header{position:relative;overflow:hidden;background:linear-gradient(110deg,#0a1531 0%,#16295a 55%,#0a1733 100%)}
+.skyline{position:absolute;top:0;right:0;bottom:0;width:48%;opacity:.5;pointer-events:none;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='760' height='230' viewBox='0 0 760 230' preserveAspectRatio='xMaxYMax slice'><g fill='%231f3a6e'><rect x='40' y='120' width='34' height='110'/><rect x='80' y='90' width='30' height='140'/><rect x='116' y='140' width='26' height='90'/><rect x='150' y='60' width='32' height='170'/><rect x='190' y='110' width='28' height='120'/><rect x='226' y='150' width='24' height='80'/><rect x='258' y='80' width='34' height='150'/><rect x='300' y='40' width='30' height='190'/><rect x='338' y='130' width='26' height='100'/><rect x='372' y='100' width='30' height='130'/><rect x='410' y='150' width='24' height='80'/><rect x='442' y='70' width='36' height='160'/><rect x='486' y='110' width='28' height='120'/><rect x='522' y='150' width='26' height='80'/><rect x='556' y='30' width='34' height='200'/><rect x='598' y='95' width='30' height='135'/><rect x='636' y='135' width='26' height='95'/><rect x='670' y='80' width='32' height='150'/><rect x='710' y='120' width='30' height='110'/></g><g fill='%232f5394'><rect x='304' y='40' width='10' height='190'/><rect x='560' y='30' width='10' height='200'/></g></svg>") no-repeat right bottom;
   background-size:cover}
 .header-inner{position:relative;z-index:2;display:flex;align-items:center;gap:22px;padding:20px 30px 14px}
 .logo{flex-shrink:0}
 .logo .nyon{font-size:42px;font-weight:900;letter-spacing:-1px;line-height:.9;color:#fff}
-.logo .tag{font-size:9px;letter-spacing:5px;color:var(--teal);margin-top:3px;font-weight:600}
-.vdiv{width:2px;align-self:stretch;background:var(--teal);margin:4px 0}
+.logo .tag{font-size:9px;letter-spacing:5px;color:var(--teal-bright);margin-top:3px;font-weight:600}
+.vdiv{width:2px;align-self:stretch;background:var(--teal-bright);margin:4px 0}
 .title-block{flex:1}
 .title-block h1{font-size:33px;font-weight:900;line-height:1.04;letter-spacing:.5px;text-transform:uppercase}
-.title-block h1 .fy{color:var(--teal)}
+.title-block h1 .fy{color:var(--teal-bright)}
 .title-block h1 .wt{color:#fff}
-.stars{color:var(--teal);font-size:13px;letter-spacing:6px;margin-top:6px;text-align:center}
+.stars{color:var(--teal-bright);font-size:13px;letter-spacing:6px;margin-top:6px;text-align:center}
 .tagline{position:relative;z-index:2;display:flex;justify-content:center;gap:34px;padding:0 30px 16px;flex-wrap:wrap}
-.tagline span{font-size:11px;letter-spacing:2px;color:#c7d3e6;text-transform:uppercase;font-weight:500}
-.tagline span+span::before{content:"•";color:var(--teal);margin-right:34px;margin-left:-17px}
+.tagline span{font-size:11px;letter-spacing:2px;color:#d7e1f2;text-transform:uppercase;font-weight:500}
+.tagline span+span::before{content:"•";color:var(--teal-bright);margin-right:34px}
 
 /* ───────── META BAR ───────── */
-.meta{display:grid;grid-template-columns:1.4fr 1.2fr 1fr 1.2fr;gap:0;background:#0c1a3a;border-top:1px solid #1d2f57;border-bottom:1px solid #1d2f57}
-.meta-cell{display:flex;align-items:center;gap:10px;padding:11px 22px;border-right:1px solid #1d2f57}
+.meta{display:grid;grid-template-columns:1.4fr 1.2fr 1fr 1.2fr;gap:0;background:var(--card);border-bottom:1px solid var(--line)}
+.meta-cell{display:flex;align-items:center;gap:10px;padding:12px 22px;border-right:1px solid var(--line)}
 .meta-cell:last-child{border-right:none}
-.meta-ico{width:26px;height:26px;border-radius:5px;background:#15294f;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;color:var(--teal)}
-.meta-cell .lab{font-size:10px;font-weight:700;letter-spacing:1px;color:#cdd8ea;text-transform:uppercase;white-space:nowrap}
-.meta-cell .lab.tl{color:var(--teal)}
-.meta-cell input{font-size:13px;font-weight:600;border-bottom:1px solid #2b3f66;min-width:90px;padding:1px 0}
-.meta-fixed{font-size:13px;font-weight:700;color:#fff;white-space:nowrap}
+.meta-ico{width:28px;height:28px;border-radius:6px;background:#eef6f3;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.meta-cell .lab{font-size:10px;font-weight:700;letter-spacing:1px;color:var(--ink-soft);text-transform:uppercase;white-space:nowrap}
+.meta-cell input{font-size:13px;font-weight:700;color:var(--navy);border-bottom:1.5px solid var(--line);min-width:90px;padding:2px 0}
+.meta-cell input:focus{border-bottom-color:var(--teal)}
+.meta-fixed{font-size:13px;font-weight:800;color:var(--navy);white-space:nowrap}
 .meta-fixed.tl{color:var(--teal)}
 
-/* ───────── BODY PADDING ───────── */
-.body{padding:18px 18px 0}
+/* ───────── TOOLBAR / TIP ───────── */
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 22px 0;flex-wrap:wrap}
+.tip{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-soft);background:#fff7e6;border:1px solid #f0dca8;padding:7px 14px;border-radius:8px}
+.tip b{color:var(--gold)}
+.tbtns{display:flex;gap:8px}
+.tbtn{background:#fff;border:1px solid var(--line);color:var(--ink);font-size:12px;font-weight:700;padding:8px 16px;border-radius:8px;cursor:pointer;letter-spacing:.3px;box-shadow:var(--shadow)}
+.tbtn:hover{border-color:var(--teal);color:var(--teal)}
+.tbtn.danger:hover{border-color:#e05a4a;color:#e05a4a}
+
+/* ───────── BODY ───────── */
+.body{padding:18px 22px 0}
 
 /* ───────── PRODUCT CARDS ───────── */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:18px}
-.pcard{background:#0e1c3e;border:1px solid #20335c;border-radius:14px;padding:16px 16px 18px}
-.pcard-head{display:flex;align-items:center;gap:13px;margin-bottom:12px}
-.pcard-ic{width:50px;height:50px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#1d3b5c,#0c1c38);border:2px solid var(--teal);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
-.pcard-ic.green{border-color:var(--green)}
-.pcard-name h2{font-size:27px;font-weight:900;letter-spacing:.5px;line-height:1}
-.pcard-name h2.teal{color:#cfe0f2}
-.pcard-name h2.greenh{color:#cfe0f2}
-.pcard-name p{font-size:9.5px;letter-spacing:1.5px;color:var(--gray);text-transform:uppercase;margin-top:3px}
-.pcard-name .uline{height:2px;width:60%;background:var(--teal);margin-top:5px;border-radius:2px}
-.pcard.peo .uline{background:var(--green)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:20px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.pcard-head{display:flex;align-items:center;gap:13px;margin-bottom:14px}
+.pcard-ic{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;color:#fff}
+.pcard.ret .pcard-ic{background:linear-gradient(135deg,#1aa884,#23c39a)}
+.pcard.peo .pcard-ic{background:linear-gradient(135deg,#2486c4,#2fa3e0)}
+.pcard.mas .pcard-ic{background:linear-gradient(135deg,#6b5bd1,#8b7df0)}
+.pcard-name h2{font-size:26px;font-weight:900;letter-spacing:.5px;line-height:1;color:var(--navy)}
+.pcard-name p{font-size:9.5px;letter-spacing:1.5px;color:var(--ink-soft);text-transform:uppercase;margin-top:3px;font-weight:600}
+.pcard-name .uline{height:3px;width:54px;margin-top:6px;border-radius:2px}
+.pcard.ret .uline{background:var(--teal)}
+.pcard.peo .uline{background:var(--blue)}
+.pcard.mas .uline{background:var(--purple)}
 
 .mtable{width:100%;border-collapse:collapse;margin-bottom:6px}
-.mtable thead th{font-size:10px;font-weight:700;letter-spacing:.5px;color:#fff;text-transform:uppercase;padding:7px 8px;background:#16294d;text-align:center;border:1px solid #24375f}
-.pcard.peo .mtable thead th{background:#1f9d5f}
-.pcard.peo .mtable thead th:first-child{background:#1f9d5f}
-.mtable thead th:first-child{text-align:left}
-.mtable tbody td{font-size:13px;padding:7px 8px;border:1px solid #24375f;text-align:center;background:#0b1730}
-.mtable tbody td:first-child{text-align:left;color:#c3d0e6;font-weight:500}
-.mtable .goal-c{color:#fff;font-weight:600}
-.mtable .ytd-c{color:var(--teal);font-weight:700}
+.mtable thead th{font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:8px 10px;text-align:center;color:#fff}
+.mtable thead th:first-child{text-align:left;border-radius:7px 0 0 0}
+.mtable thead th:last-child{border-radius:0 7px 0 0}
+.pcard.ret .mtable thead th{background:var(--teal)}
+.pcard.peo .mtable thead th{background:var(--blue)}
+.pcard.mas .mtable thead th{background:var(--purple)}
+.mtable tbody td{font-size:13px;padding:8px 10px;border-bottom:1px solid var(--line);text-align:center}
+.mtable tbody tr:last-child td{border-bottom:none}
+.mtable tbody td:first-child{text-align:left;color:var(--ink-soft);font-weight:600}
+.mtable .goal-c .goal-input{text-align:center;width:100%;color:var(--navy);font-weight:700;padding:3px 2px;border-radius:5px}
+.mtable .goal-c .goal-input:focus{background:#fff;outline:2px solid var(--gold)}
+.mtable .ytd-c{color:var(--teal);font-weight:800}
 
 /* gauge */
-.gauge-wrap{display:flex;align-items:center;gap:16px;margin-top:14px}
-.gauge{position:relative;width:108px;height:60px;flex-shrink:0}
+.gauge-wrap{display:flex;align-items:center;gap:16px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line-soft)}
+.gauge{position:relative;width:108px;height:62px;flex-shrink:0}
 .gauge svg{display:block}
-.gauge .gpct{position:absolute;bottom:2px;left:0;right:0;text-align:center;font-size:22px;font-weight:900;color:var(--teal)}
-.gauge-cap{font-size:8.5px;letter-spacing:.5px;color:var(--gray);text-transform:uppercase;text-align:center;margin-top:1px;line-height:1.2}
+.gauge .gpct{position:absolute;bottom:0;left:0;right:0;text-align:center;font-size:22px;font-weight:900;color:var(--teal)}
+.gauge-cap{font-size:8.5px;letter-spacing:.5px;color:var(--ink-soft);text-transform:uppercase;text-align:center;margin-top:2px;line-height:1.2;font-weight:600}
 .prog{flex:1}
-.prog-lab{font-size:9px;letter-spacing:1px;color:#c3d0e6;text-transform:uppercase;text-align:center;margin-bottom:7px;font-weight:600}
-.prog-track{height:11px;background:#0a1730;border:1px solid #2a3f66;border-radius:6px;overflow:hidden}
-.prog-fill{height:100%;background:linear-gradient(90deg,var(--teal-dark),var(--green));border-radius:6px;width:0;transition:width .35s ease}
-.prog-ticks{display:flex;justify-content:space-between;margin-top:5px}
-.prog-ticks span{font-size:9px;color:var(--gray)}
+.prog-lab{font-size:9px;letter-spacing:1px;color:var(--ink-soft);text-transform:uppercase;text-align:center;margin-bottom:8px;font-weight:700}
+.prog-track{height:12px;background:#eaf0f8;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--green-bright));border-radius:6px;width:0;transition:width .35s ease}
+.prog-ticks{display:flex;justify-content:space-between;margin-top:6px}
+.prog-ticks span{font-size:9px;color:var(--ink-soft);font-weight:600}
 
-/* ───────── LOWER GRID ───────── */
-.lower{display:grid;grid-template-columns:1.42fr 1fr;gap:16px;padding-bottom:18px}
+/* ───────── LOWER ───────── */
+.lower{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;padding-bottom:20px}
 
 /* monthly scorecard */
-.msc{background:#0b1730;border:1px solid #20335c;border-radius:12px;overflow:hidden}
-.msc-head{display:flex;align-items:center;gap:9px;padding:11px 15px;background:#0c1a3a;border-bottom:1px solid #20335c}
-.msc-head .ic{color:var(--teal)}
-.msc-head h3{font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#fff}
+.msc{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.msc-head{display:flex;align-items:center;gap:9px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.msc-head .ic{font-size:16px}
+.msc-head h3{font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--navy);flex:1}
+.msc-hint{font-size:10px;color:var(--ink-soft);font-weight:600}
+
+/* quick month picker */
+.mpick{display:flex;align-items:center;gap:7px;padding:11px 18px;background:var(--cell);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.mpick .ql{font-size:10px;font-weight:800;letter-spacing:.5px;color:var(--ink-soft);text-transform:uppercase;margin-right:2px}
+.mpick button{min-width:40px;padding:6px 10px;border-radius:7px;border:1px solid var(--line);background:#fff;color:var(--ink-soft);font-size:11px;font-weight:700;cursor:pointer;transition:.12s}
+.mpick button:hover{border-color:var(--teal);color:var(--teal)}
+.mpick button.active{background:var(--navy);border-color:var(--navy);color:#fff}
+
 .msc-scroll{overflow-x:auto}
-.grid-tbl{width:100%;border-collapse:collapse;min-width:760px}
-.grid-tbl th{font-size:10px;font-weight:700;color:#fff;padding:7px 6px;background:#15294d;text-align:center;border:1px solid #24375f;white-space:nowrap}
-.grid-tbl th.metric-h{text-align:left;padding-left:14px;min-width:96px}
-.grid-tbl td{border:1px solid #1f3157;padding:0;text-align:center}
-.grid-tbl td.mlabel{font-size:11px;color:#c3d0e6;padding:5px 8px 5px 22px;text-align:left;background:#0b1730;white-space:nowrap}
-.grid-tbl td .num-input{padding:5px 2px;font-size:11.5px}
-.sec-row td{background:#2f9f78 !important;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;text-align:left;padding:5px 14px}
-.sec-row.ret td{background:#2f9f78 !important}
-.sec-row.peo td{background:#176b9e !important}
-.sec-row.mas td{background:#5a4fc9 !important}
-.grid-tbl td.rev-label{font-weight:600;color:#dfe7f2}
+.grid-tbl{width:100%;border-collapse:collapse;min-width:820px}
+.grid-tbl th{font-size:10px;font-weight:800;color:var(--ink-soft);padding:9px 6px;background:var(--cell);text-align:center;white-space:nowrap;border-bottom:1px solid var(--line)}
+.grid-tbl th.metric-h{text-align:left;padding-left:16px;min-width:96px}
+.grid-tbl th.col-active{background:var(--navy);color:#fff;border-radius:6px 6px 0 0}
+.grid-tbl td{padding:0;text-align:center;border-bottom:1px solid var(--line-soft)}
+.grid-tbl td.mlabel{font-size:11.5px;color:var(--ink);font-weight:600;padding:6px 8px 6px 24px;text-align:left;white-space:nowrap;background:#fff}
+.grid-tbl td.col-active{background:var(--cell-edit)}
+.grid-tbl td .num-input{padding:8px 2px;font-size:12.5px;text-align:center;width:100%;color:var(--navy);font-weight:700;border-radius:4px;cursor:pointer}
+.grid-tbl td .num-input:hover{background:#eef2f8}
+.grid-tbl td .num-input:focus{background:#fff;outline:2px solid var(--teal);box-shadow:0 0 0 3px rgba(26,168,132,.15);cursor:text}
+.grid-tbl tbody tr.zebra td.mlabel,.grid-tbl tbody tr.zebra td:not(.col-active){background:#fcfdff}
+.sec-row td{font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;text-align:left;padding:6px 16px;color:#fff}
+.sec-row.ret td{background:var(--teal)}
+.sec-row.peo td{background:var(--blue)}
+.sec-row.mas td{background:var(--purple)}
 
 /* revenue summary */
-.rsum{background:#0b1730;border:1px solid #20335c;border-radius:12px;overflow:hidden;align-self:start}
-.rsum-head{padding:12px 16px;background:#0c1a3a;border-bottom:2px solid var(--teal);text-align:center}
-.rsum-head h3{font-size:14px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#fff}
+.rsum{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;align-self:start;box-shadow:var(--shadow)}
+.rsum-head{padding:14px 16px;border-bottom:2px solid var(--teal);text-align:center}
+.rsum-head h3{font-size:14px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--navy)}
 .rtable{width:100%;border-collapse:collapse}
-.rtable th{font-size:10px;font-weight:700;color:#cdd8ea;text-transform:uppercase;letter-spacing:.5px;padding:10px 12px;background:#13244a;border:1px solid #24375f;text-align:center}
+.rtable th{font-size:10px;font-weight:800;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.5px;padding:11px 12px;background:var(--cell);border-bottom:1px solid var(--line);text-align:center}
 .rtable th:first-child{text-align:left}
-.rtable td{padding:13px 12px;border:1px solid #1f3157;font-size:13px;text-align:center;background:#0d1a36}
-.rtable td:first-child{text-align:left;font-weight:600;color:#dfe7f2}
-.rtable .goalc{color:#fff}
-.rtable .actc{color:var(--teal);font-weight:700}
-.rtable .total-row td{background:#2f9f78;font-weight:800;font-size:14px;color:#fff;border-color:#2f9f78}
+.rtable td{padding:14px 12px;border-bottom:1px solid var(--line-soft);font-size:13px;text-align:center}
+.rtable td:first-child{text-align:left;font-weight:700;color:var(--ink)}
+.rtable .goalc{color:var(--ink);font-weight:600}
+.rtable .actc{color:var(--teal);font-weight:800}
+.rtable .total-row td{background:linear-gradient(135deg,#1aa884,#27ae60);font-weight:800;font-size:14px;color:#fff;border-bottom:none}
 .rtable .total-row td:first-child{color:#fff}
-.minigauge{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;position:relative}
+.minigauge{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;position:relative}
 .minigauge svg{position:absolute;top:0;left:0}
-.minigauge span{font-size:10px;font-weight:800;color:#fff;z-index:2}
+.minigauge span{font-size:10px;font-weight:800;color:var(--navy);z-index:2}
+.total-row .minigauge span{color:#fff}
 
 /* ───────── FOOTER ───────── */
-.footer{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#0c1a3a;border-top:2px solid var(--teal);padding:15px 30px;flex-wrap:wrap}
-.foot-items{display:flex;gap:30px;flex-wrap:wrap}
+.footer{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--card);border-top:2px solid var(--teal);padding:16px 30px;flex-wrap:wrap}
+.foot-items{display:flex;gap:28px;flex-wrap:wrap}
 .foot-item{display:flex;align-items:center;gap:11px}
-.foot-item .fic{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:16px}
-.foot-item span{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#dfe7f2}
-.foot-sep{width:1px;height:30px;background:#2a3f66}
-.foot-brand{font-size:21px;font-weight:800;font-style:italic;color:#fff;font-family:'Segoe Script','Brush Script MT',cursive}
+.foot-item .fic{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green-bright));display:flex;align-items:center;justify-content:center;font-size:16px}
+.foot-item span{font-size:12px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:var(--ink)}
+.foot-sep{width:1px;height:30px;background:var(--line)}
+.foot-brand{font-size:21px;font-weight:800;font-style:italic;color:var(--navy);font-family:'Segoe Script','Brush Script MT',cursive}
 .foot-brand b{color:var(--teal);font-weight:800}
 
-/* save toast */
-.toast{position:fixed;bottom:22px;right:22px;background:var(--teal);color:#06281f;padding:9px 18px;border-radius:20px;font-size:12px;font-weight:800;opacity:0;transform:translateY(8px);transition:.3s;pointer-events:none;z-index:99}
-.toast.show{opacity:1;transform:translateY(0)}
+/* live entry preview */
+.entry-preview{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(10px);background:var(--navy);color:#fff;padding:10px 20px;border-radius:24px;font-size:14px;font-weight:700;box-shadow:var(--shadow-lg);opacity:0;transition:.18s;pointer-events:none;z-index:99;white-space:nowrap}
+.entry-preview.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.entry-preview .ep-ctx{color:var(--teal-bright);font-size:11px;font-weight:700;margin-right:8px;text-transform:uppercase;letter-spacing:.5px}
+.entry-preview .ep-val{color:#fff}
+.entry-preview .ep-raw{color:#9fb3d6;font-weight:600}
 
-/* toolbar */
-.toolbar{display:flex;justify-content:flex-end;gap:8px;padding:10px 18px 0}
-.tbtn{background:#15294d;border:1px solid #2a3f66;color:#cdd8ea;font-size:11px;font-weight:700;padding:6px 14px;border-radius:6px;cursor:pointer;letter-spacing:.5px}
-.tbtn:hover{border-color:var(--teal);color:#fff}
-.tbtn.danger:hover{border-color:#e74c3c;color:#ff8b7a}
+/* save toast */
+.toast{position:fixed;bottom:22px;right:22px;background:var(--teal);color:#fff;padding:9px 18px;border-radius:20px;font-size:12px;font-weight:800;opacity:0;transform:translateY(8px);transition:.3s;pointer-events:none;z-index:98}
+.toast.show{opacity:1;transform:translateY(0)}
 
 @media(max-width:1100px){
   .cards{grid-template-columns:1fr}
@@ -167,16 +198,13 @@ input::placeholder{color:#5a6e8c}
 /* ───────── PRINT ───────── */
 @media print{
   @page{size:landscape;margin:10mm}
-  html,body{background:#fff !important;color:#000 !important}
-  .sheet{max-width:none;border:none}
-  .toolbar,.toast{display:none !important}
-  .header{background:#0d1b3e !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html,body,.sheet{background:#fff !important}
+  .toolbar,.toast,.entry-preview,.mpick{display:none !important}
+  .header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .msc-scroll{overflow:visible !important}
   .grid-tbl{min-width:0 !important;font-size:9px}
-  .grid-tbl td .num-input,.mtable .ytd-c,.goal-input{color:#000 !important}
   .pcard,.msc,.rsum{break-inside:avoid;page-break-inside:avoid}
-  /* keep brand fills readable when background graphics are off */
-  .sec-row td,.total-row td,.foot-item .fic,.pcard-ic{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sec-row td,.total-row td,.foot-item .fic,.pcard-ic,.mtable thead th,.header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 </style>
 </head>
@@ -206,15 +234,19 @@ input::placeholder{color:#5a6e8c}
 
   <!-- META BAR -->
   <div class="meta">
-    <div class="meta-cell"><div class="meta-ico">👤</div><div class="lab">Associate Name:</div><input type="text" id="assocName" placeholder="________________"></div>
-    <div class="meta-cell"><div class="meta-ico">👥</div><div class="lab">Team:</div><input type="text" id="teamName" placeholder="________________"></div>
-    <div class="meta-cell"><div class="meta-ico">📅</div><div class="lab">Calendar Year:</div><div class="meta-fixed">FY27</div></div>
-    <div class="meta-cell"><div class="meta-ico">🎯</div><div class="lab">Focus:</div><div class="meta-fixed tl">GROW BEYOND PAYROLL</div></div>
+    <div class="meta-cell"><div class="meta-ico">👤</div><div><div class="lab">Associate Name</div><input type="text" id="assocName" placeholder="Enter name…"></div></div>
+    <div class="meta-cell"><div class="meta-ico">👥</div><div><div class="lab">Team</div><input type="text" id="teamName" placeholder="Enter team…"></div></div>
+    <div class="meta-cell"><div class="meta-ico">📅</div><div><div class="lab">Calendar Year</div><div class="meta-fixed">FY27</div></div></div>
+    <div class="meta-cell"><div class="meta-ico">🎯</div><div><div class="lab">Focus</div><div class="meta-fixed tl">GROW BEYOND PAYROLL</div></div></div>
   </div>
 
+  <!-- TOOLBAR -->
   <div class="toolbar">
-    <button class="tbtn" onclick="window.print()">🖨 Print / PDF</button>
-    <button class="tbtn danger" onclick="resetAll()">↺ Reset</button>
+    <div class="tip">💡 <span>Quick entry: type <b>1.2</b> for <b>$1,200</b>, <b>5.1</b> for <b>$5,100</b>. Whole numbers stay literal (1200 = $1,200).</span></div>
+    <div class="tbtns">
+      <button class="tbtn" onclick="window.print()">🖨 Print / PDF</button>
+      <button class="tbtn danger" onclick="resetAll()">↺ Reset</button>
+    </div>
   </div>
 
   <div class="body">
@@ -222,10 +254,11 @@ input::placeholder{color:#5a6e8c}
     <!-- PRODUCT CARDS -->
     <div class="cards" id="cards"></div>
 
-    <!-- LOWER: monthly grid + revenue summary -->
+    <!-- LOWER -->
     <div class="lower">
       <div class="msc">
-        <div class="msc-head"><span class="ic">📅</span><h3>Monthly Scorecard</h3></div>
+        <div class="msc-head"><span class="ic">📅</span><h3>Monthly Scorecard</h3><span class="msc-hint">Tab / Enter to move down a column</span></div>
+        <div class="mpick" id="mpick"></div>
         <div class="msc-scroll">
           <table class="grid-tbl" id="gridTbl"></table>
         </div>
@@ -256,170 +289,129 @@ input::placeholder{color:#5a6e8c}
 
 </div>
 
+<div class="entry-preview" id="entryPreview"></div>
 <div class="toast" id="toast">✓ Saved</div>
 
 <script>
 const MONTHS = ['JUL','AUG','SEP','OCT','NOV','DEC','JAN','FEB','MAR','APR','MAY','JUN'];
-const STORAGE_KEY = 'nyon_fy27_scorecard_v2';
+const STORAGE_KEY = 'nyon_fy27_scorecard_v3';
 
-// Product / metric definitions — single source of truth
 const PRODUCTS = [
-  { key:'ret', name:'RETIREMENT', sub:'Retirement Solutions', icon:'📈', accent:'teal',
-    metrics:[ {k:'leads',label:'Leads',type:'num'}, {k:'revenue',label:'Revenue',type:'usd'} ] },
-  { key:'peo', name:'PEO', sub:'Professional Employer Organization', icon:'👥', accent:'green',
-    metrics:[ {k:'leads',label:'Leads',type:'num'}, {k:'eos',label:"EO's",type:'num'},
-              {k:'brets',label:'BRETS',type:'num'}, {k:'proposals',label:'Proposals',type:'num'},
+  { key:'ret', name:'RETIREMENT', sub:'Retirement Solutions', icon:'📈',
+    metrics:[ {k:'leads',label:'Leads',type:'count'}, {k:'revenue',label:'Revenue',type:'usd'} ] },
+  { key:'peo', name:'PEO', sub:'Professional Employer Organization', icon:'👥',
+    metrics:[ {k:'leads',label:'Leads',type:'count'}, {k:'eos',label:"EO's",type:'count'},
+              {k:'brets',label:'BRETS',type:'count'}, {k:'proposals',label:'Proposals',type:'count'},
               {k:'revenue',label:'Revenue',type:'usd'} ] },
-  { key:'mas', name:'MAS', sub:'Major Accounts Services', icon:'🤝', accent:'teal',
-    metrics:[ {k:'leads',label:'Leads',type:'num'}, {k:'revenue',label:'Revenue',type:'usd'} ] },
+  { key:'mas', name:'MAS', sub:'Major Accounts Services', icon:'🤝',
+    metrics:[ {k:'leads',label:'Leads',type:'count'}, {k:'revenue',label:'Revenue',type:'usd'} ] },
 ];
 
-// ── State ──
 let DATA = blankData();
+let activeCol = 0; // highlighted month column for quick entry
 
 function blankData(){
   const d = { assocName:'', teamName:'', goals:{}, monthly:{} };
-  PRODUCTS.forEach(p=>{
-    d.goals[p.key] = {};
-    p.metrics.forEach(m=> d.goals[p.key][m.k]=0 );
-  });
-  MONTHS.forEach(mo=>{
-    d.monthly[mo] = {};
-    PRODUCTS.forEach(p=>{
-      d.monthly[mo][p.key] = {};
-      p.metrics.forEach(m=> d.monthly[mo][p.key][m.k]=0 );
-    });
-  });
+  PRODUCTS.forEach(p=>{ d.goals[p.key]={}; p.metrics.forEach(m=> d.goals[p.key][m.k]=0 ); });
+  MONTHS.forEach(mo=>{ d.monthly[mo]={}; PRODUCTS.forEach(p=>{ d.monthly[mo][p.key]={}; p.metrics.forEach(m=> d.monthly[mo][p.key][m.k]=0 ); }); });
   return d;
 }
 
-function loadData(){
-  try{
-    const raw = JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
-    if(!raw) return;
-    // merge defensively so schema changes never break
-    DATA.assocName = raw.assocName||'';
-    DATA.teamName = raw.teamName||'';
-    PRODUCTS.forEach(p=>{
-      p.metrics.forEach(m=>{
-        if(raw.goals && raw.goals[p.key] && raw.goals[p.key][m.k]!=null)
-          DATA.goals[p.key][m.k] = num(raw.goals[p.key][m.k]);
-      });
-    });
-    MONTHS.forEach(mo=>{
-      PRODUCTS.forEach(p=>{
-        p.metrics.forEach(m=>{
-          if(raw.monthly && raw.monthly[mo] && raw.monthly[mo][p.key] && raw.monthly[mo][p.key][m.k]!=null)
-            DATA.monthly[mo][p.key][m.k] = num(raw.monthly[mo][p.key][m.k]);
-        });
-      });
-    });
-  }catch(e){ console.warn('load failed',e); }
+// ─────────── PARSING ───────────
+// Smart money parse: a decimal point means "thousands" (1.2 -> 1200, 5.1 -> 5100,
+// 10.5 -> 10500, 1.25 -> 1250, .5 -> 500). A whole number is literal (1200 -> 1200).
+// Strips $ , and spaces. Rejects negatives and non-numbers (-> 0).
+function parseMoney(raw){
+  if(raw==null) return 0;
+  let s = String(raw).replace(/[$,\s]/g,'');
+  if(s==='' || s==='.' || s==='-') return 0;
+  const hasDot = s.indexOf('.')!==-1;
+  let n = parseFloat(s);
+  if(!isFinite(n) || n<0) return 0;
+  if(hasDot) n = n*1000;
+  return Math.round(n);
 }
-
-let saveTimer=null;
-function saveData(){
-  DATA.assocName = document.getElementById('assocName').value;
-  DATA.teamName = document.getElementById('teamName').value;
-  try{
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA));
-  }catch(e){
-    // private-mode / disabled-storage / quota — fail quietly, keep the app usable
-    console.warn('save failed', e);
-    return;
-  }
-  clearTimeout(saveTimer);
-  const t=document.getElementById('toast');
-  t.classList.add('show');
-  saveTimer=setTimeout(()=>t.classList.remove('show'),1400);
+// Counts are literal whole numbers, no shorthand.
+function parseCount(raw){
+  if(raw==null) return 0;
+  let s = String(raw).replace(/[,\s]/g,'');
+  let n = parseFloat(s);
+  if(!isFinite(n) || n<0) return 0;
+  return Math.round(n);
 }
+function parseField(raw, type){ return type==='usd' ? parseMoney(raw) : parseCount(raw); }
 
-// ── Helpers ──
-// Whole-number policy: values are rounded to integers (whole dollars / whole counts)
-// so the YTD totals always equal the sum of the displayed monthly cells, and
-// negatives are rejected (no negative revenue/leads on a scorecard).
-function num(v){ const n=parseFloat(v); return (isFinite(n) && n>0) ? Math.round(n) : 0; }
+// numeric coercion for already-stored values (always clean integers)
+function num(v){ const n=parseFloat(v); return (isFinite(n)&&n>0)?Math.round(n):0; }
+
+// ─────────── FORMATTING ───────────
+function fmtUSD(n){ return '$'+num(n).toLocaleString('en-US'); }
+function fmtNum(n){ return num(n).toLocaleString('en-US'); }
+function fmtField(n,type){ return type==='usd'?fmtUSD(n):fmtNum(n); }
+
 function ytd(prodKey, metricKey){
-  let s=0;
-  MONTHS.forEach(mo=> s += num(DATA.monthly[mo][prodKey][metricKey]) );
-  return s;
+  let s=0; MONTHS.forEach(mo=> s += num(DATA.monthly[mo][prodKey][metricKey]) ); return s;
 }
-function fmtUSD(n){
-  n = num(n);
-  return '$'+n.toLocaleString('en-US',{maximumFractionDigits:0});
-}
-function fmtNum(n){
-  n = num(n);
-  return n.toLocaleString('en-US',{maximumFractionDigits:0});
-}
-function pct(actual, goal){
-  goal = num(goal);
-  if(goal<=0) return 0;
-  return Math.round((num(actual)/goal)*100);
-}
+function pct(actual, goal){ goal=num(goal); if(goal<=0) return 0; return Math.round((num(actual)/goal)*100); }
 function clampPct(p){ return Math.max(0, Math.min(100, p)); }
 
-// ── Half-circle gauge SVG ──
+// ─────────── GAUGES ───────────
 function halfGauge(pctVal){
   const p = clampPct(pctVal)/100;
   const cx=54, cy=54, r=44;
-  // angles measured from the left (180deg) sweeping CCW over the TOP to the right (0deg).
-  // y is negated (cy - r*sin) so the arc rises above the centre line.
   const start=Math.PI, end=Math.PI*(1-p);
   const x1=cx+r*Math.cos(start), y1=cy-r*Math.sin(start);
   const x2=cx+r*Math.cos(end),   y2=cy-r*Math.sin(end);
-  const large = 0; // a half-circle never needs the large-arc flag for these sub-180 spans
   const bgX=cx+r*Math.cos(0), bgY=cy-r*Math.sin(0);
-  const fillPath = p>0 ? `<path d="M ${x1} ${y1} A ${r} ${r} 0 ${large} 0 ${x2} ${y2}" fill="none" stroke="#3ec8a0" stroke-width="8" stroke-linecap="round"/>` : '';
+  const fillPath = p>0 ? `<path d="M ${x1} ${y1} A ${r} ${r} 0 0 0 ${x2} ${y2}" fill="none" stroke="#1aa884" stroke-width="8" stroke-linecap="round"/>` : '';
   return `<svg width="108" height="62" viewBox="0 0 108 62">
-    <path d="M ${x1} ${y1} A ${r} ${r} 0 0 0 ${bgX} ${bgY}" fill="none" stroke="#15294d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M ${x1} ${y1} A ${r} ${r} 0 0 0 ${bgX} ${bgY}" fill="none" stroke="#e6edf6" stroke-width="8" stroke-linecap="round"/>
     ${fillPath}
   </svg>`;
 }
-
-// ── Circular mini gauge (revenue summary) ──
-function circleGauge(pctVal){
+function circleGauge(pctVal, dark){
   const p = clampPct(pctVal);
   const r=20, c=2*Math.PI*r, off=c*(1-p/100);
-  return `<svg width="46" height="46" viewBox="0 0 46 46">
-    <circle cx="23" cy="23" r="${r}" fill="none" stroke="#0d2a22" stroke-width="5"/>
-    <circle cx="23" cy="23" r="${r}" fill="none" stroke="#fff" stroke-width="5"
+  const track = dark ? 'rgba(255,255,255,.3)' : '#e6edf6';
+  const fill = dark ? '#ffffff' : '#1aa884';
+  return `<svg width="48" height="48" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="${r}" fill="none" stroke="${track}" stroke-width="5"/>
+    <circle cx="24" cy="24" r="${r}" fill="none" stroke="${fill}" stroke-width="5"
       stroke-dasharray="${c}" stroke-dashoffset="${off}" stroke-linecap="round"
-      transform="rotate(-90 23 23)"/>
+      transform="rotate(-90 24 24)"/>
   </svg>`;
 }
 
-// ── Render product cards ──
+// ─────────── LIVE PREVIEW ───────────
+let previewTimer=null;
+function showPreview(ctx, raw, type){
+  const el=document.getElementById('entryPreview');
+  const val=parseField(raw, type);
+  const rawTrim=String(raw).trim();
+  if(rawTrim===''){ el.classList.remove('show'); return; }
+  el.innerHTML = `<span class="ep-ctx">${ctx}</span><span class="ep-raw">${rawTrim} =</span> <span class="ep-val">${fmtField(val,type)}</span>`;
+  el.classList.add('show');
+  clearTimeout(previewTimer);
+}
+function hidePreview(){ const el=document.getElementById('entryPreview'); el.classList.remove('show'); }
+
+// ─────────── PRODUCT CARDS ───────────
 function renderCards(){
   document.getElementById('cards').innerHTML = PRODUCTS.map(p=>{
     const rows = p.metrics.map(m=>{
-      const g = DATA.goals[p.key][m.k];
-      const a = ytd(p.key, m.k);
-      const gDisp = m.type==='usd'? fmtUSD(g): fmtNum(g);
-      const aDisp = m.type==='usd'? fmtUSD(a): fmtNum(a);
+      const g=DATA.goals[p.key][m.k], a=ytd(p.key,m.k);
       return `<tr>
         <td>${m.label}</td>
-        <td class="goal-c">
-          <input class="goal-input" type="text" inputmode="decimal"
-            data-goal="${p.key}.${m.k}" data-type="${m.type}"
-            value="${gDisp}" />
-        </td>
-        <td class="ytd-c" id="ytd-${p.key}-${m.k}">${aDisp}</td>
+        <td class="goal-c"><input class="goal-input" type="text" inputmode="decimal"
+          data-goal="${p.key}.${m.k}" data-type="${m.type}" value="${g?fmtField(g,m.type):''}" placeholder="0"></td>
+        <td class="ytd-c" id="ytd-${p.key}-${m.k}">${fmtField(a,m.type)}</td>
       </tr>`;
     }).join('');
-
-    const rev = ytd(p.key,'revenue');
-    const revGoal = DATA.goals[p.key].revenue;
-    const pVal = pct(rev, revGoal);
-
+    const pVal=pct(ytd(p.key,'revenue'), DATA.goals[p.key].revenue);
     return `<div class="pcard ${p.key}">
       <div class="pcard-head">
-        <div class="pcard-ic ${p.accent==='green'?'green':''}">${p.icon}</div>
-        <div class="pcard-name">
-          <h2 class="${p.accent==='green'?'greenh':'teal'}">${p.name}</h2>
-          <p>${p.sub}</p>
-          <div class="uline"></div>
-        </div>
+        <div class="pcard-ic">${p.icon}</div>
+        <div class="pcard-name"><h2>${p.name}</h2><p>${p.sub}</p><div class="uline"></div></div>
       </div>
       <table class="mtable">
         <thead><tr><th>Metric</th><th>Goal (FY27)</th><th>YTD Actual</th></tr></thead>
@@ -439,148 +431,179 @@ function renderCards(){
     </div>`;
   }).join('');
 
-  // wire goal inputs
   document.querySelectorAll('[data-goal]').forEach(inp=>{
-    inp.addEventListener('focus', e=>{
-      const [pk,mk]=e.target.dataset.goal.split('.');
-      const v = DATA.goals[pk][mk];
-      e.target.value = v? String(v):'';
-      e.target.select();
-    });
-    inp.addEventListener('blur', e=>{
-      const [pk,mk]=e.target.dataset.goal.split('.');
-      const t=e.target.dataset.type;
-      DATA.goals[pk][mk]=num(e.target.value.replace(/[$,]/g,''));
-      e.target.value = t==='usd'? fmtUSD(DATA.goals[pk][mk]) : fmtNum(DATA.goals[pk][mk]);
-      recalcAll(); saveData();
-    });
-    inp.addEventListener('input', e=>{
-      const [pk,mk]=e.target.dataset.goal.split('.');
-      DATA.goals[pk][mk]=num(e.target.value.replace(/[$,]/g,''));
-      recalcCards();
-    });
+    const [pk,mk]=inp.dataset.goal.split('.'); const t=inp.dataset.type;
+    const prod=PRODUCTS.find(x=>x.key===pk); const met=prod.metrics.find(x=>x.k===mk);
+    inp.addEventListener('focus', e=>{ const v=DATA.goals[pk][mk]; e.target.value=v?String(v):''; e.target.select(); });
+    inp.addEventListener('input', e=>{ DATA.goals[pk][mk]=parseField(e.target.value,t); showPreview(prod.name+' Goal · '+met.label, e.target.value, t); recalcCards(); });
+    inp.addEventListener('blur', e=>{ DATA.goals[pk][mk]=parseField(e.target.value,t); e.target.value=DATA.goals[pk][mk]?fmtField(DATA.goals[pk][mk],t):''; hidePreview(); recalcAll(); saveData(); });
   });
 }
 
-// ── Render monthly grid ──
+// ─────────── MONTH PICKER ───────────
+function renderPicker(){
+  const el=document.getElementById('mpick');
+  el.innerHTML = `<span class="ql">Quick fill month:</span>` + MONTHS.map((mo,i)=>
+    `<button class="${i===activeCol?'active':''}" data-col="${i}">${mo}</button>`).join('');
+  el.querySelectorAll('button').forEach(b=>{
+    b.addEventListener('click', ()=>{ activeCol=parseInt(b.dataset.col); applyColHighlight();
+      const first=document.querySelector(`[data-rc="0-${activeCol}"]`); if(first){ first.focus(); } });
+  });
+}
+function applyColHighlight(){
+  renderPicker();
+  document.querySelectorAll('#gridTbl th, #gridTbl td').forEach(c=> c.classList.remove('col-active'));
+  // +1 because first column is the metric label
+  document.querySelectorAll(`#gridTbl tr`).forEach(tr=>{
+    const cells=tr.children; const idx=activeCol+1;
+    if(cells[idx]) cells[idx].classList.add('col-active');
+  });
+}
+
+// ─────────── MONTHLY GRID ───────────
 function renderGrid(){
-  let head = '<thead><tr><th class="metric-h">Metric</th>';
-  MONTHS.forEach(mo=> head+=`<th>${mo}</th>` );
+  let head='<thead><tr><th class="metric-h">Metric</th>';
+  MONTHS.forEach((mo,i)=> head+=`<th data-colh="${i}">${mo}</th>` );
   head+='</tr></thead>';
 
+  // build a flat row index across products for Enter-navigation
+  let rowIndex=0;
   let body='<tbody>';
   PRODUCTS.forEach(p=>{
-    body += `<tr class="sec-row ${p.key}"><td colspan="${MONTHS.length+1}">${p.name}</td></tr>`;
-    p.metrics.forEach(m=>{
-      body += `<tr><td class="mlabel">${m.label}</td>`;
-      MONTHS.forEach(mo=>{
-        const v = DATA.monthly[mo][p.key][m.k];
-        const disp = v ? (m.type==='usd'?'$'+fmtNum(v):fmtNum(v)) : '';
+    body += `<tr class="sec-row ${p.key}"><td colspan="${MONTHS.length+1}">${p.name} &nbsp;·&nbsp; ${p.sub}</td></tr>`;
+    p.metrics.forEach((m,mi)=>{
+      const zebra = (mi%2===1)?'zebra':'';
+      body += `<tr class="${zebra}"><td class="mlabel">${m.label}</td>`;
+      MONTHS.forEach((mo,ci)=>{
+        const v=DATA.monthly[mo][p.key][m.k];
         body += `<td><input class="num-input" type="text" inputmode="decimal"
           aria-label="${p.name} ${m.label} ${mo}"
           data-cell="${mo}.${p.key}.${m.k}" data-type="${m.type}"
-          value="${disp}"></td>`;
+          data-rc="${rowIndex}-${ci}"
+          value="${v?fmtField(v,m.type):''}" placeholder="–"></td>`;
       });
-      body+='</tr>';
+      body+='</tr>'; rowIndex++;
     });
   });
   body+='</tbody>';
   document.getElementById('gridTbl').innerHTML = head+body;
+  const totalRows=rowIndex;
 
   document.querySelectorAll('[data-cell]').forEach(inp=>{
+    const [mo,pk,mk]=inp.dataset.cell.split('.'); const t=inp.dataset.type;
+    const prod=PRODUCTS.find(x=>x.key===pk); const met=prod.metrics.find(x=>x.k===mk);
     inp.addEventListener('focus', e=>{
-      const [mo,pk,mk]=e.target.dataset.cell.split('.');
-      const v=DATA.monthly[mo][pk][mk];
-      e.target.value = v? String(v):'';
-      e.target.select();
-    });
-    inp.addEventListener('blur', e=>{
-      const [mo,pk,mk]=e.target.dataset.cell.split('.');
-      const t=e.target.dataset.type;
-      const val=num(e.target.value.replace(/[$,]/g,''));
-      DATA.monthly[mo][pk][mk]=val;
-      e.target.value = val? (t==='usd'?'$'+fmtNum(val):fmtNum(val)) : '';
-      recalcAll(); saveData();
+      const v=DATA.monthly[mo][pk][mk]; e.target.value=v?String(v):''; e.target.select();
+      const ci=parseInt(e.target.dataset.rc.split('-')[1]); if(ci!==activeCol){ activeCol=ci; applyColHighlight(); }
     });
     inp.addEventListener('input', e=>{
-      const [mo,pk,mk]=e.target.dataset.cell.split('.');
-      DATA.monthly[mo][pk][mk]=num(e.target.value.replace(/[$,]/g,''));
+      DATA.monthly[mo][pk][mk]=parseField(e.target.value,t);
+      showPreview(mo+' · '+prod.name+' '+met.label, e.target.value, t);
       recalcCards();
     });
+    inp.addEventListener('blur', e=>{
+      const val=parseField(e.target.value,t); DATA.monthly[mo][pk][mk]=val;
+      e.target.value=val?fmtField(val,t):''; hidePreview(); recalcAll(); saveData();
+    });
+    inp.addEventListener('keydown', e=>{
+      if(e.key==='Enter'){
+        e.preventDefault();
+        const [r,c]=e.target.dataset.rc.split('-').map(Number);
+        let next=document.querySelector(`[data-rc="${r+1}-${c}"]`);
+        if(!next){ // wrap to top of next column
+          const nc=(c+1)%MONTHS.length;
+          next=document.querySelector(`[data-rc="0-${nc}"]`);
+        }
+        if(next){ next.focus(); }
+      }
+    });
   });
+  applyColHighlight();
 }
 
-// ── Render revenue summary ──
+// ─────────── REVENUE SUMMARY ───────────
 function renderRevSummary(){
   let totGoal=0, totAct=0;
-  let rows = PRODUCTS.map(p=>{
+  const labelMap={ret:'Retirement Revenue',peo:'PEO Revenue',mas:'MAS Revenue'};
+  let rows=PRODUCTS.map(p=>{
     const g=DATA.goals[p.key].revenue, a=ytd(p.key,'revenue'), pv=pct(a,g);
     totGoal+=num(g); totAct+=num(a);
-    const labelMap={ret:'Retirement Revenue',peo:'PEO Revenue',mas:'MAS Revenue'};
     return `<tr>
-      <td class="rev-label">${labelMap[p.key]}</td>
+      <td>${labelMap[p.key]}</td>
       <td class="goalc">${fmtUSD(g)}</td>
       <td class="actc">${fmtUSD(a)}</td>
-      <td><div class="minigauge">${circleGauge(pv)}<span>${pv}%</span></div></td>
+      <td><div class="minigauge">${circleGauge(pv,false)}<span>${pv}%</span></div></td>
     </tr>`;
   }).join('');
-
   const totPv=pct(totAct,totGoal);
   rows += `<tr class="total-row">
     <td>TOTAL BEYOND PAYROLL REVENUE</td>
     <td>${fmtUSD(totGoal)}</td>
     <td>${fmtUSD(totAct)}</td>
-    <td><div class="minigauge">${circleGauge(totPv)}<span>${totPv}%</span></div></td>
+    <td><div class="minigauge">${circleGauge(totPv,true)}<span>${totPv}%</span></div></td>
   </tr>`;
-
   document.getElementById('rsumBody').innerHTML = rows;
 }
 
-// ── Recalc ──
-// recalcCards: cheap live update of the three product cards (YTD cells, gauge %,
-// progress bar, gauge arc). Safe to call on every keystroke — only mutates text,
-// width, and a single guarded SVG redraw; never rebuilds inputs, so focus is kept.
+// ─────────── RECALC ───────────
 function recalcCards(){
   PRODUCTS.forEach(p=>{
     p.metrics.forEach(m=>{
-      const a=ytd(p.key,m.k);
-      const el=document.getElementById(`ytd-${p.key}-${m.k}`);
-      if(el) el.textContent = m.type==='usd'? fmtUSD(a): fmtNum(a);
+      const a=ytd(p.key,m.k); const el=document.getElementById(`ytd-${p.key}-${m.k}`);
+      if(el) el.textContent = fmtField(a,m.type);
     });
     const pv=pct(ytd(p.key,'revenue'), DATA.goals[p.key].revenue);
     const gp=document.getElementById('gpct-'+p.key);
     if(gp) gp.textContent = pv+'%';
-    const gw=gp ? gp.parentElement : null;       // the .gauge div
-    if(gw){ const svg=gw.querySelector('svg'); if(svg) svg.outerHTML = halfGauge(pv); }
+    const gw=gp?gp.parentElement:null;
+    if(gw){ const svg=gw.querySelector('svg'); if(svg) svg.outerHTML=halfGauge(pv); }
     const pf=document.getElementById('pfill-'+p.key);
     if(pf) pf.style.width = clampPct(pv)+'%';
   });
 }
+function recalcAll(){ recalcCards(); renderRevSummary(); }
 
-// recalcAll: full recalc including the read-only revenue summary table.
-// Called on blur (commit), not on every keystroke, to avoid the summary
-// SVG gauges flickering while the user types.
-function recalcAll(){
-  recalcCards();
-  renderRevSummary();
+// ─────────── PERSISTENCE ───────────
+function loadData(){
+  try{
+    const raw=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
+    if(!raw) return;
+    DATA.assocName=raw.assocName||''; DATA.teamName=raw.teamName||'';
+    PRODUCTS.forEach(p=> p.metrics.forEach(m=>{
+      if(raw.goals&&raw.goals[p.key]&&raw.goals[p.key][m.k]!=null) DATA.goals[p.key][m.k]=num(raw.goals[p.key][m.k]);
+    }));
+    MONTHS.forEach(mo=> PRODUCTS.forEach(p=> p.metrics.forEach(m=>{
+      if(raw.monthly&&raw.monthly[mo]&&raw.monthly[mo][p.key]&&raw.monthly[mo][p.key][m.k]!=null)
+        DATA.monthly[mo][p.key][m.k]=num(raw.monthly[mo][p.key][m.k]);
+    })));
+  }catch(e){ console.warn('load failed',e); }
+}
+let saveTimer=null;
+function saveData(){
+  DATA.assocName=document.getElementById('assocName').value;
+  DATA.teamName=document.getElementById('teamName').value;
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA)); }
+  catch(e){ console.warn('save failed',e); return; }
+  clearTimeout(saveTimer);
+  const t=document.getElementById('toast'); t.classList.add('show');
+  saveTimer=setTimeout(()=>t.classList.remove('show'),1300);
 }
 
-// ── Reset ──
 function resetAll(){
   if(!confirm('Clear all goals and monthly entries? This cannot be undone.')) return;
-  localStorage.removeItem(STORAGE_KEY);
-  DATA = blankData();
+  try{ localStorage.removeItem(STORAGE_KEY); }catch(e){}
+  DATA=blankData(); activeCol=0;
   document.getElementById('assocName').value='';
   document.getElementById('teamName').value='';
   renderCards(); renderGrid(); renderRevSummary();
 }
 
-// ── Boot ──
+// ─────────── BOOT ───────────
 loadData();
-document.getElementById('assocName').value = DATA.assocName||'';
-document.getElementById('teamName').value = DATA.teamName||'';
-document.getElementById('assocName').addEventListener('input', saveData);
-document.getElementById('teamName').addEventListener('input', saveData);
+document.getElementById('assocName').value=DATA.assocName||'';
+document.getElementById('teamName').value=DATA.teamName||'';
+document.getElementById('assocName').addEventListener('blur', saveData);
+document.getElementById('teamName').addEventListener('blur', saveData);
 renderCards();
 renderGrid();
 renderRevSummary();
