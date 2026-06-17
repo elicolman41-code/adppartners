@@ -528,8 +528,8 @@ function refreshUI(){
 // ═══════════════════════════════════════════════
 function setView(v){
   activeView=v;
-  document.getElementById('scorecardView').style.display=v==='scorecard'?'':'none';
-  document.getElementById('compareView').style.display=v==='compare'?'':'none';
+  document.getElementById('scorecardView').style.display=v==='scorecard'?'block':'none';
+  document.getElementById('compareView').style.display=v==='compare'?'block':'none';
   document.getElementById('vtab-scorecard').classList.toggle('active',v==='scorecard');
   document.getElementById('vtab-compare').classList.toggle('active',v==='compare');
   if(v==='compare') renderCompare();
