@@ -163,6 +163,21 @@ input::placeholder{color:#5a6e8c}
   .lower{grid-template-columns:1fr}
   .title-block h1{font-size:24px}
 }
+
+/* ───────── PRINT ───────── */
+@media print{
+  @page{size:landscape;margin:10mm}
+  html,body{background:#fff !important;color:#000 !important}
+  .sheet{max-width:none;border:none}
+  .toolbar,.toast{display:none !important}
+  .header{background:#0d1b3e !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .msc-scroll{overflow:visible !important}
+  .grid-tbl{min-width:0 !important;font-size:9px}
+  .grid-tbl td .num-input,.mtable .ytd-c,.goal-input{color:#000 !important}
+  .pcard,.msc,.rsum{break-inside:avoid;page-break-inside:avoid}
+  /* keep brand fills readable when background graphics are off */
+  .sec-row td,.total-row td,.foot-item .fic,.pcard-ic{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
 </style>
 </head>
 <body>
@@ -306,7 +321,13 @@ let saveTimer=null;
 function saveData(){
   DATA.assocName = document.getElementById('assocName').value;
   DATA.teamName = document.getElementById('teamName').value;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA));
+  try{
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA));
+  }catch(e){
+    // private-mode / disabled-storage / quota — fail quietly, keep the app usable
+    console.warn('save failed', e);
+    return;
+  }
   clearTimeout(saveTimer);
   const t=document.getElementById('toast');
   t.classList.add('show');
@@ -314,7 +335,10 @@ function saveData(){
 }
 
 // ── Helpers ──
-function num(v){ const n=parseFloat(v); return isFinite(n)?n:0; }
+// Whole-number policy: values are rounded to integers (whole dollars / whole counts)
+// so the YTD totals always equal the sum of the displayed monthly cells, and
+// negatives are rejected (no negative revenue/leads on a scorecard).
+function num(v){ const n=parseFloat(v); return (isFinite(n) && n>0) ? Math.round(n) : 0; }
 function ytd(prodKey, metricKey){
   let s=0;
   MONTHS.forEach(mo=> s += num(DATA.monthly[mo][prodKey][metricKey]) );
@@ -433,7 +457,7 @@ function renderCards(){
     inp.addEventListener('input', e=>{
       const [pk,mk]=e.target.dataset.goal.split('.');
       DATA.goals[pk][mk]=num(e.target.value.replace(/[$,]/g,''));
-      recalcAll();
+      recalcCards();
     });
   });
 }
@@ -451,10 +475,11 @@ function renderGrid(){
       body += `<tr><td class="mlabel">${m.label}</td>`;
       MONTHS.forEach(mo=>{
         const v = DATA.monthly[mo][p.key][m.k];
-        const disp = v? (m.type==='usd'? v : v) : '';
+        const disp = v ? (m.type==='usd'?'$'+fmtNum(v):fmtNum(v)) : '';
         body += `<td><input class="num-input" type="text" inputmode="decimal"
+          aria-label="${p.name} ${m.label} ${mo}"
           data-cell="${mo}.${p.key}.${m.k}" data-type="${m.type}"
-          value="${disp===''?'':(m.type==='usd'?'$'+fmtNum(v):fmtNum(v))}"></td>`;
+          value="${disp}"></td>`;
       });
       body+='</tr>';
     });
@@ -480,7 +505,7 @@ function renderGrid(){
     inp.addEventListener('input', e=>{
       const [mo,pk,mk]=e.target.dataset.cell.split('.');
       DATA.monthly[mo][pk][mk]=num(e.target.value.replace(/[$,]/g,''));
-      recalcAll();
+      recalcCards();
     });
   });
 }
@@ -511,9 +536,11 @@ function renderRevSummary(){
   document.getElementById('rsumBody').innerHTML = rows;
 }
 
-// ── Recalc (lightweight, no full re-render of inputs) ──
-function recalcAll(){
-  // product card YTD cells + gauges
+// ── Recalc ──
+// recalcCards: cheap live update of the three product cards (YTD cells, gauge %,
+// progress bar, gauge arc). Safe to call on every keystroke — only mutates text,
+// width, and a single guarded SVG redraw; never rebuilds inputs, so focus is kept.
+function recalcCards(){
   PRODUCTS.forEach(p=>{
     p.metrics.forEach(m=>{
       const a=ytd(p.key,m.k);
@@ -522,12 +549,19 @@ function recalcAll(){
     });
     const pv=pct(ytd(p.key,'revenue'), DATA.goals[p.key].revenue);
     const gp=document.getElementById('gpct-'+p.key);
-    const gw=document.querySelector(`#gpct-${p.key}`)?.parentElement;
     if(gp) gp.textContent = pv+'%';
-    if(gw) gw.querySelector('svg').outerHTML = halfGauge(pv); // redraw arc
+    const gw=gp ? gp.parentElement : null;       // the .gauge div
+    if(gw){ const svg=gw.querySelector('svg'); if(svg) svg.outerHTML = halfGauge(pv); }
     const pf=document.getElementById('pfill-'+p.key);
     if(pf) pf.style.width = clampPct(pv)+'%';
   });
+}
+
+// recalcAll: full recalc including the read-only revenue summary table.
+// Called on blur (commit), not on every keystroke, to avoid the summary
+// SVG gauges flickering while the user types.
+function recalcAll(){
+  recalcCards();
   renderRevSummary();
 }
 
