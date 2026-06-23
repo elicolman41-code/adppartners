@@ -73,6 +73,9 @@
     font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--adp-red);
     font-weight:700;margin:18px 0 6px;
   }
+  .yr-sub{
+    color:var(--mid);font-weight:600;letter-spacing:.5px;text-transform:none;
+  }
 
   /* Tables */
   table{width:100%;border-collapse:collapse;margin-top:6px;}
@@ -172,7 +175,32 @@
   <section>
     <h2>1. Payroll <span class="tag">Biweekly &middot; 26 runs/yr</span></h2>
 
-    <div class="yr">Year 1</div>
+    <div class="yr">Standard Pricing &mdash; Actual Ongoing Rate <span class="yr-sub">(no promotion applied)</span></div>
+    <table>
+      <thead>
+        <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lineitem">Per-payroll rate</td>
+          <td class="math">$87 / biweekly</td>
+          <td class="adp math">$74 / biweekly</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Calculation</td>
+          <td class="math">$87 &times; 26 runs</td>
+          <td class="adp math">$74 &times; 26 runs</td>
+        </tr>
+        <tr class="total-row">
+          <td class="lineitem">Annual payroll cost</td>
+          <td class="math">$2,262.00</td>
+          <td class="adp math">$1,924.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">Ongoing annual payroll savings with ADP: <span class="save">$338.00</span> &nbsp;($2,262 &minus; $1,924)</p>
+
+    <div class="yr">Year 1 &mdash; With Introductory Promotion <span class="yr-sub">(6 months free)</span></div>
     <table>
       <thead>
         <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP</th></tr>
@@ -201,45 +229,47 @@
       </tbody>
     </table>
     <p class="muted">Year 1 payroll savings with ADP: <span class="save">$1,300.00</span> &nbsp;($2,262 &minus; $962)</p>
-
-    <div class="yr">Year 2 and Beyond (annual)</div>
-    <table>
-      <thead>
-        <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="lineitem">Per-payroll rate</td>
-          <td class="math">$87 / biweekly</td>
-          <td class="adp math">$74 / biweekly</td>
-        </tr>
-        <tr>
-          <td class="lineitem">Calculation</td>
-          <td class="math">$87 &times; 26</td>
-          <td class="adp math">$74 &times; 26</td>
-        </tr>
-        <tr class="total-row">
-          <td class="lineitem">Annual payroll cost</td>
-          <td class="math">$2,262.00</td>
-          <td class="adp math">$1,924.00</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="muted">Annual payroll savings with ADP: <span class="save">$338.00</span> &nbsp;($2,262 &minus; $1,924)</p>
   </section>
 
   <!-- ============ 401k ============ -->
   <section>
-    <h2>2. 401(k) <span class="tag">Out-of-pocket basis</span></h2>
+    <h2>2. 401(k) <span class="tag">At 26 employees &middot; out-of-pocket basis</span></h2>
 
-    <div class="yr">Year 1</div>
+    <p class="muted" style="margin-top:10px;">Administration fees below reflect your current count of <strong>26 employees</strong>.</p>
+
+    <div class="yr">Standard Pricing &mdash; Actual Ongoing Rate <span class="yr-sub">(no promotion applied)</span></div>
     <table>
       <thead>
         <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP</th></tr>
       </thead>
       <tbody>
         <tr>
-          <td class="lineitem">Administration fee</td>
+          <td class="lineitem">Administration fee (at 26 employees)</td>
+          <td class="math">$210 / month, paid out of pocket</td>
+          <td class="adp math">$220 / month, charged to the plan</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Annual fee calculation</td>
+          <td class="math">$210 &times; 12</td>
+          <td class="adp math">$0.00 out of pocket (plan-funded)</td>
+        </tr>
+        <tr class="total-row">
+          <td class="lineitem">Annual out-of-pocket 401(k) cost</td>
+          <td class="math">$2,520.00</td>
+          <td class="adp"><span class="zero">$0.00</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">Ongoing annual 401(k) savings with ADP: <span class="save">$2,520.00</span> &nbsp;($2,520 &minus; $0)</p>
+
+    <div class="yr">Year 1 &mdash; With Introductory Promotion <span class="yr-sub">(8 months free)</span></div>
+    <table>
+      <thead>
+        <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lineitem">Administration fee (at 26 employees)</td>
           <td class="math">$210 / month, paid out of pocket</td>
           <td class="adp math">$220 / month, charged to the plan</td>
         </tr>
@@ -267,31 +297,6 @@
     </table>
     <p class="muted">Year 1 401(k) savings with ADP: <span class="save">$4,020.00</span> &nbsp;($4,020 &minus; $0)</p>
 
-    <div class="yr">Year 2 and Beyond (annual)</div>
-    <table>
-      <thead>
-        <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="lineitem">Administration fee</td>
-          <td class="math">$210 / month, paid out of pocket</td>
-          <td class="adp math">$220 / month, charged to the plan</td>
-        </tr>
-        <tr>
-          <td class="lineitem">Annual fee calculation</td>
-          <td class="math">$210 &times; 12</td>
-          <td class="adp math">$0.00 out of pocket (plan-funded)</td>
-        </tr>
-        <tr class="total-row">
-          <td class="lineitem">Annual out-of-pocket 401(k) cost</td>
-          <td class="math">$2,520.00</td>
-          <td class="adp"><span class="zero">$0.00</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="muted">Annual 401(k) savings with ADP: <span class="save">$2,520.00</span> &nbsp;($2,520 &minus; $0)</p>
-
     <div class="note">
       <strong>Note:</strong> Asset-based fees (basis points) are identical on both platforms and are therefore not a differentiator. They are excluded from this comparison.
     </div>
@@ -301,7 +306,37 @@
   <section>
     <h2>3. Timekeeping <span class="tag">ADP = BYOD app, no kiosk</span></h2>
 
-    <div class="yr">Year 1</div>
+    <div class="yr">Standard Pricing &mdash; Actual Ongoing Rate <span class="yr-sub">(no promotion applied)</span></div>
+    <table>
+      <thead>
+        <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP (BYOD)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lineitem">Base fee</td>
+          <td class="math">$190 / month</td>
+          <td class="adp math">$2.50 &times; 26 = $65 / month</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Base fee &mdash; annual</td>
+          <td class="math">$190 &times; 12 = $2,280.00</td>
+          <td class="adp math">$65 &times; 12 = $780.00</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Per-payroll fee &mdash; annual</td>
+          <td class="math">&mdash;</td>
+          <td class="adp math">$1.66 &times; 26 &times; 26 = $1,122.16</td>
+        </tr>
+        <tr class="total-row">
+          <td class="lineitem">Annual timekeeping cost</td>
+          <td class="math">$2,280.00</td>
+          <td class="adp math">$1,902.16 <span class="muted">($780.00 + $1,122.16)</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">Ongoing annual timekeeping savings with ADP: <span class="save">$377.84</span> &nbsp;($2,280 &minus; $1,902.16)</p>
+
+    <div class="yr">Year 1 &mdash; With Introductory Promotion <span class="yr-sub">(6 months free)</span></div>
     <table>
       <thead>
         <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP (BYOD)</th></tr>
@@ -335,36 +370,6 @@
       </tbody>
     </table>
     <p class="muted">Year 1 timekeeping savings with ADP: <span class="save">$1,328.92</span> &nbsp;($2,280 &minus; $951.08)</p>
-
-    <div class="yr">Year 2 and Beyond (annual)</div>
-    <table>
-      <thead>
-        <tr><th class="lineitem">Line Item</th><th>Paychex</th><th class="adp">ADP (BYOD)</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="lineitem">Base fee</td>
-          <td class="math">$190 / month</td>
-          <td class="adp math">$2.50 &times; 26 = $65 / month</td>
-        </tr>
-        <tr>
-          <td class="lineitem">Base fee &mdash; annual</td>
-          <td class="math">$190 &times; 12 = $2,280.00</td>
-          <td class="adp math">$65 &times; 12 = $780.00</td>
-        </tr>
-        <tr>
-          <td class="lineitem">Per-payroll fee &mdash; annual</td>
-          <td class="math">&mdash;</td>
-          <td class="adp math">$1.66 &times; 26 &times; 26 = $1,122.16</td>
-        </tr>
-        <tr class="total-row">
-          <td class="lineitem">Annual timekeeping cost</td>
-          <td class="math">$2,280.00</td>
-          <td class="adp math">$1,902.16 <span class="muted">($780.00 + $1,122.16)</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="muted">Annual timekeeping savings with ADP: <span class="save">$377.84</span> &nbsp;($2,280 &minus; $1,902.16)</p>
   </section>
 
   <!-- ============ SUMMARY ============ -->
