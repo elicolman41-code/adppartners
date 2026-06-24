@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>401(k) Comparison — Quality Care Physical Therapy</title>
+<style>
+  :root{
+    --adp-red:#D4002A; --dark:#2B2B2B; --mid:#5A5A5A; --line:#D9D9D9;
+    --tint:#FBE9ED; --tint2:#F5F5F5; --green:#0B7A3B; --amber:#8A5A00;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--dark);background:#EAEAEA;line-height:1.5;font-size:14px;}
+  .page{background:#fff;max-width:850px;margin:24px auto;padding:48px 56px;box-shadow:0 2px 14px rgba(0,0,0,.12);}
+
+  header{border-bottom:4px solid var(--adp-red);padding-bottom:20px;margin-bottom:28px;}
+  .brandrow{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;}
+  .logo{font-size:24px;font-weight:800;letter-spacing:-.5px;color:var(--adp-red);white-space:nowrap;}
+  .logo span{color:var(--dark);}
+  .doc-type{text-transform:uppercase;letter-spacing:2px;font-size:11px;color:var(--mid);text-align:right;font-weight:600;}
+  h1{font-size:23px;margin:18px 0 4px;color:var(--dark);}
+  .subtitle{color:var(--mid);font-size:14px;margin:0;}
+  .meta{display:flex;flex-wrap:wrap;gap:28px;margin-top:20px;font-size:13px;}
+  .meta .block{min-width:170px;}
+  .meta .label{text-transform:uppercase;letter-spacing:1px;font-size:10px;color:var(--mid);font-weight:700;margin-bottom:3px;}
+  .meta .value{color:var(--dark);}
+  .meta a{color:var(--adp-red);text-decoration:none;}
+
+  /* Snapshot */
+  .snapshot{display:flex;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:22px 0;}
+  .snapshot .s{flex:1;padding:14px 16px;}
+  .snapshot .s + .s{border-left:1px solid var(--line);}
+  .snapshot .k{text-transform:uppercase;letter-spacing:1px;font-size:9px;color:var(--mid);font-weight:700;}
+  .snapshot .v{font-size:18px;font-weight:800;color:var(--dark);margin-top:3px;font-variant-numeric:tabular-nums;}
+  .snapshot .vsub{font-size:11px;color:var(--mid);}
+
+  section{margin:30px 0;}
+  h2{font-size:17px;color:#fff;background:var(--dark);padding:9px 14px;margin:0;border-left:6px solid var(--adp-red);display:flex;justify-content:space-between;align-items:center;}
+  h2 .tag{font-size:11px;font-weight:500;letter-spacing:1px;color:#D9D9D9;text-transform:uppercase;}
+
+  table{width:100%;border-collapse:collapse;margin-top:6px;}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top;}
+  thead th{background:var(--tint2);text-transform:uppercase;letter-spacing:.5px;font-size:10px;color:var(--mid);border-bottom:2px solid var(--line);}
+  th.adp,td.adp{background:var(--tint);}
+  thead th.adp{color:var(--adp-red);}
+  td.lineitem{color:var(--mid);width:30%;}
+  td.math{font-variant-numeric:tabular-nums;}
+  .total-row td{font-weight:700;border-top:2px solid var(--dark);border-bottom:none;background:var(--tint2);}
+  .total-row td.adp{background:var(--tint);}
+  .save{color:var(--green);font-weight:700;}
+  .warn{color:var(--adp-red);font-weight:700;}
+  .muted{color:var(--mid);font-size:12px;}
+
+  .callout{border:1px solid var(--adp-red);background:var(--tint);border-left:6px solid var(--adp-red);padding:12px 16px;margin:20px 0;font-size:13px;color:var(--dark);border-radius:3px;}
+  .callout strong{color:var(--adp-red);}
+  .note{background:var(--tint2);border-left:4px solid var(--mid);padding:10px 14px;font-size:12px;color:var(--mid);margin:12px 0;border-radius:3px;}
+
+  .summary{margin-top:34px;border:2px solid var(--dark);border-radius:6px;overflow:hidden;}
+  .summary h2{margin:0;border-left:none;}
+  .summary .grid{display:flex;}
+  .summary .cell{flex:1;padding:22px 24px;}
+  .summary .cell + .cell{border-left:1px solid var(--line);}
+  .summary .cap{text-transform:uppercase;letter-spacing:1.5px;font-size:11px;color:var(--mid);font-weight:700;}
+  .summary .big{font-size:32px;font-weight:800;color:var(--adp-red);margin:6px 0 2px;font-variant-numeric:tabular-nums;}
+  .summary .sub{font-size:12px;color:var(--mid);}
+
+  footer{margin-top:38px;border-top:1px solid var(--line);padding-top:14px;font-size:11px;color:var(--mid);text-align:center;}
+
+  @media print{
+    body{background:#fff;font-size:12px;}
+    .page{box-shadow:none;margin:0;max-width:none;padding:0.4in 0.5in;}
+    table{page-break-inside:avoid;}
+    h2{page-break-after:avoid;}
+    .summary,.snapshot{page-break-inside:avoid;}
+    h2,th.adp,td.adp,.callout,.summary .big,.total-row td,.snapshot{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    @page{margin:0.5in;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="brandrow">
+      <div class="logo">ADP<span>&nbsp;Retirement Services</span></div>
+      <div class="doc-type">401(k) Cost Comparison</div>
+    </div>
+    <h1>Your 401(k): Paychex Today vs. ADP</h1>
+    <p class="subtitle">A side-by-side look at what you pay now &mdash; and what you would pay with ADP</p>
+
+    <div class="meta">
+      <div class="block">
+        <div class="label">Prepared For</div>
+        <div class="value"><strong>Bin</strong><br>Quality Care Physical Therapy &amp; Acupuncture PLLC</div>
+      </div>
+      <div class="block">
+        <div class="label">Prepared By</div>
+        <div class="value">Eli Colman<br>ADP Small Business Services</div>
+      </div>
+      <div class="block">
+        <div class="label">Contact</div>
+        <div class="value"><a href="mailto:Eli.Colman@adp.com">Eli.Colman@adp.com</a><br>347.205.2765</div>
+      </div>
+      <div class="block">
+        <div class="label">Date</div>
+        <div class="value">June 24, 2026</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Snapshot -->
+  <div class="snapshot">
+    <div class="s">
+      <div class="k">Total Plan Assets</div>
+      <div class="v">$218,287.59</div>
+      <div class="vsub">Active $210,473.19 &middot; Terminated $7,814.40</div>
+    </div>
+    <div class="s">
+      <div class="k">Billed Participants</div>
+      <div class="v">7</div>
+      <div class="vsub">35 active employees &middot; 44 total accounts</div>
+    </div>
+    <div class="s">
+      <div class="k">Comparison Basis</div>
+      <div class="v">Apples-to-Apples</div>
+      <div class="vsub">Both columns use your actual assets &amp; participants</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>The core difference:</strong> Your Paychex administration fee is <strong>variable</strong> &mdash; it has already crept up this year, and keeping it down means calling in to renegotiate. ADP&rsquo;s fee is a <strong>fixed, contractual formula</strong>: a set base plus $2.50 per participant. As your plan grows, the only headcount-driven increase on ADP is that $2.50 per added participant.
+  </div>
+
+  <!-- ===== SECTION 1: ADMIN ===== -->
+  <section>
+    <h2>1. Administrative &amp; Recordkeeping Fees <span class="tag">What you pay to run the plan</span></h2>
+
+    <p class="muted" style="margin-top:10px;">Paychex figures are taken directly from your recent billing statements. ADP figures use the fixed pricing from your proposal, applied to your actual plan size.</p>
+
+    <table>
+      <thead>
+        <tr><th class="lineitem">Line Item</th><th>Paychex (current)</th><th class="adp">ADP (proposed)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lineitem">Base / monthly admin fee</td>
+          <td class="math">$150.00 / mo &times; 12 = $1,800.00 <span class="warn">(variable)</span></td>
+          <td class="adp math">$125.00 / mo &times; 12 = $1,500.00 <span class="muted">(fixed)</span></td>
+        </tr>
+        <tr>
+          <td class="lineitem">Per-participant fee</td>
+          <td class="math">$6.00 &times; 7 &times; 12 = $504.00 <span class="warn">(variable)</span></td>
+          <td class="adp math">$2.50 &times; 7 &times; 12 = $210.00 <span class="muted">(fixed)</span></td>
+        </tr>
+        <tr>
+          <td class="lineitem">Plan document / setup fee</td>
+          <td class="math">$30.00 / quarter &times; 4 = $120.00</td>
+          <td class="adp math">$0.00 setup</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Asset-based recordkeeping fee</td>
+          <td class="math">None stated separately <span class="muted">(see funds below)</span></td>
+          <td class="adp math">0.450% &times; $218,287.59 = $982.29</td>
+        </tr>
+        <tr class="total-row">
+          <td class="lineitem">Annual administration cost</td>
+          <td class="math">$2,424.00</td>
+          <td class="adp math">$2,692.29</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <strong>Your Paychex admin fee is moving.</strong> Your statements show the base admin fee rose from <strong>$135 &rarr; $150/mo</strong> and the per-participant fee from <strong>$5 &rarr; $6</strong> within a few months, with extra back-billed &ldquo;adjustments.&rdquo; Paychex&rsquo;s own disclosures confirm these rates are &ldquo;set forth on your invoice&rdquo; and can change. ADP&rsquo;s base ($125) and per-participant ($2.50) are locked by contract.
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: INVESTMENT EXPENSES ===== -->
+  <section>
+    <h2>2. Investment &amp; Fund Expenses <span class="tag">The hidden asset-based drag</span></h2>
+
+    <p class="muted" style="margin-top:10px;">These come out of your participants&rsquo; returns, not a separate bill &mdash; so they are easy to miss. They scale directly with assets.</p>
+
+    <table>
+      <thead>
+        <tr><th class="lineitem">Line Item</th><th>Paychex (current)</th><th class="adp">ADP (proposed)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lineitem">Fund lineup</td>
+          <td class="math">Fidelity Advisor &ldquo;M&rdquo; shares</td>
+          <td class="adp math">Low-cost institutional lineup</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Fund expense ratio</td>
+          <td class="math warn">0.60% &ndash; 1.45%</td>
+          <td class="adp math">0.070%</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Revenue sharing paid back to provider</td>
+          <td class="math warn">25 &ndash; 50 bps embedded in funds</td>
+          <td class="adp math">None</td>
+        </tr>
+        <tr>
+          <td class="lineitem">3(38) investment management (fiduciary)</td>
+          <td class="math">Not offered &mdash; Paychex is not a fiduciary</td>
+          <td class="adp math">0.100% &times; $218,287.59 = $218.29</td>
+        </tr>
+        <tr class="total-row">
+          <td class="lineitem">Est. annual investment cost</td>
+          <td class="math">$1,310 &ndash; $3,165 <span class="muted">(&asymp; $2,183 at 1.0%)</span></td>
+          <td class="adp math">$371.09 <span class="muted">($152.80 funds + $218.29 3(38))</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <strong>Why this matters most:</strong> Paychex&rsquo;s Fidelity Advisor M-share funds cost roughly <strong>1% per year</strong> on a typical target-date allocation, and 25&ndash;50 bps of that is revenue-sharing routed back to Paychex. ADP&rsquo;s funds run <strong>0.07%</strong>. On your $218K balance that is a difference of roughly <strong>$2,000 every year</strong> &mdash; and it grows as the plan grows. ADP also includes a 3(38) investment manager who takes legal fiduciary responsibility for fund selection; Paychex does not.
+    </div>
+  </section>
+
+  <!-- ===== SUMMARY ===== -->
+  <div class="summary">
+    <h2>All-In Annual Cost <span class="tag">At your current $218,287.59 / 7 participants</span></h2>
+
+    <table>
+      <thead>
+        <tr><th class="lineitem">Cost Component</th><th>Paychex (current)</th><th class="adp">ADP (proposed)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lineitem">Administration &amp; recordkeeping</td>
+          <td class="math">$2,424.00</td>
+          <td class="adp math">$2,692.29</td>
+        </tr>
+        <tr>
+          <td class="lineitem">Investment / fund expenses (est.)</td>
+          <td class="math">$2,182.88 <span class="muted">(~1.0%)</span></td>
+          <td class="adp math">$371.09</td>
+        </tr>
+        <tr class="total-row">
+          <td class="lineitem">Estimated all-in annual cost</td>
+          <td class="math">$4,606.88</td>
+          <td class="adp math">$3,063.38</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="grid">
+      <div class="cell">
+        <div class="cap">Estimated Annual Savings with ADP</div>
+        <div class="big">$1,543.50</div>
+        <div class="sub">$4,606.88 (Paychex) &minus; $3,063.38 (ADP), at current assets</div>
+      </div>
+      <div class="cell">
+        <div class="cap">Total Asset-Based Drag</div>
+        <div class="big">0.62% <span style="font-size:15px;color:var(--mid);font-weight:600;">vs ~1.0%</span></div>
+        <div class="sub">ADP all-in (0.45% + 0.10% + 0.07%) vs Paychex fund expenses</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GROWTH ===== -->
+  <section>
+    <h2>3. As Your Plan Grows <span class="tag">The gap widens</span></h2>
+    <p class="muted" style="margin-top:10px;">Both plans have asset-based components, but Paychex&rsquo;s are higher <em>and</em> its admin fee is discretionary. The more your plan grows, the more ADP saves.</p>
+    <table>
+      <thead>
+        <tr><th class="lineitem">Plan Assets</th><th>Paychex all-in (est.)</th><th class="adp">ADP all-in</th><th>Annual savings with ADP</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lineitem">$218,288 (today)</td>
+          <td class="math">$4,607</td>
+          <td class="adp math">$3,063</td>
+          <td class="math"><span class="save">$1,544</span></td>
+        </tr>
+        <tr>
+          <td class="lineitem">$350,000</td>
+          <td class="math">$5,924</td>
+          <td class="adp math">$3,880</td>
+          <td class="math"><span class="save">$2,044</span></td>
+        </tr>
+        <tr>
+          <td class="lineitem">$500,000</td>
+          <td class="math">$7,424</td>
+          <td class="adp math">$4,810</td>
+          <td class="math"><span class="save">$2,614</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">Assumes Paychex fund expenses at ~1.0% and the current admin fee held flat (in practice it has been rising). ADP figures use the contractual formula: $1,500 base + $2.50/participant + 0.45% + 0.10% + 0.07%.</p>
+  </section>
+
+  <div class="callout">
+    <strong>Bottom line:</strong> Paychex looks cheaper on the admin line, but its ~1% fund expenses, embedded revenue-sharing, and a variable admin fee make it more expensive all-in &mdash; roughly <strong>$1,540 more per year today</strong>, widening as you grow. ADP is lower all-in, transparent, contractually fixed on the dollar fees, and includes a 3(38) fiduciary.
+  </div>
+
+  <div class="note">
+    <strong>Notes &amp; assumptions.</strong> Paychex admin/per-participant figures are from your billing statements dated Mar&ndash;May 2026; the plan document fee is $30/quarter. Paychex fund expense ratios (0.60%&ndash;1.45%) and 25&ndash;50 bps revenue sharing are from the Paychex fee disclosures; the all-in estimate uses a ~1.0% midpoint and your actual fund mix will vary. ADP figures are from your ADP Retirement proposal pricing (base $125/mo, $2.50/participant/mo, 0.450% recordkeeping asset fee, 0.100% 3(38), 0.070% fund expenses, $0 setup), applied to your actual plan assets of $218,287.59 and 7 billed participants. This is an estimate for comparison only and is subject to ADP&rsquo;s official 408(b)(2) disclosure and executed agreements.
+  </div>
+
+  <footer>
+    Prepared by Eli Colman &middot; ADP Small Business Services &middot; Eli.Colman@adp.com &middot; 347.205.2765<br>
+    For plan sponsor use only. Not for distribution to plan participants or the general public.
+  </footer>
+
+</div>
+</body>
+</html>
