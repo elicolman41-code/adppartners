@@ -73,7 +73,7 @@ def build_logo(size=320):
     return img
 
 
-def build_slide_gif(logo, out, canvas_w=None, frames=22, hold=14):
+def build_slide_gif(logo, out, canvas_w=None, frames=22, pause_ms=5000):
     """
     Build a slide-in GIF: the logo enters from the left and eases into place,
     fading in as it arrives. The LAST frame is the resting state, so any client
@@ -106,18 +106,19 @@ def build_slide_gif(logo, out, canvas_w=None, frames=22, hold=14):
         frame.alpha_composite(layer, (x, 0))
         images.append(frame.convert("P", palette=Image.ADAPTIVE, colors=255))
 
-    # hold the final resting frame
+    # final resting frame, held for `pause_ms` before the loop replays
     rest = Image.new("RGBA", (canvas_w, lh), bg + (255,))
     rest.alpha_composite(logo, (0, 0))
     rest_p = rest.convert("P", palette=Image.ADAPTIVE, colors=255)
-    images.extend([rest_p] * hold)
+    images.append(rest_p)
 
-    durations = [30] + [40] * frames + [60] * hold
-    # No `loop` kwarg -> the GIF plays through exactly ONCE and then holds on the
-    # final frame (the finished logo). It does not loop forever.
+    # durations: brief safe first frame, the slide, then a long pause on the
+    # finished logo. loop=0 -> repeats forever, so the effect is:
+    #   slide in -> sit for ~`pause_ms` -> slide in again -> ...
+    durations = [30] + [40] * frames + [pause_ms]
     images[0].save(
         out, save_all=True, append_images=images[1:],
-        duration=durations, disposal=1, optimize=True,
+        duration=durations, loop=0, disposal=1, optimize=True,
     )
 
 
