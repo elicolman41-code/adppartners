@@ -113,9 +113,11 @@ def build_slide_gif(logo, out, canvas_w=None, frames=22, hold=14):
     images.extend([rest_p] * hold)
 
     durations = [30] + [40] * frames + [60] * hold
+    # No `loop` kwarg -> the GIF plays through exactly ONCE and then holds on the
+    # final frame (the finished logo). It does not loop forever.
     images[0].save(
         out, save_all=True, append_images=images[1:],
-        duration=durations, loop=0, disposal=2, optimize=True,
+        duration=durations, disposal=1, optimize=True,
     )
 
 
