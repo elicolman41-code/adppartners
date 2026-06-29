@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+  Browser PREVIEW of Eli Colman's email signature.
+  Open this file in any browser to see how the signature looks and to watch
+  the RUN logo slide in. This file references the local /assets images and adds
+  a CSS slide-in (for the demo) on top of the animated GIF. The real signature
+  for email is signature/signature.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eli Colman — Signature Preview</title>
+<style>
+  body { margin:0; background:#eef0f3; font-family:Arial,Helvetica,sans-serif; color:#333; }
+  .wrap { max-width:680px; margin:40px auto; padding:0 20px; }
+  .card { background:#fff; border-radius:10px; padding:28px 30px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  h1 { font-size:18px; margin:0 0 4px; }
+  .sub { color:#6b7280; font-size:13px; margin:0 0 22px; }
+  .mailbox { background:#fff; border:1px solid #e4e7eb; border-radius:10px; padding:26px 30px; }
+  .mailbody { color:#555; font-size:14px; line-height:21px; }
+  .rule { border:0; border-top:1px solid #eceef1; margin:18px 0; }
+  .replay { display:inline-block; margin-top:18px; font-size:13px; color:#254ea3;
+            text-decoration:none; border:1px solid #254ea3; border-radius:6px; padding:6px 14px; cursor:pointer; }
+
+  /* --- slide-in demo (browser only) --- */
+  @keyframes slideInLogo { from { opacity:0; transform:translateX(-26px);} to { opacity:1; transform:translateX(0);} }
+  @keyframes fadeInCard  { from { opacity:0; transform:translateY(6px);} to { opacity:1; transform:translateY(0);} }
+  .sig-logo { animation: slideInLogo .8s cubic-bezier(.2,.7,.2,1) both; }
+  .sig-table { animation: fadeInCard .6s ease-out both; }
+  .replaying .sig-logo { animation: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Email signature preview</h1>
+  <p class="sub">This is how the signature appears at the bottom of an email. The RUN logo slides in.</p>
+
+  <div class="mailbox">
+    <p class="mailbody">Hi Sarah,</p>
+    <p class="mailbody">Great speaking earlier — here's the quick rundown on running payroll in-house vs. through ADP. Happy to grab 15 minutes whenever works for you.</p>
+    <p class="mailbody">Best,<br>Eli</p>
+    <hr class="rule">
+
+    <!-- ===== signature ===== -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="sig-table" style="border-collapse:collapse; background:#ffffff;">
+      <tr>
+        <td valign="top" style="padding:0 18px 0 0; width:104px;">
+          <img src="../assets/headshot.png" alt="Eli Colman, District Manager, ADP"
+               width="96" height="96"
+               style="display:block; width:96px; height:96px; border:0; border-radius:50%;" />
+          <img class="sig-logo" src="../assets/run-adp-logo-slide.gif" alt="RUN Powered by ADP"
+               width="88" height="88"
+               style="display:block; width:88px; height:88px; border:0; margin-top:14px;" />
+        </td>
+        <td valign="top" style="width:2px; background-color:#254ea3; font-size:0; line-height:0;">&nbsp;</td>
+        <td valign="top" style="padding:2px 0 0 18px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:20px; line-height:24px; font-weight:bold; color:#1a1a1a; padding-bottom:3px;">Eli Colman</td></tr>
+            <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:18px; font-weight:bold; color:#254ea3; padding-bottom:3px;">District Manager&nbsp;&nbsp;|&nbsp;&nbsp;Brooklyn</td></tr>
+            <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#6b7280; padding-bottom:12px;">ADP&nbsp;&bull;&nbsp;Payroll, HR, Insurance, Retirement</td></tr>
+            <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:20px; color:#333333; padding-bottom:2px;"><span style="display:inline-block; width:18px; color:#254ea3; font-weight:bold;">T</span><a href="tel:+13472052765" style="color:#333333; text-decoration:none;">347.205.2765</a></td></tr>
+            <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:20px; color:#333333; padding-bottom:14px;"><span style="display:inline-block; width:18px; color:#254ea3; font-weight:bold;">E</span><a href="mailto:Eli.Colman@adp.com" style="color:#333333; text-decoration:none;">Eli.Colman@adp.com</a></td></tr>
+            <tr><td>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                <tr><td bgcolor="#d71920" style="background-color:#d71920; border-radius:6px;">
+                  <a href="https://outlook.office.com/bookwithme/user/33368c78a5b94f13853ea0a6d48c13ed@ES.AD.ADP.com/meetingtype/-hstZmZVuUm6iF8l7yrlfg2?anonymous&amp;ismsaljsauthenabled&amp;ep=mCardFromTile"
+                     style="display:inline-block; padding:9px 20px; font-family:Arial,Helvetica,sans-serif; font-size:13px; font-weight:bold; color:#ffffff; text-decoration:none; border-radius:6px;">Book time with me &rarr;</a>
+                </td></tr>
+              </table>
+            </td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- ===== /signature ===== -->
+  </div>
+
+  <a class="replay" onclick="var b=document.body;b.classList.add('replaying');void b.offsetWidth;setTimeout(function(){b.classList.remove('replaying');},20);">&#8635; Replay animation</a>
+
+</div>
+</body>
+</html>
