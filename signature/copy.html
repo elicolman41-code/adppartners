@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Copy a Signature</title>
+<style>
+  body { margin:0; background:#eef0f3; font-family:Arial,Helvetica,sans-serif; color:#222; }
+  .wrap { max-width:660px; margin:0 auto; padding:28px 18px 60px; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { color:#6b7280; font-size:13px; margin:0 0 24px; line-height:19px; }
+  .card { background:#fff; border:1px solid #e4e7eb; border-radius:12px; padding:22px; margin-bottom:22px; }
+  .label { font-size:12px; font-weight:bold; letter-spacing:.5px; text-transform:uppercase; color:#6b7280; margin:0 0 14px; }
+  .sig-holder { padding:6px 2px 16px; }
+  .btn { display:inline-block; border:0; border-radius:8px; background:#1f6feb; color:#fff;
+         font-size:14px; font-weight:bold; padding:11px 20px; cursor:pointer; }
+  .btn:active { transform:translateY(1px); }
+  .ok { background:#1a7f37 !important; }
+  .hint { font-size:12px; color:#6b7280; margin-top:10px; line-height:17px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Copy a signature</h1>
+  <p class="sub">Click <b>Copy</b> under the one you want, then go to your Outlook signature box and press <b>Ctrl&nbsp;+&nbsp;V</b> to paste. No need to highlight anything.</p>
+
+  <!-- ============ ELI ============ -->
+  <div class="card">
+    <p class="label">Eli Colman</p>
+    <div class="sig-holder"><div id="sig-eli">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background:#ffffff;">
+        <tr>
+          <td valign="top" style="padding:0 18px 0 0; width:104px;">
+            <a href="https://outlook.office.com/bookwithme/user/33368c78a5b94f13853ea0a6d48c13ed@ES.AD.ADP.com/meetingtype/-hstZmZVuUm6iF8l7yrlfg2?anonymous&amp;ismsaljsauthenabled&amp;ep=mCardFromTile" style="text-decoration:none;"><img src="https://raw.githubusercontent.com/elicolman41-code/adppartners/claude/eli-colman-contact-1ltb2n/assets/headshot.png" alt="Eli Colman, District Manager, ADP" width="96" height="96" style="display:block; width:96px; height:96px; border:0; outline:none; border-radius:50%;" /></a>
+            <a href="https://outlook.office.com/bookwithme/user/33368c78a5b94f13853ea0a6d48c13ed@ES.AD.ADP.com/meetingtype/-hstZmZVuUm6iF8l7yrlfg2?anonymous&amp;ismsaljsauthenabled&amp;ep=mCardFromTile" style="text-decoration:none;"><img src="https://raw.githubusercontent.com/elicolman41-code/adppartners/claude/eli-colman-contact-1ltb2n/assets/run-adp-logo-slide.gif?v=3" alt="RUN Powered by ADP" width="88" height="88" style="display:block; width:88px; height:88px; border:0; outline:none; margin-top:14px;" /></a>
+          </td>
+          <td valign="top" style="width:2px; background-color:#254ea3; font-size:0; line-height:0;">&nbsp;</td>
+          <td valign="top" style="padding:2px 0 0 18px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:20px; line-height:24px; font-weight:bold; color:#1a1a1a; padding-bottom:3px;">Eli Colman</td></tr>
+              <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:18px; font-weight:bold; color:#254ea3; padding-bottom:3px;">District Manager&nbsp;&nbsp;|&nbsp;&nbsp;Brooklyn</td></tr>
+              <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; color:#6b7280; padding-bottom:12px;">ADP&nbsp;&bull;&nbsp;Payroll, HR, Insurance, Retirement</td></tr>
+              <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:20px; color:#333333; padding-bottom:2px;"><span style="display:inline-block; width:18px; color:#254ea3; font-weight:bold;">T</span><a href="tel:+13472052765" style="color:#333333; text-decoration:none;">347.205.2765</a></td></tr>
+              <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:20px; color:#333333; padding-bottom:14px;"><span style="display:inline-block; width:18px; color:#254ea3; font-weight:bold;">E</span><a href="mailto:Eli.Colman@adp.com" style="color:#333333; text-decoration:none;">Eli.Colman@adp.com</a></td></tr>
+              <tr><td><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td bgcolor="#d71920" style="background-color:#d71920; border-radius:6px;"><a href="https://outlook.office.com/bookwithme/user/33368c78a5b94f13853ea0a6d48c13ed@ES.AD.ADP.com/meetingtype/-hstZmZVuUm6iF8l7yrlfg2?anonymous&amp;ismsaljsauthenabled&amp;ep=mCardFromTile" style="display:inline-block; padding:9px 20px; font-family:Arial,Helvetica,sans-serif; font-size:13px; font-weight:bold; color:#ffffff; text-decoration:none; border-radius:6px;">Book a Meeting</a></td></tr></table></td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div></div>
+    <button class="btn" onclick="copySig('sig-eli', this)">Copy Eli's signature</button>
+    <div class="hint">After clicking, paste into Outlook with Ctrl+V. (If the button doesn't copy on your work PC, the signature is already selected &mdash; just press Ctrl+C.)</div>
+  </div>
+
+  <!-- ============ ALEXA A (red) ============ -->
+  <div class="card">
+    <p class="label">Alexa Slabaugh &mdash; Option A (red)</p>
+    <div class="sig-holder"><div id="sig-alexa-a">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background:#ffffff; width:520px;">
+        <tr><td style="padding:0 0 14px 0;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr>
+            <td valign="middle" style="padding:0 16px 0 0; width:104px;"><img src="https://raw.githubusercontent.com/elicolman41-code/adppartners/claude/eli-colman-contact-1ltb2n/assets/alexa-headshot.png" alt="Alexa Slabaugh, Senior Account Executive, ADP" width="100" height="100" style="display:block; width:100px; height:100px; border:0; outline:none; border-radius:10px;" /></td>
+            <td valign="middle">
+              <div style="font-family:Arial,Helvetica,sans-serif; font-size:21px; line-height:25px; font-weight:bold; color:#d71920;">Alexa Slabaugh</div>
+              <div style="font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:19px; color:#1a1a1a; padding-top:2px;">Senior Account Executive</div>
+              <div style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:17px; font-weight:bold; color:#555555; padding-top:4px;">Payroll&nbsp;&bull;&nbsp;HR&nbsp;&bull;&nbsp;Insurance&nbsp;&bull;&nbsp;Retirement&nbsp;&bull;&nbsp;H&amp;B</div>
+            </td>
+          </tr></table>
+        </td></tr>
+        <tr><td style="padding:0 0 12px 0; font-size:0; line-height:0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:520px;"><tr><td style="height:2px; background-color:#d71920; font-size:0; line-height:0;">&nbsp;</td></tr></table></td></tr>
+        <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:21px; color:#333333; padding:0 0 4px 0;"><span style="display:inline-block; width:20px; color:#d71920; font-weight:bold;">A</span>77 Sands Street, Brooklyn, NY 11201</td></tr>
+        <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:21px; color:#333333; padding:0 0 4px 0;"><span style="display:inline-block; width:20px; color:#d71920; font-weight:bold;">C</span><a href="tel:+19297541780" style="color:#333333; text-decoration:none;">929.754.1780</a></td></tr>
+        <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:21px; color:#333333; padding:0 0 14px 0;"><span style="display:inline-block; width:20px; color:#d71920; font-weight:bold;">E</span><a href="mailto:Alexa.slabaugh@adp.com" style="color:#333333; text-decoration:none;">Alexa.slabaugh@adp.com</a></td></tr>
+        <tr><td><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr>
+          <td valign="middle" style="padding:0 18px 0 0;"><a href="https://outlook.office.com/bookwithme/user/e11797e1a5874838add8655a4c2c7690@ADP.com?anonymous&amp;ep=signature&amp;ismsaljsauthenabled" style="text-decoration:none;"><img src="https://raw.githubusercontent.com/elicolman41-code/adppartners/claude/eli-colman-contact-1ltb2n/assets/adp-75-animation.gif?v=1" alt="ADP 75 Years" width="86" height="86" style="display:block; width:86px; height:86px; border:0; outline:none;" /></a></td>
+          <td valign="middle"><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td bgcolor="#d71920" style="background-color:#d71920; border-radius:6px;"><a href="https://outlook.office.com/bookwithme/user/e11797e1a5874838add8655a4c2c7690@ADP.com?anonymous&amp;ep=signature&amp;ismsaljsauthenabled" style="display:inline-block; padding:10px 22px; font-family:Arial,Helvetica,sans-serif; font-size:13px; font-weight:bold; color:#ffffff; text-decoration:none; border-radius:6px;">Book a Meeting</a></td></tr></table></td>
+        </tr></table></td></tr>
+      </table>
+    </div></div>
+    <button class="btn" onclick="copySig('sig-alexa-a', this)">Copy Option A (red)</button>
+    <div class="hint">After clicking, paste into Outlook with Ctrl+V.</div>
+  </div>
+
+  <!-- ============ ALEXA B (navy) ============ -->
+  <div class="card">
+    <p class="label">Alexa Slabaugh &mdash; Option B (navy)</p>
+    <div class="sig-holder"><div id="sig-alexa-b">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background:#ffffff; width:520px;">
+        <tr><td bgcolor="#17335c" style="background-color:#17335c; padding:14px 20px;">
+          <div style="font-family:Arial,Helvetica,sans-serif; font-size:21px; line-height:25px; font-weight:bold; color:#ffffff;">Alexa Slabaugh</div>
+          <div style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:18px; color:#c7d3e8; padding-top:3px;">Senior Account Executive&nbsp;&nbsp;&bull;&nbsp;&nbsp;ADP</div>
+        </td></tr>
+        <tr><td style="padding:16px 20px 6px 20px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr>
+            <td valign="top" style="padding:0 18px 0 0; width:96px;"><img src="https://raw.githubusercontent.com/elicolman41-code/adppartners/claude/eli-colman-contact-1ltb2n/assets/alexa-headshot-circle.png" alt="Alexa Slabaugh, Senior Account Executive, ADP" width="92" height="92" style="display:block; width:92px; height:92px; border:0; outline:none; border-radius:50%;" /></td>
+            <td valign="top">
+              <div style="font-family:Arial,Helvetica,sans-serif; font-size:11px; line-height:15px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; color:#17335c; padding-bottom:8px;">Payroll &middot; HR &middot; Insurance &middot; Retirement &middot; H&amp;B</div>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+                <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:21px; color:#333333;"><span style="display:inline-block; width:20px; color:#17335c; font-weight:bold;">A</span>77 Sands Street, Brooklyn, NY 11201</td></tr>
+                <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:21px; color:#333333;"><span style="display:inline-block; width:20px; color:#17335c; font-weight:bold;">C</span><a href="tel:+19297541780" style="color:#333333; text-decoration:none;">929.754.1780</a></td></tr>
+                <tr><td style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:21px; color:#333333;"><span style="display:inline-block; width:20px; color:#17335c; font-weight:bold;">E</span><a href="mailto:Alexa.slabaugh@adp.com" style="color:#333333; text-decoration:none;">Alexa.slabaugh@adp.com</a></td></tr>
+              </table>
+            </td>
+          </tr></table>
+        </td></tr>
+        <tr><td style="padding:6px 20px 16px 20px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr>
+            <td valign="middle" style="padding:0 18px 0 0;"><a href="https://outlook.office.com/bookwithme/user/e11797e1a5874838add8655a4c2c7690@ADP.com?anonymous&amp;ep=signature&amp;ismsaljsauthenabled" style="text-decoration:none;"><img src="https://raw.githubusercontent.com/elicolman41-code/adppartners/claude/eli-colman-contact-1ltb2n/assets/adp-75-animation.gif?v=1" alt="ADP 75 Years" width="80" height="80" style="display:block; width:80px; height:80px; border:0; outline:none;" /></a></td>
+            <td valign="middle"><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"><tr><td bgcolor="#17335c" style="background-color:#17335c; border-radius:6px;"><a href="https://outlook.office.com/bookwithme/user/e11797e1a5874838add8655a4c2c7690@ADP.com?anonymous&amp;ep=signature&amp;ismsaljsauthenabled" style="display:inline-block; padding:10px 22px; font-family:Arial,Helvetica,sans-serif; font-size:13px; font-weight:bold; color:#ffffff; text-decoration:none; border-radius:6px;">Book a Meeting</a></td></tr></table></td>
+          </tr></table>
+        </td></tr>
+      </table>
+    </div></div>
+    <button class="btn" onclick="copySig('sig-alexa-b', this)">Copy Option B (navy)</button>
+    <div class="hint">After clicking, paste into Outlook with Ctrl+V.</div>
+  </div>
+
+</div>
+
+<script>
+function copySig(id, btn) {
+  var el = document.getElementById(id);
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  var done = false;
+  try { done = document.execCommand('copy'); } catch (e) { done = false; }
+  var original = btn.getAttribute('data-label') || btn.textContent;
+  btn.setAttribute('data-label', original);
+  if (done) {
+    btn.textContent = '✓ Copied — now paste in Outlook (Ctrl+V)';
+    btn.classList.add('ok');
+  } else {
+    btn.textContent = 'Selected — press Ctrl+C to copy';
+  }
+  setTimeout(function () {
+    btn.textContent = original;
+    btn.classList.remove('ok');
+  }, 3500);
+}
+</script>
+</body>
+</html>
