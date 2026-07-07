@@ -1,9 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { Match, Pick } from '../game/types';
+import type { Match } from '../game/types';
 import { POSITION_NAMES, POSITION_ORDER } from '../game/types';
 import { CATEGORIES } from '../game/data/categories';
 import { PLAYER_BY_ID } from '../game/data/db';
-import { continueAfterReveal, roundMarks, spinForRound, submitPick } from '../game/engine/match';
+import {
+  continueAfterReveal,
+  roundComplete,
+  roundMarks,
+  spinForRound,
+  submitPick,
+  unavailableIds,
+} from '../game/engine/match';
 import { buildLineup } from '../game/engine/lineup';
 import { playerSubtitle, searchPlayers } from '../game/engine/search';
 import { ResultsScreen } from './Results';
@@ -11,12 +18,13 @@ import { ResultsScreen } from './Results';
 interface Props {
   match: Match;
   setMatch: (m: Match) => void;
+  onRunItBack: (winnerSide: 0 | 1) => void;
   onQuit: () => void;
 }
 
-export function MatchScreen({ match, setMatch, onQuit }: Props) {
+export function MatchScreen({ match, setMatch, onRunItBack, onQuit }: Props) {
   if (match.phase === 'results') {
-    return <ResultsScreen match={match} onQuit={onQuit} />;
+    return <ResultsScreen match={match} onRunItBack={onRunItBack} onQuit={onQuit} />;
   }
   return (
     <div className="stack fade-in">
@@ -36,20 +44,25 @@ export function MatchScreen({ match, setMatch, onQuit }: Props) {
   );
 }
 
-function MarkStrip({ marks }: { marks: ReturnType<typeof roundMarks> }) {
+export function MarkStrip({ marks }: { marks: ReturnType<typeof roundMarks> }) {
   return (
     <div className="mark-strip">
-      {marks.map((m, i) => (
-        <span key={i} className={`mark ${m}`}>
-          {m === 'hit' ? '✓' : m === 'x' ? '✕' : '·'}
-        </span>
-      ))}
+      {marks.map((m, i) => {
+        const cls = m.landed ? 'hit' : m.misses > 0 ? 'x' : 'pending';
+        return (
+          <span key={i} className={`mark ${cls}`}>
+            {m.landed ? '✓' : m.misses > 0 ? '✕' : '·'}
+            {m.misses > 0 && <i className="mark-misses">{m.misses}</i>}
+          </span>
+        );
+      })}
     </div>
   );
 }
 
 function ScoreBar({ match }: { match: Match }) {
   const [a, b] = match.participants;
+  const inRun = match.game > 1;
   return (
     <div className="scorebar">
       <div className={`score-side ${match.turn === 0 && match.phase !== 'results' ? 'active' : ''}`}>
@@ -58,6 +71,11 @@ function ScoreBar({ match }: { match: Match }) {
       </div>
       <div className="score-mid">
         <div>RD {Math.min(match.currentRound + 1, match.totalRounds)}/{match.totalRounds}</div>
+        {inRun && (
+          <div className="run-chip">
+            GM {match.game} · {match.runWins[0]}–{match.runWins[1]}
+          </div>
+        )}
       </div>
       <div className={`score-side ${match.turn === 1 && match.phase !== 'results' ? 'active' : ''}`}>
         <div className="name">{b.name}</div>
@@ -123,10 +141,18 @@ function SpinPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => 
 function PickPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => void }) {
   const [query, setQuery] = useState('');
   const [typoInput, setTypoInput] = useState<string | null>(null);
-  const category = match.rounds[match.currentRound].category;
+  const round = match.rounds[match.currentRound];
+  const category = round.category;
   const picker = match.participants[match.turn];
 
   const hits = useMemo(() => searchPlayers(query, 8), [query]);
+  // Out of the pool: drafted this run/game, or crossed out earlier this round.
+  const gone = useMemo(() => {
+    const s = unavailableIds(match);
+    for (const a of round.attempts) s.add(a.pick.playerId);
+    return s;
+  }, [match, round]);
+  const myMisses = roundMarks(match, match.turn)[match.currentRound].misses;
 
   const submit = (input: string) => {
     const out = submitPick(match, input);
@@ -146,7 +172,9 @@ function PickPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => 
         <div className="spin-label settled">{category.label}</div>
       </div>
 
-      <div className="turn-banner">{picker.name} — your pick</div>
+      <div className="turn-banner">
+        {picker.name} — {myMisses > 0 ? 'back on the clock, land one this time' : 'your pick'}
+      </div>
 
       <div className="search-wrap">
         <input
@@ -166,12 +194,29 @@ function PickPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => 
         />
         {query.trim().length > 0 && hits.length > 0 && (
           <div className="suggestions">
-            {hits.map((h) => (
-              <button key={h.player.id} className="suggestion" onClick={() => submit(h.player.displayName)}>
-                <span>{h.player.displayName}</span>
-                <small>{playerSubtitle(h.player)}</small>
-              </button>
-            ))}
+            {hits.map((h) => {
+              const taken = gone.has(h.player.id);
+              const crossedOut = round.attempts.some(
+                (a) => a.pick.playerId === h.player.id && a.pick.outcome !== 'eligible',
+              );
+              return (
+                <button
+                  key={h.player.id}
+                  className={`suggestion ${taken ? 'taken' : ''}`}
+                  disabled={taken}
+                  onClick={() => submit(h.player.displayName)}
+                >
+                  <span>{h.player.displayName}</span>
+                  <small>
+                    {crossedOut
+                      ? 'Crossed out this round'
+                      : taken
+                        ? 'Already drafted — out of the pool'
+                        : playerSubtitle(h.player)}
+                  </small>
+                </button>
+              );
+            })}
           </div>
         )}
       </div>
@@ -194,37 +239,36 @@ function PickPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => 
 // Reveal phase — the ruling, the evidence, the penalty.
 // ---------------------------------------------------------------------------
 
-function latestPick(match: Match): { pick: Pick; pickerName: string } | null {
-  const round = match.rounds[match.currentRound];
-  if (!round) return null;
-  const entries = match.participants
-    .map((pt) => ({ pick: round.picks[pt.id], pickerName: pt.name }))
-    .filter((e): e is { pick: Pick; pickerName: string } => !!e.pick);
-  if (entries.length === 0) return null;
-  // With one pick, reveal it; with two, reveal the second picker's ruling.
-  return entries.length === 1 ? entries[0] : entries[1];
-}
-
 function RevealPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => void }) {
-  const latest = latestPick(match);
-  if (!latest) {
-    setMatch(continueAfterReveal(match));
-    return null;
-  }
-  const { pick, pickerName } = latest;
+  const round = match.rounds[match.currentRound];
+  const latest = round?.attempts[round.attempts.length - 1];
+  // Reveal with nothing to reveal (corrupted save): advance via effect, never
+  // set state during render.
+  useEffect(() => {
+    if (!latest) setMatch(continueAfterReveal(match));
+  }, [latest, match, setMatch]);
+  if (!latest) return null;
+  const { pick } = latest;
+  const picker = match.participants.find((pt) => pt.id === latest.participantId)!;
   const player = PLAYER_BY_ID[pick.playerId];
   const kind = pick.outcome === 'eligible' ? 'ok' : pick.outcome === 'duplicate' ? 'dup' : 'bad';
   const title =
     pick.outcome === 'eligible' ? 'ELIGIBLE' : pick.outcome === 'duplicate' ? 'ALREADY DRAFTED' : 'NOT ELIGIBLE';
 
-  const round = match.rounds[match.currentRound];
-  const bothPicked = Object.keys(round.picks).length === 2;
+  const done = roundComplete(match, match.currentRound);
   const isLastRound = match.currentRound === match.totalRounds - 1;
-  const nextLabel = !bothPicked
-    ? `Pass the phone — ${match.participants[match.turn].name} is up`
+  const nextPicker = match.participants[match.turn];
+  const samePicker = nextPicker.id === picker.id;
+  const nextLabel = !done
+    ? samePicker
+      ? `${nextPicker.name} — take another shot`
+      : `Pass the phone — ${nextPicker.name} is up`
     : isLastRound
       ? 'Simulate the series'
       : 'Next round';
+  const xNote = samePicker
+    ? `${player?.displayName} is crossed out — ${nextPicker.name} stays on the clock. Same category, another shot.`
+    : `${player?.displayName} is crossed out — ${nextPicker.name} takes over on the same category. Nobody loses a spot: everyone still ends with five.`;
 
   return (
     <div className="stack fade-in">
@@ -232,14 +276,12 @@ function RevealPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) =
         <div className="delta">{pick.outcome === 'eligible' ? '✓' : '✕'}</div>
         <div className="big">{title}</div>
         <div className="sub">
-          {pickerName} picked <b style={{ color: 'var(--text)' }}>{player?.displayName}</b>
+          {picker.name} picked <b style={{ color: 'var(--text)' }}>{player?.displayName}</b>
           {' · '}
           {round.category.label}
         </div>
         <div className="reason">{pick.reason}</div>
-        {pick.outcome !== 'eligible' && (
-          <div className="x-note">{player?.displayName} is crossed out — this round's pick is lost.</div>
-        )}
+        {pick.outcome !== 'eligible' && <div className="x-note">{xNote}</div>}
       </div>
 
       <div className="card evidence">

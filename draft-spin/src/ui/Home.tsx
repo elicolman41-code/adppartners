@@ -7,8 +7,8 @@ interface Props {
 const STEPS: [string, string][] = [
   ['Spin a category', 'The wheel lands on something like "Won an MVP" or "Played for the Bulls in the 90s".'],
   ['Type any NBA player', 'Search by name or nickname — KD, Bron, Shaq, T-Mac all work.'],
-  ['Get fact-checked instantly', 'Right pick: he slots into your lineup. Wrong pick: ✕ — the player is crossed out, that round is lost, and we show you exactly why.'],
-  ['Battle in a best-of-7', 'After 5 rounds, your lineups (PG through Center) play a simulated series with an MVP and a full recap.'],
+  ['Get fact-checked instantly', 'Right pick: he slots into your lineup. Wrong pick: ✕ — he’s crossed out and the turn passes on the same category. You always end with five.'],
+  ['Battle in a best-of-7, then run it back', 'After 5 rounds your lineups (PG through Center) play a simulated series. Chain games back-to-back — every player already drafted is out of the pool.'],
 ];
 
 export function HomeScreen({ resumable, onPlay, onResume }: Props) {

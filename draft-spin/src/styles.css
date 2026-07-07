@@ -152,6 +152,7 @@ body {
 /* per-round ✓/✕ marks */
 .mark-strip { display: flex; gap: 6px; justify-content: center; margin-top: 6px; }
 .mark {
+  position: relative;
   width: 22px; height: 22px;
   border-radius: 7px;
   display: grid;
@@ -164,6 +165,28 @@ body {
 }
 .mark.hit { color: var(--green); border-color: rgba(46, 204, 113, 0.45); background: var(--green-soft); }
 .mark.x { color: var(--red); border-color: rgba(255, 77, 77, 0.4); background: var(--red-soft); }
+.mark-misses {
+  position: absolute;
+  top: -6px; right: -7px;
+  min-width: 13px; height: 13px;
+  border-radius: 7px;
+  background: var(--red);
+  color: #fff;
+  font-style: normal;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 13px;
+  text-align: center;
+  padding: 0 2px;
+}
+.run-chip {
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--orange);
+  white-space: nowrap;
+}
 
 /* ---------- spinner ---------- */
 .spin-window {
@@ -258,6 +281,8 @@ body {
 }
 .suggestion:last-child { border-bottom: none; }
 .suggestion:active { background: var(--orange-soft); }
+.suggestion.taken { opacity: 0.45; cursor: default; }
+.suggestion.taken span { text-decoration: line-through; }
 .suggestion small { color: var(--text-dim); font-weight: 500; font-size: 12px; white-space: nowrap; }
 .typo-note {
   color: var(--text-dim);
@@ -357,6 +382,21 @@ body {
 .series-hero .trophy { font-size: 40px; }
 .series-hero .winner { font-size: 26px; font-weight: 900; margin-top: 6px; }
 .series-hero .scoreline { font-size: 18px; color: var(--text-dim); font-weight: 700; margin-top: 4px; }
+.series-hero .run-line {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+.run-note {
+  color: var(--text-dim);
+  font-size: 13px;
+  text-align: center;
+  padding: 0 8px;
+  margin-top: -6px;
+}
 .game-row {
   display: flex;
   gap: 12px;

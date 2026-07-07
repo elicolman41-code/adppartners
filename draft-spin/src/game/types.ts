@@ -169,9 +169,10 @@ export interface ValidationResult {
 export type PickOutcome = 'eligible' | 'ineligible' | 'duplicate';
 
 /**
- * A ruled pick. No point math: an eligible pick locks the player into the
- * roster; an ineligible or duplicate pick is crossed out (X) and the player
- * is removed from the pick — the round is simply lost.
+ * A ruled attempt. No point math: an eligible pick locks the player into the
+ * roster and ends that side's turn for the round; an ineligible or duplicate
+ * pick is crossed out (X) and the turn passes to the other player on the same
+ * category — nobody loses a roster spot, both sides always finish with five.
  */
 export interface Pick {
   playerId: string;
@@ -183,7 +184,8 @@ export interface Pick {
 export interface Round {
   index: number; // 0-based
   category: SpunCategory;
-  picks: Record<string, Pick | undefined>; // participantId -> pick
+  /** Every ruled attempt in order. A side is done once it has an eligible one. */
+  attempts: { participantId: string; pick: Pick }[];
 }
 
 export interface Participant {
@@ -206,6 +208,12 @@ export interface Match {
   turn: 0 | 1;
   phase: MatchPhase;
   usedCategoryIds: string[];
+  /** 1-based game number within a run-it-back chain. */
+  game: number;
+  /** Players drafted in earlier games of this run — out of the pool for both sides. */
+  excludedIds: string[];
+  /** Series wins by each side in earlier games of this run. */
+  runWins: [number, number];
 }
 
 // ---------------------------------------------------------------------------

@@ -1,16 +1,17 @@
 import { useMemo } from 'react';
 import type { Match } from '../game/types';
 import { PLAYER_BY_ID } from '../game/data/db';
-import { roundMarks } from '../game/engine/match';
+import { canRunItBack, roundMarks, runWinsAfter } from '../game/engine/match';
 import { simulateSeries } from '../game/engine/simulator';
-import { LineupCard } from './Match';
+import { LineupCard, MarkStrip } from './Match';
 
 interface Props {
   match: Match;
+  onRunItBack: (winnerSide: 0 | 1) => void;
   onQuit: () => void;
 }
 
-export function ResultsScreen({ match, onQuit }: Props) {
+export function ResultsScreen({ match, onRunItBack, onQuit }: Props) {
   const [a, b] = match.participants;
 
   // Seeded by match id — reloading the room shows the identical series.
@@ -21,6 +22,11 @@ export function ResultsScreen({ match, onQuit }: Props) {
 
   const winner = match.participants[series.winnerSide];
   const mvp = PLAYER_BY_ID[series.mvpPlayerId];
+
+  // Run scoreboard including the game that just finished.
+  const runWins = runWinsAfter(match, series.winnerSide);
+  const poolUsed = match.excludedIds.length + a.roster.length + b.roster.length;
+  const runnable = useMemo(() => canRunItBack(match), [match]);
 
   return (
     <div className="stack fade-in">
@@ -35,22 +41,27 @@ export function ResultsScreen({ match, onQuit }: Props) {
         <div className="scoreline">
           {series.wins[series.winnerSide]}–{series.wins[1 - series.winnerSide]}
         </div>
+        <div className="run-line">
+          Game {match.game} · Run: {a.name} {runWins[0]} – {runWins[1]} {b.name}
+        </div>
       </div>
 
       <div className="card">
         <div className="eyebrow" style={{ marginBottom: 6 }}>Draft report</div>
         <div className="roster-grid">
-          {match.participants.map((pt, i) => (
-            <div className="score-side" key={pt.id} style={{ textAlign: 'center' }}>
-              <div className="name">{pt.name}</div>
-              <div className="mark-strip center">
-                {roundMarks(match, i as 0 | 1).map((m, r) => (
-                  <span key={r} className={`mark ${m}`}>{m === 'hit' ? '✓' : m === 'x' ? '✕' : '·'}</span>
-                ))}
+          {match.participants.map((pt, i) => {
+            const marks = roundMarks(match, i as 0 | 1);
+            const misses = marks.reduce((n, m) => n + m.misses, 0);
+            return (
+              <div className="score-side" key={pt.id} style={{ textAlign: 'center' }}>
+                <div className="name">{pt.name}</div>
+                <MarkStrip marks={marks} />
+                <div className="sub">
+                  {pt.roster.length}/5 landed{misses > 0 ? ` · ${misses} crossed out` : ' · clean sheet'}
+                </div>
               </div>
-              <div className="sub">{pt.roster.length}/5 picks landed</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
@@ -96,8 +107,24 @@ export function ResultsScreen({ match, onQuit }: Props) {
         </div>
       </div>
 
-      <button className="btn btn-primary" onClick={onQuit}>
-        Play again
+      {runnable ? (
+        <>
+          <button className="btn btn-primary" onClick={() => onRunItBack(series.winnerSide)}>
+            Run it back — Game {match.game + 1}
+          </button>
+          <p className="run-note">
+            Same matchup, fresh categories. The {poolUsed} players drafted so far in this run are
+            out of the pool for both sides.
+          </p>
+        </>
+      ) : (
+        <p className="run-note">
+          The pool is drafted out — {poolUsed} players are gone and not enough categories remain
+          playable. What a run. 🏁
+        </p>
+      )}
+      <button className="btn btn-ghost" onClick={onQuit}>
+        {runnable ? 'End the run' : 'Start fresh'}
       </button>
     </div>
   );

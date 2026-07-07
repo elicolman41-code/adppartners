@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Match } from './game/types';
-import { createMatch, loadMatch, saveMatch } from './game/engine/match';
+import { createMatch, loadMatch, rematch, saveMatch } from './game/engine/match';
 import { HomeScreen } from './ui/Home';
 import { LobbyScreen } from './ui/Lobby';
 import { MatchScreen } from './ui/Match';
@@ -25,6 +25,10 @@ export default function App() {
     setView('home');
   };
 
+  const runItBack = (winnerSide: 0 | 1) => {
+    if (match) setMatch(rematch(match, winnerSide));
+  };
+
   return (
     <div className="app">
       {view === 'home' && (
@@ -36,7 +40,7 @@ export default function App() {
       )}
       {view === 'lobby' && <LobbyScreen onStart={startMatch} onBack={() => setView('home')} />}
       {view === 'match' && match && (
-        <MatchScreen match={match} setMatch={setMatch} onQuit={quitMatch} />
+        <MatchScreen match={match} setMatch={setMatch} onRunItBack={runItBack} onQuit={quitMatch} />
       )}
 
       <nav className="bottomnav">
