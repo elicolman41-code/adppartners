@@ -56,22 +56,25 @@ export function rateRoster(playerIds: string[]): TeamRatingBreakdown {
   }
 
   const wings = players.filter(
-    (pl) => (pl.position === 'SF' || pl.position === 'SG' || pl.position === 'PF') && pl.heightInches >= 78,
+    (pl) =>
+      pl.positions.some((pos) => pos === 'SF' || pos === 'SG' || pos === 'PF') &&
+      pl.heightInches >= 78,
   ).length;
   if (wings === 0) {
     fitPenalty += 4;
     fitNotes.push('No wing size to match up in a playoff series.');
   }
 
-  const centers = players.filter((pl) => pl.position === 'C').length;
-  if (centers >= 3) {
+  // Versatility eases the clog: only players locked into a single spot count.
+  const pureCenters = players.filter((pl) => pl.positions.length === 1 && pl.positions[0] === 'C').length;
+  if (pureCenters >= 3) {
     fitPenalty += 4;
-    fitNotes.push(`${centers} centers is a clogged frontcourt.`);
+    fitNotes.push(`${pureCenters} centers is a clogged frontcourt.`);
   }
-  const guards = players.filter((pl) => pl.position === 'PG').length;
-  if (guards >= 3) {
+  const pureGuards = players.filter((pl) => pl.positions.length === 1 && pl.positions[0] === 'PG').length;
+  if (pureGuards >= 3) {
     fitPenalty += 3;
-    fitNotes.push(`${guards} point guards is an awkward rotation.`);
+    fitNotes.push(`${pureGuards} point guards is an awkward rotation.`);
   }
 
   if (fitNotes.length === 0) fitNotes.push('Clean roles — the pieces fit.');

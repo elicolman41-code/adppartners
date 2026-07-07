@@ -11,14 +11,17 @@ Open **`dist/index.html`** in any browser — it is a fully self-contained
 single file (works on a phone, no server, no install). Pass-and-play: two
 players share one device.
 
-## Rules (from the brief)
+## Rules
 
-- **Eligible pick:** +1 point, player locks into your roster.
-- **Ineligible real player:** −1 point, with the exact reason and evidence.
-- **Duplicate player (anywhere in the match):** −1 point.
-- **Unknown name / typo:** 0 points, retry — you are only penalized after
-  submitting a real player.
-- **Series win:** +3 bonus points.
+- **Eligible pick:** the player slots into your lineup (Point Guard, Shooting
+  Guard, Small Forward, Power Forward, Center — multi-position players slide
+  to wherever they're needed).
+- **Ineligible real player:** ✕ — the player is crossed out, the round's pick
+  is lost, and the exact reason + evidence is shown.
+- **Duplicate player (anywhere in the match):** ✕ — same as a wrong pick.
+- **Unknown name / typo:** free retry, no penalty.
+- **Winner:** the simulated best-of-7 between the two drafted lineups decides
+  the match — every pick you land makes your team stronger.
 
 Non-negotiables honored: eligibility is checked by **code against structured
 data** (never AI guessing), no live API calls during a round, no copied brand
@@ -29,12 +32,13 @@ room replays the identical result.
 
 | Piece | Where |
 |---|---|
-| 160+ curated players (bio, height, draft, country, awards, rings, team-season stints, source notes) | `src/game/data/players*.ts` |
+| 230+ curated players through the 2025-26 season (bio, height, draft, country, awards, rings, team-season stints, multi-position tags, source notes) | `src/game/data/players*.ts` |
+| Lineup builder: assigns picks to PG/SG/SF/PF/C slots, multi-position players fill gaps | `src/game/engine/lineup.ts` |
 | 30 launch categories with difficulty + params | `src/game/data/categories.ts` |
-| Deterministic validators returning `{eligible, reason, penalty, player, evidence[]}` | `src/game/engine/validators.ts` |
+| Deterministic validators returning `{eligible, reason, player, evidence[]}` | `src/game/engine/validators.ts` |
 | Alias-aware search (KD, Bron, Shaq, T-Mac…), accent/punctuation normalization, top-8 suggestions | `src/game/engine/search.ts` |
 | Category generator: no repeats, eligible-count checks, random team/decade params, difficulty ramp | `src/game/engine/categoryGen.ts` |
-| Match state: rooms, rounds, turns, scoring, duplicate prevention, localStorage persistence | `src/game/engine/match.ts` |
+| Match state: rooms, rounds, turns, X-out rulings, duplicate prevention, localStorage persistence | `src/game/engine/match.ts` |
 | Series simulator: talent/creation/spacing/defense/rebounding + fit penalties, seeded best-of-7, game scores, closing notes, MVP, why-you-won | `src/game/engine/simulator.ts` |
 
 ## Develop
@@ -42,7 +46,7 @@ room replays the identical result.
 ```bash
 npm install
 npm run dev      # local dev server
-npm test         # 70 unit tests (validators, search, match flow, simulator)
+npm test         # 82 unit tests (validators, search, match flow, lineup, simulator, data integrity)
 npm run build    # emits the single-file dist/index.html
 ```
 

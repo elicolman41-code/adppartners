@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
 import type { Match } from '../game/types';
 import { PLAYER_BY_ID } from '../game/data/db';
-import { WIN_SERIES_BONUS } from '../game/engine/match';
+import { roundMarks } from '../game/engine/match';
 import { simulateSeries } from '../game/engine/simulator';
+import { LineupCard } from './Match';
 
 interface Props {
   match: Match;
@@ -21,16 +22,6 @@ export function ResultsScreen({ match, onQuit }: Props) {
   const winner = match.participants[series.winnerSide];
   const mvp = PLAYER_BY_ID[series.mvpPlayerId];
 
-  // The +3 series bonus is applied at display time so a reload never
-  // double-counts it in the saved match state.
-  const finalScores = match.participants.map((pt, i) =>
-    i === series.winnerSide ? pt.score + WIN_SERIES_BONUS : pt.score,
-  );
-  const champion =
-    finalScores[0] === finalScores[1]
-      ? null
-      : match.participants[finalScores[0] > finalScores[1] ? 0 : 1];
-
   return (
     <div className="stack fade-in">
       <header className="topbar">
@@ -43,23 +34,24 @@ export function ResultsScreen({ match, onQuit }: Props) {
         <div className="winner">{winner.name} wins the series</div>
         <div className="scoreline">
           {series.wins[series.winnerSide]}–{series.wins[1 - series.winnerSide]}
-          {' · '}+{WIN_SERIES_BONUS} bonus
         </div>
       </div>
 
       <div className="card">
-        <div className="eyebrow" style={{ marginBottom: 6 }}>Final points</div>
+        <div className="eyebrow" style={{ marginBottom: 6 }}>Draft report</div>
         <div className="roster-grid">
           {match.participants.map((pt, i) => (
             <div className="score-side" key={pt.id} style={{ textAlign: 'center' }}>
               <div className="name">{pt.name}</div>
-              <div className="pts">{finalScores[i]}</div>
+              <div className="mark-strip center">
+                {roundMarks(match, i as 0 | 1).map((m, r) => (
+                  <span key={r} className={`mark ${m}`}>{m === 'hit' ? '✓' : m === 'x' ? '✕' : '·'}</span>
+                ))}
+              </div>
+              <div className="sub">{pt.roster.length}/5 picks landed</div>
             </div>
           ))}
         </div>
-        <p className="sub" style={{ textAlign: 'center', marginTop: 8 }}>
-          {champion ? `${champion.name} takes the match.` : 'Dead even — run it back.'}
-        </p>
       </div>
 
       <div className="card mvp-row">
@@ -93,17 +85,12 @@ export function ResultsScreen({ match, onQuit }: Props) {
       </div>
 
       <div className="card">
-        <div className="eyebrow" style={{ marginBottom: 10 }}>Final rosters</div>
+        <div className="eyebrow" style={{ marginBottom: 10 }}>Final lineups</div>
         <div className="roster-grid">
           {match.participants.map((pt) => (
             <div className="roster-col" key={pt.id}>
               <h4>{pt.name}</h4>
-              {pt.roster.length === 0 && <div className="roster-slot empty">No eligible picks</div>}
-              {pt.roster.map((id) => (
-                <div className="roster-slot filled" key={id}>
-                  {PLAYER_BY_ID[id]?.displayName ?? id}
-                </div>
-              ))}
+              <LineupCard playerIds={pt.roster} />
             </div>
           ))}
         </div>

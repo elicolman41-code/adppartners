@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Match, Pick } from '../game/types';
+import { POSITION_NAMES, POSITION_ORDER } from '../game/types';
 import { CATEGORIES } from '../game/data/categories';
 import { PLAYER_BY_ID } from '../game/data/db';
-import { continueAfterReveal, spinForRound, submitPick } from '../game/engine/match';
+import { continueAfterReveal, roundMarks, spinForRound, submitPick } from '../game/engine/match';
+import { buildLineup } from '../game/engine/lineup';
 import { playerSubtitle, searchPlayers } from '../game/engine/search';
 import { ResultsScreen } from './Results';
 
@@ -34,33 +36,32 @@ export function MatchScreen({ match, setMatch, onQuit }: Props) {
   );
 }
 
+function MarkStrip({ marks }: { marks: ReturnType<typeof roundMarks> }) {
+  return (
+    <div className="mark-strip">
+      {marks.map((m, i) => (
+        <span key={i} className={`mark ${m}`}>
+          {m === 'hit' ? '✓' : m === 'x' ? '✕' : '·'}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 function ScoreBar({ match }: { match: Match }) {
   const [a, b] = match.participants;
-  const picksThisRound = match.rounds[match.currentRound]?.picks ?? {};
   return (
     <div className="scorebar">
       <div className={`score-side ${match.turn === 0 && match.phase !== 'results' ? 'active' : ''}`}>
         <div className="name">{a.name}</div>
-        <div className="pts">{a.score}</div>
+        <MarkStrip marks={roundMarks(match, 0)} />
       </div>
       <div className="score-mid">
         <div>RD {Math.min(match.currentRound + 1, match.totalRounds)}/{match.totalRounds}</div>
-        <div className="round-dots">
-          {Array.from({ length: match.totalRounds }, (_, i) => (
-            <i
-              key={i}
-              className={
-                i < match.currentRound || (i === match.currentRound && Object.keys(picksThisRound).length === 2)
-                  ? 'done'
-                  : ''
-              }
-            />
-          ))}
-        </div>
       </div>
       <div className={`score-side ${match.turn === 1 && match.phase !== 'results' ? 'active' : ''}`}>
         <div className="name">{b.name}</div>
-        <div className="pts">{b.score}</div>
+        <MarkStrip marks={roundMarks(match, 1)} />
       </div>
     </div>
   );
@@ -228,14 +229,17 @@ function RevealPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) =
   return (
     <div className="stack fade-in">
       <div className={`verdict ${kind}`}>
+        <div className="delta">{pick.outcome === 'eligible' ? '✓' : '✕'}</div>
         <div className="big">{title}</div>
-        <div className="delta">{pick.points > 0 ? `+${pick.points}` : pick.points}</div>
         <div className="sub">
           {pickerName} picked <b style={{ color: 'var(--text)' }}>{player?.displayName}</b>
           {' · '}
           {round.category.label}
         </div>
         <div className="reason">{pick.reason}</div>
+        {pick.outcome !== 'eligible' && (
+          <div className="x-note">{player?.displayName} is crossed out — this round's pick is lost.</div>
+        )}
       </div>
 
       <div className="card evidence">
@@ -262,26 +266,44 @@ function RevealPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) =
 // Rosters
 // ---------------------------------------------------------------------------
 
+export function LineupCard({ playerIds }: { playerIds: string[] }) {
+  const lineup = useMemo(() => buildLineup(playerIds), [playerIds]);
+  return (
+    <>
+      {POSITION_ORDER.map((pos) => {
+        const id = lineup.slots[pos];
+        const player = id ? PLAYER_BY_ID[id] : null;
+        return (
+          <div className={`lineup-slot ${player ? 'filled' : 'empty'}`} key={pos}>
+            <span className="lineup-pos">{POSITION_NAMES[pos]}</span>
+            <span className="lineup-player">
+              {player ? player.displayName : '—'}
+              {player && player.positions.length > 1 && (
+                <small className="lineup-flex"> {player.positions.join('/')}</small>
+              )}
+            </span>
+          </div>
+        );
+      })}
+      {lineup.bench.map(({ playerId, position }) => (
+        <div className="lineup-slot filled bench" key={playerId}>
+          <span className="lineup-pos">Bench · {POSITION_NAMES[position]}</span>
+          <span className="lineup-player">{PLAYER_BY_ID[playerId]?.displayName}</span>
+        </div>
+      ))}
+    </>
+  );
+}
+
 function Rosters({ match }: { match: Match }) {
   return (
     <div className="card">
-      <div className="eyebrow" style={{ marginBottom: 10 }}>Rosters</div>
+      <div className="eyebrow" style={{ marginBottom: 10 }}>Lineups</div>
       <div className="roster-grid">
         {match.participants.map((pt) => (
           <div className="roster-col" key={pt.id}>
             <h4>{pt.name}</h4>
-            {Array.from({ length: match.totalRounds }, (_, i) => {
-              const id = pt.roster[i];
-              return id ? (
-                <div className="roster-slot filled" key={i}>
-                  {PLAYER_BY_ID[id]?.displayName ?? id}
-                </div>
-              ) : (
-                <div className="roster-slot empty" key={i}>
-                  Slot {i + 1}
-                </div>
-              );
-            })}
+            <LineupCard playerIds={pt.roster} />
           </div>
         ))}
       </div>

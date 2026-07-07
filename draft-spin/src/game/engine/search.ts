@@ -81,5 +81,5 @@ export function resolvePlayer(input: string): Player | null {
 
 export function playerSubtitle(player: Player): string {
   const status = player.active ? 'Active' : 'Retired';
-  return `${player.position} · ${teamName(latestTeamId(player))} · ${status}`;
+  return `${player.positions.join('/')} · ${teamName(latestTeamId(player))} · ${status}`;
 }

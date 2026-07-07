@@ -288,11 +288,10 @@ export function validatePick(player: Player, category: SpunCategory): Validation
   return {
     eligible: ruling.eligible,
     reason: ruling.reason,
-    penalty: ruling.eligible ? 0 : -1,
     player: {
       id: player.id,
       displayName: player.displayName,
-      position: player.position,
+      positions: player.positions,
       team: latestTeamId(player),
     },
     evidence: ruling.evidence,

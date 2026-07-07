@@ -6,7 +6,6 @@ import { resolvePlayer } from './search';
 import { PLAYER_BY_ID } from '../data/db';
 
 export const TOTAL_ROUNDS = 5;
-export const WIN_SERIES_BONUS = 3;
 
 function makeRoomCode(rng: () => number): string {
   const letters = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
@@ -24,8 +23,8 @@ export function createMatch(youName: string, friendName: string): Match {
     createdAt: Date.now(),
     totalRounds: TOTAL_ROUNDS,
     participants: [
-      { id: 'p1', name: youName || 'You', score: 0, roster: [] },
-      { id: 'p2', name: friendName || 'Friend', score: 0, roster: [] },
+      { id: 'p1', name: youName || 'You', roster: [] },
+      { id: 'p2', name: friendName || 'Friend', roster: [] },
     ],
     rounds: [],
     currentRound: 0,
@@ -59,9 +58,11 @@ export type SubmitOutcome =
 
 /**
  * Submit a typed pick for the participant whose turn it is.
- * - Unknown/typo: no penalty, no state change — retry.
- * - Duplicate real player (either roster or same round): -1.
- * - Eligible: +1 and lock into roster.  Ineligible: -1 with reason.
+ * - Unknown/typo: no state change — retry freely.
+ * - Duplicate real player (either roster or same round): crossed out (X),
+ *   the pick is lost for the round.
+ * - Eligible: locks into the roster.  Ineligible: crossed out (X) with the
+ *   reason and evidence — that round's slot stays empty.
  */
 export function submitPick(match: Match, input: string): SubmitOutcome {
   const player = resolvePlayer(input);
@@ -81,12 +82,11 @@ export function submitPick(match: Match, input: string): SubmitOutcome {
   if (alreadyPicked) {
     result = {
       eligible: false,
-      reason: `${player.displayName} has already been drafted this match. Duplicate picks lose a point.`,
-      penalty: -1,
+      reason: `${player.displayName} has already been drafted this match. Duplicates are crossed out — the pick is lost.`,
       player: {
         id: player.id,
         displayName: player.displayName,
-        position: player.position,
+        positions: player.positions,
         team: player.seasons[player.seasons.length - 1]?.teamId ?? '',
       },
       evidence: [
@@ -98,13 +98,12 @@ export function submitPick(match: Match, input: string): SubmitOutcome {
         },
       ],
     };
-    pick = { playerId: player.id, outcome: 'duplicate', points: -1, reason: result.reason, evidence: result.evidence };
+    pick = { playerId: player.id, outcome: 'duplicate', reason: result.reason, evidence: result.evidence };
   } else {
     result = validatePick(player, category);
     pick = {
       playerId: player.id,
       outcome: result.eligible ? 'eligible' : 'ineligible',
-      points: result.eligible ? 1 : -1,
       reason: result.reason,
       evidence: result.evidence,
     };
@@ -114,7 +113,6 @@ export function submitPick(match: Match, input: string): SubmitOutcome {
     if (i !== match.turn) return pt;
     return {
       ...pt,
-      score: pt.score + pick.points,
       roster: pick.outcome === 'eligible' ? [...pt.roster, pick.playerId] : pt.roster,
     };
   }) as Match['participants'];
@@ -154,16 +152,20 @@ export function continueAfterReveal(match: Match): Match {
   return { ...match, currentRound: match.currentRound + 1, phase: 'spin', turn: 0 };
 }
 
-/** Apply the optional +3 series-win bonus once results are simulated. */
-export function applySeriesBonus(match: Match, winnerSide: 0 | 1): Match {
-  const participants = match.participants.map((pt, i) =>
-    i === winnerSide ? { ...pt, score: pt.score + WIN_SERIES_BONUS } : pt,
-  ) as Match['participants'];
-  return { ...match, participants };
-}
-
 export function rosterNames(match: Match, side: 0 | 1): string[] {
   return match.participants[side].roster.map((id) => PLAYER_BY_ID[id]?.displayName ?? id);
+}
+
+export type RoundMark = 'hit' | 'x' | 'pending';
+
+/** Per-round ✓ / ✗ marks for a participant, for the score strip. */
+export function roundMarks(match: Match, side: 0 | 1): RoundMark[] {
+  const pid = match.participants[side].id;
+  return Array.from({ length: match.totalRounds }, (_, i) => {
+    const pick = match.rounds[i]?.picks[pid];
+    if (!pick) return 'pending';
+    return pick.outcome === 'eligible' ? 'hit' : 'x';
+  });
 }
 
 // ---------------------------------------------------------------------------
@@ -171,7 +173,7 @@ export function rosterNames(match: Match, side: 0 | 1): string[] {
 // simulation reproduces the identical series result).
 // ---------------------------------------------------------------------------
 
-const STORAGE_KEY = 'draft-spin-match-v1';
+const STORAGE_KEY = 'draft-spin-match-v2';
 
 export function saveMatch(match: Match | null): void {
   try {

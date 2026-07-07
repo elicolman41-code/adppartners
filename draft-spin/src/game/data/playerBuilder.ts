@@ -41,7 +41,8 @@ export function a(input: AwardsInput = {}): PlayerAwards {
 export function p(
   id: string,
   displayName: string,
-  position: Position,
+  /** Slash-separated, primary first: 'PG', 'PF/C', 'PG/SG/SF/PF/C'. */
+  position: string,
   heightInches: number,
   birthCountry: string,
   birthYear: number,
@@ -59,7 +60,7 @@ export function p(
   return {
     id,
     displayName,
-    position,
+    positions: position.split('/') as Position[],
     heightInches,
     birthCountry,
     birthYear,

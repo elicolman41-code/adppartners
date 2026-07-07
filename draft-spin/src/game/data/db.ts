@@ -3,12 +3,14 @@ import { PLAYERS_LEGENDS } from './playersLegends';
 import { PLAYERS_2000S } from './players2000s';
 import { PLAYERS_2010S } from './players2010s';
 import { PLAYERS_MODERN } from './playersModern';
+import { PLAYERS_EXPANSION } from './playersExpansion';
 
 export const PLAYERS: Player[] = [
   ...PLAYERS_LEGENDS,
   ...PLAYERS_2000S,
   ...PLAYERS_2010S,
   ...PLAYERS_MODERN,
+  ...PLAYERS_EXPANSION,
 ];
 
 export const PLAYER_BY_ID: Record<string, Player> = Object.fromEntries(

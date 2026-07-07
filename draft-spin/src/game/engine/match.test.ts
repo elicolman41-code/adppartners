@@ -52,37 +52,38 @@ describe('category spinning', () => {
   });
 });
 
-describe('scoring rules from the plan', () => {
-  it('eligible pick: +1 and locks into roster', () => {
+describe('X-out pick rules', () => {
+  it('eligible pick locks into the roster', () => {
     const m = freshRound();
     const name = findPick(m, true);
     const out = submitPick(m, name);
     if (out.kind !== 'ruled') throw new Error('expected ruling');
-    expect(out.pick.points).toBe(1);
-    expect(out.match.participants[0].score).toBe(1);
+    expect(out.pick.outcome).toBe('eligible');
     expect(out.match.participants[0].roster).toHaveLength(1);
   });
 
-  it('ineligible real-player pick: -1 and no roster lock', () => {
+  it('ineligible real-player pick is crossed out: no roster lock, round lost', () => {
     const m = freshRound();
     const name = findPick(m, false);
     const out = submitPick(m, name);
     if (out.kind !== 'ruled') throw new Error('expected ruling');
-    expect(out.pick.points).toBe(-1);
-    expect(out.match.participants[0].score).toBe(-1);
+    expect(out.pick.outcome).toBe('ineligible');
     expect(out.match.participants[0].roster).toHaveLength(0);
+    // The round is consumed — the pick is recorded as an X, not retryable.
+    const roundPicks = out.match.rounds[out.match.currentRound].picks;
+    expect(roundPicks['p1']?.outcome).toBe('ineligible');
     expect(out.result.reason.length).toBeGreaterThan(0);
     expect(out.result.evidence.length).toBeGreaterThan(0);
   });
 
-  it('unknown/typo: 0 points, retry allowed, state unchanged', () => {
+  it('unknown/typo: retry allowed, state unchanged', () => {
     const m = freshRound();
     const out = submitPick(m, 'Kevon Duran the Third');
     expect(out.kind).toBe('unknown');
-    expect(m.participants[0].score).toBe(0);
+    expect(Object.keys(m.rounds[m.currentRound].picks)).toHaveLength(0);
   });
 
-  it('duplicate real-player pick: -1 for the second picker', () => {
+  it('duplicate real-player pick is crossed out for the second picker', () => {
     const m = freshRound();
     const name = findPick(m, true);
     const first = submitPick(m, name);
@@ -92,8 +93,7 @@ describe('scoring rules from the plan', () => {
     const second = submitPick(afterReveal, name);
     if (second.kind !== 'ruled') throw new Error('expected ruling');
     expect(second.pick.outcome).toBe('duplicate');
-    expect(second.pick.points).toBe(-1);
-    expect(second.match.participants[1].score).toBe(-1);
+    expect(second.match.participants[1].roster).toHaveLength(0);
   });
 });
 
@@ -117,8 +117,6 @@ describe('full match flow', () => {
       m = continueAfterReveal(friend.match);
     }
     expect(m.phase).toBe('results');
-    expect(m.participants[0].score).toBe(5);
-    expect(m.participants[1].score).toBe(5);
     expect(m.participants[0].roster).toHaveLength(5);
     expect(m.participants[1].roster).toHaveLength(5);
     expect(m.usedCategoryIds).toHaveLength(5);

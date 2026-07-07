@@ -4,6 +4,16 @@
 
 export type Position = 'PG' | 'SG' | 'SF' | 'PF' | 'C';
 
+export const POSITION_ORDER: Position[] = ['PG', 'SG', 'SF', 'PF', 'C'];
+
+export const POSITION_NAMES: Record<Position, string> = {
+  PG: 'Point Guard',
+  SG: 'Shooting Guard',
+  SF: 'Small Forward',
+  PF: 'Power Forward',
+  C: 'Center',
+};
+
 export interface Team {
   id: string; // canonical franchise abbreviation, e.g. 'LAL'
   name: string; // current franchise name
@@ -49,7 +59,8 @@ export interface TeamStint {
 export interface Player {
   id: string;
   displayName: string;
-  position: Position;
+  /** Every position the player can credibly play, primary first. */
+  positions: Position[];
   heightInches: number;
   birthCountry: string;
   birthYear: number;
@@ -142,11 +153,10 @@ export interface Evidence {
 export interface ValidationResult {
   eligible: boolean;
   reason: string;
-  penalty: number; // 0 for eligible / +? handled by scoring layer; -1 shown here
   player: {
     id: string;
     displayName: string;
-    position: Position;
+    positions: Position[];
     team: string; // most recent team id
   };
   evidence: Evidence[];
@@ -158,10 +168,14 @@ export interface ValidationResult {
 
 export type PickOutcome = 'eligible' | 'ineligible' | 'duplicate';
 
+/**
+ * A ruled pick. No point math: an eligible pick locks the player into the
+ * roster; an ineligible or duplicate pick is crossed out (X) and the player
+ * is removed from the pick — the round is simply lost.
+ */
 export interface Pick {
   playerId: string;
   outcome: PickOutcome;
-  points: number;
   reason: string;
   evidence: Evidence[];
 }
@@ -175,7 +189,6 @@ export interface Round {
 export interface Participant {
   id: string;
   name: string;
-  score: number;
   roster: string[]; // eligible player ids, locked in
 }
 

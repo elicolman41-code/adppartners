@@ -55,7 +55,6 @@ describe('award validators', () => {
     expect(check('lebron-james', 'has_mvp').eligible).toBe(true);
     const r = check('patrick-ewing', 'has_mvp');
     expect(r.eligible).toBe(false);
-    expect(r.penalty).toBe(-1);
     expect(r.reason).toContain('never won an MVP');
   });
 
@@ -169,7 +168,6 @@ describe('bio validators', () => {
   it('under_6_3: the Kevin Durant example from the plan rules him out', () => {
     const kd = check('kevin-durant', 'under_6_3');
     expect(kd.eligible).toBe(false);
-    expect(kd.penalty).toBe(-1);
     expect(kd.evidence[0].field).toBe('Listed height');
     expect(check('muggsy-bogues', 'under_6_3').eligible).toBe(true);
     expect(check('isaiah-thomas', 'under_6_3').eligible).toBe(true);
@@ -239,12 +237,11 @@ describe('history validators', () => {
 });
 
 describe('validation response shape (from the build plan)', () => {
-  it('returns eligible, reason, penalty, player, and evidence fields', () => {
+  it('returns eligible, reason, player, and evidence fields', () => {
     const r = check('kevin-durant', 'under_6_3');
     expect(r).toMatchObject({
       eligible: false,
-      penalty: -1,
-      player: { id: 'kevin-durant', displayName: 'Kevin Durant', position: 'SF' },
+      player: { id: 'kevin-durant', displayName: 'Kevin Durant', positions: ['SF', 'PF'] },
     });
     expect(r.reason.length).toBeGreaterThan(10);
     expect(r.evidence.length).toBeGreaterThan(0);
