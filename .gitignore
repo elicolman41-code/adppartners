@@ -6,3 +6,4 @@ output/raw_leads_pre_scoring.json
 
 # draft-spin
 draft-spin/node_modules/
+draft-spin/tsconfig.tsbuildinfo
