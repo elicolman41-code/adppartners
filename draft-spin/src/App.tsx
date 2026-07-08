@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Match } from './game/types';
+import type { AiLevel } from './game/engine/ai';
 import { createMatch, loadMatch, rematch, saveMatch } from './game/engine/match';
 import { HomeScreen } from './ui/Home';
 import { LobbyScreen } from './ui/Lobby';
@@ -9,14 +10,15 @@ type View = 'home' | 'lobby' | 'match';
 
 export default function App() {
   const [view, setView] = useState<View>('home');
+  const [lobbyMode, setLobbyMode] = useState<'friend' | 'ai'>('friend');
   const [match, setMatch] = useState<Match | null>(() => loadMatch());
 
   useEffect(() => {
     saveMatch(match);
   }, [match]);
 
-  const startMatch = (you: string, friend: string) => {
-    setMatch(createMatch(you, friend));
+  const startMatch = (you: string, friend: string, ai?: AiLevel) => {
+    setMatch(createMatch(you, friend, ai));
     setView('match');
   };
 
@@ -34,11 +36,14 @@ export default function App() {
       {view === 'home' && (
         <HomeScreen
           resumable={match !== null}
-          onPlay={() => setView('lobby')}
+          onPlayFriend={() => { setLobbyMode('friend'); setView('lobby'); }}
+          onPlayAi={() => { setLobbyMode('ai'); setView('lobby'); }}
           onResume={() => setView('match')}
         />
       )}
-      {view === 'lobby' && <LobbyScreen onStart={startMatch} onBack={() => setView('home')} />}
+      {view === 'lobby' && (
+        <LobbyScreen mode={lobbyMode} onStart={startMatch} onBack={() => setView('home')} />
+      )}
       {view === 'match' && match && (
         <MatchScreen match={match} setMatch={setMatch} onRunItBack={runItBack} onQuit={quitMatch} />
       )}

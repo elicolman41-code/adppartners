@@ -1,15 +1,21 @@
-# Draft Spin 🏀
+# You Know Ball 🏀
 
-Head-to-head NBA category draft game, built from the *Draft Spin* product
-brief (July 2026). Spin a random category, type any NBA player, get
-fact-checked instantly by a deterministic rules engine, and after 5 rounds
-watch both drafted teams battle in a simulated best-of-7 series.
+Head-to-head NBA category draft showdown (formerly *Draft Spin*, built from
+the July 2026 product brief). Spin a random category, type any NBA player,
+get fact-checked instantly by a deterministic rules engine, and after 5
+rounds watch both drafted teams battle in a simulated best-of-7 series.
 
 ## Play it
 
 Open **`dist/index.html`** in any browser — it is a fully self-contained
-single file (works on a phone, no server, no install). Pass-and-play: two
-players share one device.
+single file (works on a phone, no server, no install). Two modes:
+
+- **Play a Friend** — pass-and-play on one device.
+- **Challenge the AI** — draft against a bot under the same rules. Three
+  difficulties: *Rookie Bot* (misses often, drafts on vibes), *Coach Bot*
+  (solid picks, occasional brain-fade), *GOAT Bot* (never misses, drafts for
+  talent and lineup fit). Bot picks are seeded per match, so reloading
+  replays the same draft.
 
 ## Rules
 
@@ -52,7 +58,7 @@ room replays the identical result.
 ```bash
 npm install
 npm run dev      # local dev server
-npm test         # 91 unit tests (validators, search, match flow, steal rule, run-it-back, lineup, simulator, data integrity)
+npm test         # 97 unit tests (validators, search, match flow, steal rule, run-it-back, AI opponent, lineup, simulator, data integrity)
 npm run build    # emits the single-file dist/index.html
 ```
 

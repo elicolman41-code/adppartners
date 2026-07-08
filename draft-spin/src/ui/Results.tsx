@@ -31,7 +31,7 @@ export function ResultsScreen({ match, onRunItBack, onQuit }: Props) {
   return (
     <div className="stack fade-in">
       <header className="topbar">
-        <div className="brand">Draft<em>Spin</em></div>
+        <div className="brand">You Know <em>Ball</em></div>
         <div className="room-chip">ROOM {match.roomCode}</div>
       </header>
 

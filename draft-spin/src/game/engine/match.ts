@@ -15,7 +15,11 @@ function makeRoomCode(rng: () => number): string {
   return code;
 }
 
-export function createMatch(youName: string, friendName: string): Match {
+export function createMatch(
+  youName: string,
+  friendName: string,
+  opponentAi?: Match['participants'][1]['ai'],
+): Match {
   const id = `m-${Date.now().toString(36)}-${Math.floor(Math.random() * 1e6).toString(36)}`;
   const rng = makeRng(`room:${id}`);
   return {
@@ -25,7 +29,7 @@ export function createMatch(youName: string, friendName: string): Match {
     totalRounds: TOTAL_ROUNDS,
     participants: [
       { id: 'p1', name: youName || 'You', roster: [] },
-      { id: 'p2', name: friendName || 'Friend', roster: [] },
+      { id: 'p2', name: friendName || 'Friend', roster: [], ...(opponentAi ? { ai: opponentAi } : {}) },
     ],
     rounds: [],
     currentRound: 0,
@@ -44,7 +48,7 @@ export function createMatch(youName: string, friendName: string): Match {
  * sides. The winner of the game that just ended gets a run win.
  */
 export function rematch(prev: Match, winnerSide: 0 | 1): Match {
-  const base = createMatch(prev.participants[0].name, prev.participants[1].name);
+  const base = createMatch(prev.participants[0].name, prev.participants[1].name, prev.participants[1].ai);
   return {
     ...base,
     game: prev.game + 1,

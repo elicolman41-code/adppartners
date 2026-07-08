@@ -192,6 +192,8 @@ export interface Participant {
   id: string;
   name: string;
   roster: string[]; // eligible player ids, locked in
+  /** Set when this seat is played by the computer. */
+  ai?: 'rookie' | 'veteran' | 'goat';
 }
 
 export type MatchPhase = 'lobby' | 'spin' | 'pick' | 'reveal' | 'results';

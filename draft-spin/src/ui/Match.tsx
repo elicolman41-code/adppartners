@@ -13,6 +13,7 @@ import {
 } from '../game/engine/match';
 import { buildLineup } from '../game/engine/lineup';
 import { playerSubtitle, searchPlayers } from '../game/engine/search';
+import { aiOnClock, aiPickName } from '../game/engine/ai';
 import { ResultsScreen } from './Results';
 
 interface Props {
@@ -29,7 +30,7 @@ export function MatchScreen({ match, setMatch, onRunItBack, onQuit }: Props) {
   return (
     <div className="stack fade-in">
       <header className="topbar">
-        <div className="brand">Draft<em>Spin</em></div>
+        <div className="brand">You Know <em>Ball</em></div>
         <div className="room-chip">ROOM {match.roomCode}</div>
       </header>
 
@@ -145,6 +146,17 @@ function PickPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => 
   const category = round.category;
   const picker = match.participants[match.turn];
 
+  // AI seat: think for a beat, then submit its (seeded, deterministic) pick.
+  const aiLevel = aiOnClock(match);
+  useEffect(() => {
+    if (!aiLevel) return;
+    const t = window.setTimeout(() => {
+      const out = submitPick(match, aiPickName(match, aiLevel));
+      if (out.kind === 'ruled') setMatch(out.match);
+    }, 1400);
+    return () => clearTimeout(t);
+  }, [aiLevel, match, setMatch]);
+
   const hits = useMemo(() => searchPlayers(query, 8), [query]);
   // Out of the pool: drafted this run/game, or crossed out earlier this round.
   const gone = useMemo(() => {
@@ -164,6 +176,20 @@ function PickPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) => 
     setQuery('');
     setMatch(out.match);
   };
+
+  if (aiLevel) {
+    return (
+      <div className="stack">
+        <div className="spin-window">
+          <div className="spin-tag">Round {match.currentRound + 1} category</div>
+          <div className="spin-label settled">{category.label}</div>
+        </div>
+        <div className="turn-banner ai-thinking">
+          🤖 {picker.name} is on the clock<span className="dots" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="stack">
@@ -259,10 +285,15 @@ function RevealPhase({ match, setMatch }: { match: Match; setMatch: (m: Match) =
   const isLastRound = match.currentRound === match.totalRounds - 1;
   const nextPicker = match.participants[match.turn];
   const samePicker = nextPicker.id === picker.id;
+  const nextIsAi = !!nextPicker.ai;
   const nextLabel = !done
     ? samePicker
-      ? `${nextPicker.name} — take another shot`
-      : `Pass the phone — ${nextPicker.name} is up`
+      ? nextIsAi
+        ? `${nextPicker.name} tries again`
+        : `${nextPicker.name} — take another shot`
+      : nextIsAi
+        ? `${nextPicker.name} is up — watch the pick`
+        : `Pass the phone — ${nextPicker.name} is up`
     : isLastRound
       ? 'Simulate the series'
       : 'Next round';

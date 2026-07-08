@@ -1,6 +1,7 @@
 interface Props {
   resumable: boolean;
-  onPlay: () => void;
+  onPlayFriend: () => void;
+  onPlayAi: () => void;
   onResume: () => void;
 }
 
@@ -11,24 +12,27 @@ const STEPS: [string, string][] = [
   ['Battle in a best-of-7, then run it back', 'After 5 rounds your lineups (PG through Center) play a simulated series. Chain games back-to-back — every player already drafted is out of the pool.'],
 ];
 
-export function HomeScreen({ resumable, onPlay, onResume }: Props) {
+export function HomeScreen({ resumable, onPlayFriend, onPlayAi, onResume }: Props) {
   return (
     <div className="stack fade-in">
       <header className="topbar">
-        <div className="brand">Draft<em>Spin</em></div>
+        <div className="brand">You Know <em>Ball</em></div>
       </header>
 
-      <div className="eyebrow">Head-to-head NBA draft game</div>
+      <div className="eyebrow">Head-to-head NBA draft showdown</div>
       <h1 className="headline">
-        Spin. Type. <em>Get checked.</em> Build the better team.
+        Spin. Type. <em>Get checked.</em> Prove you know ball.
       </h1>
       <p className="sub">
-        Play a friend on one phone. Five rounds, one random category per round, every
-        pick fact-checked against real career data — no arguing.
+        Five rounds, one random category per round, every pick fact-checked against
+        real career data — no arguing.
       </p>
 
-      <button className="btn btn-primary" onClick={onPlay}>
+      <button className="btn btn-primary" onClick={onPlayFriend}>
         Play a Friend
+      </button>
+      <button className="btn btn-primary btn-ai" onClick={onPlayAi}>
+        🤖 Challenge the AI
       </button>
       {resumable && (
         <button className="btn btn-ghost" onClick={onResume}>
