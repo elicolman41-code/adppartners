@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 *.pyo
 output/raw_leads_pre_scoring.json
+
+# Client payroll working files — contains employee PII (names, SSN fragments, wages)
+output/payroll/
