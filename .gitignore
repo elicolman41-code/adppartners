@@ -6,3 +6,7 @@ output/raw_leads_pre_scoring.json
 
 # Client payroll working files — contains employee PII (names, SSN fragments, wages)
 output/payroll/
+
+# ADP onboarding packets — contains FULL employee SSNs, dates of birth,
+# and business bank routing/account numbers. Never commit.
+output/onboarding/
