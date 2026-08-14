@@ -3,3 +3,14 @@ __pycache__/
 *.pyc
 *.pyo
 output/raw_leads_pre_scoring.json
+
+# Client payroll working files — contains employee PII (names, SSN fragments, wages)
+output/payroll/
+
+# ADP onboarding packets — contains FULL employee SSNs, dates of birth,
+# and business bank routing/account numbers. Never commit.
+output/onboarding/
+
+# Young Israel of Midwood working files — contains full employee SSNs,
+# home addresses, W-2 data, and business bank account details. Never commit.
+output/young_israel/
