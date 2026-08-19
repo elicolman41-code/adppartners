@@ -1,0 +1,200 @@
+<title>Pipeline Engine</title>
+<style>
+  :root{
+    --paper:#F2F3F0;--card:#FFF;--ink:#171A1D;--slate:#5D6772;--hair:#D9DCD7;--soft:#E8EAE6;
+    --red:#C8281E;--green:#1E7A55;--green-bg:#E5F0EA;--amber:#B37A16;--amber-bg:#FAF2E2;
+    --dead:#9AA2AB;--blue:#2B5FA6;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#14171A;--card:#1D2126;--ink:#E9EBE8;--slate:#98A2AC;--hair:#2E343A;--soft:#262B31;
+    --red:#E05548;--green:#5FBF8E;--green-bg:#17281F;--amber:#E0A458;--amber-bg:#2A2117;
+    --dead:#5D6772;--blue:#6E9BEF;}}
+  :root[data-theme="dark"]{
+    --paper:#14171A;--card:#1D2126;--ink:#E9EBE8;--slate:#98A2AC;--hair:#2E343A;--soft:#262B31;
+    --red:#E05548;--green:#5FBF8E;--green-bg:#17281F;--amber:#E0A458;--amber-bg:#2A2117;
+    --dead:#5D6772;--blue:#6E9BEF;}
+  :root[data-theme="light"]{
+    --paper:#F2F3F0;--card:#FFF;--ink:#171A1D;--slate:#5D6772;--hair:#D9DCD7;--soft:#E8EAE6;
+    --red:#C8281E;--green:#1E7A55;--green-bg:#E5F0EA;--amber:#B37A16;--amber-bg:#FAF2E2;
+    --dead:#9AA2AB;--blue:#2B5FA6;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.45;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:56rem;margin:0 auto;padding:1.5rem 1rem 4rem;display:flex;flex-direction:column;gap:1.25rem}
+  .eyebrow{font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;color:var(--slate);font-weight:600}
+  h1{margin:.25rem 0 0;font-size:clamp(1.6rem,5vw,2.2rem);letter-spacing:-.02em;font-weight:700}
+  .sub{color:var(--slate);font-size:.875rem;margin-top:.25rem}
+  .num{font-variant-numeric:tabular-nums}
+
+  .focus{background:var(--card);border:1px solid var(--hair);border-left:5px solid var(--red);border-radius:5px;padding:1rem}
+  .focus h2{margin:0 0 .625rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--red)}
+  .focus ol{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+  .focus li{font-size:.9rem}.focus li b{font-weight:700}.focus li span{color:var(--slate);font-size:.8125rem}
+
+  .bar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+  .chip{border:1px solid var(--hair);background:var(--card);padding:.375rem .625rem;border-radius:999px;font-size:.78125rem;font-weight:600;cursor:pointer;color:var(--ink)}
+  .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .count{margin-left:auto;font-size:.75rem;color:var(--slate)}
+
+  .lead{background:var(--card);border:1px solid var(--hair);border-radius:5px;padding: .875rem 1rem;display:flex;flex-direction:column;gap:.5rem}
+  .lead.dead{opacity:.45}
+  .top{display:flex;gap:.75rem;align-items:baseline;flex-wrap:wrap}
+  .score{font-size:1.05rem;font-weight:700;min-width:2.2rem}
+  .s80{color:var(--red)}.s65{color:var(--amber)}.s50{color:var(--slate)}
+  .name{font-weight:700;font-size:1rem}
+  .who{color:var(--slate);font-size:.8125rem}
+  .tags{display:flex;gap:.375rem;flex-wrap:wrap}
+  .tag{font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.125rem .4rem;border-radius:3px;background:var(--soft);color:var(--slate)}
+  .tag.grid{background:var(--amber-bg);color:var(--amber)}
+  .tag.walk{background:var(--green-bg);color:var(--green)}
+  .why{font-size:.84375rem;color:var(--slate)}
+  .contact{display:flex;gap:.875rem;flex-wrap:wrap;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78125rem}
+  .contact a{color:var(--blue);text-decoration:none}
+  .ctrl{display:flex;gap:1.25rem;flex-wrap:wrap;border-top:1px solid var(--soft);padding-top:.5rem}
+  .ctrl label{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);font-weight:700;margin-right:.375rem}
+  select{font:inherit;font-size:.8125rem;padding:.2rem .4rem;border:1px solid var(--hair);border-radius:4px;background:var(--card);color:var(--ink)}
+  .sf-unclaimed{outline:2px solid var(--green)}
+  .sf-taken{outline:2px solid var(--dead)}
+
+  h3.sect{margin:1rem 0 0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);font-weight:700;border-bottom:2px solid var(--hair);padding-bottom:.4rem}
+  .note{font-size:.75rem;color:var(--slate)}
+</style>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">ADP Partner Sales · Eli Colman · Weekly sweep: Mondays</div>
+    <h1>Pipeline Engine</h1>
+    <div class="sub">Ranked partner pipeline. Log Salesforce checks and call outcomes — the Monday fleet reads them and re-prioritizes. Seeded Aug 14, 2026.</div>
+  </header>
+
+  <div class="focus">
+    <h2>This Week's Top 5</h2>
+    <ol>
+      <li><b>Virgilio De Sousa — Putnam Accounting</b> (917) 698-2436 · <span>6-month-old PLLC, full contact set, ex-top-10 firm. Freshest lead on the board.</span></li>
+      <li><b>Iryna Stepanchuk CPA</b> — 195 Montague St · <span>~90 Gusto clients, blocks from your desk. Ask for the accounts Gusto strains to hold.</span></li>
+      <li><b>Rehan Usmani — Black Ink</b> (718) 859-4555 · <span>300+ clients, payroll in-house. Grid conversation, not referral.</span></li>
+      <li><b>Alexander Roytenberg — Integrated CPA</b> 30 John St · <span>Walk over. VC-backed book that outgrows Gusto; PwC/Goldman pedigree.</span></li>
+      <li><b>Colin Horsford CPA</b> 347-201-2045 · <span>Intuit Tax Council seat — feels the ProPartner shakeup first, and publishes to peers.</span></li>
+    </ol>
+  </div>
+
+  <div class="bar" id="filters">
+    <button class="chip" data-f="all" aria-pressed="true">All</button>
+    <button class="chip" data-f="call" aria-pressed="false">Call this week (80+)</button>
+    <button class="chip" data-f="grid" aria-pressed="false">Grid targets</button>
+    <button class="chip" data-f="walk" aria-pressed="false">Walkable</button>
+    <button class="chip" data-f="sf" aria-pressed="false">Needs SF check</button>
+    <button class="chip" data-f="fu" aria-pressed="false">Follow-ups</button>
+    <span class="count" id="count"></span>
+  </div>
+
+  <h3 class="sect">New Prospects — Ranked</h3>
+  <div id="leads"></div>
+
+  <h3 class="sect">Live Pipeline — Nurse List</h3>
+  <div id="pipe"></div>
+
+  <p class="note">Tracking saves on this device. Gusto client counts came from search snippets — verify in a browser before quoting one to a prospect. Dead leads stay listed (faded) so the fleet knows not to resurface them.</p>
+</div>
+
+<script>
+const LEADS=[
+ {id:"putnam",s:95,n:"Putnam Accounting Tax Services CPA PLLC",w:"Virgilio E. De Sousa, CPA · Bed-Stuy · reg. Feb 2026",why:"Six months old, live booking site, Sat hours, ex-top-10-firm bank audit background. Also works at NobHill CPA — second door.",ph:"9176982436",em:"virgilds@putnamats.com",site:"putnamats.com",tags:["new firm"]},
+ {id:"adbook",s:85,n:"AD Bookkeeping Solutions LLC",w:"Anthony Darand · Brooklyn",why:"Recent LLC, Level 2 ProAdvisor, no payroll partner found — greenfield. Actively marketing year-end cleanups.",ph:"3156771154",em:"anthonyd@adbookkeepingsolutions.com",site:"adbookkeepingsolutions.com",tags:["greenfield"]},
+ {id:"blackink",s:82,n:"Black Ink Tax & Accounting",w:"Rehan Usmani, EA, MBA · 1839 Flatbush Ave",why:"300+ clients, payroll processed IN-HOUSE. Margin + tax-liability relief pitch. Biggest Grid target on the board.",ph:"7188594555",em:"blackinkofficials@gmail.com",site:"bitaccounting.com",tags:["grid"]},
+ {id:"cubepros",s:77,n:"Cubepros",w:"Ryan Balfe, CEO · 54 W 40th St, Manhattan",why:"109 Gusto clients — largest published referral volume found. Ask for the outgrown accounts, not the book.",ph:"8552684835",site:"cubepros.com",tags:["gusto 109"]},
+ {id:"mh",s:77,n:"M&H Accounting Services LLC",w:"Poly Fatima · Bronx",why:"Newest firm in batch, 'now accepting clients' release, fractional CFO line, runs payroll in-house. Greenfield.",ph:"9146582992",em:"info@mhaccountingservices.com",site:"mhaccountingservices.com",tags:["new firm","greenfield"]},
+ {id:"allunited",s:75,n:"All United Accounting & Tax",w:"Julia Ibrahim, CPA/CIA · Bath Beach",why:"Triple-partnered (Gusto+QB+Xero) = no loyalty to defend. E-commerce niche with multi-state pain. Skip education, go to terms.",ph:"9292601500",em:"juliaibrahim@allunitedcpa.com",site:"allunitedcpa.com",tags:["proven referrer"]},
+ {id:"husney",s:75,n:"Husney CPA PC",w:"Jack Husney, CPA · Ocean Ave + Midtown",why:"Gusto partner, two offices off a small team, media presence — a relationship-builder who already refers.",ph:"3474505225",em:"Jack@HusneyCPA.com",site:"husneycpa.com",tags:["gusto"]},
+ {id:"integrated",s:75,n:"Integrated CPA",w:"Alexander Roytenberg, CPA · 30 John St, DUMBO",why:"Walkable. 22 Gusto clients, VC/Web3 book that outgrows Gusto at 50 heads. PwC/Goldman/MS pedigree. Buy him coffee.",site:"integrated.cpa",tags:["gusto 22","walkable"]},
+ {id:"stepanchuk",s:74,n:"Iryna Stepanchuk, CPA",w:"195 Montague St, Brooklyn Heights",why:"~90 Gusto clients since 2014 — second-highest volume found. Referring is already how she works.",ph:"9293722497",em:"info@stepanchukcpa.com",site:"stepanchukcpa.com",tags:["gusto 90","walkable"]},
+ {id:"horsford",s:70,n:"Horsford Accounting & Advisory",w:"Colin Horsford, CPA, MBA · Brooklyn",why:"Intuit Tax Council member + published author — highest-leverage Intuit target. A win here carries to other firms.",ph:"3472012045",em:"colin@horsfordcpa.com",site:"horsfordcpa.com",tags:["intuit"]},
+ {id:"greensky",s:70,n:"Green Sky Bookkeeping",w:"Janine Rodriguez · 81 Prospect St, DUMBO",why:"In your building's orbit. QBO specialist, nonprofit/MWBE niche where payroll allocation breaks QBO setups.",ph:"7183064928",site:"greenskybookkeeping.com",tags:["intuit","walkable"]},
+ {id:"downie",s:70,n:"Downie Tax Solutions",w:"Shaneque Downie, EA · Canarsie",why:"Advanced ProAdvisor, $50M+ managed client revenue = clients with real headcount.",ph:"3474105337",site:"downiesolutions.com",tags:["intuit"]},
+ {id:"levin",s:68,n:"Payroll Help LLC",w:"Michael Levin · 68 Jay St, DUMBO",why:"Runs a separately incorporated payroll entity, 29 Gusto clients, on your block. Strategically a first-five call.",tags:["gusto 29","walkable","grid"]},
+ {id:"totally",s:67,n:"Totally Booked",w:"Kelly Gonsalves · Bayside, Queens",why:"2x Top-10 ProAdvisor nationally, double-listed Gusto+Intuit. Proven referrer with a platform.",ph:"7182184941",em:"kelly@totallybooked.nyc",site:"totallybooked.nyc",tags:["proven referrer"]},
+ {id:"alquds",s:62,n:"Alquds Accounting & Tax",w:"Rami Ahmad, AFSP, CMA · Staten Island · reg. Oct 2025",why:"Best spin-off story (ex-Project Hospitality). QB ProAdvisor — check his payroll tier first.",site:"web.sichamber.com listing",tags:["new firm"]},
+ {id:"clearpath",s:60,n:"ClearPath CFO Advisory",w:"41 Flatbush Ave · reg. 2025",why:"Has a payroll services page with NO vendor behind it — fastest close on the greenfield list. Multi-vertical (medical/hospitality/construction).",ph:"7182103604",em:"info@clearpath-cfo.com",site:"clearpath-cfo.com",tags:["greenfield","new firm"]},
+ {id:"eilenberg",s:60,n:"Eilenberg Tax & Accounting CPA PC",w:"Yitzchak Eilenberg, CPA · Crown Heights · reg. Jun 2024",why:"Entity formation through payroll registration — stands up new employers. Marketing on Alignable now.",ph:"5183879173",site:"eilenbergcpa.com",tags:["new firm"]},
+ {id:"jajate",s:58,n:"Jajate CPA PLLC",w:"Sion Jajate, CPA · Marine Park",why:"EY→BDO→Marcum→own shop. Hiring a staff accountant. Confirm how long he's actually been solo.",site:"sjaccountingcpa.com",tags:["new firm"]},
+ {id:"star",s:45,n:"Star Tax & Accounting",w:"principal unknown · Flushing",why:"Gusto partner, live phone — one call names the owner and this jumps a tier.",ph:"3474813320",tags:["gusto","crack"]},
+ {id:"bba",s:42,n:"BBA Accounting Advisors PLLC",w:"principal unknown · Sunnyside",why:"Gusto partner, actively hiring, live phone. Call and ask for the managing partner.",ph:"7183920240",tags:["gusto","crack"]},
+ {id:"findaway",s:40,n:"Find A Way",w:"Industry City, 68 34th St",why:"Gusto partner since 2016, hospitality vertical, minutes from DUMBO. No contact found — walk in.",tags:["gusto","walkable","crack"]},
+ {id:"deutsch",s:37,n:"Deutsch CPA PLLC",w:"4908 New Utrecht Ave · filed Mar 2026",why:"Newest CPA PLLC found. Anonymous — crack via NYSED Public Accountancy lookup, Kings County.",tags:["new firm","crack"]},
+ {id:"weich",s:37,n:"Weichselbaum CPA PLLC",w:"1314 E 32nd St, Midwood · filed Feb 2026",why:"Home-office solo. Crack via NYSED lookup + PTIN directory ZIP 11210.",tags:["new firm","crack"]}
+];
+const PIPE=[
+ {id:"p-slava",n:"Slava — Smith & Moskalev",w:"80 clients on AccountantsWorld · $9/payroll ask",why:"Sent numbers email + no-pressure follow-up w/ free amendments + Accountant Connect link. No response to last touch.",ph:"7183322626"},
+ {id:"p-elena-bo",n:"Elena — Big Orange Consulting",w:"Greenpoint · QuickBooks + Paychex",why:"Boss said no; sent gracious door-open text with Wed 11am/4pm offer. Watch for reply.",tags:[]},
+ {id:"p-elena-ny",n:"Elena — NY Tax (rev share partner)",w:"~50 in-house payroll clients",why:"Partner signed. Need: her pricing, bank-account comfort, January plan meeting ON CALENDAR (Oct/Nov).",tags:[]},
+ {id:"p-steven",n:"Steven — Innovative Advisors",w:"19→22 clients on Paychex",why:"Tuesday meeting. CORRECT THE MATH: quoted $46K, real number ~$32K at 2×. Confirm multiplier + Paychex tail.",tags:[]},
+ {id:"p-jacob",n:"Jacob — Preis Is Right Accounting",w:"Moving accounts from SurePayroll/Paychex",why:"Sent clarify-role email. Goal: he calls; get him on CPA rev share + Accountant Connect.",tags:[]},
+ {id:"p-amberstone",n:"David Stephens — Amberstone",w:"$19,390 scheduled · $50K target",why:"Rev share $1,290 pays Aug 15 — confirm it landed. WJZ/Wei payroll setup in motion. VIP workers comp, ADS SEP-IRA open.",ph:"9295540289"},
+ {id:"p-shay",n:"Shay CPA — Nina & Akshay",w:"Startup firm, many PEOs",why:"Renewal-data email w/ rate image sent. No ask pending — watch for reply, revisit at renewal season.",tags:[]},
+ {id:"p-mohammed",n:"Mohammed",w:"6 clients + Four Star Candy",why:"Recap sent ($3,600/yr + residuals). Four Star needs bank account. Confirm new accounts on RUN.",tags:[]}
+];
+
+const KEY="pipeline_engine_v1";
+let state={};try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+
+const fmt=t=>"("+t.slice(0,3)+") "+t.slice(3,6)+"-"+t.slice(6);
+const leadsEl=document.getElementById("leads"),pipeEl=document.getElementById("pipe");
+let filter="all";
+
+function card(l,isPipe){
+  const st=state[l.id]||{};
+  const d=document.createElement("div");
+  d.className="lead"+(st.call==="dead"?" dead":"")+(st.sf==="unclaimed"?" sf-unclaimed":st.sf==="taken"?" sf-taken":"");
+  const cls=l.s>=80?"s80":l.s>=65?"s65":"s50";
+  let contact="";
+  if(l.ph)contact+=`<a href="tel:${l.ph}">${fmt(l.ph)}</a>`;
+  if(l.em)contact+=`<a href="mailto:${l.em}">${l.em}</a>`;
+  if(l.site)contact+=`<span>${l.site}</span>`;
+  d.innerHTML=
+    `<div class="top">${isPipe?"":`<span class="score num ${cls}">${l.s}</span>`}<span class="name">${l.n}</span><span class="who">${l.w}</span></div>`+
+    (l.tags&&l.tags.length?`<div class="tags">${l.tags.map(t=>`<span class="tag${t==="grid"?" grid":""}${t==="walkable"?" walk":""}">${t}</span>`).join("")}</div>`:"")+
+    `<div class="why">${l.why}</div>`+
+    (contact?`<div class="contact">${contact}</div>`:"")+
+    `<div class="ctrl">
+      <span><label>Salesforce</label><select data-k="sf" data-id="${l.id}">
+        <option value="" ${!st.sf?"selected":""}>Unchecked</option>
+        <option value="unclaimed" ${st.sf==="unclaimed"?"selected":""}>Unclaimed ✓</option>
+        <option value="taken" ${st.sf==="taken"?"selected":""}>Taken ✗</option>
+      </select></span>
+      <span><label>Status</label><select data-k="call" data-id="${l.id}">
+        <option value="" ${!st.call?"selected":""}>—</option>
+        <option value="called" ${st.call==="called"?"selected":""}>Called</option>
+        <option value="noanswer" ${st.call==="noanswer"?"selected":""}>No answer</option>
+        <option value="followup" ${st.call==="followup"?"selected":""}>Follow-up due</option>
+        <option value="meeting" ${st.call==="meeting"?"selected":""}>Meeting set</option>
+        <option value="dead" ${st.call==="dead"?"selected":""}>Dead</option>
+      </select></span>
+    </div>`;
+  d.querySelectorAll("select").forEach(s=>s.addEventListener("change",e=>{
+    const id=e.target.dataset.id,k=e.target.dataset.k;
+    state[id]=state[id]||{};state[id][k]=e.target.value;save();render();
+  }));
+  return d;
+}
+function show(l){
+  const st=state[l.id]||{};
+  if(filter==="all")return true;
+  if(filter==="call")return l.s>=80&&st.call!=="dead";
+  if(filter==="grid")return (l.tags||[]).includes("grid");
+  if(filter==="walk")return (l.tags||[]).includes("walkable");
+  if(filter==="sf")return !st.sf&&st.call!=="dead";
+  if(filter==="fu")return st.call==="followup"||st.call==="noanswer";
+  return true;
+}
+function render(){
+  leadsEl.innerHTML="";pipeEl.innerHTML="";
+  let n=0;
+  LEADS.forEach(l=>{if(show(l)){leadsEl.appendChild(card(l,false));n++}});
+  PIPE.forEach(l=>{if(filter==="all"||filter==="fu"&&((state[l.id]||{}).call==="followup")){pipeEl.appendChild(card(l,true));}});
+  document.getElementById("count").textContent=n+" prospects";
+}
+document.querySelectorAll("#filters .chip").forEach(c=>c.addEventListener("click",()=>{
+  document.querySelectorAll("#filters .chip").forEach(x=>x.setAttribute("aria-pressed","false"));
+  c.setAttribute("aria-pressed","true");filter=c.dataset.f;render();
+}));
+render();
+</script>
