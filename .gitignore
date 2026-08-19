@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 *.pyo
 output/raw_leads_pre_scoring.json
+
+# Knowledge graph outputs (rebuild with: graphify .)
+graphify-out/
