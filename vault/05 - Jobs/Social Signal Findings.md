@@ -33,3 +33,43 @@ Reddit posters are pseudonymous. No names, no firms. NYC/Brooklyn geo-targeted s
 - Firecrawl: WORKS. Only tool that reaches reddit.
 - Lusha: **FREE plan, 40 credits total.** Signals work but 1 credit/company; phone reveal = 5. Not viable for recurring sweeps. Reserve for cracking specific anonymous PLLCs. Upgrade or don't build the sweep on it.
 - Crustdata: installed, server NOT connecting, no tools loaded. Was the best shot at named leads (LinkedIn posts + bookkeeper job postings). Eli to check API key registered on Crustdata side.
+
+---
+
+# Sweep 2 — 2026-08-20 (manual run, 5 agents)
+
+## NEW: Intuit's real 2026 wound is CONTROL, not price
+QBO mandatory automated payroll taxes (July 1 2026). Accountants are angrier than owners. Their words:
+- "we will no longer be able to decide WHEN we pay (or if we do pay) our payroll taxes" (r/QuickBooks)
+- "QBO payroll taxes will no longer give us the option of manually entering payroll tax payments. It will withdraw the money from the accounts" (r/quickbooksonline)
+- "Anyone else get the email starting June 30th you can no longer turn off automated payments or filing?" (r/Bookkeeping)
+- "the system defaults to aggressive prepayment schedules rather than holding funds" (r/QuickBooks, "screwed up automatic payroll taxes on day 1")
+- **Intuit charges ~$50/mo to OPT OUT** of automation (r/QuickBooks thread title)
+
+=> LEAD WITH: who controls the debit date and the impound. NOT price.
+=> For a CPA: their client's cash gets pulled early, and the CPA owns that relationship damage, not Intuit.
+
+## NEW competitor weaknesses
+- **TriNet**: "did not file our MA state taxes for almost two years. Withheld all the money for it, did not file" (r/humanresources — OLD thread, verify before repeating)
+- **Insperity**: "extremely slow customer support, tickets taking months" — and ADP TotalSource already in that buyer's consideration set (r/nonprofit)
+- **Wave Payroll**: silent backend migration to third-party, "incorrect data, missing records" — NEW displacement source, not previously tracked
+
+## ⚠️ ALL QUOTES ARE SEARCH SNIPPETS, NOT VERIFIED FULL QUOTES
+Agent never opened a thread (Firecrawl 429). Truncated mid-sentence, no confirmed dates. OPEN THE THREAD before any prospect-facing use.
+
+## INFRASTRUCTURE FINDINGS (fix before next sweep)
+1. **Firecrawl 429s throttled 3 of 5 agents.** Running 5 concurrent agents against one Firecrawl account is self-defeating. STAGGER or serialize the Firecrawl-dependent agents.
+2. **NY DOS business search is a POST form** — not queryable by any agent. This is WHY new-firm yield is always thin. Recency has never actually been filtered on; dates come from Yelp self-reported fields. Needs a scripted approach or drop the claim.
+3. **Firm domains are egress-blocked for WebFetch.** Grid Hunter could not read a single payroll page. Needs `firecrawl_scrape` (not just search) to pull verbatim site language.
+4. **ChamberMaster / GrowthZone directories are queryable by keyword+date** and reliably surface new tax/bookkeeping members nationally. Institutionalize this — it independently re-found 2 firms already in the pipeline, proving the channel targets the right profile.
+
+## GRID HUNTER VERIFY-LIST (unverified — need scrape pass, do NOT cold call on this alone)
+Self-hosted `/payrollservice.php` pattern = usually in-house payroll:
+- Zell & Ettinger CPAs, Brooklyn — ze.cpa/payrollservice.php
+- A. Kahan CPA PC, Brooklyn — kahancpa.com/payrollservice.php
+- TaxSmart NY, Queens — taxsmartny.com/payrollservice.php ("dedicated payroll specialist")
+- Sheldon L. Richards CPA (5 boroughs) — rcpasolutions.com/payroll-services
+- YWL & Company LLC, Queens — ywlcpa.com
+
+## OUT OF SCOPE BUT NOTED
+ProAxis Tax & Accounting (Dor Israel, CPA) — founded 2026, Hasbrouck Heights NJ, licensed in BOTH NJ and NY. If territory rules ever permit, this is a documented brand-new solo practice.
