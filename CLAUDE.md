@@ -16,6 +16,7 @@ You are **Fable**, Eli Colman's organizer for his ADP partner-sales operation. D
 - Push to branch claude/focused-ptolemy-Zd1xI
 
 ## The stack
-- Dashboard: docs/index.html (GitHub Pages) + claude.ai artifact b444c105-cc5f-4faf-a0b5-e58e1229b3d7
+- Dashboard: docs/index.html (GitHub Pages) · downloadable copy in downloads/
+- **NO claude.ai artifacts.** Eli's work computer is VPN'd — deliver as self-contained HTML files in downloads/ and send them directly. No external fonts/CDN; everything must work offline.
 - Monday sweep trigger: trig_01KYWKW1yXmM76tmH77AXua6
 - Prospect data: output/*.csv · Scorecard: scorecard/

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wholesale Payroll Signal Report</title>
+
+<style>
+  :root{
+    --ground:#FBFAF8;
+    --panel:#FFFFFF;
+    --panel-2:#F3F1EC;
+    --ink:#1B1A17;
+    --ink-2:#4A473F;
+    --mute:#767166;
+    --rule:#DFDBD2;
+    --accent:#B23026;
+    --accent-soft:#F6E7E4;
+    --hot:#B23026;
+    --warm:#9A6A18;
+    --cool:#3F6072;
+    --shadow:0 1px 2px rgba(27,26,23,.06), 0 8px 24px -16px rgba(27,26,23,.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#141412;
+      --panel:#1D1D1A;
+      --panel-2:#252420;
+      --ink:#F2EFE9;
+      --ink-2:#C4BFB4;
+      --mute:#8C8679;
+      --rule:#33322D;
+      --accent:#E8776A;
+      --accent-soft:#3A211E;
+      --hot:#E8776A;
+      --warm:#D8A44E;
+      --cool:#7FA6BB;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#141412;
+    --panel:#1D1D1A;
+    --panel-2:#252420;
+    --ink:#F2EFE9;
+    --ink-2:#C4BFB4;
+    --mute:#8C8679;
+    --rule:#33322D;
+    --accent:#E8776A;
+    --accent-soft:#3A211E;
+    --hot:#E8776A;
+    --warm:#D8A44E;
+    --cool:#7FA6BB;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:47rem;margin:0 auto;padding:2.5rem 1.25rem 4rem;display:flex;flex-direction:column;gap:2.25rem;}
+
+  .eyebrow{
+    font-family:Consolas,"Courier New",ui-monospace,monospace;
+    font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--mute);
+  }
+  h1{
+    font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+    font-weight:700;font-size:clamp(1.9rem,5.5vw,2.6rem);
+    line-height:1.08;letter-spacing:-.02em;margin:.5rem 0 0;
+    text-wrap:balance;
+  }
+  .sub{color:var(--ink-2);margin:.75rem 0 0;max-width:38rem;}
+
+  header{border-bottom:1px solid var(--rule);padding-bottom:1.75rem;}
+
+  h2{
+    font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+    font-weight:600;font-size:1.15rem;letter-spacing:-.01em;
+    margin:0 0 .25rem;text-wrap:balance;
+  }
+  section{display:flex;flex-direction:column;gap:1rem;}
+  .lead{color:var(--ink-2);margin:0;}
+
+  /* thesis quote */
+  .thesis{
+    background:var(--accent-soft);
+    border-left:3px solid var(--accent);
+    padding:1.5rem 1.5rem 1.35rem;
+    display:flex;flex-direction:column;gap:.9rem;
+  }
+  .thesis blockquote{
+    margin:0;font-size:1.3rem;line-height:1.42;
+  }
+  .thesis blockquote em{font-style:italic;}
+  .thesis strong{color:var(--accent);font-weight:600;}
+  .attrib{
+    font-family:Consolas,"Courier New",ui-monospace,monospace;
+    font-size:.72rem;color:var(--mute);letter-spacing:.02em;
+  }
+
+  /* signal list */
+  ul.signals{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.7rem;}
+  ul.signals li{
+    background:var(--panel);
+    border:1px solid var(--rule);
+    box-shadow:var(--shadow);
+    padding:.95rem 1.1rem;
+    display:flex;flex-direction:column;gap:.4rem;
+  }
+  .src{
+    font-family:Consolas,"Courier New",ui-monospace,monospace;
+    font-size:.7rem;letter-spacing:.04em;color:var(--mute);
+    display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;
+  }
+  .chip{
+    display:inline-block;padding:.1rem .45rem;
+    border:1px solid currentColor;
+    font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;
+  }
+  .chip.hot{color:var(--hot);}
+  .chip.warm{color:var(--warm);}
+  .chip.cool{color:var(--cool);}
+  .q{margin:0;font-size:.98rem;line-height:1.5;}
+  .q em{font-style:italic;color:var(--ink);}
+
+  /* callout */
+  .callout{
+    background:var(--panel-2);
+    border:1px solid var(--rule);
+    padding:1.25rem 1.35rem;
+    display:flex;flex-direction:column;gap:.7rem;
+  }
+  .callout p{margin:0;color:var(--ink-2);}
+  .callout p strong{color:var(--ink);font-weight:600;}
+
+  /* table */
+  .scroller{overflow-x:auto;border:1px solid var(--rule);background:var(--panel);}
+  table{border-collapse:collapse;width:100%;min-width:30rem;font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;font-size:.85rem;}
+  th{
+    text-align:left;font-weight:600;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--mute);padding:.7rem .9rem;border-bottom:1px solid var(--rule);
+  }
+  td{padding:.75rem .9rem;border-bottom:1px solid var(--rule);color:var(--ink-2);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.name{color:var(--ink);font-weight:600;}
+  td .st{font-family:Consolas,"Courier New",ui-monospace,monospace;font-size:.72rem;}
+  .ok{color:var(--cool);}
+  .bad{color:var(--hot);}
+  .warnc{color:var(--warm);}
+
+  footer{
+    border-top:1px solid var(--rule);padding-top:1.25rem;
+    font-family:Consolas,"Courier New",ui-monospace,monospace;
+    font-size:.7rem;color:var(--mute);line-height:1.7;
+  }
+  a{color:var(--accent);}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Signal Sweep · 20 August 2026 · Firecrawl</div>
+    <h1>They already have a name for what you sell.</h1>
+    <p class="sub">First live social sweep of accountant and bookkeeper forums. One finding is worth more than the rest of the report combined.</p>
+  </header>
+
+  <section>
+    <div class="thesis">
+      <blockquote>What she's looking for has an industry term — it's often called <strong>accountant partner or wholesale payroll</strong>. The idea is that <strong>the accountant owns the client</strong>.</blockquote>
+      <div class="attrib">r/Accounting · "Need Help Finding an Alternative to QuickBooks for Payroll" · one accountant explaining it to another, unprompted</div>
+    </div>
+    <p class="lead">This is your revenue-share pitch, described in their vocabulary rather than ADP's. Lead with <em>wholesale payroll</em> and <em>you own the client</em>. "Partner program" reads as vendor language; this reads as shop talk.</p>
+  </section>
+
+  <section>
+    <h2>Live displacement intent</h2>
+    <p class="lead">Threads from the last three months. People actively shopping, not idly complaining.</p>
+    <ul class="signals">
+      <li>
+        <div class="src"><span class="chip hot">Shopping now</span> r/Payroll — "Best QBO integration?"</div>
+        <p class="q"><em>"Bad service from QB desktop assisted payroll and we just moved to QBO — we want to move away from Intuit for payroll taxes, forms, etc."</em></p>
+      </li>
+      <li>
+        <div class="src"><span class="chip hot">Shopping now</span> r/Accounting — "Bookkeeping and payroll software recommendation"</div>
+        <p class="q">Weighing <em>gusto/adp</em> by name for client payroll. You are already in the consideration set.</p>
+      </li>
+      <li>
+        <div class="src"><span class="chip warm">Incumbent pain</span> r/Bookkeeping — "Why does everyone recommend Gusto for payroll?"</div>
+        <p class="q"><em>"Just as infuriating to work with as QuickBooks. I loathe every time I have to call them."</em></p>
+      </li>
+      <li>
+        <div class="src"><span class="chip warm">Incumbent pain</span> r/quickbooksonline — "Stay Away from QuickBooks Online"</div>
+        <p class="q">Commenters actively pushing readers off QuickBooks payroll onto anything else.</p>
+      </li>
+      <li>
+        <div class="src"><span class="chip cool">Open ask</span> r/Payroll — "PLEASE HELP FIND PAYROLL PROVIDER"</div>
+        <p class="q">Unresolved request for a provider recommendation.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>The Slava trap is an industry pattern</h2>
+    <div class="callout">
+      <p>A bookkeeper on r/Bookkeeping was asked to run a client's <strong>weekly</strong> payroll inside a <strong>$250 engagement they say should be $350+</strong>. Payroll absorbed into an underpriced fee, exactly as with Slava.</p>
+      <p>That makes <strong>"get paid on the payroll you already run"</strong> a repeatable opening, not a one-off argument tailored to one firm.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gusto's documented weak point</h2>
+    <div class="callout">
+      <p>From verified Capterra reviews: <strong>941 misfilings</strong>, missed payments, and support that reviewers say does not understand payroll tax.</p>
+      <p>The one worth memorizing — Gusto <strong>cannot handle an employee working in two states</strong>, which a reviewer specifically flagged as common in the Northeast. That is a tri-state wedge you can raise in any NY/NJ/CT conversation.</p>
+      <p>Separately: <strong>Paychex is the AICPA/CPA.com preferred provider.</strong> That is the incumbent you are displacing inside CPA channels.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What this method cannot do</h2>
+    <div class="callout">
+      <p>Every poster above is <strong>pseudonymous</strong>. No names, no firms. Geo-targeted searches for NYC and Brooklyn returned nothing but career and cost-of-living threads — people do not post their city when asking about payroll software.</p>
+      <p>Social listening gives you <strong>language and timing, not leads.</strong> Named prospects still come from NY DOS filings, NYSED, and the Gusto partner directory. Worth calibrating before building the pipeline around it.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Connector status</h2>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Connector</th><th>State</th><th>What it means</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">Firecrawl</td>
+            <td class="st ok">Working</td>
+            <td>The only tool that reaches Reddit — native fetches are egress-blocked. Everything above came from here. ~6 credits.</td>
+          </tr>
+          <tr>
+            <td class="name">Lusha</td>
+            <td class="st warnc">Free plan</td>
+            <td>40 credits total, 0 spent. Signals work but cost 1 credit per company; phone reveals cost 5. Too thin for a recurring sweep — reserve for cracking specific anonymous PLLCs.</td>
+          </tr>
+          <tr>
+            <td class="name">Crustdata</td>
+            <td class="st bad">Not connecting</td>
+            <td>Installed, but the server loads no tools. This was the best shot at actual names — LinkedIn posts and bookkeeper job postings. Check the API key on Crustdata's side.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    Sources: r/Accounting, r/Bookkeeping, r/Payroll, r/quickbooksonline (via Firecrawl, 3–6 month window) · Gusto pain points from verified Capterra reviews.<br>
+    Forum posts are pseudonymous and unverified. Treat as directional intel for message and timing — never quote a poster back at a prospect.
+  </footer>
+
+</div>
+
+</body>
+</html>
