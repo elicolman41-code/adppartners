@@ -68,11 +68,11 @@
   <div class="focus">
     <h2>This Week's Top 5</h2>
     <ol>
-      <li><b>Irina Golub / Yanina Karlinsky — Innovative Accounting</b> (718) 942-5525 · <span>112 Gusto clients since 2014. Largest proven referrer we've found. Sheepshead Bay.</span></li>
-      <li><b>Virgilio De Sousa — Putnam Accounting</b> (917) 698-2436 · <span>6-month-old PLLC, full contact set, ex-top-10 firm. Freshest new firm on the board.</span></li>
-      <li><b>Steven — Innovative Advisors</b> · <span>PIPELINE: correct the math. You said ~$46K; real number ~$32K at 2×. Aging badly — do this first.</span></li>
-      <li><b>Iryna Stepanchuk CPA</b> — 195 Montague St · <span>~90 Gusto clients, blocks from your desk. Ask for the accounts Gusto strains to hold.</span></li>
-      <li><b>Rehan Usmani — Black Ink</b> (718) 859-4555 · <span>300+ clients, payroll in-house. Grid conversation, not referral.</span></li>
+      <li><b>Caroline Barad — Skylight Financial</b> (718) 218-3865 · <span>295 Front St — two blocks away. Walk over. Payroll + CFO in-house, ProAdvisor active.</span></li>
+      <li><b>Irina Golub / Yanina Karlinsky — Innovative Accounting</b> (718) 942-5525 · <span>112 Gusto clients since 2014. Largest proven referrer on the board.</span></li>
+      <li><b>Jose Alberti — Taxvance</b> (718) 431-2233 · <span>Sunset Park. Registers the LLC, does workers comp — there when the client hires.</span></li>
+      <li><b>Steven — Innovative Advisors</b> · <span>PIPELINE: correct the math. Said ~$46K, real is ~$32K at 2×. Aging badly.</span></li>
+      <li><b>Joy Lynch — Colors Consulting</b> (718) 266-0616 · <span>ProAdvisor, lists payroll for freelancers/small owners. Verify number on dial 1.</span></li>
     </ol>
   </ol>
   </div>
@@ -98,6 +98,21 @@
 
 <script>
 const LEADS=[
+ {id:"skylight",s:88,n:"Skylight Financial, Inc.",w:"Caroline Barad, Founder/CEO · 295 Front St, DUMBO 11201",why:"WALKABLE — two blocks from your desk. Multi-person firm, ProAdvisor-confirmed, does bookkeeping + payroll + fractional CFO in-house. 25 ProAdvisor reviews = active.",ph:"7182183865",site:"skyfin.net",tags:["proadvisor","walkable","grid"]},
+ {id:"taxvance",s:88,n:"Taxvance LLC",w:"Jose Alberti, Managing Member · 5125 6th Ave, Sunset Park",why:"Business registration + tax + bookkeeping + workers comp + ITIN. Near-exact match to the converting profile. Forms the LLC, so they're there when it hires.",ph:"7184312233",site:"taxvance.com",tags:["community","formation"]},
+ {id:"colors",s:82,n:"Colors Consulting Group Inc.",w:"Joy Lynch, President · Coney Island / Gravesend 11224",why:"ProAdvisor listing confirmed. Lists payroll alongside QuickBooks work for freelancers/small owners. Manta listing unclaimed — verify number on dial 1.",ph:"7182660616",em:"info@colorsconsultinggroup.com",site:"colorsconsultinggroup.com",tags:["proadvisor","referrer"]},
+ {id:"karnafully",s:82,n:"Karnafully Tax Services Inc.",w:"Mohammed 'Moe' Hasem, MBA, EA, CAA · 37-20 74th St, Jackson Heights",why:"EA and Certifying Acceptance Agent — sees clients the moment they go from ITIN filer to employer. That's the handoff.",ph:"7182056040",site:"karnafullytax.com",tags:["community","formation"]},
+ {id:"atax-fordham",s:79,n:"ATAX Fordham Heights",w:"Alexis Romero, owner · 2255 Grand Concourse, Bronx",why:"Incorporation services (C-corp, S-corp, LLC, PC, nonprofit) + tax + bookkeeping. CAUTION: ATAX is a franchise — corporate may already have payroll terms. Verify first.",ph:"7186180759",site:"atax.com/bronx-ny-fordham-heights",tags:["community","formation","crack"]},
+ {id:"mclan",s:72,n:"McLan Accounting Services, LLC",w:"4121 18th Ave, Borough Park 11218",why:"Only Brooklyn firm found whose payroll page is SEO-titled for the service itself — markets payroll as a lead product, so likely carries a real book. Principal unconfirmed.",ph:"7188718250",site:"mclancpa.com",tags:["grid","crack"]},
+ {id:"unlimited",s:72,n:"Unlimited Multi Service",w:"994 Broadway, Bushwick 11221",why:"Textbook community multiservice: tax, LLC formation, notary, insurance, liquor licenses. VERIFY OPEN — one Yelp listing flagged closed July 2026. Ask for the owner.",ph:"7184525100",tags:["community","formation","crack"]},
+ {id:"notaria",s:70,n:"Notaria Latinoamericana",w:"88-03 Roosevelt Ave, Jackson Heights",why:"Strongest multiservice profile found — corporation creation, accounting, PAYROLL, ITIN, notary, apostille. Already does payroll = displacement play, not greenfield. Principal unnamed.",ph:"3477304011",site:"notarialatinoamericana.com",tags:["community","formation","crack"]},
+ {id:"artax",s:68,n:"AR Tax Service, Inc.",w:"1057 Clarkson Ave, East Flatbush 11212",why:"Small East Flatbush shop, tax + notary + accounting. Business formation NOT confirmed — qualify on the call. Ask for the owner.",ph:"7185645400",tags:["community","crack"]},
+ {id:"zell",s:65,n:"Zell & Ettinger CPAs",w:"3001 Avenue M, Midwood 11210",why:"Has a SEPARATE 'Online Payroll' client-entry portal ('submit your hours and earnings whenever you want') and names NO third-party vendor. Could still be white-labeled — unverified.",ph:"7186921212",site:"ze.cpa",tags:["grid","crack"]},
+ {id:"ogc",s:64,n:"OGC-REWCPAs, LLC",w:"739 Utica Ave, East Flatbush 11203",why:"Multi-partner (hyphenated name implies a merger) — merged practices inherit two payroll processes. QuickBooks services page. Principal unconfirmed, one click on their About fixes it.",ph:"7184678535",site:"ogc-rewcpas.com",tags:["grid","crack"]},
+ {id:"kahan",s:60,n:"A. Kahan CPA PC",w:"36 Taaffe Pl, Bed-Stuy 11205",why:"Payroll a named nav item under Business Services, no vendor named. First name not sourced — don't guess it.",ph:"7188879112",em:"info@kahancpa.com",site:"kahancpa.com",tags:["grid","crack"]},
+ {id:"rkatz",s:58,n:"R Katz CPA PC",w:"Rachel Katz · Gravesend/Homecrest 11223",why:"Solo principal with payroll in the service list — the Slava shape. Open with the AccountantsWorld math: 80 clients at $10/mo is a full-time job that nets nothing.",ph:"7183724800",tags:["grid"]},
+ {id:"rogoff",s:55,n:"Accounting Solutions LLC",w:"Becky Rogoff, Strategic Advisor · Brooklyn 11229",why:"ProAdvisor listing confirms address + website; Intuit renders phones client-side so no number indexed. 30-second manual look at the site should get it.",site:"asolutionsny.com",tags:["proadvisor","crack"]},
+ {id:"kraus",s:55,n:"Harvey M Kraus",w:"1018 8th Ave, Park Slope 11215",why:"Long-established solo practice, small-business accounting + payroll. Succession angle — a long-run solo book is the cleanest Grid shape.",ph:"7187881972",tags:["grid","crack"]},
  {id:"ontrack",s:76,n:"On Track Bookkeeping & Accounting",w:"Tziry Silberstein · 60 Rutledge St, South Williamsburg",why:"Intuit ProAdvisor running other people's books. Ask what a referral pays her when a client outgrows QuickBooks Payroll.",ph:"7186569522",em:"tziry@ontrackbookkeepingny.com",site:"ontrackbookkeeping.com",tags:["proadvisor","referrer"]},
  {id:"bunker",s:72,n:"Bunker & Co. CPA, PLLC",w:"Borough Park · 1021 38th St · 30+ yrs",why:"ProAdvisor AND a dedicated in-house payroll page. Nonprofit specialty. Grid + referral both live. Principal name UNVERIFIED — don't guess on the call.",ph:"7184384858",site:"bunkercpa.com",tags:["proadvisor","grid","crack"]},
  {id:"bookview",s:66,n:"Bookview Accounting Inc.",w:"Chaim Freund · 5100 15th Ave, Borough Park",why:"Outsourced-CFO clients always ask who to use for payroll. Weaker signal — TaxBuzz/PTIN listing, not a payroll partner directory.",ph:"7185146011",site:"bookviewaccounting.com",tags:["proadvisor"]},
