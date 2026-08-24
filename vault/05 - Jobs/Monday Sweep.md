@@ -40,3 +40,24 @@ Also: STAGGER Firecrawl-dependent agents — concurrent agents 429 each other.
 - Lusha: flapping, signals tools never tested
 - Crustdata: NOT installed — Eli connecting via claude.ai
 - Scheduling connector: DOWN — blocking the trigger edits above
+
+## 🔑 CHANNEL BREAKTHROUGH 2026-08-24 — DayOneLead
+**dayonelead.com republishes NY Division of Corporations filings** by borough + industry WITH REAL FILING DATES. This solves the recency problem that has crippled the new-firm lane since day one (NY DOS's own search is a POST form, unqueryable).
+- EGRESS-BLOCKED for our tools. **ELI must open it manually** — ~10 min:
+  - dayonelead.com/new-york/brooklyn/bookkeeping (5 entities)
+  - dayonelead.com/new-york/brooklyn/accounting (19 entities)
+  - dayonelead.com/new-york/bronx/tax-preparation (6 entities)
+- Site claims it carries owner names + contact info behind a trial.
+- ~30 DOS-verified new firms sitting there.
+
+## RETIRED TECHNIQUE
+**Yelp "was founded in 20XX" search — DEAD.** That phrase lives in page body text the search index does not expose. It never worked and never could through search. Stop spending calls on it.
+
+## ENRICHMENT PATH for the 3 verified new formations
+PTIN Directory (ptindirectory.com) searched by ZIP 11219 (SA Bookkeeping) and 11235 (Atlantik) should attach preparer names + phones.
+
+## NEIGHBORHOODS THAT RETURNED NOTHING via keyword search
+Bay Ridge, Bensonhurst, Sheepshead Bay, Coney Island, Crown Heights, Bed-Stuy, East New York, Flushing, Woodside, Astoria, Elmhurst, Soundview, Port Richmond. Keyword search surfaces national chains + mobile-notary SEO pages there. These need a DIRECTORY-PAGE pass (Yelp/YellowPages listing pages opened directly), which requires scrape access.
+
+## DEAD
+Unlimited Multi Service (994 Broadway, Bushwick) — CLOSED, confirmed Yelp. Left on board at score 0 so it is not re-surfaced as a new find.
