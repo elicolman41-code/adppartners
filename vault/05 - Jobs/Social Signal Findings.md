@@ -44,7 +44,7 @@ QBO mandatory automated payroll taxes (July 1 2026). Accountants are angrier tha
 - "QBO payroll taxes will no longer give us the option of manually entering payroll tax payments. It will withdraw the money from the accounts" (r/quickbooksonline)
 - "Anyone else get the email starting June 30th you can no longer turn off automated payments or filing?" (r/Bookkeeping)
 - "the system defaults to aggressive prepayment schedules rather than holding funds" (r/QuickBooks, "screwed up automatic payroll taxes on day 1")
-- **Intuit charges ~$50/mo to OPT OUT** of automation (r/QuickBooks thread title)
+- ~~"Intuit charges ~$50/mo to OPT OUT"~~ **RETRACTED 2026-08-24.** Came from a Reddit thread TITLE only. UNVERIFIABLE — no authoritative source documents any paid opt-out. Reality: as of July 1 2026 the toggle is simply GONE for all users (mandatory since Nov 15 2025 for new accounts). DO NOT SAY THIS TO A CPA.
 
 => LEAD WITH: who controls the debit date and the impound. NOT price.
 => For a CPA: their client's cash gets pulled early, and the CPA owns that relationship damage, not Intuit.
@@ -73,3 +73,25 @@ Self-hosted `/payrollservice.php` pattern = usually in-house payroll:
 
 ## OUT OF SCOPE BUT NOTED
 ProAxis Tax & Accounting (Dor Israel, CPA) — founded 2026, Hasbrouck Heights NJ, licensed in BOTH NJ and NY. If territory rules ever permit, this is a documented brand-new solo practice.
+
+---
+
+# Trigger Watcher — 2026-08-24
+
+**Nothing material broke in the last 2 weeks.** QBO forced-automation story unchanged since July 1: no reversal, no sourceable opt-out fee, no filed lawsuit. Backlash is real but lives in unverified Intuit Community threads.
+
+## ⚠️ TIME-SENSITIVE — WATCH DAILY
+**NY DFS 2027 small group rates are still REQUESTED, not approved** (~25.3% carrier filings / 25.7% DFS summary). Last year DFS ruled **Aug 29**. A decision is likely within days.
+- For 2026, DFS **cut small group requests by 45.8%**. Expect a large cut again.
+- **Our TotalSource collateral must NOT quote an approved number until DFS rules.** Re-check before any printing.
+- https://myportal.dfs.ny.gov/web/prior-approval/ind-and-sg-medical/summary-of-2027-requested-rate-actions
+
+## Corrections to talking points
+- **DROP the "$50/mo opt-out fee"** — unverifiable. Use cash-flow timing + loss of control instead.
+- Expect the CPA counter-argument: Intuit advertises tax penalty protection when the platform errs on user-supplied data. https://quickbooks.intuit.com/payroll/tax-penalty-protection/
+
+## NY Jan 1 2027 (known, nothing new) — CPA touchpoint material
+Minimum wage moves to CPI-indexed increases; RAISE Act effective Jan 1 2027; retail panic-button rule (500+ employees, mostly outside SMB lane); 2027 PFL rate still unpublished.
+
+## UNSWEPT (not confirmed quiet — no calls spent)
+QB Desktop Payroll sunset fallout, QBOA→Intuit Accountant Suite cutover, ProAdvisor→ProPartner, Gusto/Paychex/Rippling/ADP pricing & layoffs.
