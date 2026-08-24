@@ -1,7 +1,9 @@
 # Job: Monday Sweep
 
-Trigger fires ~8am ET Mondays into the main session. Fleet: Signal Scout, Registrar, Grid Hunter, Directory Miner, Nationwide Tracker, Trigger Watcher (light) — all Opus, hard cap 7, one round, no loops. Fable does Pipeline Nurse inline.
-Scoring: Actionability 25 / Referral 20 / Recency 15 / Grid 10 / Timing 10 / Growth 10 / Proximity-or-Community 10.
+Trigger fires ~8am ET Mondays into the main session. Fleet: Signal Scout, Registrar, Grid Hunter, Directory Miner, Trigger Watcher (light) — all Opus, hard cap 5, one round, no loops.
+**NATIONWIDE TRACKER REMOVED 2026-08-24** (Eli's call). NYC only. Its 13 leads were also stripped from the dashboard — they were padding the 80+ tier (call-now count went 15 -> 6 once removed, revealing the NYC board is much thinner than headline numbers suggested). Fable does Pipeline Nurse inline.
+Scoring: Actionability 25 / Referral 20 / Recency 15 / Grid 10 / Timing 10 / Growth 10 / Brooklyn proximity 10.
+**Weight ACTIONABILITY hardest.** 13 board leads are tagged 'crack' (no phone/email) = not callable. Callable beats interesting.
 Output: update dashboard (artifact + docs/index.html), refresh Top-5, SHORT summary. Update vault firm notes for anything new.
 
 ## Signal Scout — MUST route through Firecrawl
@@ -30,7 +32,8 @@ First run: check `account_usage` + `signals_company_filters` to confirm the plan
 - `crustdata_company_enrich` — headcount/growth on ranked leads
 
 ## PENDING (apply when scheduling connector reconnects)
-Trigger trig_01KYWKW1yXmM76tmH77AXua6 still needs written in: Nationwide Tracker in fleet (cap→7), Lusha signals step, Firecrawl-routed Signal Scout, Crustdata step.
+Trigger trig_01KYWKW1yXmM76tmH77AXua6 still needs written in: REMOVE Nationwide Tracker (cap→5), remove the claude.ai artifact republish step (Eli: no artifacts — deliver downloads/*.html instead), Lusha signals step, Firecrawl-routed Signal Scout, Crustdata step.
+Also: STAGGER Firecrawl-dependent agents — concurrent agents 429 each other.
 
 ## Connector status (as of 2026-08-20)
 - Firecrawl: connected, flapping — WORKS (verified on M&H research)
