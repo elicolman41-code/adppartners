@@ -85,6 +85,8 @@
     <button class="chip" data-f="sf" aria-pressed="false">Needs SF check</button>
     <button class="chip" data-f="fu" aria-pressed="false">Follow-ups</button>
     <span class="count" id="count"></span>
+    <button class="chip" id="exportBtn" style="margin-left:auto">Copy my status</button>
+    <button class="chip" id="importBtn">Paste status</button>
   </div>
 
   <h3 class="sect">New Prospects — Ranked</h3>
@@ -161,6 +163,36 @@ const PIPE=[
 const KEY="pipeline_engine_v1";
 let state={};try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+
+// --- status portability: this board's marks live in THIS browser only.
+// "Copy my status" puts them on the clipboard so they can be sent to Fable
+// and baked into the file; "Paste status" restores them on another device.
+function statusText(){
+  const rows=[];
+  for(const id in state){
+    const st=state[id]||{};
+    const bits=[];
+    if(st.call) bits.push(st.call);
+    if(st.sf) bits.push("sf:"+st.sf);
+    if(st.note) bits.push("note:"+st.note);
+    if(bits.length) rows.push(id+" = "+bits.join(" | "));
+  }
+  return rows.length ? rows.sort().join("\n") : "(nothing marked yet)";
+}
+document.getElementById("exportBtn").onclick=async()=>{
+  const payload="PIPELINE STATUS "+new Date().toISOString().slice(0,10)+"\n"+statusText()+"\n\nRAW: "+JSON.stringify(state);
+  try{ await navigator.clipboard.writeText(payload); alert("Copied. Paste it to Fable and it gets baked into the file."); }
+  catch(e){ window.prompt("Copy this and send it to Fable:", payload); }
+};
+document.getElementById("importBtn").onclick=()=>{
+  const t=window.prompt("Paste the RAW {...} status from your other device:");
+  if(!t) return;
+  try{
+    const start=t.indexOf("{"), obj=JSON.parse(t.slice(start));
+    Object.assign(state,obj); save(); render();
+    alert("Status restored.");
+  }catch(e){ alert("Could not read that. Paste the part starting with { after RAW:"); }
+};
 
 const fmt=t=>"("+t.slice(0,3)+") "+t.slice(3,6)+"-"+t.slice(6);
 const leadsEl=document.getElementById("leads"),pipeEl=document.getElementById("pipe");
