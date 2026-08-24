@@ -63,8 +63,9 @@ Agent never opened a thread (Firecrawl 429). Truncated mid-sentence, no confirme
 3. **Firm domains are egress-blocked for WebFetch.** Grid Hunter could not read a single payroll page. Needs `firecrawl_scrape` (not just search) to pull verbatim site language.
 4. **ChamberMaster / GrowthZone directories are queryable by keyword+date** and reliably surface new tax/bookkeeping members nationally. Institutionalize this — it independently re-found 2 firms already in the pipeline, proving the channel targets the right profile.
 
-## GRID HUNTER VERIFY-LIST (unverified — need scrape pass, do NOT cold call on this alone)
-Self-hosted `/payrollservice.php` pattern = usually in-house payroll:
+## ~~GRID HUNTER VERIFY-LIST~~ — ⚠️ PREMISE RETRACTED 2026-08-24
+**`/payrollservice.php` is NOT an in-house-payroll tell.** It is the stock URL of the **CPA Site Solutions** website template, used by hundreds of firms. It proves only that they bought the same website package. Do not use this pattern as a Grid signal again.
+Original (bad) list kept for reference only:
 - Zell & Ettinger CPAs, Brooklyn — ze.cpa/payrollservice.php
 - A. Kahan CPA PC, Brooklyn — kahancpa.com/payrollservice.php
 - TaxSmart NY, Queens — taxsmartny.com/payrollservice.php ("dedicated payroll specialist")
@@ -105,3 +106,28 @@ Confirmed real Brooklyn ProAdvisor listings; profile pages egress-blocked so no 
 
 Rejected: Powered Books (Rockland County, SEO landing page only), TechBrot (statewide remote, no NYC office).
 NOTE: Firecrawl was DISCONNECTED during this run — that's why yield was 3 not 5-8. Brooklyn ProAdvisor density is high; one unblocked pass on zips 11219/11249/11235 should triple this.
+
+---
+
+# Grid Hunter 2026-08-24 — retry result
+
+## ⚠️ TOOLING CEILING (fix before running this lane again)
+- **Firecrawl exposes only `firecrawl_search`** — SERP titles/snippets. **No scrape/extract tool.** No agent can read page body text.
+- Firm domains remain **EGRESS_BLOCKED** for WebFetch (confirmed on ze.cpa).
+- Firecrawl then 429'd and stayed there through a retry.
+=> **No verbatim payroll-page language is obtainable today.** Grid Hunter cannot do its job until Firecrawl scrape is enabled OR the firm domains are allowlisted. Target URLs are already identified — it's a ~15 min job once unblocked.
+
+## Corrections
+- `/payrollservice.php` = CPA Site Solutions template. NOT a signal. (See retraction above.)
+- **YWL & Company is BROOKLYN-based**, not Queens. Its Queens pages are templated geo-SEO landing pages. Watch for this pattern inflating apparent footprint.
+- **Sheldon L. Richards CPA — DOWNGRADE.** Page titled "Payroll & HR Services"; the "& HR" pairing + Midtown address is the shape of a firm RESELLING a PEO/vendor bundle, not running checks in-house.
+
+## Best remaining candidates (all UNVERIFIED — call-order, not qualification)
+1. **McLan Accounting Services** — 4121 18th Ave, Borough Park — (718) 871-8250 — score 72. Only one whose payroll page is SEO-titled for the service itself ("Payroll Services Brooklyn NY"), i.e. markets payroll as a lead product. Two domains: mclantax.com / mclancpa.com.
+2. **OGC-REWCPAs LLC** — 739 Utica Ave, East Flatbush — (718) 467-8535 — score 64. Multi-partner (hyphenated name implies merger); merged practices inherit two payroll processes.
+3. **R Katz CPA PC** — Brooklyn 11223 — (718) 372-4800 — **Rachel Katz** — score 58. Solo principal, payroll in service list = the Slava shape.
+4. **Harvey M Kraus** — 1018 8th Ave, Park Slope — (718) 788-1972 — score 55. Long-established solo; succession/Grid angle.
+5. **Zell & Ettinger CPAs** — 3001 Avenue M, Midwood — (718) 692-1212 — strongest of the original five: has a SEPARATE "Online Payroll" client-entry portal ("Submit your hours and earnings whenever you want") and names NO third-party vendor. Could still be a white-labeled vendor portal.
+6. **A. Kahan CPA PC** — 36 Taaffe Pl, Bed-Stuy — (718) 887-9112 — info@kahancpa.com
+
+Book size UNKNOWN for all. Principals sourced only for Richards and Katz — rest deliberately blank, not guessed.
