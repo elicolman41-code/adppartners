@@ -95,3 +95,13 @@ Minimum wage moves to CPI-indexed increases; RAISE Act effective Jan 1 2027; ret
 
 ## UNSWEPT (not confirmed quiet — no calls spent)
 QB Desktop Payroll sunset fallout, QBOA→Intuit Accountant Suite cutover, ProAdvisor→ProPartner, Gusto/Paychex/Rippling/ADP pricing & layoffs.
+
+## Directory Miner 2026-08-24 — 4 ProAdvisor profiles ELI MUST OPEN HIMSELF
+Confirmed real Brooklyn ProAdvisor listings; profile pages egress-blocked so no contact data. Open on a non-VPN browser, ~1 min each:
+- Andrew Lewis — https://proadvisor.intuit.com/quickbooks-help/andrew-lewis-cb
+- Becky Rogoff (slug "accountingsolutionsny") — https://proadvisor.intuit.com/app/accountant/search?searchId=accountingsolutionsny
+- Caroline Barad — https://proadvisor.intuit.com/app/accountant/search?searchId=caroline-barad-2
+- Joy Lynch — https://proadvisor.intuit.com/app/accountant/search?searchId=joy-a-lynch
+
+Rejected: Powered Books (Rockland County, SEO landing page only), TechBrot (statewide remote, no NYC office).
+NOTE: Firecrawl was DISCONNECTED during this run — that's why yield was 3 not 5-8. Brooklyn ProAdvisor density is high; one unblocked pass on zips 11219/11249/11235 should triple this.
