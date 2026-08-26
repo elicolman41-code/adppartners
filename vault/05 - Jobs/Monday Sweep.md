@@ -61,3 +61,29 @@ Bay Ridge, Bensonhurst, Sheepshead Bay, Coney Island, Crown Heights, Bed-Stuy, E
 
 ## DEAD
 Unlimited Multi Service (994 Broadway, Bushwick) — CLOSED, confirmed Yelp. Left on board at score 0 so it is not re-surfaced as a new find.
+
+## Sweep 2026-08-24 (rerun) — method finding that MATTERS
+**Keyword searches return SEO doorway pages. DIRECTORY-RECORD searches return real firms with phones.**
+Go at Yelp/YellowPages/Manta/TaxBuzz/PTIN/BBB/Yahoo Local BUSINESS-DETAIL pages, not category keyword queries. This one change took a neighborhood set that produced ZERO last run to 10 callable leads.
+
+## ⚠️ EGRESS REGRESSION
+directory.relayfi.com was reachable earlier today, now BLOCKED. Also blocked: xero.com, most firm domains. Firecrawl is SEARCH-ONLY (no scrape tool exists).
+=> Directory Miner returned 0 callable this run. Not an effort problem.
+**accountants.ramp.com IS reachable** and is untouched — point the next directory pass there first.
+
+## STILL UNCOVERED (need directory-record passes)
+- Brooklyn: Canarsie, Flatlands, Mill Basin, Gravesend, Prospect Heights, Sunset Park north, Brownsville proper
+- Bronx: Fordham, Kingsbridge, Riverdale, Throgs Neck, Soundview, Hunts Point, Mott Haven, Pelham Bay (Bronx yielded only 2 firms total — dominated by H&R Block SEO pages)
+- Staten Island: entire NORTH SHORE (St. George, Port Richmond, Great Kills, Tottenville)
+- Queens: Sunnyside, Ridgewood, Elmhurst, Corona, Bayside, Whitestone, Far Rockaway, Rego Park, Ozone Park
+
+## CHASE FIRST NEXT RUN
+**Tax & Financial Services (Bay Ridge)** — explicitly advertises helping clients INCORPORATE, open LLCs, C Corps and S Corps; est. 1980. Best profile match found all sweep. Agent ran out of budget before landing the phone. https://www.yelp.com/biz/tax-and-financial-services-brooklyn
+Also name-only: Bay Ridge Tax Planning (9710 3rd Ave), Easy Tax Services (3094 Coney Island Ave), Schwartz Accounting (1839 Flatbush Ave), Maria Agency (590 Manhattan Ave, Greenpoint).
+
+## CONFIRMED CLOSED — do not call
+- Unlimited Multi Service, 994 Broadway Bushwick (Yelp, July 2026)
+- Astoria Tax Service, 45-18 Court Sq (Yelp)
+
+## NAME COLLISION WARNING
+**ASR Accounting & Tax (Bronx, 2718 Lurting Ave)** is a NEW lead and is NOT Aldo's ASR Consulting on the daily to-do. Different firms.
