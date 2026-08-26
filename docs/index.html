@@ -62,7 +62,7 @@
   <header>
     <div class="eyebrow">ADP Partner Sales · Eli Colman · Weekly sweep: Mondays</div>
     <h1>Pipeline Engine</h1>
-    <div class="sub">Ranked partner pipeline. Log Salesforce checks and call outcomes — the Monday fleet reads them and re-prioritizes. Updated Aug 19, 2026 — nationwide sweep added.</div>
+    <div class="sub">Ranked partner pipeline. Log every call outcome — the Lane Scorecard below turns your own marks into evidence about which lanes actually convert. NYC only. Updated Aug 24, 2026.</div>
   </header>
 
   <div class="focus">
@@ -75,6 +75,11 @@
       <li><b>Steven — Innovative Advisors</b> · <span>PIPELINE: correct the math. Said ~$46K, real is ~$32K at 2×. Still open.</span></li>
     </ol>
   </ol>
+  </div>
+
+  <div class="focus" id="scorecard" style="border-left-color:#2A6146;display:none">
+    <h2 style="color:#2A6146">Lane Scorecard — from your own call outcomes</h2>
+    <div id="scoreBody" style="font-size:.85rem"></div>
   </div>
 
   <div class="bar" id="filters">
@@ -209,6 +214,37 @@ const KEY="pipeline_engine_v1";
 let state={};try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
 
+// --- Lane Scorecard: which lanes actually convert, computed from Eli's own marks.
+// Scores on this board are estimates. THIS is the only real evidence.
+function renderScorecard(){
+  const el=document.getElementById("scorecard"), body=document.getElementById("scoreBody");
+  if(!el||!body) return;
+  const byTag={};
+  LEADS.forEach(l=>{
+    const st=state[l.id]; if(!st||!st.call) return;
+    const tags=(l.tags&&l.tags.length)?l.tags:["untagged"];
+    tags.forEach(t=>{
+      byTag[t]=byTag[t]||{worked:0,dead:0,touched:0};
+      byTag[t].touched++;
+      if(st.call==="meeting") byTag[t].worked++;
+      if(st.call==="dead") byTag[t].dead++;
+    });
+  });
+  const rows=Object.entries(byTag).filter(([,v])=>v.touched>=2)
+    .sort((a,b)=>(b[1].worked/b[1].touched)-(a[1].worked/a[1].touched));
+  if(!rows.length){ el.style.display="none"; return; }
+  el.style.display="";
+  body.innerHTML='<div style="color:#6B7377;margin-bottom:.5rem">Lanes with 2+ logged outcomes. Meeting-set rate is the only number here that is measured rather than guessed.</div>'+
+    rows.map(([t,v])=>{
+      const pct=Math.round(100*v.worked/v.touched);
+      return '<div style="display:flex;gap:.6rem;align-items:baseline;padding:.2rem 0">'+
+        '<b style="min-width:7rem">'+t+'</b>'+
+        '<span style="font-variant-numeric:tabular-nums;min-width:3rem">'+pct+'%</span>'+
+        '<span style="color:#6B7377">'+v.worked+' meeting'+(v.worked===1?"":"s")+' / '+v.touched+' called'+(v.dead?" · "+v.dead+" dead":"")+'</span>'+
+        '</div>';
+    }).join("");
+}
+
 // --- status portability: this board's marks live in THIS browser only.
 // "Copy my status" puts them on the clipboard so they can be sent to Fable
 // and baked into the file; "Paste status" restores them on another device.
@@ -291,6 +327,7 @@ function show(l){
 function render(){
   leadsEl.innerHTML="";pipeEl.innerHTML="";
   let n=0;
+  renderScorecard();
   LEADS.forEach(l=>{if(show(l)){leadsEl.appendChild(card(l,false));n++}});
   PIPE.forEach(l=>{if(filter==="all"||filter==="fu"&&((state[l.id]||{}).call==="followup")){pipeEl.appendChild(card(l,true));}});
   document.getElementById("count").textContent=n+" prospects";
