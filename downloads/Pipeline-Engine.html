@@ -62,17 +62,17 @@
   <header>
     <div class="eyebrow">ADP Partner Sales · Eli Colman · Weekly sweep: Mondays</div>
     <h1>Pipeline Engine</h1>
-    <div class="sub">Ranked partner pipeline. Log every call outcome — the Lane Scorecard below turns your own marks into evidence about which lanes actually convert. NYC only. Updated Aug 24, 2026.</div>
+    <div class="sub">Ranked partner pipeline. Log every call outcome — the Lane Scorecard below turns your own marks into evidence about which lanes actually convert. NYC only. Updated Aug 31, 2026.</div>
   </header>
 
   <div class="focus">
     <h2>This Week's Top 5</h2>
     <ol>
-      <li><b>Caroline Barad — Skylight Financial</b> (718) 218-3865 · <span>295 Front St — two blocks away. Walk over. Payroll + CFO in-house.</span></li>
-      <li><b>Lillian Bowman — Lillian's Professional Services</b> (718) 953-6455 · <span>Bed-Stuy since 1980. ITIN acceptance agent — sees employers the week they hire.</span></li>
-      <li><b>Marc Hilaire — Nodelays Tax</b> (347) 461-9350 · <span>Flatbush. Already runs payroll in-house. Pure displacement call.</span></li>
-      <li><b>Joseph Glauber, CPA</b> (718) 486-7878 · <span>Williamsburg. Payroll in-house — Grid conversation.</span></li>
-      <li><b>Steven — Innovative Advisors</b> · <span>PIPELINE: correct the math. Said ~$46K, real is ~$32K at 2×. Still open.</span></li>
+      <li><b>Stephen — Innovative Advisors</b> · <span>PIPELINE, OVERDUE: you said early this week. Correct the math — you said ~$46K, real is ~$32K at 2×. He may be filling in the sheet against the wrong number.</span></li>
+      <li><b>PRIMUS Business Management</b> (212) 328-0138 · <span>147 Prince St — walkable. Accounting + HR + admin bundled. 13 Gusto clients since 2019.</span></li>
+      <li><b>Kenford Peli — The Peli Firm</b> (718) 878-3959 · <span>Brooklyn Navy Yard, 10 min away. Payroll is the visible gap in their own service list.</span></li>
+      <li><b>Profitas LLC</b> (917) 407-3719 · <span>Park Slope. 22 Gusto clients since 2014 — a 12-year referral habit.</span></li>
+      <li><b>Caroline Barad — Skylight Financial</b> (718) 218-3865 · <span>295 Front St, two blocks. Still uncalled.</span></li>
     </ol>
   </ol>
   </div>
@@ -105,6 +105,22 @@
 
 <script>
 const LEADS=[
+ {id:"peli",s:88,n:"The Peli Firm, LLC",w:"Kenford Peli, CEO · 1 Dock 72 Way Ste 7-128, Brooklyn Navy Yard 11205 · LLC filed Oct 2 2025 (NY DOS)",why:"10 min from DUMBO. Brands as accounting/financial management/consulting — PAYROLL IS THE VISIBLE GAP in their own service list. Note: site says founded 2011 vs Oct 2025 filing, likely a restructure — don't open with 'congrats on the new firm'.",ph:"7188783959",em:"information@thepelifirm.com",site:"thepelifirm.com",tags:["dco","new firm","walkable"]},
+ {id:"profitas",s:88,n:"Profitas LLC",w:"423 18th St, Park Slope 11215",why:"22 Gusto clients, partner since 2014 — a 12-year referral habit. Niche book: Broadway producers, record labels, filmmakers, law firms, property managers. Niches mean repeatable referral patterns.",ph:"9174073719",site:"profitasllc.com",tags:["gusto","referrer"]},
+ {id:"primus",s:86,n:"PRIMUS Business Management",w:"147 Prince St, Brooklyn 11201 · founded 2002 · WALKABLE",why:"13 Gusto clients since 2019. Sells accounting + HR + admin as a BUNDLE to nonprofits and small business — payroll already inside their pitch. BBB A+, ICIC Inner City 100.",ph:"2123280138",em:"info@primusco.com",site:"primusco.com",tags:["gusto","referrer","walkable"]},
+ {id:"profitline",s:84,n:"ProfitLine USA",w:"Dianna O'Doherty · 169 Madison Ave, Murray Hill 10016",why:"12 Gusto clients since 2016. Outsourced back-office/controller shop, currently running free strategy calls — actively acquiring, which is when a referral channel gets attention.",ph:"2126550028",site:"profitlineusa.com",tags:["gusto","referrer"]},
+ {id:"westwood",s:80,n:"Westwood Tax & Consulting LLC",w:"Josh Zimmelman, founder · 5 Penn Plaza Fl 19, Manhattan (+ Rockville Centre)",why:"29 Gusto clients since 2017 — highest verified count this sweep. Named founder, two offices. Already monetizes referrals.",ph:"5167920505",site:"westwoodtax.com",tags:["gusto","referrer"]},
+ {id:"protax",s:78,n:"Protax Center",w:"1679 East 19th St Ste 2A, Homecrest/Sheepshead Bay 11229",why:"Service-specific payroll URL (not the CPA-template). Snippet: team 'handles complex payroll calculations, W-2 generation, and precise tax filings' — first-person, no vendor named. Separate bookkeeping + outsourced-CFO pages.",ph:"7186450500",em:"info@protaxcenter.com",site:"protaxcenter.com",tags:["grid"]},
+ {id:"isaacson",s:74,n:"Arthur Isaacson & Company, CPA",w:"5808 New Utrecht Ave, Borough Park 11219 · since 1986 · 3 offices",why:"Payroll page SEO-titled for the service on a custom domain — markets payroll as its own product. 40 years, three offices = likely a real recurring book. Highest Grid-multiple potential this sweep.",ph:"7188530999",site:"brooklynaccountingservice.net",tags:["grid"]},
+ {id:"meicpa",s:70,n:"MEI CPA PC",w:"1714 86th St 2nd Fl, Bensonhurst 11214",why:"Sales-tax page says they manage 'the entire process... from data collection, to calculation, to filing and remittance.' CAUTION: payroll page says 'guidance', which may mean advisory not processing — qualify on the call.",ph:"7189753363",site:"meicpa.com",tags:["grid","crack"]},
+ {id:"qatax",s:69,n:"Q&A Tax Solutions, Inc.",w:"885 Grand St, East Williamsburg 11211",why:"Best in-house wording found: 'full-service payroll processing... including pay calculations, direct deposit, payroll tax withholdings, and ALL REQUIRED QUARTERLY AND ANNUAL FILINGS.' No vendor named. NOTE: markets a Queens page but the office is Brooklyn.",ph:"7187828802",site:"qataxsolutions.com",tags:["grid"]},
+ {id:"elebook",s:62,n:"ELE Bookkeeping Inc.",w:"555 Crown St #3B, Crown Heights 11213 · filed Apr 3 2025 (DOS doc #7577107)",why:"16 months old, QuickBooks-native, prime payroll-referral age. Possible d/b/a link to Brooklyn Bookkeeping — UNCONFIRMED, do not dial as ELE.",tags:["dco","new firm","crack"]},
+ {id:"goldbaugh",s:62,n:"Jessie Goldbaugh LLC",w:"Jessie Goldbaugh, CMA · 185 Clinton Ave, Clinton Hill 11205 · very close to DUMBO",why:"7 Gusto clients since 2019. Solo CMA whose model is mentorship-plus-systems — the profile that hands payroll off rather than doing it in-house. No phone found.",site:"jessiegoldbaugh.com",tags:["gusto","referrer","crack"]},
+ {id:"yogicpa",s:58,n:"Yogi CPA",w:"Zunie Nguyen, CPA · 136 Madison Ave 6th Fl, Murray Hill 10016",why:"Ramp partner directory listing = fintech-referral fluency. Small enough that the principal answers. Email published, no phone found.",em:"Hello@yogicpa.com",site:"yogicpa.com",tags:["referrer","crack"]},
+ {id:"vitalnv",s:58,n:"Vital NextVentures LLC",w:"Rodman Vital (registered agent) · 611 E 76th St Apt 6B, Canarsie 11236 · filed Jan 10 2026 (DOS)",why:"Verified DOS filing, home-address registration. NOTE: DayOneLead lists it under Manhattan tax-prep but the DOS address is Brooklyn — trust DOS.",tags:["new firm","crack"]},
+ {id:"advisoryalign",s:57,n:"Advisory Alignment Collective LLC",w:"1473 5th, Manhattan · filed May 28 2026 (DOS)",why:"Textbook DCO naming — 'Advisory', 'Collective', three months old, zero payroll signal yet. Worth a DOS lookup for the member name.",tags:["dco","new firm","crack"]},
+ {id:"honig",s:54,n:"Alan S. Honig & Associates, Inc.",w:"Alan Honig, CPA · 1501 Broadway #1802, Times Square 10036",why:"Long-running solo-principal CPA shop, succession-age profile — the kind that outsources payroll rather than builds it. Off-thesis but callable.",ph:"2127641234",tags:["referrer"]},
+ {id:"exbo",s:52,n:"Exbo Group Inc.",w:"305 7th Ave, Chelsea → relocating to 740 Broadway, NoHo",why:"Listed in BOTH Ramp and Bill.com partner directories — strongest referral signal in the batch. Controllership/CFO for early-growth companies, so payroll is a hand-off not a competency they defend. Principal name NOT confirmed — don't guess.",site:"exbogroup.com",tags:["referrer","crack"]},
  {id:"velo",s:82,n:"Velo Accounting Group LLC",w:"22 Brevoort Pl, Bed-Stuy 11216 · est. March 14, 2025 (NY DOS)",why:"BEST DCO MATCH. 17 months old. Own services list: bookkeeping, PAYROLL, sales & use tax, tax prep, app advisory + CFO services — payroll present, not headlined. Gusto partner (~68 clients) so they already refer payroll out: displacement, not education. NO PEO partner visible → TotalSource opening. Partnership form submitted 8/24.",site:"veloag.com",tags:["dco","referrer","new firm","contacted"]},
  {id:"weissco",s:66,n:"Weiss & Company",w:"Brooklyn · new accounting LLC filing",why:"Partner-style name on the DOS new-accounting-filings list. Recency is DOS-sourced. Needs principal + phone before calling.",tags:["dco","new firm","crack"]},
  {id:"rdwilliamson",s:58,n:"RD Williamson & Assoc, LLC",w:"Brooklyn · new accounting LLC filing",why:"Partner-style name, DOS-sourced recency. Only related person found is a Dwain Williamson tax preparer — may be solo, verify structure.",tags:["dco","new firm","crack"]},

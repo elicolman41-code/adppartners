@@ -87,3 +87,26 @@ Also name-only: Bay Ridge Tax Planning (9710 3rd Ave), Easy Tax Services (3094 C
 
 ## NAME COLLISION WARNING
 **ASR Accounting & Tax (Bronx, 2718 Lurting Ave)** is a NEW lead and is NOT Aldo's ASR Consulting on the daily to-do. Different firms.
+
+## Sweep 2026-08-31 — method status
+**WORKING:**
+- **Gusto partner directory** — fully readable, publishes CLIENT COUNTS + partner-since years. Now the workhorse. Lead with it.
+- **DayOneLead via WebSearch allowed_domains** — still works but PARTIAL. Resolved: /brooklyn/bookkeeping, /brooklyn/business-consulting, /manhattan/tax-preparation. FAILED to resolve as category pages: /queens/accounting, /brooklyn/tax-preparation, /manhattan/accounting (summarizer redirected to Bronx or to entity pages).
+- **bizprofile.net — NEW, add to Stage 2 rotation ahead of ZoomInfo.** Returns exact DOS filing dates AND document numbers for entities DayOneLead won't date.
+
+**DEGRADED:**
+- **accountants.ramp.com is now EGRESS-BLOCKED** (was reachable Aug 24). Names leak via WebSearch snippets only. Second directory to degrade after Relay.
+- bill.com/find-an-accountant reachable but results skew national; won't filter to Brooklyn.
+
+**CAUTION on Gusto client counts:** they are GUSTO clients, not the firm's total book. Never quote the number back to a prospect as their client count.
+
+## TALKING-POINT CORRECTION (Intuit ProAdvisor → ProPartner)
+Existing **30% ProAdvisor Preferred Pricing discounts and revenue share are GRANDFATHERED** for subscriptions set up before launch. **Do NOT tell CPAs they lose their discount — that is wrong and they will know it.**
+Real hooks instead: QBOA discontinued Dec 2026 (firms move to a free Core plan); **Accelerate goes to $149/mo on Jan 20 2027**; Books Close $8/client/mo (≤50 clients), $6 (>50); ProAdvisor tiers sunset early 2027.
+
+## NY DFS 2027 SMALL GROUP — STILL NO RULING as of Aug 31 2026
+Most recent DFS rate-decision press release is still the 2026 one (Aug 29 2025). 2027 filings remain listed as requested/proposed: ~25.3% (ACA Signups tally) / 25.7% (DFS weighted). **Collateral is fine — it already says "requested." Never say "approved."**
+For 2026 DFS cut small group 24% requested → 13% approved (45.8% cut). **RE-CHECK WEDNESDAY**, not next Monday — the ruling is overdue.
+
+## QUEENS PROBLEM
+No Queens firm cleared verification this run. Every Queens-titled result traced to a templated geo-SEO page or an office physically in Brooklyn/Bronx. Next Queens attempt must work from a Queens ZIP-anchored directory, not search titles.
