@@ -135,3 +135,25 @@ Lists EVERY IRS-registered paid preparer by city/ZIP **including firms with zero
 ## SCORING FOR THIS PROFILE
 Actionability 25 / Business-client evidence 20 / Book-size signals 20 (tenure, review volume, staff, service breadth) / **Under-prospected signals 20** (no partner-directory listing, basic website, no marketing) / Proximity 15.
 Note the inversion: for this lane, ABSENCE from partner directories SCORES POSITIVELY. That is the opposite of the referral lane's rule.
+
+## PTIN METHOD — RESULTS 2026-08-31 (7 leads, the profile works)
+**ptindirectory.com is EGRESS-BLOCKED to WebFetch — but its Google SNIPPETS render firm name, preparer name, full street address AND phone.** That is enough. Never fetch it; always snippet-mine it.
+**How to query:** ZIP numbers do NOT filter (URLs carry no ZIP). What works is "ptindirectory Brooklyn" + a firm-name token ("accounting corp", "accounting services corp") OR a street/neighborhood name. For unswept areas query by CORRIDOR: "ptindirectory Brooklyn 86th Street" / "Kings Highway" / "Coney Island Avenue" / "Bay Ridge Avenue".
+Also use **ptin.org** — a SEPARATE site with FIRM-level records (more useful than preparer-level). It produced Juan V. Soto's credentials and Brighton Tax's firm record.
+
+**ZIP yield:** 11229 Homecrest = RICHEST (9 named firms w/ phones in one query) · 11235 Brighton Beach = good · 11214/11223 = poor (engine ignores ZIP, matches "Brooklyn") · 11204/11230/11234/11209/11228 = NOT REACHED.
+**Budget rule:** snippet-mining is cheap, VERIFICATION burns the calls (~every 2nd detail page is blocked). Spend ~2/3 of the cap on verification, not discovery.
+
+## NEWLY EGRESS-BLOCKED (cumulative dead-ends)
+ptindirectory.com · dotax.com · buzzfile.com · chamberofcommerce.com · yelp.com · yellowpages.com · taxbuzz.com · gusto.com · accountants.ramp.com · directory.relayfi.com · xero.com · dayonelead.com · AND ordinary small-business sites (taxofficenyc.com, ccltax.com, sotosaccountingservices.com, orientstarservices.com).
+Still yielding via snippets: Manta · Yahoo Local · ZoomInfo · CountingWorks · ptin.org · bizprofile.net · i24app.com
+
+## ⚠️ VERIFY BEFORE DIALING
+- **Blue-Ribbon Accounting & Tax (Elmhurst, Eric Chung)** — possible name collision with Eli's "Jacob at Blue Ribbon" TotalSource account. Likely different firms; CONFIRM before cold-calling.
+- **United Accounting Services (Ilya Estrin, 2946 Quentin Rd)** — 17 yrs, payroll in services, would otherwise qualify. EXCLUDED: BBB Scam Tracker entry reports a recruiting email IMPERSONATING the firm, and phone numbers conflict across sources. The report is about impersonation, not misconduct by them — but get a clean phone before dialing.
+
+## ONE VERIFICATION QUERY SHORT (cheap to close next run)
+Shneyder CPA PC (Roman Shneyder, 174 Brighton 11th St 2nd Fl 11235, 347-875-0070) · Esses Accounting Firm LLC (Victor Esses, 2171 E 21st St 11229, 718-615-1684) · Leon Levitis Accounting (address conflict: 1817 vs 807 Kings Hwy) · Fajardo Accounting (43-20 52nd St, Woodside — payroll advertised, no phone yet)
+
+## UNSWEPT
+Brooklyn: 11204, 11230, 11234, 11209, 11228. Queens: Astoria, Ridgewood 11385, Sunnyside, Rego Park, Forest Hills, Ozone Park, Corona 11368 — **Corona and Ridgewood highest-yield remaining.**
