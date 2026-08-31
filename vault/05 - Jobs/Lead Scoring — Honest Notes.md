@@ -64,3 +64,42 @@ REJECTED: Cipriani & Bauer (Bauer 24+ yrs, co-op/condo/HOA audit specialty — n
 
 ## THE CHANNEL WORTH MORE THAN ANY SWEEP
 **Ask DCO Partners for referrals.** Firms founded in the same 2-3 year window by people who left the same mid-size firms cluster socially. One conversation with DCO's principals would out-produce a hundred searches. This is the highest-leverage move available and costs nothing.
+
+---
+
+# Gated sweep 2026-08-31 (Eli asked for a strict approval loop)
+
+## THE BAR (4 hard requirements — apply every round)
+1. WORKING PHONE with a source URL. A firm without a phone is NOT a lead — exclude it.
+2. REAL WEBSITE — established operation, not a bare state filing.
+3. **PAYROLL IN THEIR OWN SERVICE LIST.** A Yelp/YellowPages CATEGORY TAG DOES NOT COUNT. (Emerson Gamory was rejected on exactly this and later confirmed to have NO payroll — the tag was wrong. The rule earned its keep.)
+4. NOT BRAND-NEW — roughly 3-15 yrs. Established with a book and a site.
+
+## APPROVED (8) → on the board
+Arrowpoint Tax (92) · Donofrio (84) · AJ Tax (82) · J.D. Pantzis (80) · Alan Lorman (78) · Manning Accounting (74) · Shibu P. Thomas (74) · Brooklyn CPA P.C. (62)
+
+## REJECTED, with reasons — do not re-surface
+- **Shay CPA** — ALREADY A LIVE PIPELINE ACCOUNT (Nina & Akshay). My prompt error: exclusion lists must include PIPE accounts, not just LEADS.
+- **Pay Plus Accounting Solutions / Anays Caceres** — Eli has ALREADY met with Anays. Same error class.
+- **Emerson Gamory** — payroll DISPROVEN. Own site + TaxBuzz + BBB + chamberofcommerce + Black Atlas all list tax prep/planning/bookkeeping/estate/formation, NO payroll. Only the Yelp category said otherwise.
+- **Brooklyn Bookkeeping Co** — their own copy says payroll "in partnership with ADP." ALREADY AN ADP PARTNER. → Eli should Salesforce-check who owns them.
+- **Gabor & Associates** — no payroll in services.
+- **Staten Island Tax Services** — no named principal, no confirmed website.
+- **Dynamic Tax & Accounting** — multi-branch chain (Bronx/Queens/Buffalo/NJ), branch office not a principal's shop.
+- **New Era Tax Service** — 3 yrs, BBB accredited Jan 2026, rebrand of Smart Tax. Fails establishment.
+- **All In Accounting (SI)** — payroll directory-only, same defect as Gamory.
+- **Marcus Hilton CPA / Rodriguez & Co (Bronx)** — no payroll text obtained. Re-workable.
+- **DTGD CPAs / DeCandido (SI)** — /payrollservice.php template, non-signal.
+
+## ⚠️ PROMPT FIX REQUIRED EVERY SWEEP
+Exclusion lists MUST include the LIVE PIPELINE accounts, not just the leads array. Two agents surfaced existing relationships as cold leads this round (Shay, Pay Plus). Pull names from BOTH arrays.
+
+## EGRESS — now blocked to WebFetch (cumulative)
+gusto.com · accountants.ramp.com · directory.relayfi.com · xero.com · yelp.com · yellowpages.com · taxbuzz.com · dayonelead.com · most firm domains.
+Phone-bearing detail records are the method's foundation and they are increasingly unreadable. Firecrawl is SEARCH-ONLY (no scrape). **The binding constraint is now fetch access, not search strategy.**
+Untried and worth it: **PTIN Directory by ZIP** — never reached before a cap.
+
+## COVERAGE STILL EMPTY
+Bronx: Riverdale, Kingsbridge, Throgs Neck, Pelham Bay, Soundview, Mott Haven, Hunts Point, Castle Hill, Parkchester.
+Staten Island: St. George, Port Richmond, New Brighton, West Brighton, Bulls Head, Great Kills.
+Both boroughs collapse into CPA Site Solutions template sites and unfetchable category pages.
