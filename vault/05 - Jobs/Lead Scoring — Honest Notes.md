@@ -103,3 +103,35 @@ Untried and worth it: **PTIN Directory by ZIP** — never reached before a cap.
 Bronx: Riverdale, Kingsbridge, Throgs Neck, Pelham Bay, Soundview, Mott Haven, Hunts Point, Castle Hill, Parkchester.
 Staten Island: St. George, Port Richmond, New Brighton, West Brighton, Bulls Head, Great Kills.
 Both boroughs collapse into CPA Site Solutions template sites and unfetchable category pages.
+
+---
+
+# 🎯 THE HIGHEST-VALUE PROFILE (Eli, 2026-08-31) — "big book, small footprint"
+
+## What it is
+The UNDER-PROSPECTED firm: a long-tenured neighborhood tax/accounting practice with a LARGE client book but almost no marketing presence. No SEO, no content, no partner-directory listing. **No rep has ever called them.** When they engage a vendor they call an inbound 800 number and get a junior inside salesperson who doesn't recognize what they're holding.
+
+**Proof case Eli cited:** the principal of Orient Star Services (orientstarservices.com, Sadique) called ADP's inbound line saying "I have a hundred clients." A colleague picked it up and turned it into a **200-client Grid acquisition.**
+
+## Why it's an arbitrage
+These firms are invisible to search — no domain authority, no SEO — which is EXACTLY why no competitor and no ADP rep has found them. The invisibility that makes them hard for us to find is the same thing that makes them uncontested.
+(Confirmed: orientstarservices.com is egress-blocked AND a name search returns nothing about the firm. The exemplar itself is unfindable.)
+
+## SIGNALS (target FIRM CHARACTERISTICS — never ethnicity or national origin)
+- Storefront/small-office practice in a dense immigrant small-business corridor
+- **Multilingual service advertised** — a commercial signal that the client base is small-business owners needing hands-on service
+- **10+ years tenure + basic/dated website** — real operation, no marketing machine
+- **Multi-service**: entity formation, notary, translation, immigration paperwork, insurance alongside tax/bookkeeping
+- **ABSENT from Gusto / ProAdvisor / Xero partner directories** — presence there means someone already found them
+- High review count relative to web sophistication = real client volume
+
+## TERRITORY
+South Brooklyn: Sheepshead Bay 11235 · Homecrest 11229 · Brighton Beach · Gravesend 11223 · Bensonhurst 11214/11204 · Midwood 11230 · Bay Ridge 11209 · Dyker Heights 11228
+Queens: Flushing 11354/11355 · Elmhurst 11373 · Jackson Heights 11372 · Corona 11368 · Woodside 11377 · Richmond Hill 11418 · Ozone Park · Jamaica 11432 · Astoria · Ridgewood 11385
+
+## THE RIGHT TOOL — PTIN Directory (ptindirectory.com)
+Lists EVERY IRS-registered paid preparer by city/ZIP **including firms with zero web presence** — precisely this population. Carries firm name AND preparer name, so it yields a named principal for an otherwise invisible firm. Never used before this run. This is the correct instrument for this profile; directory-partner mining is structurally the WRONG one (it selects for firms already found).
+
+## SCORING FOR THIS PROFILE
+Actionability 25 / Business-client evidence 20 / Book-size signals 20 (tenure, review volume, staff, service breadth) / **Under-prospected signals 20** (no partner-directory listing, basic website, no marketing) / Proximity 15.
+Note the inversion: for this lane, ABSENCE from partner directories SCORES POSITIVELY. That is the opposite of the referral lane's rule.
