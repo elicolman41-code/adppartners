@@ -25,6 +25,8 @@
   .sub{color:var(--slate);font-size:.875rem;margin-top:.25rem}
   .num{font-variant-numeric:tabular-nums}
 
+  .lead.tent{border-left:5px solid #B4762A}
+  .lead.tent::after{content:"TENTATIVE \2014 REVISIT";position:absolute;top:.5rem;right:.6rem;font-size:.55rem;letter-spacing:.09em;font-weight:700;color:#B4762A}
   .focus{background:var(--card);border:1px solid var(--hair);border-left:5px solid var(--red);border-radius:5px;padding:1rem}
   .focus h2{margin:0 0 .625rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--red)}
   .focus ol{margin:0;padding-left:1.25rem;display:flex;flex-direction:column;gap:.5rem}
@@ -35,7 +37,7 @@
   .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   .count{margin-left:auto;font-size:.75rem;color:var(--slate)}
 
-  .lead{background:var(--card);border:1px solid var(--hair);border-radius:5px;padding: .875rem 1rem;display:flex;flex-direction:column;gap:.5rem}
+  .lead{position:relative;background:var(--card);border:1px solid var(--hair);border-radius:5px;padding: .875rem 1rem;display:flex;flex-direction:column;gap:.5rem}
   .lead.dead{opacity:.45}
   .top{display:flex;gap:.75rem;align-items:baseline;flex-wrap:wrap}
   .score{font-size:1.05rem;font-weight:700;min-width:2.2rem}
@@ -89,6 +91,7 @@
     <button class="chip" data-f="walk" aria-pressed="false">Walkable</button>
     <button class="chip" data-f="sf" aria-pressed="false">Needs SF check</button>
     <button class="chip" data-f="fu" aria-pressed="false">Follow-ups</button>
+    <button class="chip" data-f="tent" aria-pressed="false">Tentative</button>
     <span class="count" id="count"></span>
     <button class="chip" id="exportBtn" style="margin-left:auto">Copy my status</button>
     <button class="chip" id="importBtn">Paste status</button>
@@ -309,7 +312,7 @@ let filter="all";
 function card(l,isPipe){
   const st=state[l.id]||{};
   const d=document.createElement("div");
-  d.className="lead"+(st.call==="dead"?" dead":"")+(st.sf==="unclaimed"?" sf-unclaimed":st.sf==="taken"?" sf-taken":"");
+  d.className="lead"+(st.call==="dead"?" dead":"")+(st.call==="tentative"?" tent":"")+(st.sf==="unclaimed"?" sf-unclaimed":st.sf==="taken"?" sf-taken":"");
   const cls=l.s>=80?"s80":l.s>=65?"s65":"s50";
   let contact="";
   if(l.ph)contact+=`<a href="tel:${l.ph}">${fmt(l.ph)}</a>`;
@@ -332,6 +335,7 @@ function card(l,isPipe){
         <option value="noanswer" ${st.call==="noanswer"?"selected":""}>No answer</option>
         <option value="followup" ${st.call==="followup"?"selected":""}>Follow-up due</option>
         <option value="meeting" ${st.call==="meeting"?"selected":""}>Meeting set</option>
+        <option value="tentative" ${st.call==="tentative"?"selected":""}>Tentative \u2014 taken, revisit</option>
         <option value="dead" ${st.call==="dead"?"selected":""}>Dead</option>
       </select></span>
     </div>`;
@@ -344,11 +348,12 @@ function card(l,isPipe){
 function show(l){
   const st=state[l.id]||{};
   if(filter==="all")return true;
-  if(filter==="call")return l.s>=80&&st.call!=="dead";
+  if(filter==="call")return l.s>=80&&st.call!=="dead"&&st.call!=="tentative";
   if(filter==="grid")return (l.tags||[]).includes("grid");
   if(filter==="walk")return (l.tags||[]).includes("walkable");
   if(filter==="sf")return !st.sf&&st.call!=="dead";
   if(filter==="fu")return st.call==="followup"||st.call==="noanswer";
+  if(filter==="tent")return st.call==="tentative";
   return true;
 }
 function render(){
