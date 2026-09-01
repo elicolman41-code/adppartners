@@ -157,3 +157,45 @@ Shneyder CPA PC (Roman Shneyder, 174 Brighton 11th St 2nd Fl 11235, 347-875-0070
 
 ## UNSWEPT
 Brooklyn: 11204, 11230, 11234, 11209, 11228. Queens: Astoria, Ridgewood 11385, Sunnyside, Rego Park, Forest Hills, Ozone Park, Corona 11368 — **Corona and Ridgewood highest-yield remaining.**
+
+---
+
+# VOLUME SWEEP 2026-09-01 — 118 new callable firms (board 134 → 252)
+
+## 🔑 THE QUERY PATTERNS THAT WORK (this is the whole method)
+1. **`ptindirectory <CITY> NY tax preparer phone address`** — THE workhorse. Including BOTH the words "phone" AND "address" is what makes Google render the full contact block in the snippet. Yields 6-9 complete leads per single call.
+2. **Add the literal `"718-"`** to force a phone into the snippet. One Brooklyn agent got ~70% of its list from this.
+3. **`ptindirectory <city> NY tax FIRM phone address`** — the `/tax-firms/` path (vs `/tax-preparers/`) returns FIRM-level records: fewer apartment-address solo preparers, more real offices.
+4. **City name > "Brooklyn"/"Queens"** — PTIN URLs are CITY-keyed (jackson-heights-ny, ridgewood-ny, south-richmond-hill-ny). ZIP numbers do NOT filter.
+5. **Second pass with a corridor name over an already-mined city pulls DIFFERENT firms.** Always run both.
+6. Also mirrors: fww. / xww. / hww. / ftp.ptindirectory.com and **rpo.ptin.org/tax-firms/** all render records.
+
+## PRIORITIZATION HEURISTIC (use this to sort dialing)
+**718 landline + street address + suite/floor = long-tenured practice with a real book.**
+**917/347/646 mobile + apartment address = one-person seasonal shop.** Lower priority for a payroll conversation.
+Credential ladder: LLP / multi-partner PC > CPA > EA > CAA > SRTP/AFSP > none.
+Naming signals: "& Associates", "& Co.", "Group", "Business Services", "Office Services", "Multiservice", two surnames = bigger book.
+
+## RICHEST VEINS FOUND
+Liberty Ave, South Richmond Hill 11419 — **7 firms in ONE query**. Ocean Ave/Pkwy 11235, 65th St 11204, Myrtle Ave + Fresh Pond Rd Ridgewood 11385, Northern Blvd Bayside 11361, Main St Flushing 11354, Roosevelt Ave 11372, Woodside 11377, Sunnyside 11104, Forest Hills 11375.
+
+## WHAT DIDN'T WORK
+- **Bronx saturates after ~3 queries** — ptindirectory keeps re-serving the same 10-result landing page. Break it with FIRM-NAME TOKENS (`"Bronx NY Tax Firm" multiservices`) — but those snippets withhold the phone, needing a second pass.
+- Any Bronx query without a ptindirectory/ptin.org anchor drowns in H&R Block / Jackson Hewitt / Liberty SEO.
+- Astoria corridor queries (Steinway/Ditmars/30th Ave) returned chains; the plain `ptindirectory Astoria` query was far better.
+- Corridor-NAME queries pull Wikipedia and Redfin street sitemaps — add `-wikipedia -redfin`.
+- bizprofile.net and i24app returned nothing usable this run — deprioritize.
+- Name-chasing (hunting a phone for an already-surfaced name) is the WEAKEST use of calls: ~1 phone per 2 calls. Prefer more corridor sweeps.
+
+## ⚠️ VERIFY BEFORE DIALING
+- **New York Tax & Multiservices Inc** (Felipe Velasquez, 82-10 Roosevelt Ave) — may be the same entity as **NYS Tax & Multiservices** already on the board.
+- **ADP Accounting & Tax Service LLC** (David A. Persaud, Queens Village) — NAME COLLISION, unrelated to ADP the company. Actually a decent ice-breaker.
+- **Haven-Rich Tax Service** — 516 area code on a Queens storefront.
+- **Leon Levitis** — address conflict, 1817 vs 807 Kings Hwy.
+- **Tax Pros USA** — multi-location, confirm it is not a franchise.
+- **OGC-REWCPAs = Orley G. Cameron, CPA** — merged; the previously anonymous record now has its principal.
+
+## ~60 NAMED FIRMS ARE ONE PHONE-LOOKUP AWAY
+Brooklyn: Y&W Accounting (Sophia Zhu), Y&L Accounting (Yana Bruck), Sterling Brokerage & Tax (Dennis Brown), Profile Filings (Miriam Hoffman), J&I Tax (Igor Gendler), Big Two Tax (Boris Krush), Dyker Tax (1442 86th St), EV Business Services, AKAF, Precise Taxes, Polarstar Tax (Shu Z. Lin), EMI Associates (Edmund Israel), Jacob Glick & Associates LLP, Roth & Company LLP (1428 36th St), Downie Business Solutions, Bay Accounting (Olga Bekker), DJ Accounting (Doreen Bellitti Lanois), SSV Tax (Odinga Roberts), CB Tax (Cecil Buxo), Accounting & Tax Professionals (Bertrand Marecheau), JL Accounting (Jacob Lebovits), Brooklyn Tax & Accounting (Michael Hovell).
+Queens: Walter J. Cook CPA (71-02 Myrtle Ave), AAC Accounting (Andrew Laoutas), Perkins Accounting (Brett Perkins CPA), LS Accounting (Lawrence Stecker), LJS Accounting (Julian Martinez), Lucky Tax (Hyon J. Yang), Premier Tax (Shuya Huang), C&S Accounting (Qiaoyan He), 88 Accounting (Zhang H. Huang), MS Accounting Solutions (Mukesh Shah), Flushing Accounting & Tax (Wei Deng), Trustworthy Accounting (Chen Shi), Sekyung Corp (Eun S. John), P&K Tax Prep (Jong H. Kim), Fu Accounting (Yi Fu), MAR Tax (Richard Kemme), Sherpa Accounting (Chhiring Sherpa), Lazar Borukhov CPA, FRP Tax (Sharon Hooper), Continental Transfer (Felix Cordoba), CD Tax Prep (Carolina Durango).
+Bronx: T&T Multiservice (Warner Antigua), FT Multiservices (Ruben Cano), Energy Tax Multiservices (Dewar Pena Frias), Cleantaxes (Felix Pozo Cuesta), Hakim & Co (Rukon Hakim), Delgado Multiservices, Upscale Multiservices (Hansel Pena), A&G Tax Multiservices, Blue Purl Accounting (Angela Laguer), GML Accounting (Yaw Asamoah), 4 Seasons Tax (Winter Weeks), DGR Accounting (David Rivera), Rivera & Rivera (2045 Lafayette Ave), Magnifique Tax (Denise July).
