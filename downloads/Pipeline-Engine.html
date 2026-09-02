@@ -94,6 +94,7 @@
     <button class="chip" data-f="fu" aria-pressed="false">Follow-ups</button>
     <button class="chip" data-f="tent" aria-pressed="false">Tentative</button>
     <button class="chip" data-f="big" aria-pressed="false">Big book / small footprint</button>
+    <button class="chip" data-f="green" aria-pressed="false">\u2713 Unclaimed \u2014 clear to call</button>
     <span class="count" id="count"></span>
     <button class="chip" id="exportBtn" style="margin-left:auto">Copy my status</button>
     <button class="chip" id="importBtn">Paste status</button>
@@ -490,6 +491,7 @@ function show(l){
   if(filter==="fu")return st.call==="followup"||st.call==="noanswer";
   if(filter==="tent")return st.call==="tentative";
   if(filter==="big")return (l.tags||[]).includes("bigbook");
+  if(filter==="green")return st.sf==="unclaimed"&&st.call!=="dead";
   return true;
 }
 function render(){
