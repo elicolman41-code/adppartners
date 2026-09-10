@@ -51,3 +51,21 @@ That's it. Keep the ask this small when it goes to him in writing.
 - [ ] Excel → approval → sign-off
 
 **Program fit:** [[Grid]] (2x, thru end of October) · 401(k) · [[Revenue Share]]
+
+
+## Meeting 2026-09-10, 1:00 PM — plan
+1. **McKenzie (licensed retirement partner) joins** — start the 401(k) process, give Stephen instructions on how to pull invoicing for the 401(k)s so we can get them
+2. **Go through the Excel** — see what he has, answer questions
+3. **Offer: Eli logs into his Paychex admin page** if he wants help pulling everything
+
+## ⚠️ On the Paychex admin access
+Do NOT take his credentials. **Screen share instead** — he drives, Eli directs. Reasons:
+- Taking a client's login to a third-party system is a liability Eli does not want to own
+- Paychex terms generally prohibit credential sharing; if anything looks wrong later, the access becomes the story
+- Screen share gets the same result in the same time
+If he insists on direct access, have him create a separate user rather than hand over his own.
+
+## Status
+- 2x multiplier runs through END OF OCTOBER
+- He is a Paychex SUPER ADMIN — billing access should not be blocked
+- Still to verify: the ~$60/employee/month claim, against real invoices
