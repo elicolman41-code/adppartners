@@ -69,3 +69,16 @@ If he insists on direct access, have him create a separate user rather than hand
 - 2x multiplier runs through END OF OCTOBER
 - He is a Paychex SUPER ADMIN — billing access should not be blocked
 - Still to verify: the ~$60/employee/month claim, against real invoices
+
+
+## ⭐ THE MOST IMPORTANT THING — keep the client ask tiny
+**BANK PROOF is really the only thing we need from his clients.**
+Accepted: recent bank statement · voided check · online banking screenshot.
+Keep this as the single ask in anything written. A one-line ask gets done; a list gets deferred.
+
+## Timing
+- Implementation call-in happens around the **60 and 90 day** marks
+- 401(k) plan transfers from Paychex also run **60-90 days** — argues for starting NOW, not January
+
+## ⚠️ TO CONFIRM WITH ELI
+Eli's note said "besides Ram at the end of the 401k" — could not resolve "Ram." Possibly a name, or "run." Ask before it goes in any client-facing doc.
