@@ -10,7 +10,7 @@ status: pipeline
 Full process walked end to end. He's in. Remaining path: **fill the Excel → get it approved → get it signed off → move.**
 
 ## THE BIG UPDATE
-**2x multiplier extended through END OF OCTOBER** (was Sept 30). His reaction: "okay, that's great." Pressure is off — but that means the date now has to come from him, not from a deadline.
+**2x multiplier CONFIRMED through end of October** (was Sept 30). His reaction: "okay, that's great." Pressure is off — but that means the date now has to come from him, not from a deadline.
 
 ## What he asked, and what I told him
 
@@ -82,3 +82,9 @@ Keep this as the single ask in anything written. A one-line ask gets done; a lis
 
 ## ⚠️ TO CONFIRM WITH ELI
 Eli's note said "besides Ram at the end of the 401k" — could not resolve "Ram." Possibly a name, or "run." Ask before it goes in any client-facing doc.
+
+
+## 2026-09-15 — HE'S IN
+Stephen texted: "Spoke to all my clients, so looks like I am ready to do." Asked whether to target the 9/30 payroll through ADP.
+Eli's call: **don't rush 9/30. Start fresh for Q4 (Oct 1).** 2x confirmed through October so there's no forcing function. Sequence: Paychex 401(k)s first → get everything in order → Q4 start.
+Next: Thursday sit-down. Bring pay frequencies for each client — weekly payers make an Oct 1 start tight.
