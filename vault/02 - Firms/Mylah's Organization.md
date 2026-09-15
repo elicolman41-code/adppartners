@@ -17,9 +17,9 @@ source: Padova Multiservices
 3. Account is on **4-day** (processing lead time) — note this if anyone asks about turnaround
 
 ## Authorization for Mercades (requested 9/15)
-Eli drafted an email to **Charles Belgrave** asking him to send back, from his own email, this statement:
+Eli drafted an email to **Charles Belgrave** (subject: `Mylah's Organization 29629715 — authorization for Mercades`) asking him to send back, from his own email, this statement:
 
-> I, Charles Belgrave, hereby authorize Mercades Avalon to unlock and run payroll for Myla's Organization Incorporated, client ID 296-297-15. Please also add her as an admin on the account.
+> I, Charles Belgrave, hereby authorize Mercades Avalon to unlock and run payroll for Myla's Organization Incorporated, client ID 29629715. Please also add her as an admin on the account.
 
 ⚠️ Name spelling now has two versions in the vault: "Mercedes" (8/24) and "Mercades Avalon" (9/15). Confirm which is right — it goes on an authorization.
 ⚠️ Confirm Charles is the **authorized contact of record** on this account. If he's the accountant at Padova rather than an owner/officer of the entity, his authorization may not be accepted.
