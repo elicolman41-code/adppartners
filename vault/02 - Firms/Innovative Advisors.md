@@ -135,3 +135,4 @@ Decide client-by-client at the meeting so nobody's confused about who calls whom
 - **FRG Advisory is New/Gusto** — a competitor conversion, not greenfield. Confirm whether a Gusto conversion is Grid-eligible or falls to Platinum/rev share.
 - **Atlas Opera** is the only New client with no 401(k) flag.
 - Hygiene: 10 non-breaking spaces (3 between state and ZIP in col H — will break registration imports), 6 trailing spaces, G5 "Steeer" typo, G10 "1625 Cody, Ave", J2/K2 both labeled "Payroll Frequency."
+- 2026-09-17: Eli confirmed ALL 12 Existing (Paychex) clients have 401(k) balances → 12 conversions to McKenzie by 9/24, not 6. CSV k401 column set to convert for all Existing.

@@ -21,14 +21,11 @@
 | Thu 10/1 | ADP effective. |
 | **Fri 10/2** | Kranz Motorcars first ADP check — the only weekly payer. Everything for Kranz done by **Mon 9/28**. |
 
-## 401(k) — SIX conversions, not four, plus five new
-**Paychex conversions (all Existing clients, all in the 9/24 batch):**
-- Walters Mirrors — $1,308.24 — found in portal
-- Onchain Strategies — $831.21 — found in portal
-- Spencer Thwaytes — $812.80 — NOT found in portal, chase
-- B333 Trading — flagged Yes, no fee captured — verify
-- Complete Merchant — flagged Yes, no fee captured — verify
-- Upstate Logistics — $0.91 fee, NO flag — pull from portal, don't write off
+## 401(k) — TWELVE conversions (every Existing client), plus five new
+**Eli confirmed 9/17: all 12 Existing Paychex clients have 401(k) balances.** All 12 go to McKenzie in the 9/24 batch:
+Wisdom by Woods · Upstate Logistics · Auction Time Pieces · Tyree Advisory · Onchain · RJC Holdings · Backfin · Walters Mirrors · Spencer Thwaytes · Kranz Motorcars · B333 Trading · Complete Merchant
+- Paychex fee captured on the sheet only for Walters ($1,308.24), Onchain ($831.21), Spencer Thwaytes ($812.80), Upstate ($0.91). Missing fees don't change the count — the balance does.
+- Each conversion needs a Paychex plan document / most recent statement from Stephen. Ask for all 12 at once.
 **New plans (5 × $500):** AJG, FRG, Kapstone, Broadway 2000, North Star. Atlas Opera has no flag.
 **Broadway 2000:** 1 payroll/yr at $300 — its $500 401(k) exceeds its payroll revenue. Confirm ADP prices it as standard.
 McKenzie runs this track. It does NOT gate payroll. Say that to Stephen out loud.
