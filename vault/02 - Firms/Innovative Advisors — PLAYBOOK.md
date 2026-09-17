@@ -21,18 +21,18 @@
 | Thu 10/1 | ADP effective. |
 | **Fri 10/2** | Kranz Motorcars first ADP check — the only weekly payer. Everything for Kranz done by **Mon 9/28**. |
 
-## 401(k) — TWELVE conversions (every Existing client), plus five new
-**Eli confirmed 9/17: all 12 Existing Paychex clients have 401(k) balances.** All 12 go to McKenzie in the 9/24 batch:
-Wisdom by Woods · Upstate Logistics · Auction Time Pieces · Tyree Advisory · Onchain · RJC Holdings · Backfin · Walters Mirrors · Spencer Thwaytes · Kranz Motorcars · B333 Trading · Complete Merchant
-- Paychex fee captured on the sheet only for Walters ($1,308.24), Onchain ($831.21), Spencer Thwaytes ($812.80), Upstate ($0.91). Missing fees don't change the count — the balance does.
-- Each conversion needs a Paychex plan document / most recent statement from Stephen. Ask for all 12 at once.
-**New plans (5 × $500):** AJG, FRG, Kapstone, Broadway 2000, North Star. Atlas Opera has no flag.
+## 401(k) — 3 conversions (4 if Upstate is real), plus 7 NEW plans
+**Eli corrected 9/17: "Yes" on the sheet = a NEW 401(k), not an existing one. Existing = has a Paychex balance/fee.**
+**Paychex conversions (balances exist):** Walters Mirrors ($1,308.24) · Onchain ($831.21) · Spencer Thwaytes ($812.80) · Upstate Logistics ($0.91 fee — confirm it's a real plan)
+**New plans (7 × $500 promo):** B333 Trading · Complete Merchant · AJG · FRG · Kapstone · Broadway 2000 · North Star
+- **Need from Stephen for all 7 new: owner name, email, phone.** That is the ask. McKenzie can't open a plan without a contact.
+- Conversions need the Paychex plan doc / latest statement (3 or 4, not 12).
 **Broadway 2000:** 1 payroll/yr at $300 — its $500 401(k) exceeds its payroll revenue. Confirm ADP prices it as standard.
 McKenzie runs this track. It does NOT gate payroll. Say that to Stephen out loud.
 
 ## WHAT ELI NEEDS FROM STEPHEN — the only asks
 1. Bank proof per client (statement / voided check / banking screenshot)
-2. Email + phone per 401(k) contact
+2. Owner name, email + phone for the 7 NEW 401(k) clients
 3. Wait for the 9/30 payrolls, then final YTD pull
 4. Agree the two-list split (below)
 Everything else Eli pulls himself from the Paychex portal on a **screen share — he drives, Eli directs, no credentials.** One session, three deliverables: **pay dates + period-ends** (the sheet has NONE — an October calendar can't be built without them), state account numbers + SUI rates, 401(k) balances + fees.
