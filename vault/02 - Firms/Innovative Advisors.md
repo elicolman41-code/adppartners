@@ -106,6 +106,7 @@ Asked Patrick AND the VP whether October pays 100% vs the current 70%. **Nobody 
 - **Bank statements from all the clients** (or voided check / banking screenshot)
 - **Emails and phone numbers** for the people on the 401(k)s
 - **Balances** — I can log into his Paychex portal and pull these myself (screen share, don't take credentials)
+- **WAIT FOR THE LAST PAYCHEX PAYROLLS — the ones due 9/30.** Final YTD registers don't exist until those run. Prior-wage loading needs the FINAL numbers, so the pull happens AFTER 9/30, not before. (Pull a preliminary now so ADP isn't starting from zero; treat the post-9/30 pull as the delta.)
 
 ### What I pull from his Paychex portal myself
 All the billing / balances / plan information necessary. Screen share — he drives, I direct.
