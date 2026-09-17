@@ -15,7 +15,7 @@ Full process walked end to end. He's in. Remaining path: **fill the Excel → ge
 ## What he asked, and what I told him
 
 **"Paychex is charging me ~$60/month per employee."**
-Told him that's probably not how it actually works — that number doesn't line up with normal Paychex per-employee pricing. **He requested billing on all of them** to find out. ⚠️ This is worth digging into: if he's genuinely paying $60/employee/month, the economics of his whole book change and the Grid case gets much stronger. Verify against the real invoices.
+Eli pushed back on the call. **CORRECTION 2026-09-17 — STEPHEN WAS RIGHT.** His own sheet: $18,186.82 Paychex book ÷ 12 ÷ 25 employees = **$60.62/employee/month** (all 18 clients: $60.34). Do NOT push back on this number again. It is an AVERAGE, not a rate card — per-client it ranges from $25 (Spencer Thwaytes, Broadway 2000) to $258 (Kranz, weekly, 1 EE). It STRENGTHENS the Grid case: it's the cost he's paying to do work he doesn't want.
 
 **Billing access —** he's a **SUPER ADMIN** on the Paychex side. That's the unlock: he should have access to all the reports without needing per-client permission grants. This was the blocker for three weeks and it may not be a blocker at all.
 
@@ -121,3 +121,16 @@ Decide client-by-client at the meeting so nobody's confused about who calls whom
 - [ ] Bank proof + contact info collected per client
 - [ ] Grid agreement signing — first week of October
 - [ ] Then: Stephen sends the new-client introductions
+
+
+## Data audit 2026-09-17 — corrections to my own earlier reads
+- **$60/EE/month: TRUE** (see above).
+- **Upstate $0.91 (O4): NOT confirmed typo.** N4 (401k flag) is blank but a fee is present. Pull from portal on screen share; don't write off.
+- **CLIENT COUNT MISMATCH:** vault history says 19→22 on Paychex; sheet shows 12 Existing. Ask Stephen directly — either the sheet is incomplete or the earlier count was wrong. $18K vs $30K+ book.
+- **Column O (401k fees $2,953.16) and P (other CY fees $1,100) are NOT in the M29 total.** True annualized Paychex billing incl. those = $26,499.98. My "excluded by design" was an assumption — Q header only excludes year-end/W2 fees, and O isn't that. Decide the basis in writing before any number goes to Stephen.
+- **M29 = SUM(M3:M26) only.** Column A is numbered to 82. Add client #25+ and it silently drops out of the total. Widen the range if the list grows.
+- **Kranz Motorcars is the outlier and the constraint:** $3,094/yr = 13.8% of the book, 1 EE, and the ONLY weekly payer. ADP will reprice it; it's the client that makes Oct 1 tight.
+- **FL is the largest state footprint (5), not NY (4).** 9 states total.
+- **FRG Advisory is New/Gusto** — a competitor conversion, not greenfield. Confirm whether a Gusto conversion is Grid-eligible or falls to Platinum/rev share.
+- **Atlas Opera** is the only New client with no 401(k) flag.
+- Hygiene: 10 non-breaking spaces (3 between state and ZIP in col H — will break registration imports), 6 trailing spaces, G5 "Steeer" typo, G10 "1625 Cody, Ave", J2/K2 both labeled "Payroll Frequency."
