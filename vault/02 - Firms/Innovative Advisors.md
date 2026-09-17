@@ -137,3 +137,4 @@ Decide client-by-client at the meeting so nobody's confused about who calls whom
 - Hygiene: 10 non-breaking spaces (3 between state and ZIP in col H — will break registration imports), 6 trailing spaces, G5 "Steeer" typo, G10 "1625 Cody, Ave", J2/K2 both labeled "Payroll Frequency."
 - 2026-09-17: Eli confirmed ALL 12 Existing (Paychex) clients have 401(k) balances → 12 conversions to McKenzie by 9/24, not 6. CSV k401 column set to convert for all Existing.
 - 2026-09-17 (correction): NOT 12 conversions. Existing 401(k)s = 3 (Walters, Onchain, Spencer Thwaytes) + Upstate to verify. "Yes" flag = NEW 401(k): 7 (B333, Complete Merchant, AJG, FRG, Kapstone, Broadway 2000, North Star). Need owner name/email/phone for the 7 new.
+- 2026-09-17: Eli — do NOT pre-split the 18. Find out from Stephen which clients Eli handles directly vs. which they run together. setup_with reset to "ask".

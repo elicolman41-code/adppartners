@@ -34,14 +34,11 @@ McKenzie runs this track. It does NOT gate payroll. Say that to Stephen out loud
 1. Bank proof per client (statement / voided check / banking screenshot)
 2. Owner name, email + phone for the 7 NEW 401(k) clients
 3. Wait for the 9/30 payrolls, then final YTD pull
-4. Agree the two-list split (below)
+4. Go through the 18 together: which are direct, which are run together
 Everything else Eli pulls himself from the Paychex portal on a **screen share — he drives, Eli directs, no credentials.** One session, three deliverables: **pay dates + period-ends** (the sheet has NONE — an October calendar can't be built without them), state account numbers + SUI rates, 401(k) balances + fees.
 
-## THE TWO-LIST SPLIT — 9 direct / 9 with Stephen
-Rule, with precedence stated: (1) new and not yet introduced → Stephen; (2) otherwise, weekly/biweekly/semi-monthly OR 3+ EE OR has a 401(k) → direct; (3) else → Stephen.
-**DIRECT (Eli is the contact):** Kranz (weekly) · Upstate (biweekly, 3 EE) · Backfin (semi-mo, 3 EE) · Walters Mirrors (semi-mo, 5 EE, 401k) · Auction Time Pieces (semi-mo) · Spencer Thwaytes (3 EE, 401k) · Onchain (401k) · B333 (401k) · Complete Merchant (401k)
-**WITH STEPHEN:** Wisdom by Woods · Tyree Advisory · RJC Holdings · AJG · FRG · Kapstone · Broadway 2000 · Atlas Opera · North Star (the six new ones flip to direct after Stephen introduces them)
-Give Stephen the list; let him veto rows. The rule survives vetoes.
+## WHO HANDLES WHOM — NOT DECIDED. Ask Stephen.
+Eli 9/17: don't pre-split. Go through the 18 with Stephen and mark each one: **direct** (Eli deals with the owner) or **together** (Eli + Stephen run it). CSV setup_with = "ask" until he answers.
 
 ## PAYCHEX EXIT — order of work
 Weekly → biweekly → semi-monthly → monthly. Not alphabetical, not by revenue.
