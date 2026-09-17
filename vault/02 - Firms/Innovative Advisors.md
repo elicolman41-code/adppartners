@@ -99,7 +99,7 @@ Asked Patrick AND the VP whether October pays 100% vs the current 70%. **Nobody 
 1. **401(k)s TODAY** — the piece with a clock. 12-months-free promo ends **9/24**.
    - Get the Paychex-conversion 401(k)s signed off (Walter's Mirrors, Spencer Thwaytes, Onchain Strategies, Upstate Logistics?)
    - Get the NEW 401(k)s signed off (incoming clients who have or want plans)
-2. **Grid agreement** — sign first week of October, aligned with the 10/1 Paychex start date.
+2. **Grid agreement** — sign **last week of September (9/25–9/30)**, BEFORE the 10/1 Paychex start. (Eli set this 9/17; the email to Stephen says 25th–30th. Earlier draft said first week of October — superseded.)
 3. **New-client introductions** — HOLD until the Grid agreement is signed. That's what gets him Platinum 1x on those instead of standard rev share. In his interest.
 
 ### THE ONLY THINGS I NEED FROM STEPHEN
@@ -119,7 +119,7 @@ Decide client-by-client at the meeting so nobody's confused about who calls whom
 - [ ] 401(k) submissions in before 9/24
 - [ ] Two-list outline (with Stephen vs. direct) written down and shared with him
 - [ ] Bank proof + contact info collected per client
-- [ ] Grid agreement signing — first week of October
+- [ ] Grid agreement signing — 9/25–9/30, before first ADP payroll
 - [ ] Then: Stephen sends the new-client introductions
 
 
