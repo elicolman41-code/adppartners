@@ -110,3 +110,10 @@ For 2026 DFS cut small group 24% requested → 13% approved (45.8% cut). **RE-CH
 
 ## QUEENS PROBLEM
 No Queens firm cleared verification this run. Every Queens-titled result traced to a templated geo-SEO page or an office physically in Brooklyn/Bronx. Next Queens attempt must work from a Queens ZIP-anchored directory, not search titles.
+
+## 2026-09-21 run
+- 5 Opus agents. Yield: Grid Hunter 13 (PTIN snippet-mining Astoria/Jackson Heights/Ridgewood/Sheepshead Bay/Jamaica/Bensonhurst), Directory Miner 7 (ProAdvisors, mostly Manhattan; no hard client counts anywhere). Board 280 → 300.
+- DEAD LANES this week: Signal Scout 0 (reddit.com hard-blocked for WebSearch, X 429, Firecrawl can't combine recency+topic). Registrar 0 (dayonelead only ingested through ~Jul 22; data.ny.gov also egress-blocked). Don't spend agents on these two until tooling changes — cut to 3 agents next Monday: Grid Hunter, Directory Miner, Trigger Watcher.
+- Unmined ZIPs for next PTIN pass: Bay Ridge 11209, Sunset Park 11220 (use `ptindirectory <ZIP> "718-"`), Flatbush 11226, Bushwick 11237.
+- Gusto partner client counts seen for known firms: Velo Accounting Group 71 (Brooklyn 11216), Find A Way 4, Cubepros 1000+ SMBs.
+- Trigger still says "artifact" and Nationwide agent — needs editing (scheduling connector).
