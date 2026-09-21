@@ -22,12 +22,13 @@
 | **Fri 10/2** | Kranz Motorcars first ADP check — the only weekly payer. Everything for Kranz done by **Mon 9/28**. |
 
 ## 401(k) — 3 conversions (4 if Upstate is real), plus 7 NEW plans
+**Eli 9/21: 401(k) revenue does NOT count toward Grid. Stephen is paid flat: $750 per plan converted from Paychex, $300 per new plan.** 3 conv × $750 + 7 new × $300 = $4,350 (+$750 if Upstate).
 **Eli corrected 9/17: "Yes" on the sheet = a NEW 401(k), not an existing one. Existing = has a Paychex balance/fee.**
 **Paychex conversions (balances exist):** Walters Mirrors ($1,308.24) · Onchain ($831.21) · Spencer Thwaytes ($812.80) · Upstate Logistics ($0.91 fee — confirm it's a real plan)
-**New plans (7 × $500 promo):** B333 Trading · Complete Merchant · AJG · FRG · Kapstone · Broadway 2000 · North Star
+**New plans (7 × $300 to Stephen):** B333 Trading · Complete Merchant · AJG · FRG · Kapstone · Broadway 2000 · North Star
 - **Need from Stephen for all 7 new: owner name, email, phone.** That is the ask. McKenzie can't open a plan without a contact.
 - Conversions need the Paychex plan doc / latest statement (3 or 4, not 12).
-**Broadway 2000:** 1 payroll/yr at $300 — its $500 401(k) exceeds its payroll revenue. Confirm ADP prices it as standard.
+**Broadway 2000:** 1 payroll/yr at $300 — confirm ADP prices it as standard.
 McKenzie runs this track. It does NOT gate payroll. Say that to Stephen out loud.
 
 ## WHAT ELI NEEDS FROM STEPHEN — the only asks
