@@ -18,3 +18,6 @@ $1,500 plan transfer fee; discontinuance 0.50–1.50% of assets inside a 5-year 
 
 ## The one ask that settles any account
 Screenshot of the client's 401k portal **Billing Statements** page, or the 408(b)(2) cover page (says whether they're a Retirement Services Included Client).
+
+## Update 2026-09-21 — the HRS Billing Statement (third document type)
+Seen for Onchain + Spencer Thwaytes (Stephen's book, plans opened 2026). Issuer "Human Resource Services, 1175 John St, West Henrietta NY", 1-800-472-0072. Monthly, ACH ~10 days after statement. Lines: 3(16) Plan Administration $25 · Monthly Recordkeeping $150 · Participant $6 each · **SET UP $111.09/mo, "INSTALLMENT $3999.00"** = $3,999 financed over 36 months · Annual Account Fee ~70 bps from participant assets. So a brand-new small Paychex 401(k) costs ~$3,400–3,700/yr in hard fees, on top of the payroll invoice. Quality Care (older plan) had no setup line and no 3(16) line — the $25 3(16) + $3,999 setup look like the 2026 new-plan package.
