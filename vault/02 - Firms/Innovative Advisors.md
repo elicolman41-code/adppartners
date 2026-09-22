@@ -164,3 +164,4 @@ Decide client-by-client at the meeting so nobody's confused about who calls whom
   - FRG Advisory: Gusto, monthly, $50/mo (sheet said $70).
   - Everything else on the sheet = brand-new payroll clients.
   NET: true Paychex conversions with revenue history = Wisdom, Upstate, Auction, Tyree, Onchain, RJC(?), Backfin, Walters, Spencer, Kranz = 10, minus B333 (never ran). Complete Merchant is Gusto, not Paychex.
+- 2026-09-22 CORRECTION: outstanding setup balances were overstated as paid. 'PAYMENT RECEIVED' on the HRS statement is CUMULATIVE received, not installments billed. Correct: Walters $2,749.07 (rcvd $249.93 of $2,999), Onchain $3,887.91 (rcvd $111.09 of $3,999), Spencer $3,999.00 (rcvd $0). Total outstanding $10,635.98, not $10,441.58.
