@@ -154,3 +154,13 @@ Decide client-by-client at the meeting so nobody's confused about who calls whom
 - 2026-09-21: Eli: Paychex Direct Deposit Premium Processing is charged every run. Auction Time Pieces recurring = $154.10/run x 24 = $3,698.40, sheet said $1,898.40 (+$1,800). Six verified clients now $22,379.66 vs sheet $20,495.66 (+$1,884).
 - 2026-09-21: SCARE, factor into Grid math: Stephen says some accounts on his Paychex roster have NEVER processed a payroll. Consistent with Auction (Minimum Monthly Billing month) and Wisdom (no-payroll month). Grid pays on ADP revenue from accounts that actually run — an account with no payroll history has no run rate to multiply and may not count as a conversion. Eli thinks it's fine but the 6 unverified (Kranz, Upstate, B333, Tyree, Complete Merchant, RJC) are exactly the ones to check for processing history before counting them.
 - 2026-09-21: Eli's call — accounts with no Paychex payroll history WILL be submitted toward the Grid as conversions. Risk: if ADP treats them as new (no prior revenue) they fall to Platinum/rev share, not 2x. Don't volunteer the distinction to Stephen; don't build the payout number on them until the Grid desk accepts them.
+- 2026-09-22 (Stephen email, per-client status):
+  - Kranz: needs client to grant Partner Pro access; reminder sent 9/21.
+  - Upstate + Tyree: access granted 9/21, reports pending ~1 day, invoices expected 9/22.
+  - B333: set up in Paychex, NEVER ran payroll. Moving straight to ADP without a Paychex run. → no Paychex revenue; Grid eligibility must be confirmed with the desk.
+  - Complete Merchant: NOT Paychex — on Gusto, 2 EE, $100/mo, payroll only. Coming to ADP. Not a Grid conversion (Gusto eligibility unverified, same bucket as FRG).
+  - RJC Holdings: prior ADP client (>1 yr ago), Stephen moved them to Paychex; Paychex can't link Partner Pro. No invoice. WIN-BACK — check whether a former ADP account counts toward Grid.
+  - Broadway 2000: no provider — pays via IRS Treasury online, cash payroll, ~$400/yr. Coming to ADP, quarterly or annual. Prior-year payroll was over-inflated vs distributions; fix on setup. Not a Paychex conversion.
+  - FRG Advisory: Gusto, monthly, $50/mo (sheet said $70).
+  - Everything else on the sheet = brand-new payroll clients.
+  NET: true Paychex conversions with revenue history = Wisdom, Upstate, Auction, Tyree, Onchain, RJC(?), Backfin, Walters, Spencer, Kranz = 10, minus B333 (never ran). Complete Merchant is Gusto, not Paychex.
