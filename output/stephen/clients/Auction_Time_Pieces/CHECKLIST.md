@@ -1,31 +1,40 @@
-# Auction Time Pieces — Q4 START CHECKLIST
-EIN 42-2190303 · Owner Hani Amiri Manesh · Semi Monthly, 24 runs/yr · 2 employees
+# Auction Time Pieces — Q4 START
+EIN 42-2190303 · Hani Amiri Manesh · Semi Monthly, 24 runs/yr · 2 EE · CA
+**Paychex start: JUL 2026** — 7/30 invoice carries the $200 one-time setup fee
 
-## FROM THE CLIENT (only two)
+Q4 start means 10/1 – 12/31. Balances have to carry the whole year.
+
+## THE 7 BALANCE ITEMS
+| # | What | Date range | Paychex report to pull | Got it |
+|---|------|-----------|------------------------|--------|
+| 1 | YTD report | 1/1 – last payroll before ADP | Employee Earnings Report (unmasked) | [ ] |
+| 2 | PQYTD | 1/1 – 9/30 | Employee Earnings Report (unmasked) | [ ] |
+| 3 | Payroll by payroll, gross to net | 10/1 – last payroll before ADP | Cash Requirements + Payroll Journal + Department Summary, one set per payroll | [ ] |
+| 4 | Proof of federal tax deposits | current quarter only | Cash Requirements, Taxpay lines | [ ] |
+| 5 | Proof of state and local tax deposits | current quarter only | Cash Requirements, Taxpay lines | [ ] |
+| 6 | 941s | Q1, Q2, Q3 | 941 from the quarterly packet | [ ] |
+| 7 | SIT and SUI filings | Q1, Q2, Q3 | Quarter Reconciliation Return + Wage Detail Report | [ ] |
+
+> **Started July 2026.** No Q1 or Q2 941, and no Q1 or Q2 SIT/SUI. Q3 only.
+
+## ALSO PULL
+- [ ] Employee info, all current year — Employee Earnings Report (unmasked). Socials live in the EE/DD Profiles, not the report.
+- [ ] Direct Deposit Details Report (unmasked)
+- [ ] Pay dates and period end dates through year end
+- [ ] Last Paychex check date, in writing
+- [ ] State withholding + UI account numbers and SUI rate
+
+## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
 
-## ELI PULLS FROM PARTNER PRO
-- [ ] Pay dates and period end dates for the rest of the year
-- [ ] Last Paychex check date, confirmed in writing
-- [ ] YTD wages and taxes through the final Paychex payroll
-- [ ] State withholding account number
-- [ ] State UI account number + SUI rate
-- [ ] Employee list: names, addresses, SSNs, pay rates, direct deposit
-- [ ] 401(k) balance and fees, if there is a plan
-
-## STATE SETUP
-- [ ] All state registrations confirmed active
-- [ ] TPA authorization where the state requires it (MI, OH, FL, MD, AZ)
-- [ ] Paychex TPA end-dated 9/30/26, ADP begins 10/1/26
-
-## Q4 CUTOVER
+## CUTOVER
 - [ ] Last Paychex check on or before 9/30
 - [ ] First ADP check on or after 10/1
 - [ ] No pay period paid twice
 - [ ] Paychex schedule terminated in writing
+- [ ] TPA authorization where the state requires it (MI, OH, FL, MD, AZ)
 
 ## UPLOADS RECEIVED
-(files land in this folder — log them here)
 
 ## NOTES
