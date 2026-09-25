@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Next Steps</title>
 <style>
-:root{--ink:#14171a;--slate:#5b6570;--hair:#e3e7eb;--card:#fff;--bg:#f6f7f9;--red:#c00000;--accent:#0b5fa5;--warn:#e0a800}
+:root{--ink:#14171a;--slate:#5b6570;--hair:#e3e7eb;--card:#fff;--bg:#f6f7f9;--red:#c00000;--accent:#0b5fa5;--warn:#e0a800;--green:#1a7f37}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
 .wrap{max-width:780px;margin:0 auto;padding:16px}
@@ -12,8 +12,11 @@ header h1{margin:0;font-size:1.55rem;letter-spacing:-.01em}
 header p{margin:.35rem 0 0;font-size:.95rem;opacity:.92}
 .card{background:var(--card);border:1px solid var(--hair);border-radius:10px;padding:18px 20px;margin:0 0 14px}
 .card h2{margin:0 0 .7rem;font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;color:var(--slate)}
-.tl{display:flex;gap:14px;align-items:flex-start;margin:.85rem 0}
-.when{flex:0 0 108px;font-weight:700;font-size:.9rem;color:var(--accent);padding-top:1px}
+.card h2.big{font-size:1.05rem;letter-spacing:0;text-transform:none;color:var(--ink);font-weight:700}
+.pill{display:inline-block;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;padding:.18rem .5rem;border-radius:20px;color:#fff;margin-left:.4rem;vertical-align:middle}
+.p-conv{background:var(--accent)}.p-new{background:var(--green)}
+.tl{display:flex;gap:14px;align-items:flex-start;margin:.8rem 0}
+.when{flex:0 0 110px;font-weight:700;font-size:.9rem;color:var(--accent);padding-top:1px}
 .tl b{display:block;margin-bottom:.1rem}
 .tl span{color:var(--slate);font-size:.93rem}
 ul{margin:.4rem 0 0;padding-left:1.25rem}
@@ -30,49 +33,37 @@ footer{color:var(--slate);font-size:.82rem;text-align:center;padding:10px 0 24px
 <div class="wrap">
 <header>
   <h1>Innovative Advisors &mdash; Next Steps</h1>
-  <p>Thirteen payroll clients moving to ADP</p>
+  <p>Thirteen converting from Paychex &middot; Five new</p>
 </header>
 
 <div class="card">
   <h2>Timeline</h2>
-  <div class="tl"><div class="when">Today</div><div><b>I submit the pricing</b><span>Thirteen clients. Nothing needed from you for this part.</span></div></div>
-  <div class="tl"><div class="when">Mon or Tue</div><div><b>Agreement comes back for signature</b><span>I send it over as soon as it&rsquo;s ready.</span></div></div>
-  <div class="tl"><div class="when">That week</div><div><b>We collect what we need</b><span>This is the window. Everything below happens here.</span></div></div>
-  <div class="tl"><div class="when">Friday</div><div><b>Accounts ready</b><span>Once signed, setup takes a couple of days per client.</span></div></div>
+  <div class="tl"><div class="when">Today</div><div><b>I submit the pricing</b><span>Thirteen clients. Nothing needed from you.</span></div></div>
+  <div class="tl"><div class="when">Mon or Tue</div><div><b>Agreement back for signature</b><span>I send it over as soon as it&rsquo;s ready.</span></div></div>
+  <div class="tl"><div class="when">Tuesday</div><div><b>I pull everything from Partner Pro</b><span>We get on together and I collect what I need for all thirteen in one sitting.</span></div></div>
+  <div class="tl"><div class="when">That week</div><div><b>Bank statements and signatures come in</b><span>The only items that have to come from the clients themselves.</span></div></div>
+  <div class="tl"><div class="when">Friday</div><div><b>Accounts ready</b><span>The gap gives us room to collect without rushing.</span></div></div>
 </div>
 
 <div class="card">
-  <h2>What I need from each client</h2>
+  <h2 class="big">The thirteen converting from Paychex <span class="pill p-conv">Conversions</span></h2>
+  <p style="margin:.2rem 0 .5rem">I collect the account information myself from your Partner Pro on Tuesday. You don&rsquo;t need to gather anything.</p>
+  <p style="margin:.2rem 0 .3rem"><b>From each client, only two things:</b></p>
   <ul>
-    <li><b>SS-4.</b> That one document has almost everything &mdash; legal name, EIN, address, entity type. If they don&rsquo;t have it handy, the tax ID, legal business name and business address will do.</li>
-    <li><b>Business bank information.</b></li>
-    <li><b>Employee information.</b> Names, pay rates, direct deposit.</li>
-  </ul>
-</div>
-
-<div class="note">
-  <b>Bank proof is required for every client.</b> A voided check, a bank letter, or a screenshot of the account. This has to come from the client directly, not from you. It is the one item that will hold up an account if it&rsquo;s missing.
-</div>
-
-<div class="card">
-  <h2>How onboarding runs</h2>
-  <ul>
-    <li>You send the SS-4.</li>
-    <li>I create the account and send the e-sign.</li>
-    <li>We walk through digital onboarding together, about twenty minutes.</li>
-    <li>Account is ready in a day or two.</li>
-    <li>Cash payroll goes on first. After the first payroll we turn on RUN &amp; Done.</li>
+    <li>Bank statement</li>
+    <li>Signature</li>
   </ul>
 </div>
 
 <div class="card">
-  <h2>State tax IDs</h2>
-  <p style="margin:0">The client applies for any state withholding or unemployment numbers they need. If that becomes a headache, tell me and I&rsquo;ll send exact steps or walk them through it.</p>
-</div>
-
-<div class="card">
-  <h2>New clients &mdash; send introductions now</h2>
-  <p style="margin:0 0 .4rem;color:var(--slate);font-size:.93rem">These five aren&rsquo;t part of the pricing submission. They come in separately, and we can start them while the rest is in signature.</p>
+  <h2 class="big">The five new clients <span class="pill p-new">New</span></h2>
+  <p style="margin:.2rem 0 .5rem">These go through full onboarding. Send me the introductions and I&rsquo;ll take it from there.</p>
+  <p style="margin:.2rem 0 .3rem"><b>From each one:</b></p>
+  <ul>
+    <li>SS-4. That one document has almost everything. If they don&rsquo;t have it, the tax ID, legal business name and business address will do.</li>
+    <li>Business bank information</li>
+    <li>Employee information</li>
+  </ul>
   <table>
     <tr><th>Client</th><th>Owner</th></tr>
     <tr><td>B333 Trading Group</td><td>Oliver Beirne</td></tr>
@@ -81,6 +72,20 @@ footer{color:var(--slate);font-size:.82rem;text-align:center;padding:10px 0 24px
     <tr><td>Atlas Opera</td><td>John Ewing</td></tr>
     <tr><td>North Star Works</td><td>Christina Pellicane</td></tr>
   </table>
+</div>
+
+<div class="note">
+  <b>Bank statements and signatures are needed from all eighteen.</b> Those two have to come from each client directly, not from you. Everything else I can handle.
+</div>
+
+<div class="card">
+  <h2>How onboarding runs</h2>
+  <ul>
+    <li>I create the account and send the e-sign.</li>
+    <li>We walk through digital onboarding together, about twenty minutes.</li>
+    <li>Account is ready in a day or two.</li>
+    <li>Cash payroll goes on first. After the first payroll we turn on RUN &amp; Done.</li>
+  </ul>
 </div>
 
 <div class="card">
