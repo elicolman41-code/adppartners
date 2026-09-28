@@ -34,6 +34,11 @@ Second break: "all pages, no redaction" means the client hands over full transac
 
 **Practical:** desktop browser is usually easier than mobile because the OS clock shows the date. On mobile the status bar shows time but not date, which is exactly why the two-shot allowance exists.
 
+## CORRECTION 2026-09-28 — two proofs CAN be combined
+Eli, from direct experience: **two different bank proofs can be submitted together to make one complete proof.** Example: a statement that shows the full account number but no routing, plus a screenshot that shows the routing.
+
+The 4.2.26 email does NOT say this — it reads as if each form is judged on its own ("must contain the items listed in order to be considered valid"). Fable pushed back on this and was wrong. Do not push back on it again. Otto governs, and the email is a summary.
+
 ## Other accepted forms (reference only)
 - **Voided check:** fractional number, company name, bank name, ABA + DDA, "VOID" written, no other handwriting
 - **Pre-printed check reorder form:** company name, bank name, ABA + DDA, pre-printed "reorder" wording; no VOID needed
