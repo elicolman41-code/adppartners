@@ -117,3 +117,14 @@ No Queens firm cleared verification this run. Every Queens-titled result traced 
 - Unmined ZIPs for next PTIN pass: Bay Ridge 11209, Sunset Park 11220 (use `ptindirectory <ZIP> "718-"`), Flatbush 11226, Bushwick 11237.
 - Gusto partner client counts seen for known firms: Velo Accounting Group 71 (Brooklyn 11216), Find A Way 4, Cubepros 1000+ SMBs.
 - Trigger still says "artifact" and Nationwide agent — needs editing (scheduling connector).
+
+## 2026-09-28 run
+- 3 Opus agents only (Signal Scout and Registrar stayed cut — Reddit/X unreachable, dayonelead stale, data.ny.gov egress-blocked). Board 300 → 320.
+- Grid Hunter 12 via PTIN mining. NEW WORKING PATTERN: for ZIPs where `ptindirectory <hood> NY tax preparer` returns nothing, the `ptindirectory <ZIP> "718-"` variant works — cracked Bay Ridge 11209 and Sunset Park 11220 that way.
+- Directory Miner 9, EIGHT with exact published Gusto client counts. Gusto is the only directory publishing real numbers; Xero and QuickBooks gave nothing. Future sweeps: Gusto-only for counts, a different source for names/phones.
+- Gusto profiles publish NO phone and NO principal — contact routes through a form. Those leads need a site lookup or a walk-in.
+- STILL UNMINED: Bushwick 11237 (retry with the "718-" variant), East Flatbush 11203, Corona 11368.
+- Recoverable extras Grid Hunter found but didn't rank: Sl Tax Centers (1127 Eastern Pkwy, 718-774-0985), Padova Multiservice (1205 Remsen Ave, 718-676-4398), Bsba Business Services (245 Conklin Ave, 718-496-9062).
+- CAVEAT to carry: PTIN addresses are registration addresses, not verified storefronts. "storefront" and "bigbook" tags are inferences from commercial-corridor addresses and entity structure, not from any client-count source.
+- McLan Accounting was already on the board — dedupe caught it. Exclusion list needs fuzzy matching, exact-name matching missed it.
+- Trigger: only new item is Intuit ProPartner detail, 9/15, five tiers, firm-level, ProAdvisor stays program of record until early 2027. Nothing new on QB Desktop sunset, Gusto/Paychex pricing, or ADP.
