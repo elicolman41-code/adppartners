@@ -16,10 +16,26 @@ First payroll to pull from: **first 2026 payroll date — still needed**
 | 1 | YTD report | first payroll – last payroll before ADP | Employee Earnings Report (unmasked) | [ ] |
 | 2 | PQYTD | first payroll – 9/30 | Employee Earnings Report (unmasked) | [ ] |
 | 3 | Payroll by payroll, gross to net | 10/1 – last payroll before ADP | Cash Requirements + Payroll Journal + Department Summary, one set per payroll | [ ] |
-| 4 | Proof of federal tax deposits | Q3 only | Cash Requirements, Taxpay lines | [ ] |
-| 5 | Proof of state and local tax deposits | Q3 only | Cash Requirements, Taxpay lines | [ ] |
-| 6 | 941s | **Q3** | 941 from the quarterly packet | [ ] |
-| 7 | SIT and SUI filings | **Q3** | Quarter Reconciliation Return + Wage Detail Report | [ ] |
+| 4 | Proof of federal tax deposits | Q3 — from Cash Requirements, not a filing | Cash Requirements, Taxpay lines | [ ] |
+| 5 | Proof of state and local tax deposits | Q3 — from Cash Requirements, not a filing | Cash Requirements, Taxpay lines | [ ] |
+| 6 | 941s (filed returns only) | **NONE — Q3 start, and Q3 is not filed until 10/31** | 941 from the quarterly packet | [ ] |
+| 7 | SIT and SUI filings (filed returns only) | **NONE — Q3 start, and Q3 is not filed until 10/31** | Quarter Reconciliation Return + Wage Detail Report | [ ] |
+
+> **No 941s and no SIT/SUI returns to collect at all.** Q3 start means Q1 and Q2 never happened, and Q3 will not be filed until 10/31. Everything for this client comes off the payroll registers.
+
+## ⚠️ Q3 IS NOT A FILING YOU COLLECT
+Q3 returns are not due until **10/31**, so Paychex will not have produced them before the
+10/1 cutover. Do not wait on them and do not ask for them.
+
+What replaces them: **the payroll register through the last Paychex check.**
+- YTD register from the first payroll to the last Paychex check
+- Payroll-by-payroll gross to net for Q3
+- Cash Requirements pages showing the Q3 federal and state/local deposits
+
+That is the Q3 balance. The filed return is Paychex's job on 10/31 — get a copy for the
+file afterward, but it does not gate anything.
+
+**Get in writing that Paychex is filing Q3** on every agency they were set up on.
 
 ## ON FILE
 - Nothing received yet.
@@ -28,7 +44,9 @@ First payroll to pull from: **first 2026 payroll date — still needed**
 - [ ] Employee info, all current year — Employee Earnings Report (unmasked). Socials live in the EE/DD Profiles, not the report.
 - [ ] Direct Deposit Details Report (unmasked)
 - [ ] Pay dates and period end dates through year end
+- [ ] **Last Paychex payroll — full register, gross to net** (this is the Q3 balance)
 - [ ] Last Paychex check date, in writing
+- [ ] Written confirmation Paychex is filing Q3 on 10/31, agency by agency
 - [ ] State withholding + UI account numbers and SUI rate
 
 ## 🚩 CONFIRM THE START DATE FIRST

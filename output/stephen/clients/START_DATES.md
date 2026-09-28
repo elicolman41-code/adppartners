@@ -4,24 +4,40 @@
 **The rule:** balances run from the client's FIRST PAYCHEX PAYROLL, not from 1/1.
 A client who started in July has no Q1 or Q2 filings. Asking for them stalls the collection.
 
-| Client | Paychex start | Evidence | Quarters that exist | 941s / SIT-SUI still needed |
+| Client | Paychex start | Evidence | Quarters that exist | Filed returns still needed |
 |---|---|---|---|---|
-| Onchain Strategies | **Jan 2026 (Q1)** | Q1 report YTD = QTD = $15,000.00 | Q1, Q2, Q3 | **Q3** |
-| Backfin Logistics | **Jan 2026 (Q1)** | Q1 report YTD = QTD = $83,371.59 | Q1, Q2, Q3 | **Q3** |
-| Walters Mirrors | **Q1 2026** | Q2 YTD $158,973.68 − QTD $86,399.57 = $72,574.11 Q1 wages | Q1, Q2, Q3 | **Q1 and Q3** |
-| Spencer Thwaytes | **Q2 2026** | Q2 report YTD = QTD = $7,500.00 | Q2, Q3 | **Q3** |
-| Tyree Advisory | **Jun 2026 (Q2)** | first check 6/30/26 on payroll journal | Q2, Q3 | **Q2 and Q3** |
-| Wisdom by Woods | **Jun 2026 (Q2)** *likely* | $200 setup fee on 6/24/26 invoice | Q2, Q3 | **Q2 and Q3** |
-| Auction Time Pieces | **Jul 2026 (Q3)** | first check 7/31/26 on payroll journal | **Q3 only** | **Q3** |
-| Upstate Logistics | **Jul 2026 (Q3)** *unconfirmed* | Taxpay active 7/10 + 7/24 | **Q3 only** (if July holds) | **Q3** |
+| Onchain Strategies | **Jan 2026 (Q1)** | Q1 report YTD = QTD = $15,000.00 | Q1, Q2 filed | **none — complete** |
+| Backfin Logistics | **Jan 2026 (Q1)** | Q1 report YTD = QTD = $83,371.59 | Q1, Q2 filed | **none — complete** |
+| Walters Mirrors | **Q1 2026** | Q2 YTD $158,973.68 − QTD $86,399.57 = $72,574.11 Q1 wages | Q1, Q2 filed | **Q1** |
+| Spencer Thwaytes | **Q2 2026** | Q2 report YTD = QTD = $7,500.00 | Q2 filed | **none — complete** |
+| Tyree Advisory | **Jun 2026 (Q2)** | first check 6/30/26 on payroll journal | Q2 filed | **Q2** |
+| Wisdom by Woods | **Jun 2026 (Q2)** *likely* | $200 setup fee on 6/24/26 invoice | Q2 filed | **Q2** |
+| Auction Time Pieces | **Jul 2026 (Q3)** | first check 7/31/26 on payroll journal | **none filed** | **none ever** |
+| Upstate Logistics | **Jul 2026 (Q3)** *unconfirmed* | Taxpay active 7/10 + 7/24 | **none filed** (if July holds) | **none ever** |
 
 ## What this means
-- **Only 3 of 8 clients need all three quarters** — Onchain, Backfin, Walters.
-- **Two need Q3 alone** — Auction and Upstate. Those are nearly finished before they start.
-- **Q3 does not exist yet for anyone.** Q3 closes 9/30. Pull every Q3 941 and quarterly
-  report in early October, after Paychex generates them.
-- **Only one true gap in the back quarters: Walters Q1.** Everything else that is missing
-  is either Q3 (not yet produced) or a quarter that never happened.
+**Q3 is not a filing you collect.** Q3 returns are not due until 10/31, so Paychex will not
+have produced them before the 10/1 cutover. The Q3 balance comes off the **payroll register
+through the last Paychex check** — YTD register, payroll-by-payroll gross to net, and the
+Cash Requirements pages showing the Q3 deposits. Paychex files the actual Q3 return on
+10/31; get a copy for the file afterward, but it gates nothing.
+
+So the entire remaining filed-return ask is **three documents**:
+
+| Client | Document |
+|---|---|
+| Walters Mirrors | Q1 2026 941 + Q1 quarterly report |
+| Tyree Advisory | Q2 2026 941 + Q2 quarterly report |
+| Wisdom by Woods | Q2 2026 941 + Q2 quarterly report |
+
+- **Onchain, Backfin and Spencer are complete** on filed returns.
+- **Auction and Upstate need no filed returns at all** — nothing was ever filed for them,
+  and Q3 won't be filed before the handoff.
+- What every one of the eight still needs is the **last Paychex payroll register**, which
+  cannot be pulled until after the 9/30 runs.
+- **Get written confirmation Paychex is filing Q3** on every agency they were set up on.
+  On Upstate that matters most — they never set up MI UIA, OH Job & Family, OH Taxation
+  or AZ DES, so there may be nothing to file on those agencies and an open exposure instead.
 
 ## What the packet contained
 | Report | Pages |
