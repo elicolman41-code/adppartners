@@ -1,21 +1,29 @@
-# Tyree Advisory Group LLC — Q4 START
+# Tyree Advisory Group LLC — Q4 START (10/1 – 12/31)
 EIN 42-1951214 · Ty Tyree · Monthly, 12 runs/yr · 1 EE · PA
-**Paychex start: unknown** — no invoice yet
 
-Q4 start means 10/1 – 12/31. Balances have to carry the whole year.
+## ⚠️ PAYCHEX START DATE — this governs everything below
+**JUN 2026 (Q2) — CONFIRMED**
+Evidence: first check 6/30/26 on the payroll journal
+**Filings that exist: Q2 and Q3 only**
+First payroll to pull from: **6/30/2026**
+
+> Do not chase quarters before the start date. They do not exist, and asking for them
+> stalls the collection. "YTD" means from the first Paychex payroll, not from 1/1.
 
 ## THE 7 BALANCE ITEMS
-| # | What | Date range | Paychex report to pull | Got it |
-|---|------|-----------|------------------------|--------|
-| 1 | YTD report | 1/1 – last payroll before ADP | Employee Earnings Report (unmasked) | [ ] |
-| 2 | PQYTD | 1/1 – 9/30 | Employee Earnings Report (unmasked) | [ ] |
+| # | What | Date range for THIS client | Paychex report to pull | Got it |
+|---|------|---------------------------|------------------------|--------|
+| 1 | YTD report | first payroll – last payroll before ADP | Employee Earnings Report (unmasked) | [x] |
+| 2 | PQYTD | first payroll – 9/30 | Employee Earnings Report (unmasked) | [ ] |
 | 3 | Payroll by payroll, gross to net | 10/1 – last payroll before ADP | Cash Requirements + Payroll Journal + Department Summary, one set per payroll | [ ] |
-| 4 | Proof of federal tax deposits | current quarter only | Cash Requirements, Taxpay lines | [ ] |
-| 5 | Proof of state and local tax deposits | current quarter only | Cash Requirements, Taxpay lines | [ ] |
-| 6 | 941s | Q1, Q2, Q3 | 941 from the quarterly packet | [ ] |
-| 7 | SIT and SUI filings | Q1, Q2, Q3 | Quarter Reconciliation Return + Wage Detail Report | [ ] |
+| 4 | Proof of federal tax deposits | Q3 only | Cash Requirements, Taxpay lines | [ ] |
+| 5 | Proof of state and local tax deposits | Q3 only | Cash Requirements, Taxpay lines | [ ] |
+| 6 | 941s | **Q2, Q3** | 941 from the quarterly packet | [ ] |
+| 7 | SIT and SUI filings | **Q2, Q3** | Quarter Reconciliation Return + Wage Detail Report | [ ] |
 
-> **Start date unknown.** Confirm the first Paychex payroll date before chasing Q1 and Q2 filings. If they started mid-year those quarters do not exist.
+## ON FILE
+- [x] Employee Earnings Record 1/1-9/25
+- [x] Payroll Journal 1/1-9/25
 
 ## ALSO PULL
 - [ ] Employee info, all current year — Employee Earnings Report (unmasked). Socials live in the EE/DD Profiles, not the report.
@@ -27,14 +35,3 @@ Q4 start means 10/1 – 12/31. Balances have to carry the whole year.
 ## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
-
-## CUTOVER
-- [ ] Last Paychex check on or before 9/30
-- [ ] First ADP check on or after 10/1
-- [ ] No pay period paid twice
-- [ ] Paychex schedule terminated in writing
-- [ ] TPA authorization where the state requires it (MI, OH, FL, MD, AZ)
-
-## UPLOADS RECEIVED
-
-## NOTES
