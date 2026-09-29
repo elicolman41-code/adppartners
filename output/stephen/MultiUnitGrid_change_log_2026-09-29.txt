@@ -1,0 +1,227 @@
+Multi Unit Grid!D3: 'Stephen Scialo' -> None (was a name, not an address; Eli: leave blank)
+Multi Unit Grid!G3: ' Eli Colman' -> 'Eli Colman' (trim)
+Multi Unit Grid!G4: ' Patrick Cassidy' -> 'Patrick Cassidy' (trim)
+Multi Unit Grid!G5: ' Shannon  Suppa' -> 'Shannon Suppa' (trim)
+Multi Unit Grid!H15: 'Paychex' -> 'Paychex - prior ADP client - Paychex cannot link Partner Pro access' 
+Multi Unit Grid!H16: 'Paychex' -> 'Paychex - client has not yet granted report access' 
+Multi Unit Grid!F17: 1543 -> 1557.36 
+Multi Unit Grid!D21: 5 -> 3 
+Multi Unit Grid!H23: 'Paychex' -> 'Gusto - not a Paychex account' 
+Multi Unit Grid!H24: 'Paychex' -> 'Gusto - not a Paychex account' 
+Multi Unit Grid!H25: 'Paychex' -> 'No provider - pays IRS directly via EFTPS - cash payroll' 
+Product Selections!D27: 'FRG Advisory, LLC' -> 'FRG Advisory LLC' (941 name rule: letters/numbers/&/- only)
+Product Selections!D28: 'Broadway 2000, Inc' -> 'Broadway 2000 Inc' (941 name rule: letters/numbers/&/- only)
+COE.Client.Details!H19: None -> datetime.datetime(2026, 10, 9, 0, 0) (estimate by frequency)
+COE.Client.Details!L19: None -> '33-4154077' 
+COE.Client.Details!M19: None -> '2107 Goldfinch Blvd' 
+COE.Client.Details!O19: None -> 'Princeton' 
+COE.Client.Details!P19: None -> 'NJ' 
+COE.Client.Details!Q19: None -> '08540' 
+COE.Client.Details!R19: None -> 'Robert' 
+COE.Client.Details!S19: None -> 'Tupe' 
+COE.Client.Details!T19: None -> '(561) 676-0037' 
+COE.Client.Details!U19: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W19: None -> 'Paychex' 
+COE.Client.Details!Z19: None -> '525216' 
+COE.Client.Details!AA19: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H20: None -> datetime.datetime(2026, 10, 30, 0, 0) (estimate by frequency)
+COE.Client.Details!L20: None -> '42-1951214' 
+COE.Client.Details!M20: None -> '106 W Dorothys Way' 
+COE.Client.Details!O20: None -> 'Lincoln University' 
+COE.Client.Details!P20: None -> 'PA' 
+COE.Client.Details!Q20: None -> '19352' 
+COE.Client.Details!R20: None -> 'Ty' 
+COE.Client.Details!S20: None -> 'Tyree' 
+COE.Client.Details!T20: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U20: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W20: None -> 'Paychex' 
+COE.Client.Details!Z20: None -> '525216' 
+COE.Client.Details!AA20: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H21: None -> datetime.datetime(2026, 10, 30, 0, 0) (estimate by frequency)
+COE.Client.Details!L21: None -> '86-2385686' 
+COE.Client.Details!M21: None -> '6278 North Federal Highway' 
+COE.Client.Details!O21: None -> 'Fort Lauderdale' 
+COE.Client.Details!P21: None -> 'FL' 
+COE.Client.Details!Q21: None -> '33308' 
+COE.Client.Details!R21: None -> 'Ricardo' 
+COE.Client.Details!S21: None -> "De'Carvalho" 
+COE.Client.Details!T21: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U21: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W21: None -> 'Paychex' 
+COE.Client.Details!Z21: None -> '525216' 
+COE.Client.Details!AA21: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H22: None -> datetime.datetime(2026, 10, 2, 0, 0) (estimate by frequency)
+COE.Client.Details!L22: None -> '39-2155930' 
+COE.Client.Details!M22: None -> '432 S Walnut St' 
+COE.Client.Details!O22: None -> 'Kennett Square' 
+COE.Client.Details!P22: None -> 'PA' 
+COE.Client.Details!Q22: None -> '19348' 
+COE.Client.Details!R22: None -> 'Heather' 
+COE.Client.Details!S22: None -> 'Kranz' 
+COE.Client.Details!T22: None -> '(484) 731-2656' 
+COE.Client.Details!U22: None -> 'info@kranzmotorcars.com' 
+COE.Client.Details!W22: None -> 'Paychex' 
+COE.Client.Details!Z22: None -> '525216' 
+COE.Client.Details!AA22: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H23: None -> datetime.datetime(2026, 10, 30, 0, 0) (estimate by frequency)
+COE.Client.Details!L23: None -> '93-3723791' 
+COE.Client.Details!M23: None -> '5320 Blue Reed Lane' 
+COE.Client.Details!O23: None -> 'Lake Worth' 
+COE.Client.Details!P23: None -> 'FL' 
+COE.Client.Details!Q23: None -> '33467' 
+COE.Client.Details!R23: None -> 'Robert' 
+COE.Client.Details!S23: None -> 'Shaul' 
+COE.Client.Details!T23: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U23: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W23: None -> 'Paychex' 
+COE.Client.Details!Z23: None -> '525216' 
+COE.Client.Details!AA23: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H24: None -> datetime.datetime(2026, 10, 15, 0, 0) (estimate by frequency)
+COE.Client.Details!L24: None -> '42-2190303' 
+COE.Client.Details!M24: None -> '24324 Walnut Steeer' 
+COE.Client.Details!N24: None -> 'Suite B' 
+COE.Client.Details!O24: None -> 'Newhall' 
+COE.Client.Details!P24: None -> 'CA' 
+COE.Client.Details!Q24: None -> '91321' 
+COE.Client.Details!R24: None -> 'Hani' 
+COE.Client.Details!S24: None -> 'Amiri Manesh' 
+COE.Client.Details!T24: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U24: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W24: None -> 'Paychex' 
+COE.Client.Details!Z24: None -> '525216' 
+COE.Client.Details!AA24: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H25: None -> datetime.datetime(2026, 10, 30, 0, 0) (estimate by frequency)
+COE.Client.Details!L25: None -> '33-3282413' 
+COE.Client.Details!M25: None -> '655 Pyrite Will St' 
+COE.Client.Details!O25: None -> 'Las Vegas' 
+COE.Client.Details!P25: None -> 'NV' 
+COE.Client.Details!Q25: None -> '89138' 
+COE.Client.Details!R25: None -> 'Robert' 
+COE.Client.Details!S25: None -> 'Watson' 
+COE.Client.Details!T25: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U25: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W25: None -> 'Paychex' 
+COE.Client.Details!Z25: None -> '525216' 
+COE.Client.Details!AA25: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H26: None -> datetime.datetime(2026, 10, 15, 0, 0) (estimate by frequency)
+COE.Client.Details!L26: None -> '33-4371485' 
+COE.Client.Details!M26: None -> '7921 SPRINGWAY RD' 
+COE.Client.Details!O26: None -> 'Towson' 
+COE.Client.Details!P26: None -> 'MD' 
+COE.Client.Details!Q26: None -> '21204' 
+COE.Client.Details!R26: None -> 'Dave' 
+COE.Client.Details!S26: None -> 'Truscello' 
+COE.Client.Details!T26: None -> '(410) 498-1527' 
+COE.Client.Details!U26: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W26: None -> 'Paychex' 
+COE.Client.Details!Z26: None -> '525216' 
+COE.Client.Details!AA26: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H27: None -> datetime.datetime(2026, 10, 9, 0, 0) (estimate by frequency)
+COE.Client.Details!L27: None -> '33-3877704' 
+COE.Client.Details!M27: None -> '1625 Cody Ave' 
+COE.Client.Details!O27: None -> 'Ridgewood' 
+COE.Client.Details!P27: None -> 'NY' 
+COE.Client.Details!Q27: None -> '11385-5733' 
+COE.Client.Details!R27: None -> 'Niccolo' 
+COE.Client.Details!S27: None -> 'Russino' 
+COE.Client.Details!T27: None -> '(718) 366-0777' 
+COE.Client.Details!U27: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W27: None -> 'Paychex' 
+COE.Client.Details!Z27: None -> '525216' 
+COE.Client.Details!AA27: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H28: None -> datetime.datetime(2026, 10, 30, 0, 0) (estimate by frequency)
+COE.Client.Details!L28: None -> '93-1357097' 
+COE.Client.Details!M28: None -> '1524 Bayview Drive' 
+COE.Client.Details!O28: None -> 'Fort Lauderdale' 
+COE.Client.Details!P28: None -> 'FL' 
+COE.Client.Details!Q28: None -> '33304' 
+COE.Client.Details!R28: None -> 'Spencer' 
+COE.Client.Details!S28: None -> 'Thwaytes' 
+COE.Client.Details!T28: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U28: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W28: None -> 'Paychex' 
+COE.Client.Details!Z28: None -> '525216' 
+COE.Client.Details!AA28: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H29: None -> datetime.datetime(2026, 10, 30, 0, 0) (estimate by frequency)
+COE.Client.Details!L29: None -> '99-4630525' 
+COE.Client.Details!M29: None -> '6252 Isabel Cove Ave' 
+COE.Client.Details!O29: None -> 'Las Vegas' 
+COE.Client.Details!P29: None -> 'NV' 
+COE.Client.Details!Q29: None -> '89139' 
+COE.Client.Details!R29: None -> 'Richard' 
+COE.Client.Details!S29: None -> 'Zamilpa' 
+COE.Client.Details!T29: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U29: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W29: None -> 'Gusto' 
+COE.Client.Details!Z29: None -> '525216' 
+COE.Client.Details!AA29: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H30: None -> datetime.datetime(2026, 10, 30, 0, 0) (estimate by frequency)
+COE.Client.Details!L30: None -> '40-0020506' 
+COE.Client.Details!M30: None -> '431 E 20th Street' 
+COE.Client.Details!O30: None -> 'New York' 
+COE.Client.Details!P30: None -> 'NY' 
+COE.Client.Details!Q30: None -> '10010' 
+COE.Client.Details!R30: None -> 'Frank' 
+COE.Client.Details!S30: None -> 'Giordano' 
+COE.Client.Details!T30: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U30: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W30: None -> 'Gusto' 
+COE.Client.Details!Z30: None -> '525216' 
+COE.Client.Details!AA30: None -> 'Eli.Colman@adp.com' 
+COE.Client.Details!H31: None -> datetime.datetime(2026, 12, 31, 0, 0) (estimate by frequency)
+COE.Client.Details!L31: None -> '85-3662838' 
+COE.Client.Details!M31: None -> '662 Driggs Avenue' 
+COE.Client.Details!O31: None -> 'Brooklyn' 
+COE.Client.Details!P31: None -> 'NY' 
+COE.Client.Details!Q31: None -> '11211' 
+COE.Client.Details!R31: None -> 'Benjamin' 
+COE.Client.Details!S31: None -> 'Solomon' 
+COE.Client.Details!T31: None -> '845-642-8927' (fallback: Stephen)
+COE.Client.Details!U31: None -> 'sscialo@innovateadvisors.com' (fallback: Stephen)
+COE.Client.Details!W31: None -> 'None' 
+COE.Client.Details!Z31: None -> '525216' 
+COE.Client.Details!AA31: None -> 'Eli.Colman@adp.com' 
+Internal COE_Account Grid!G2: 8540 -> '08540' 
+Internal COE_Account Grid!G3: 19352 -> '19352' 
+Internal COE_Account Grid!G4: 33308 -> '33308' 
+Internal COE_Account Grid!G5: 19348 -> '19348' 
+Internal COE_Account Grid!E6: 'Lake Worth, FL\xa033467' -> 'Lake Worth' 
+Internal COE_Account Grid!F6: ' FL' -> 'FL' 
+Internal COE_Account Grid!G6: 33467 -> '33467' 
+Internal COE_Account Grid!E7: 'Newhall, CA\xa091321' -> 'Newhall' 
+Internal COE_Account Grid!F7: 'CA\xa0' -> 'CA' 
+Internal COE_Account Grid!G7: 91321 -> '91321' 
+Internal COE_Account Grid!E8: 'Las Vegas, NV 89138' -> 'Las Vegas' 
+Internal COE_Account Grid!G8: 89138 -> '89138' 
+Internal COE_Account Grid!G9: 21204 -> '21204' 
+Internal COE_Account Grid!D10: '1625 Cody, Ave' -> '1625 Cody Ave' 
+Internal COE_Account Grid!G10: 11385 -> '11385-5733' 
+Internal COE_Account Grid!G11: 33304 -> '33304' 
+Internal COE_Account Grid!E12: ' Las Vegas' -> 'Las Vegas' 
+Internal COE_Account Grid!G12: 89139 -> '89139' 
+Internal COE_Account Grid!E13: 'New York ' -> 'New York' 
+Internal COE_Account Grid!G13: 10010 -> '10010' 
+Internal COE_Account Grid!G14: 11211 -> '11211' 
+COE.Client.Details!M24: '24324 Walnut Steeer' -> '24324 Walnut Street' (typo)
+Internal COE_Account Grid!D7: 'Walnut Steeer Suite B' -> 'Walnut Street Suite B' (typo)
+
+Multi Unit Grid!C24: 'FRG Advisory, LLC' -> 'FRG Advisory LLC' (name consistent across tabs)
+Multi Unit Grid!C25: 'Broadway 2000, Inc' -> 'Broadway 2000 Inc' (name consistent across tabs)
+Internal COE_Account Grid!C13: 'FRG Advisory, LLC' -> 'FRG Advisory LLC' 
+Internal COE_Account Grid!C14: 'Broadway 2000, Inc' -> 'Broadway 2000 Inc' 
+Multi Unit Grid!D7: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W19: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W20: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W21: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W22: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W23: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W24: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W25: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W26: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W27: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W28: 'Paychex' -> 'Paychex/Surepayroll' (Current Provider list value)
+COE.Client.Details!W31: 'None' -> 'Other' (Current Provider list value)
+COE.Client.Details!N21: None -> '#491' (Sunbiz registered address — CONFIRM with Stephen)
+Internal COE_Account Grid!D4: '6278 North Federal Highway' -> '6278 North Federal Highway #491' (Sunbiz)
+COE.Client.Details!M26: '7921 SPRINGWAY RD' -> '7921 Springway Rd' (title case)
+Internal COE_Account Grid!D9: '7921 SPRINGWAY RD' -> '7921 Springway Rd' (title case)
