@@ -1,0 +1,141 @@
+=== TAB: Multi Unit Grid — single cells ===
+D3	(clear it — delete 'Stephen Scialo')
+D7	Paychex/Surepayroll
+G3	Eli Colman
+G4	Patrick Cassidy
+G5	Shannon Suppa
+
+=== TAB: Multi Unit Grid — click C13, paste (cols C:H, 13 rows) ===
+Upstate Logistics Group LLC	3	26	2042.82	Included	Paychex
+Tyree Advisory Group LLC	1	12	863.04	Included	Paychex
+RJC Holdings	1	12	696	Included	Paychex - prior ADP client - Paychex cannot link Partner Pro access
+Kranz Motorcars LLC	1	52	3094	Included	Paychex - client has not yet granted report access
+Wisdom by Woods LLC	1	12	1557.36	Included	Paychex
+Auction Time Pieces	2	24	3698.4	Included	Paychex
+Onchain Strategies LLC	1	12	1212	Included	Paychex
+Backfin Logistics LLC	3	24	2364	Included	Paychex
+Walters Mirrors Inc	3	26	6810.7	Included	Paychex
+Spencer Thwaytes & Co LLC	3	12	924	Included	Paychex
+Complete Merchant Services Consulting	2	12	1200	Included	Gusto - not a Paychex account
+FRG Advisory LLC	1	12	600	Included	Gusto - not a Paychex account
+Broadway 2000 Inc	1	1	400	Included	No provider - pays IRS directly via EFTPS - cash payroll
+
+=== TAB: Product Selections — click D16, paste (col D, 13 rows) ===
+Upstate Logistics Group LLC
+Tyree Advisory Group LLC
+RJC Holdings
+Kranz Motorcars LLC
+Wisdom by Woods LLC
+Auction Time Pieces
+Onchain Strategies LLC
+Backfin Logistics LLC
+Walters Mirrors Inc
+Spencer Thwaytes & Co LLC
+Complete Merchant Services Consulting
+FRG Advisory LLC
+Broadway 2000 Inc
+
+=== TAB: COE.Client.Details — click H19, paste (col H, next check date) ===
+10/9/2026
+10/30/2026
+10/30/2026
+10/2/2026
+10/30/2026
+10/15/2026
+10/30/2026
+10/15/2026
+10/9/2026
+10/30/2026
+10/30/2026
+10/30/2026
+12/31/2026
+
+=== TAB: COE.Client.Details — FIRST format column Q as Text (so 08540 keeps its zero), then click L19, paste (cols L:U, 13 rows) ===
+33-4154077	2107 Goldfinch Blvd		Princeton	NJ	08540	Robert	Tupe	(561) 676-0037	sscialo@innovateadvisors.com
+42-1951214	106 W Dorothys Way		Lincoln University	PA	19352	Ty	Tyree	845-642-8927	sscialo@innovateadvisors.com
+86-2385686	6278 North Federal Highway	#491	Fort Lauderdale	FL	33308	Ricardo	De'Carvalho	845-642-8927	sscialo@innovateadvisors.com
+39-2155930	432 S Walnut St		Kennett Square	PA	19348	Heather	Kranz	(484) 731-2656	info@kranzmotorcars.com
+93-3723791	5320 Blue Reed Lane		Lake Worth	FL	33467	Robert	Shaul	845-642-8927	sscialo@innovateadvisors.com
+42-2190303	24324 Walnut Street	Suite B	Newhall	CA	91321	Hani	Amiri Manesh	845-642-8927	sscialo@innovateadvisors.com
+33-3282413	655 Pyrite Will St		Las Vegas	NV	89138	Robert	Watson	845-642-8927	sscialo@innovateadvisors.com
+33-4371485	7921 Springway Rd		Towson	MD	21204	Dave	Truscello	(410) 498-1527	sscialo@innovateadvisors.com
+33-3877704	1625 Cody Ave		Ridgewood	NY	11385-5733	Niccolo	Russino	(718) 366-0777	sscialo@innovateadvisors.com
+93-1357097	1524 Bayview Drive		Fort Lauderdale	FL	33304	Spencer	Thwaytes	845-642-8927	sscialo@innovateadvisors.com
+99-4630525	6252 Isabel Cove Ave		Las Vegas	NV	89139	Richard	Zamilpa	845-642-8927	sscialo@innovateadvisors.com
+40-0020506	431 E 20th Street		New York	NY	10010	Frank	Giordano	845-642-8927	sscialo@innovateadvisors.com
+85-3662838	662 Driggs Avenue		Brooklyn	NY	11211	Benjamin	Solomon	845-642-8927	sscialo@innovateadvisors.com
+
+=== TAB: COE.Client.Details — click W19, paste (col W) ===
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Paychex/Surepayroll
+Gusto
+Gusto
+Other
+
+=== TAB: COE.Client.Details — click Z19, paste (cols Z:AA) ===
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+525216	Eli.Colman@adp.com
+
+=== TAB: COE.Client.Details — click AB19, paste (col AB, DM split 100%) ===
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+=== TAB: Internal COE_Account Grid — FIRST format column G as Text, then click C2, paste (cols C:G, 13 rows) ===
+Upstate Logistics Group LLC	2107 Goldfinch Blvd	Princeton	NJ	08540
+Tyree Advisory Group LLC	106 W Dorothys Way	Lincoln University	PA	19352
+RJC Holdings	6278 North Federal Highway #491	Fort Lauderdale	FL	33308
+Kranz Motorcars LLC	432 S Walnut St	Kennett Square	PA	19348
+Wisdom by Woods LLC	5320 Blue Reed Lane	Lake Worth	FL	33467
+Auction Time Pieces	24324 Walnut Street Suite B	Newhall	CA	91321
+Onchain Strategies LLC	655 Pyrite Will St	Las Vegas	NV	89138
+Backfin Logistics LLC	7921 Springway Rd	Towson	MD	21204
+Walters Mirrors Inc	1625 Cody Ave	Ridgewood	NY	11385-5733
+Spencer Thwaytes & Co LLC	1524 Bayview Drive	Fort Lauderdale	FL	33304
+Complete Merchant Services Consulting	6252 Isabel Cove Ave	Las Vegas	NV	89139
+FRG Advisory LLC	431 E 20th Street	New York	NY	10010
+Broadway 2000 Inc	662 Driggs Avenue	Brooklyn	NY	11211
+
+=== TAB: Internal COE_Account Grid — click I2, paste (col I) ===
+33-4154077
+42-1951214
+86-2385686
+39-2155930
+93-3723791
+42-2190303
+33-3282413
+33-4371485
+33-3877704
+93-1357097
+99-4630525
+40-0020506
+85-3662838
