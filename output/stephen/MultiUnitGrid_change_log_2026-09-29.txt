@@ -225,3 +225,5 @@ COE.Client.Details!N21: None -> '#491' (Sunbiz registered address — CONFIRM wi
 Internal COE_Account Grid!D4: '6278 North Federal Highway' -> '6278 North Federal Highway #491' (Sunbiz)
 COE.Client.Details!M26: '7921 SPRINGWAY RD' -> '7921 Springway Rd' (title case)
 Internal COE_Account Grid!D9: '7921 SPRINGWAY RD' -> '7921 Springway Rd' (title case)
+
+COE.Client.Details!AB19:AB968: DM Deal Split formula, CBA Lightning branch 0.7 -> 1 (Eli 9/29: split 70% -> 100%). House Deal Split (AD) derives 1-AB -> 0.

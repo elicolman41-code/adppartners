@@ -20,6 +20,7 @@ Multi Unit Grid D3 firm legal address · D9 Salesforce Acquisition ID · G6 ESO 
 - **RJC Holdings suite #491** (COE N21) came from the Florida Sunbiz filing, not from Stephen. Confirm or delete.
 
 ## Decisions applied
+- **DM Deal Split set to 100%** (COE column AB; template default was 70%). House Deal Split therefore 0%. Confirm with Patrick or Shannon that October pays 100% — the vault note from 9/17 says nobody at ADP had confirmed it yet.
 - Walters 3 EE (was keyed as 5). Backfin 3 EE and Auction 2 EE kept as submitted, though Paychex reports show 5 and 1.
 - Walters billing $6,810.70 = ADP max, deliberately not the $13,055.90 Paychex figure.
 - Wisdom corrected $1,543 → $1,557.36.
