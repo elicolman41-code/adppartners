@@ -62,3 +62,15 @@ Michigan: employer authorizes ADP as TPA in MiUI, ID 50000003, begin 10/1/26.
 ## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
+
+## 9/30 WORKER PROFILES — all 3 received (PII in the private file, not git)
+| Employee | Lives / works | Hired | Pay |
+|---|---|---|---|
+| Jacqueline Brogan | Macomb, **MI** | 6/18/26 | $175k, biweekly |
+| Scott Robson | Madeira, **OH** | 6/29/26 | $125k, biweekly |
+| Jeremy Reid | Scottsdale, **AZ** | 7/6/26 | $150k, biweekly |
+All three remote, one per state. Nobody works in NJ (the business address).
+
+🚩 **Every employee is in a state where Paychex never set up unemployment** (MI UIA, OH Job & Family, AZ DES). Unemployment for all three has likely gone unfiled and unpaid since June/July. This is exposure, not paperwork.
+🚩 **Robson has no Ohio city or school district tax set up.** Madeira is an Ohio municipality; working from home there usually means municipal withholding. Check before building.
+- 401(k): Brogan 6% pre-tax, Reid 8% Roth, both with tiered match. Robson eligible, not contributing. **This is a 4th Paychex 401(k) conversion.**
