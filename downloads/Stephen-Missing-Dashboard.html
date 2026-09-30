@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stephen Setup Tracker</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#16181d;--mut:#626874;--line:#dde0e6;--red:#b42318;--redbg:#fdecea;--amb:#8a5a00;--ambbg:#fff5e0;--grn:#1b6b3a;--grnbg:#e8f5ec;--blu:#0b5fa5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111317;--card:#1a1d23;--ink:#eceef2;--mut:#9aa1ad;--line:#2c3038;--redbg:#3a1a17;--ambbg:#3a2e12;--grnbg:#15301f;--red:#ff8a80;--amb:#f2c35b;--grn:#7fd49a;--blu:#7db8ee}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.w{max-width:1100px;margin:0 auto;padding:24px 16px 60px}h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 20px}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:28px 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:12px}
+.urgent{border-left:4px solid var(--red)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.c h3{margin:0 0 2px;font-size:16px}.c .meta{color:var(--mut);font-size:13px;margin-bottom:10px}
+ul{margin:0;padding-left:18px}li{margin:3px 0}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:2px}
+.t-red{background:var(--redbg);color:var(--red)}.t-amb{background:var(--ambbg);color:var(--amb)}.t-grn{background:var(--grnbg);color:var(--grn)}
+.done{color:var(--grn)}.miss{color:var(--red);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}th{color:var(--mut);font-size:12px;text-transform:uppercase}
+.q li{color:var(--mut)}.q b{color:var(--ink)}
+</style></head><body><div class="w">
+<h1>Stephen / Innovative Advisors — what's still missing</h1>
+<p class="sub">Updated 9/30/2026 · 9 Paychex clients with access + 4 others · 21 employees on file</p>
+
+<h2>Do first</h2>
+<div class="card urgent"><b>Cancel scheduled Paychex payrolls</b> — or employees get paid twice
+<table><tr><th>Client</th><th>Last Paychex check</th><th>Paychex still has</th><th>First ADP check</th></tr>
+<tr><td>Kranz Motorcars</td><td>10/2</td><td class="miss">10/9</td><td>10/9</td></tr>
+<tr><td>Upstate Logistics</td><td>10/2</td><td class="miss">10/16</td><td>10/16</td></tr>
+<tr><td>Wisdom by Woods</td><td>10/1</td><td class="miss">11/2</td><td>11/2</td></tr>
+<tr><td>Other six</td><td>—</td><td>confirm none (Walters ~10/14?)</td><td>—</td></tr></table></div>
+
+<h2>Missing, by client</h2>
+<div class="grid">
+<div class="card c"><h3>Walters Mirrors <span class="tag t-red">3 items</span></h3><div class="meta">3 EE · NY · biweekly</div><ul>
+<li class="miss">Q3 Cash Requirements</li><li class="miss">Q1 941 + quarterly — from prior provider</li><li class="miss">Bank proof · signature</li></ul></div>
+
+<div class="card c"><h3>Backfin Logistics <span class="tag t-red">4 items</span></h3><div class="meta">5 EE · DC/KY/MD/OH · semi-monthly</div><ul>
+<li class="miss">State withholding returns Q1+Q2 (KY, OH, DC, MD)</li><li class="miss">Covington city returns Q1+Q2</li><li class="miss">MD unemployment Q2</li><li class="miss">Bank proof · signature</li></ul></div>
+
+<div class="card c"><h3>Upstate Logistics <span class="tag t-amb">1 item</span></h3><div class="meta">3 EE · MI/OH/AZ · biweekly</div><ul>
+<li class="miss">Bank proof · signature</li><li class="done">Owner email still missing (Robert Tupe)</li></ul></div>
+
+<div class="card c"><h3>Kranz Motorcars <span class="tag t-amb">1 item</span></h3><div class="meta">3 EE · PA · weekly</div><ul><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>Wisdom by Woods <span class="tag t-amb">1 item</span></h3><div class="meta">1 EE · FL · monthly</div><ul><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>Tyree Advisory <span class="tag t-amb">1 item</span></h3><div class="meta">1 EE · PA · monthly</div><ul><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>Onchain Strategies <span class="tag t-amb">1 item</span></h3><div class="meta">1 EE · NV · monthly</div><ul><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>Spencer Thwaytes <span class="tag t-amb">1 item</span></h3><div class="meta">3 EE · FL · monthly</div><ul><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>Auction Time Pieces <span class="tag t-amb">1 item</span></h3><div class="meta">1 EE · FL · semi-monthly</div><ul><li class="miss">Bank proof · signature</li></ul></div>
+</div>
+
+<h2>Not on Paychex access</h2>
+<div class="grid">
+<div class="card c"><h3>RJC Holdings</h3><div class="meta">Paychex · Stephen can't link</div><ul><li class="miss">YTD register, filed quarterlies, last payroll, employee info</li><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>Complete Merchant</h3><div class="meta">Gusto · contact Douglas Morgan</div><ul><li class="miss">Gusto reports (per email)</li><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>FRG Advisory</h3><div class="meta">Gusto</div><ul><li class="miss">Gusto reports (per email)</li><li class="miss">Bank proof · signature</li></ul></div>
+<div class="card c"><h3>Broadway 2000</h3><div class="meta">Self-filed EFTPS</div><ul><li class="miss">Filed 941s + state returns, EFTPS history</li><li class="miss">Bank proof · signature</li></ul></div>
+</div>
+
+<h2>401(k)</h2>
+<div class="card"><ul><li class="miss">Owner name/email/phone — 7 new plans (B333, Complete Merchant, AJG, FRG, Kapstone, Broadway 2000, North Star)</li>
+<li class="miss">Plan docs — 4 conversions (Walters, Onchain, Spencer, Upstate)</li></ul></div>
+
+<h2>Put in front of Stephen — not blocking setup</h2>
+<div class="card q"><ul>
+<li><b>Taxes Paychex withheld but didn't remit</b> — Backfin ~$26K, Upstate ~$6.6K, Onchain (federal), smaller at Tyree, Kranz, Wisdom, Auction. Did clients pay directly?</li>
+<li><b>Upstate</b> — no unemployment accounts MI/OH/AZ; NJ tax withheld, no NJ employees; 401(k) = 4th conversion</li>
+<li><b>Walters</b> — who was the prior provider; Carlos on Long Island with NYC tax</li>
+<li><b>Kranz</b> — owners coded Partner on W-2; hired 11/1/25, paid anywhere before Aug?</li>
+<li><b>Spencer</b> — entity type (kids' FICA exemption); FL unemployment number</li>
+<li><b>Onchain</b> — Helena MT vs Las Vegas address</li>
+<li><b>Auction</b> — employee in Florida; FL registration?</li>
+</ul></div>
+
+<h2>Done</h2>
+<div class="card"><p class="done" style="margin:0">All 21 employee profiles · Earnings Records · payroll journals · E&amp;D registers · Q3 Cash Requirements (8 of 9) · Q4 packets for Kranz, Upstate, Wisdom · filed quarterlies for Onchain, Backfin, Spencer · 12 of 13 owner emails</p></div>
+</div></body></html>
