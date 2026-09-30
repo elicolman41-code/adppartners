@@ -34,3 +34,11 @@ Employee taxes 1,462.57 · Employer taxes 1,229.05 · Total tax liability 2,691.
 - **Headcount is 3, not 1.** Grid + CBA say 1 EE at $59.50/run. Pricing was never verified from an invoice.
 - **Joel Edwards has no local tax withheld.** Heather and Joseph both have Kennett Square Borough EIT ("PA KENNT-Che BOR", $5.41/wk). Joel has none. Every PA employee should have local EIT withheld based on where they live and work. Get his home address / PSD code before building him in ADP.
 - Heather and Joseph have no federal income tax withheld — likely W-4 elections. Confirm when entering W-4s.
+
+## 9/30 WORKER PROFILES (all 3 received — details in the private employee file, not in git)
+- ✅ Addresses, DOB, hire dates, pay, W-4s, direct deposit all on file for Heather, Joseph, Joel.
+- 🚩 **Heather and Joseph are coded Officer Type: PARTNER** and paid on W-2. If Kranz Motorcars LLC is taxed as a partnership, partners generally can't be W-2 employees. If it's an S-corp, fine. Stephen is their accountant — ask him.
+- 🚩 **Heather and Joseph were hired 11/1/25, but the first Paychex check is 8/14/26.** Were they paid Jan–Aug 2026 somewhere else? If so, those wages and filings are missing from the YTD balances.
+- 🚩 **Joel Edwards has no local tax set up at all.** He lives in Royersford (Montgomery County). He needs resident EIT for his home municipality plus the Kennett Square worksite, like the other two have.
+- ⚠️ **PA Worksite Code reads "Missing" on all three.** Pennsylvania local tax reporting needs the worksite PSD code. Set it correctly in ADP.
+- Heather and Joseph share one Wells Fargo account for direct deposit.
