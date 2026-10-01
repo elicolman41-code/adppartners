@@ -194,3 +194,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 10/1 RULE (Eli): ALL Stephen clients go CASH payroll at ADP going forward. Never fill direct deposit on EE forms, never flag Paychex DD as an issue.
 
 - 2026-10-01: Eli sent intro + e-sign emails (reply-all, Stephen cc) to Heather Kranz (Kranz) and Dave Truscello (Backfin).
+
+- 2026-10-01: Eli — FRG Advisory (Frank Giordano, Gusto) has NOT filed anything: no 941s / state returns to collect. Treat as fresh setup (no prior-quarter balancing). Confirm whether Gusto ever ran payroll in 2026 (if yes, Gusto should have filed — get YTD).
