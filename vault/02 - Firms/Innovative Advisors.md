@@ -192,3 +192,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-01: Eli — ALL Stephen clients will be CASH PAYROLL on ADP (no direct deposit set up). DD removed from every Employee Information Form.
 
 - 10/1 RULE (Eli): ALL Stephen clients go CASH payroll at ADP going forward. Never fill direct deposit on EE forms, never flag Paychex DD as an issue.
+
+- 2026-10-01: Eli sent intro + e-sign emails (reply-all, Stephen cc) to Heather Kranz (Kranz) and Dave Truscello (Backfin).
