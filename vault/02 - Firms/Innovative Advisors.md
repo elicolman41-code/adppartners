@@ -190,3 +190,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-09-30: 🚩 UPSTATE also ran a 10/02 Paychex payroll ($17,307.69 gross). Paychex has the NEXT one scheduled 10/16 — kill it; ADP's first Upstate check is 10/16. Q4 Paychex payrolls so far: Kranz 10/2, Wisdom 10/1, Upstate 10/2.
 - 2026-09-30: WALTERS uploaded to ADP, signature created. Only bank proof outstanding. First Walters client through.
 - 2026-10-01: Eli — ALL Stephen clients will be CASH PAYROLL on ADP (no direct deposit set up). DD removed from every Employee Information Form.
+
+- 10/1 RULE (Eli): ALL Stephen clients go CASH payroll at ADP going forward. Never fill direct deposit on EE forms, never flag Paychex DD as an issue.
