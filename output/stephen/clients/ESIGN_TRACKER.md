@@ -13,7 +13,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | | |
 | 9 | Walters Mirrors Inc | Niccolo | niccolo.russino@gmail.com (cc sales@waltersmirror.com) | | | |
 | 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | | | |
-| 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ⏳ send Wed 10/7 | | |
+| 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ⏳ Doug back Mon 10/5 — send then | | |
 | 12 | FRG Advisory | Frank | frank@lionadvsry.com | | | |
 | 13 | Broadway 2000 | Ben | ben@bens.world | | | |
 | 14 | B333 Trading Group | Oliver | NEED EMAIL | | | |
