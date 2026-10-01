@@ -58,3 +58,7 @@ FL state ID was missing as of August. Confirm it has been issued.
 ## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
+
+## Owner contact (Eli, 10/1)
+- Robert Shaul · (561) 762-4157 · robovo23@gmail.com
+- FEIN per all Paychex docs: 99-2638378 (93-3723791 only on Stephen sheet)
