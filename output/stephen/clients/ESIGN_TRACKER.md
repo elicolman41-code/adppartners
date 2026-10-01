@@ -1,0 +1,23 @@
+# E-Sign Intro Emails — Stephen (Innovative Advisors) clients
+Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
+
+| # | Company | Greeting | Send to | Intro sent | E-sign signed | Bank proof |
+|---|---|---|---|---|---|---|
+| 1 | Kranz Motorcars LLC | Heather | heather@kranzmotorcars.com | ✅ 10/1 | | |
+| 2 | Backfin Logistics LLC | Dave | dave.truscello@unishippers.com | ✅ 10/1 | | |
+| 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | | | |
+| 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | | | |
+| 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | | | |
+| 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | | | |
+| 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | | | |
+| 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | | | |
+| 9 | Walters Mirrors Inc | Niccolo | niccolo.russino@gmail.com (cc sales@waltersmirror.com) | | | |
+| 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | | | |
+| 11 | Complete Merchant Services | Doug | douglas@cmscus.com | | | |
+| 12 | FRG Advisory | Frank | frank@lionadvsry.com | | | |
+| 13 | Broadway 2000 | Ben | ben@bens.world | | | |
+| 14 | B333 Trading Group | Oliver | NEED EMAIL | | | |
+| 15 | AJG Trading | Anthony | NEED EMAIL | | | |
+| 16 | Kapstone Digital | Alexander | NEED EMAIL | | | |
+| 17 | Atlas Opera | John | NEED EMAIL | | | |
+| 18 | North Star Works | Christina | NEED EMAIL | | | |
