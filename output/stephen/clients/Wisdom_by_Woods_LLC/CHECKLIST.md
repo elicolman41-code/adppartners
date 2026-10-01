@@ -62,3 +62,4 @@ FL state ID was missing as of August. Confirm it has been issued.
 ## Owner contact (Eli, 10/1)
 - Robert Shaul · (561) 762-4157 · robovo23@gmail.com
 - FEIN per all Paychex docs: 99-2638378 (93-3723791 only on Stephen sheet)
+- Company address for ADP (Eli 10/1): 10710 Pelican Dr, Wellington, FL 33414-6154 (EE home stays 5320 Blue Reed Lane)
