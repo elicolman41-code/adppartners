@@ -68,3 +68,7 @@ There is **no Q1** — Q2 is the first quarter. Do not ask for Q1 filings.
 All three employees are the owner's **minor children** — ages 10, 9 and 6 — each on $15,000/yr, paid monthly, hired 3/18/26.
 Social Security and Medicare are set **exempt (Family/Children)** and federal income tax exempt. No direct deposit on any profile.
 🚩 That FICA exemption only holds if the LLC is a sole proprietorship/disregarded entity owned by the parent, or a partnership owned only by the parents. If it's taxed as an S-corp or C-corp, the exemption doesn't apply. **Stephen set this up — confirm the entity type before ADP copies the exemptions.**
+
+## Owner contact (Eli, 10/1)
+- Spencer Thwaytes · (850) 766-9736 · spencer.thwaytes@gmail.com
+- Children-employee FICA/FUTA/FL RT exemption explains $0 taxes — confirm entity type (sole prop/parent partnership vs corp)
