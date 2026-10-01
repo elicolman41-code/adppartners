@@ -61,3 +61,6 @@ No state income tax in Nevada, so item 7 is SUI only.
 ## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
+
+## Owner contact (Eli, 10/1)
+- Robert Watson · (702) 403-9402 · rwatso5@gmail.com
