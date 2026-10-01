@@ -74,3 +74,6 @@ All three remote, one per state. Nobody works in NJ (the business address).
 🚩 **Every employee is in a state where Paychex never set up unemployment** (MI UIA, OH Job & Family, AZ DES). Unemployment for all three has likely gone unfiled and unpaid since June/July. This is exposure, not paperwork.
 🚩 **Robson has no Ohio city or school district tax set up.** Madeira is an Ohio municipality; working from home there usually means municipal withholding. Check before building.
 - 401(k): Brogan 6% pre-tax, Reid 8% Roth, both with tiered match. Robson eligible, not contributing. **This is a 4th Paychex 401(k) conversion.**
+
+## Owner contact (Eli, 10/1)
+- Bob (Robert) Tupe · (215) 850-4386 · bob.tupe@unishippers.com
