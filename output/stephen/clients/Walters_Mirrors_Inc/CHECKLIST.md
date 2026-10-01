@@ -65,3 +65,6 @@ Q2 wages $86,399.57. Q2 941 liability $14,893.15.
 ## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
+
+## Owner contact (Eli, 10/1)
+- Niccolo Russino · mobile (917) 680-1554 · Niccolo.russino@gmail.com (work email listed as niccollo.russino@gmail.com — double-L, confirm) · office (718) 366-0777
