@@ -17,3 +17,8 @@
 
 ## Follow up
 - Thank Maurice if he referred him
+
+## PayPro research (10/2)
+- Battlecard: reports/PayPro home care battlecard.md
+- Likely Paypro Workforce Mgmt (Ronkonkoma NY, UKG-based). Confirm via login URL/pay stub.
+- Lead with 1099 caregiver misclassification risk; no savings/compliance promises.
