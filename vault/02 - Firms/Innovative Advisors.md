@@ -200,3 +200,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-02: WALTERS MIRRORS — Niccolo signed payroll + 401(k) e-signs. Eli SUBMITTED. First Stephen client submitted. (Bank proof status: confirm.)
 
 - 2026-10-02: UPSTATE — Bob signed payroll + 401(k), bank proof in, SUBMITTED. Open: AZ UI # (Reid), cancel Paychex 10/16 run.
+
+- 2026-10-02 PM calls: Watson (Onchain) answered, will sign payroll. Spencer: called x2 + texted, no answer. Wisdom (Shaul): called (outcome TBD).
