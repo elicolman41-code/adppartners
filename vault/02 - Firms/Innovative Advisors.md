@@ -198,3 +198,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-01: Eli — FRG Advisory (Frank Giordano, Gusto) has NOT filed anything: no 941s / state returns to collect. Treat as fresh setup (no prior-quarter balancing). Confirm whether Gusto ever ran payroll in 2026 (if yes, Gusto should have filed — get YTD).
 
 - 2026-10-02: WALTERS MIRRORS — Niccolo signed payroll + 401(k) e-signs. Eli SUBMITTED. First Stephen client submitted. (Bank proof status: confirm.)
+
+- 2026-10-02: UPSTATE — Bob signed payroll + 401(k), bank proof in, SUBMITTED. Open: AZ UI # (Reid), cancel Paychex 10/16 run.
