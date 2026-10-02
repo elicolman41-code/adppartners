@@ -6,7 +6,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 1 | Kranz Motorcars LLC | Heather | heather@kranzmotorcars.com | ✅ 10/1 | ⏳ Heather called 10/2 — signing over weekend | |
 | 2 | Backfin Logistics LLC | Dave | dave.truscello@unishippers.com | ✅ 10/1 | | |
 | 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | | | |
-| 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | ✅ 10/2 (combined payroll+401k) | ⏳ signing | ✅ 10/2 |
+| 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | ✅ 10/2 (combined payroll+401k) | ✅ payroll + 401k signed 10/2 | ✅ 10/2 |
 | 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | | |
 | 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | ✅ 10/2 | ✅ payroll + 401k signed 10/2 | |
 | 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | ✅ 10/1 | | |
