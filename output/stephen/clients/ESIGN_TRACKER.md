@@ -3,7 +3,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 
 | # | Company | Greeting | Send to | Intro sent | E-sign signed | Bank proof |
 |---|---|---|---|---|---|---|
-| 1 | Kranz Motorcars LLC | Heather | heather@kranzmotorcars.com | ✅ 10/1 | | |
+| 1 | Kranz Motorcars LLC | Heather | heather@kranzmotorcars.com | ✅ 10/1 | ⏳ Heather called 10/2 — signing over weekend | |
 | 2 | Backfin Logistics LLC | Dave | dave.truscello@unishippers.com | ✅ 10/1 | | |
 | 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | | | |
 | 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | | | |
