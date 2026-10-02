@@ -1,5 +1,5 @@
 # Healthify Care — Jewel
-**Friday 10/2, 10:00 AM**
+**RESCHEDULED → Monday 10/5, 10:30 AM** (was Fri 10/2 10 AM; Jewel had a last-minute issue)
 
 - Home healthcare
 - 8 field, 4 office
