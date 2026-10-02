@@ -202,3 +202,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-02: UPSTATE — Bob signed payroll + 401(k), bank proof in, SUBMITTED. Open: AZ UI # (Reid), cancel Paychex 10/16 run.
 
 - 2026-10-02 PM calls: Watson (Onchain) answered, will sign payroll. Spencer: called x2 + texted, no answer. Wisdom (Shaul): called (outcome TBD).
+
+- 2026-10-02: WISDOM — Robert Shaul signed, bank proof in, SUBMITTED. Open: cancel Paychex 11/02 run; $189 FL RT from 7/01 unremitted; Grid EIN fix (99-2638378).
