@@ -210,3 +210,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-05: Sent Robert Shaul (Wisdom) email re: CAA bank info blank (re-sign) + routing-number screenshot. Sent Niccolo + Stephen (Walters) email asking for Q1 2026 941 + NYS-45 from prior provider. Walters incomplete reply to ADP still needs Q1.
 
 - 2026-10-05: Eli — Walters ADP pricing is $2,600/yr (2.6K), NOT the $6,810.70 on the Grid. Update Grid/expectations. Submitted 4 at ADP price ≈ $7,366–7,412/yr.
+
+- 2026-10-05: SPENCER — payroll signed + SUBMITTED. Confirm 401(k) e-sign status + full-acct bank proof. Open: entity type (child FICA exemption).
