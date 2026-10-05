@@ -15,7 +15,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | ✅ 10/2 | ✅ signed 10/5 | ⏳ need bank proof (Ricky sending via email) |
 | 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ⏳ Doug back Mon 10/5 — send then | | |
 | 12 | FRG Advisory | Frank | frank@lionadvsry.com | | | |
-| 13 | Broadway 2000 | Ben | ben@bens.world | | | |
+| 13 | Broadway 2000 | Ben | ben@bens.world | ⏳ intro drafting 10/5 (payroll + 401k) | | ✅ bank statement 10/5 |
 | 14 | B333 Trading Group | Oliver | NEED EMAIL | | | |
 | 15 | AJG Trading | Anthony | NEED EMAIL | | | |
 | 16 | Kapstone Digital | Alexander | NEED EMAIL | | | |
