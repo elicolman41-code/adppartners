@@ -8,7 +8,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | | | |
 | 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | ✅ 10/2 (combined payroll+401k) | ✅ payroll + 401k signed — SUBMITTED 10/2 | ✅ 10/2 |
 | 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | | |
-| 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | ✅ 10/2 | 401k ✅ signed · ⏳ PAYROLL signature still needed | ✅ 10/2 |
+| 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | ✅ 10/2 | ✅ payroll + 401k signed 10/5 — READY TO SUBMIT | ✅ 10/2 |
 | 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | ✅ 10/1 | | |
 | 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | ✅ signed 10/2 — SUBMITTED 10/2 | ✅ 10/2 |
 | 9 | Walters Mirrors Inc | Niccolo | niccolo.russino@gmail.com (cc sales@waltersmirror.com) | ✅ 10/1 | ✅ payroll + 401k signed — SUBMITTED 10/2 | ✅ 10/2 |
