@@ -226,3 +226,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-05: Walters incomplete answered. BROADWAY 2000 SUBMITTED (6th).
 
 - 2026-10-05: Eli — Complete Merchant has NO 401(k). New-401k count now 5 (B333, AJG, FRG, Kapstone, North Star).
+
+- 2026-10-05: NEW-CLIENT PROCESS (first: North Star Works / Christina Pellicane, cpellicane321@gmail.com). Onboarding via Platinum (normal onboarding). Stephen sends SS-4 (legal name, address, EIN). Eli needs only: business bank acct (routing/account) + employee info. Intro email = schedule quick call + prep list. Template reused for all new-business clients.

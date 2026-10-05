@@ -20,4 +20,4 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 15 | AJG Trading | Anthony | NEED EMAIL | | | |
 | 16 | Kapstone Digital | Alexander | NEED EMAIL | | | |
 | 17 | Atlas Opera | John | NEED EMAIL | | | |
-| 18 | North Star Works | Christina | NEED EMAIL | | | |
+| 18 | North Star Works | Christina | cpellicane321@gmail.com | ⏳ Stephen intro 10/5 — NEW payroll (Platinum onboarding) | | |
