@@ -214,3 +214,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-05: SPENCER — payroll signed + SUBMITTED. Confirm 401(k) e-sign status + full-acct bank proof. Open: entity type (child FICA exemption).
 
 - 2026-10-05: SPENCER bank proof (full acct) received — complete. 🔔 NEW OPPORTUNITY: Spencer Thwaytes has a SEPARATE company needing ADP EOR (Employer of Record) services, ~10 employees. Get: company name, EIN, where EEs are located (US vs international), timeline. Route to ADP EOR/GlobalView team; confirm Grid/referral credit.
+
+- 2026-10-05: WISDOM incomplete cleared — Rob re-signed CAA w/ bank info + routing proof.
