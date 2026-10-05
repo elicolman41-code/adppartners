@@ -39,3 +39,7 @@ This vault is the persistent memory for Eli Colman's ADP partner-sales project. 
 2. New facts about programs/math go in `04 - Programs` immediately (esp. corrections)
 3. Daily note gets a short entry whenever a session does real work
 4. Everything commits to GitHub — the container is ephemeral, the repo is the memory
+
+## Email drafts rule (Eli, 2026-10-05)
+- ALWAYS address drafts to Eli's WORK email: Eli.Colman@adp.com (he forwards from work). Never to clients directly.
+- ALWAYS show the draft text in chat first; only put it in Gmail drafts after Eli approves.
