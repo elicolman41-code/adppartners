@@ -13,7 +13,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | ✅ SUBMITTED 10/2 · incomplete CLEARED 10/5 (new CAA + routing proof) | ✅ |
 | 9 | Walters Mirrors Inc | Niccolo | niccolo.russino@gmail.com (cc sales@waltersmirror.com) | ✅ 10/1 | ✅ payroll + 401k signed — SUBMITTED 10/2 · Q1 NOT FILED — accountant reconciling (Stephen 10/5); incomplete ANSWERED 10/5 (Q2 docs + SSN forms sent; Q1 to follow) | ✅ 10/2 |
 | 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | ✅ 10/2 | ✅ signed 10/5 | ⏳ need bank proof (Ricky sending via email) |
-| 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ⏳ Doug back Mon 10/5 — send then | | |
+| 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ⏳ intro + Gusto doc request drafted 10/5 (NV, no 401k) | | |
 | 12 | FRG Advisory | Frank | frank@lionadvsry.com | ⏳ EIN confirmed 40-0020506 — send intro (payroll+401k) | | |
 | 13 | Broadway 2000 | Ben | ben@bens.world | ✅ 10/5 (payroll only — NO 401k) | ✅ signed — SUBMITTED 10/5 | ✅ bank statement 10/5 |
 | 14 | B333 Trading Group | Oliver | NEED EMAIL | | | |
