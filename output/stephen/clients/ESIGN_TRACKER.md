@@ -10,7 +10,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | | |
 | 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | ✅ 10/2 | ✅ payroll + 401k signed 10/5 — SUBMITTED 10/5 | ✅ 10/2 |
 | 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | ✅ 10/1 | | |
-| 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | ✅ signed 10/2 — SUBMITTED 10/2 | ✅ 10/2 |
+| 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | ✅ submitted 10/2 → ⚠️ INCOMPLETE 10/5: CAA bank info blank, re-sign | ⚠️ need routing # screenshot |
 | 9 | Walters Mirrors Inc | Niccolo | niccolo.russino@gmail.com (cc sales@waltersmirror.com) | ✅ 10/1 | ✅ payroll + 401k signed — SUBMITTED 10/2 | ✅ 10/2 |
 | 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | ✅ 10/2 | | |
 | 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ⏳ Doug back Mon 10/5 — send then | | |
