@@ -222,3 +222,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-05: FRG EIN CONFIRMED 40-0020506 (Grid correct). The Q1 NYS-45 under 88-1063280 (Frank Giordano personal, $84K) is a separate entity — not part of this setup, do not send to ADP. FRG = fresh setup, no priors. Ready for intro (payroll + new 401k).
 
 - 2026-10-05: Stephen confirmed Walters Q1 2026 was NOT filed; accountant reconciling. Back-office reply drafted w/ Q2 941 + NYS-45 + SSN forms.
+
+- 2026-10-05: Walters incomplete answered. BROADWAY 2000 SUBMITTED (6th).
