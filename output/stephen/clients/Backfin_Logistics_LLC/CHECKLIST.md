@@ -72,3 +72,6 @@ On the Q1 report DC, KY income tax, KY unemploy, KY SCUF and both KY locals all 
 ## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
+
+## Owner contact (Eli, 10/5)
+- Dave Truscello · (410) 598-1527 (from Eli; Grid/FMCSA had 498 — 598 is correct) · dave.truscello@unishippers.com
