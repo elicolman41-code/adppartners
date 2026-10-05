@@ -7,7 +7,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 2 | Backfin Logistics LLC | Dave | dave.truscello@unishippers.com | ✅ 10/1 | | |
 | 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | | | |
 | 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | ✅ 10/2 (combined payroll+401k) | ✅ payroll + 401k signed — SUBMITTED 10/2 | ✅ 10/2 |
-| 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | | |
+| 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | ⏳ Hani said 10/5 — signing today | |
 | 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | ✅ 10/2 | ✅ payroll + 401k signed 10/5 — SUBMITTED 10/5 | ✅ 10/2 |
 | 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | ✅ 10/1 | | |
 | 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | ✅ submitted 10/2 → ⚠️ INCOMPLETE 10/5: CAA bank info blank, re-sign (emailed Rob 10/5) | ⚠️ need routing # screenshot |
