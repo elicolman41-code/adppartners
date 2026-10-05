@@ -56,3 +56,6 @@ Resolve before the ADP build. Started 7/31/26, so **Q3 is the only quarter that 
 ## FROM THE CLIENT
 - [ ] Bank statement
 - [ ] Signature on the ADP service agreement
+
+## Owner contact (Eli, 10/5)
+- Hani Amiri (Manesh) · (225) 401-8991 · hani@auctiontimepieces.com
