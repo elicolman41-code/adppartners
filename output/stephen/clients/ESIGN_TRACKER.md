@@ -14,7 +14,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 9 | Walters Mirrors Inc | Niccolo | niccolo.russino@gmail.com (cc sales@waltersmirror.com) | ✅ 10/1 | ✅ payroll + 401k signed — SUBMITTED 10/2 · Q1 NOT FILED — accountant reconciling (Stephen 10/5); incomplete ANSWERED 10/5 (Q2 docs + SSN forms sent; Q1 to follow) | ✅ 10/2 |
 | 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | ✅ 10/2 | ✅ signed 10/5 | ⏳ need bank proof (Ricky sending via email) |
 | 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ✅ 10/5 (intro + Gusto directions PDF; NV, no 401k) | | |
-| 12 | FRG Advisory | Frank | frank@lionadvsry.com | ⏳ EIN confirmed 40-0020506 — send intro (payroll+401k) | | |
+| 12 | FRG Advisory | Frank | frank@lionadvsry.com | ✅ 10/5 (payroll + new 401k; EIN 40-0020506) | | |
 | 13 | Broadway 2000 | Ben | ben@bens.world | ✅ 10/5 (payroll only — NO 401k) | ✅ signed — SUBMITTED 10/5 | ✅ bank statement 10/5 |
 | 14 | B333 Trading Group | Oliver | NEED EMAIL | | | |
 | 15 | AJG Trading | Anthony | NEED EMAIL | | | |
