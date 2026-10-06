@@ -234,3 +234,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-06: ONCHAIN incomplete answered (bank proof, NV MBT 0000-3636-0845, Q1 NV UI pg1, no CQ).
 
 - 2026-10-06: Complete Merchant (CMC) Doug Morgan mobile (302) 359-8918. Called 10/6, no answer; texted.
+
+- 2026-10-06: RJC SUBMITTED (7th). Walters Q1 confirmation email drafted for Stephen to send back (client ID 32637631).
