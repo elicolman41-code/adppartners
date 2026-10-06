@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stephen To-Do Board</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1c1c1c;--slate:#5c6066;--hair:#e2e0da;--red:#c8291c;--amber:#b7791f;--green:#2f7d4f;--blue:#2b5ea7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151618;--card:#1e2023;--ink:#ecebe8;--slate:#9aa0a6;--hair:#2e3135}}
+:root[data-theme="dark"]{--bg:#151618;--card:#1e2023;--ink:#ecebe8;--slate:#9aa0a6;--hair:#2e3135}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+h1{font-size:1.35rem;margin:.25rem 0}.sub{color:var(--slate);font-size:.85rem;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:10px 0 16px}
+.stat{background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:10px}.stat b{display:block;font-size:1.4rem}.stat span{color:var(--slate);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+section{background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:12px 14px;margin-bottom:12px}
+section h2{margin:0 0 8px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+.urgent h2{color:var(--red)}.calls h2{color:var(--amber)}.sub2 h2{color:var(--blue)}.done h2{color:var(--green)}
+ul{list-style:none;margin:0;padding:0}li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--hair)}li:first-child{border-top:0}
+input[type=checkbox]{margin-top:3px;width:17px;height:17px;flex:none;accent-color:var(--green)}
+li.chk .t{text-decoration:line-through;color:var(--slate)}
+.t b{font-weight:650}.t small{display:block;color:var(--slate)}
+.tag{font-size:.68rem;border:1px solid var(--hair);border-radius:99px;padding:1px 7px;margin-left:6px;color:var(--slate);white-space:nowrap}
+a{color:var(--blue)}
+.foot{color:var(--slate);font-size:.75rem;margin-top:8px}
+</style></head><body><div class="wrap">
+<h1>Stephen / Innovative Advisors: To-Do</h1>
+<div class="sub">As of Tue Oct 6, 2026. Checkboxes save in this browser only.</div>
+<div class="stats">
+ <div class="stat"><b>7</b><span>Submitted</span></div>
+ <div class="stat"><b>6</b><span>Need signature</span></div>
+ <div class="stat"><b>5</b><span>New clients pending</span></div>
+ <div class="stat"><b>Oct 31</b><span>2x Grid ends</span></div>
+</div>
+
+<section class="urgent"><h2>🔴 Urgent: this week</h2><ul>
+<li><input type="checkbox" id="u1"><div class="t"><b>Kranz: get Heather to sign + bank proof</b><span class="tag">Fri 10/9 Paychex run</span><small>(484) 731-2656 · sticky note didn't work · cancel 10/9 Paychex run once signed</small></div></li>
+<li><input type="checkbox" id="u2"><div class="t"><b>Upstate: Bob pays skipped OH withholding</b><span class="tag">due 10/15</span><small>$276.48 + $133.77 via Ohio Business Gateway · (215) 850-4386</small></div></li>
+<li><input type="checkbox" id="u3"><div class="t"><b>Upstate: AZ UI # + Madeira local tax to implementation</b><span class="tag">before 10/16</span><small>First ADP check Fri 10/16</small></div></li>
+<li><input type="checkbox" id="u4"><div class="t"><b>Upstate: ask implementation about MI / OH / AZ TPA</b><small>Covered by POA package, or does Bob add ADP in MiWAM / ERIC / AZ portal?</small></div></li>
+<li><input type="checkbox" id="u5"><div class="t"><b>Stephen: cancel Paychex runs</b><small>Kranz 10/9 · Upstate 10/16 · Wisdom 11/2 · Taxpay files Q3, not Q4</small></div></li>
+</ul></section>
+
+<section class="calls"><h2>📞 Signatures to chase</h2><ul>
+<li><input type="checkbox" id="c1"><div class="t"><b>Backfin: Dave</b> (410) 598-1527<small>Said he'd call this afternoon. Ask: ~$26K unremitted taxes paid? KY UI #?</small></div></li>
+<li><input type="checkbox" id="c2"><div class="t"><b>Auction: Hani</b> (225) 401-8991<small>Said ~2:30 PM today. Text at 3 if nothing.</small></div></li>
+<li><input type="checkbox" id="c3"><div class="t"><b>Complete Merchant: Doug</b> (302) 359-8918<small>Called + texted 10/6. Also needs Gusto reports (PDF directions sent).</small></div></li>
+<li><input type="checkbox" id="c4"><div class="t"><b>FRG: Frank</b> frank@lionadvsry.com<small>Intro sent 10/5 (payroll + 401k). Fix 60.3% discount before submitting.</small></div></li>
+<li><input type="checkbox" id="c5"><div class="t"><b>Tyree: Ty</b> (717) 579-5300<small>Intro sent 10/6. Pay rate $6,000 vs $3,750? Stephen promised $20/mo off.</small></div></li>
+</ul></section>
+
+<section class="sub2"><h2>📋 Submitted: open items</h2><ul>
+<li><input type="checkbox" id="s1"><div class="t"><b>Walters: Stephen's Q1 confirmation email</b><small>Texted him the copy-paste (client ID 32637631). Forward to back office when he sends it.</small></div></li>
+<li><input type="checkbox" id="s2"><div class="t"><b>Broadway: Ben's DOB</b><small>(646) 387-3809</small></div></li>
+<li><input type="checkbox" id="s3"><div class="t"><b>Spencer: 401(k) e-sign + entity type</b><small>Also: 🔔 second company needs EOR, ~10 EEs</small></div></li>
+<li><input type="checkbox" id="s4"><div class="t"><b>RJC: watch for bank-proof kickback</b><small>Truist screenshot had no business name</small></div></li>
+<li><input type="checkbox" id="s5"><div class="t"><b>Upstate: Q3 unemployment catch-up (MI/OH/AZ)</b><small>Paychex likely never filed. Decide who: CPA or ADP prior-quarter.</small></div></li>
+</ul></section>
+
+<section class="sub2"><h2>🆕 New clients</h2><ul>
+<li><input type="checkbox" id="n1"><div class="t"><b>North Star: Christina</b><small>Waiting on call time reply · cpellicane321@gmail.com</small></div></li>
+<li><input type="checkbox" id="n2"><div class="t"><b>B333 · AJG · Kapstone · Atlas Opera</b><small>Waiting on Stephen's SS-4s + intro emails (asked 10/6)</small></div></li>
+</ul></section>
+
+<section class="sub2"><h2>Other</h2><ul>
+<li><input type="checkbox" id="o1"><div class="t"><b>Kevin: 5-employee payroll</b><small>Texted check-in 10/6</small></div></li>
+<li><input type="checkbox" id="o2"><div class="t"><b>Jewel / Healthify: send reschedule email</b><small>In Gmail drafts. Battlecard ready (PayPro).</small></div></li>
+<li><input type="checkbox" id="o3"><div class="t"><b>Call new Brooklyn Gusto books</b><small>Innovative Accounting (718) 336-3100 · Husney CPA · Stepanchuk CPA</small></div></li>
+</ul></section>
+
+<section class="done"><h2>✅ Submitted (7)</h2><div class="t">Walters · Upstate · Wisdom · Onchain · Spencer · Broadway 2000 · RJC</div></section>
+<div class="foot">Built by Fable · source: output/stephen/clients/ESIGN_TRACKER.md</div>
+</div>
+<script>
+const K="stephen_todo_v1";let s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
+document.querySelectorAll('input[type=checkbox]').forEach(c=>{c.checked=!!s[c.id];c.closest('li').classList.toggle('chk',c.checked);
+c.addEventListener('change',()=>{s[c.id]=c.checked;c.closest('li').classList.toggle('chk',c.checked);try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}})});
+</script></body></html>
