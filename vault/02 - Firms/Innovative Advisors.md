@@ -244,3 +244,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-06: TYREE pricing — Stephen promised Ty $20/mo less than Paychex ($71.92) → ADP $51.92/mo = $623.04/yr (Grid had $863.04). Use $51.92/run monthly when submitting.
 
 - 2026-10-06: 🟢 UPSTATE — FIRST ADP PAYROLL PROCESSED (check date 10/16, cash req $17,766.36). Bob must: (1) stop Paychex 10/16 run, (2) change MI UIA TPA to ADP (MiWAM), (3) send AZ UI tax ID.
+
+- 2026-10-06 EOD: 7 submitted (Walters, Upstate, Wisdom, Onchain, Spencer, Broadway, RJC). Upstate first ADP payroll processed for 10/16. Onchain incomplete answered; assigned Rushitosh Borde (IID 32637837). Spencer back-office Q answered (Bryan). Wisdom assigned Grazel. Unsigned: Kranz, Backfin, Auction, Tyree, CMC, FRG. New lead Island Burger (Annette ref) callback 10/7 AM.
