@@ -240,3 +240,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-06: Eli — FRG has NO 401(k). New-401k count now 4 (B333, AJG, Kapstone, North Star). Stephen new-plan comp 4 x $300 = $1,200.
 
 - 2026-10-06 CORRECTION (Eli): "no 401k" meant no PAYCHEX 401k to convert / not in payroll setup now. NEW 401k plans still happen AFTER payroll for all 7: B333, Complete Merchant, AJG, FRG, Kapstone, Broadway 2000, North Star. Stephen comp: 4 conversions x $750 + 7 new x $300 = $5,100. Payroll first, 401k later.
+
+- 2026-10-06: TYREE pricing — Stephen promised Ty $20/mo less than Paychex ($71.92) → ADP $51.92/mo = $623.04/yr (Grid had $863.04). Use $51.92/run monthly when submitting.
