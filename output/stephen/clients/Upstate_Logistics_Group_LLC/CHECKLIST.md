@@ -91,16 +91,16 @@ All three remote, one per state. Nobody works in NJ (the business address).
 ### Bob to-do
 - [ ] Make sure Paychex does NOT run 10/16 (period 10/05–10/18)
 - [ ] Cancel Paychex service — Paychex files Q3, NOT Q4 (keep Paychex 401k/HRS until conversion moves it)
-- [ ] MiWAM: change MI UIA TPA to ADP (acct 2420085)
+- [ ] MiWAM: change MI UIA TPA to ADP (acct 2420085) — ONLY manual agency step
+- [ ] Bank verification for ADP
 - [ ] Send AZ DES unemployment account # (still "applied for")
-- [ ] Pay skipped OH withholding (55-5045759) by 10/15: $276.48 + $133.77
-- [ ] Register Robson's Madeira OH local tax (RITA? verify)
-- [ ] Ohio ERIC TPA if implementation says client must do it
 ### Eli to-do
 - [ ] Confirm Paychex 10/16 cancelled by Wed/Thu (double-pay risk)
-- [ ] Ask implementation: MI/OH/AZ UI POAs in package or client online?
-- [ ] Feed AZ UI # + Madeira registration to implementation
+- [ ] Feed AZ UI # to implementation
+- [ ] Get bank verification completed
 - [ ] Robson exempt vs non-exempt — confirm
 - [ ] Q3 UI catch-up MI/OH/AZ (Paychex never filed) — decide CPA vs ADP
 - [ ] 401(k) conversion w/ McKenzie (Brogan 6% pre-tax, Reid 8% Roth, both + match; Robson none) — ~$1,365/payroll not in cash req
 - [ ] NJ: CPA closes or leaves dormant; don't set up in ADP
+
+_Eli 10/6: skip Ohio withholding catch-up + Madeira local — not pursuing. Only manual client step = switch TPA; plus bank verification._
