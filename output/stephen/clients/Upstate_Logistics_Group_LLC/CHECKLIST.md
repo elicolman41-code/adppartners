@@ -86,3 +86,21 @@ All three remote, one per state. Nobody works in NJ (the business address).
 5. Stephen/Eli: Q3 unemployment catch-up MI/OH/AZ — Paychex never started UI Taxpay there; decide CPA vs ADP prior-quarter service.
 - NJ: no NJ wages; CPA closes or leaves dormant NJ WH/UI 334-154-077/000; confirm $381.92 reversal zeroed. Don't set up NJ in ADP.
 - 401(k) conversion separate (ADP Retirement / McKenzie).
+
+## 🟢 LIVE — first ADP payroll processed 10/6 for check date Fri 10/16 (cash req $17,766.36, Chase ...8273)
+### Bob to-do
+- [ ] Make sure Paychex does NOT run 10/16 (period 10/05–10/18)
+- [ ] Cancel Paychex service — Paychex files Q3, NOT Q4 (keep Paychex 401k/HRS until conversion moves it)
+- [ ] MiWAM: change MI UIA TPA to ADP (acct 2420085)
+- [ ] Send AZ DES unemployment account # (still "applied for")
+- [ ] Pay skipped OH withholding (55-5045759) by 10/15: $276.48 + $133.77
+- [ ] Register Robson's Madeira OH local tax (RITA? verify)
+- [ ] Ohio ERIC TPA if implementation says client must do it
+### Eli to-do
+- [ ] Confirm Paychex 10/16 cancelled by Wed/Thu (double-pay risk)
+- [ ] Ask implementation: MI/OH/AZ UI POAs in package or client online?
+- [ ] Feed AZ UI # + Madeira registration to implementation
+- [ ] Robson exempt vs non-exempt — confirm
+- [ ] Q3 UI catch-up MI/OH/AZ (Paychex never filed) — decide CPA vs ADP
+- [ ] 401(k) conversion w/ McKenzie (Brogan 6% pre-tax, Reid 8% Roth, both + match; Robson none) — ~$1,365/payroll not in cash req
+- [ ] NJ: CPA closes or leaves dormant; don't set up in ADP
