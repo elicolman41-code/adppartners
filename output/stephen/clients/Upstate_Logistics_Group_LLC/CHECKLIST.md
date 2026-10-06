@@ -94,6 +94,7 @@ All three remote, one per state. Nobody works in NJ (the business address).
 - [ ] MiWAM: change MI UIA TPA to ADP (acct 2420085) — ONLY manual agency step
 - [ ] Bank verification for ADP
 - [ ] Send AZ DES unemployment account # (still "applied for")
+- [ ] 401(k): until the plan converts, Bob remits 401(k) contributions MANUALLY to Paychex HRS each payroll (~$1,365/payroll: Brogan 6% pre-tax, Reid 8% Roth, + ER match) — tell Eli if questions
 ### Eli to-do
 - [ ] Confirm Paychex 10/16 cancelled by Wed/Thu (double-pay risk)
 - [ ] Feed AZ UI # to implementation
