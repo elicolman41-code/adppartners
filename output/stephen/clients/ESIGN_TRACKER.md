@@ -9,7 +9,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | ✅ 10/2 (combined payroll+401k) | ✅ payroll + 401k signed — SUBMITTED 10/2 · 🟢 FIRST ADP PAYROLL PROCESSED 10/6 for 10/16 ($17,766.36). Bob to-do: stop Paychex 10/16, MI UIA TPA → ADP, AZ UI # | ✅ 10/2 |
 | 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | ⏳ 10/6: Hani done for the day, not signed — follow up 10/7 | |
 | 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | ✅ 10/2 | ✅ payroll + 401k signed 10/5 — SUBMITTED 10/5 · ⚠️ INCOMPLETE 10/6: MBT ✅ 0000-3636-0845, Q1 NV ✅, no CQ ✅ — bank proof ✅ — incomplete ANSWERED to back office 10/6 | ✅ 10/2 |
-| 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | ✅ 10/1 | ✅ payroll signed — SUBMITTED 10/5 (401k e-sign pending?) | ✅ 10/5 (full acct) · 🔔 2nd co. needs EOR ~10 EEs |
+| 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | ✅ 10/1 | ✅ payroll signed — SUBMITTED 10/5 · back office Q (minors exempt + Q1) answered 10/6 (401k e-sign pending?) | ✅ 10/5 (full acct) · 🔔 2nd co. needs EOR ~10 EEs |
 | 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | ✅ SUBMITTED 10/2 · incomplete CLEARED 10/5 (new CAA + routing proof) | ✅ |
 | 9 | Walters Mirrors Inc | Niccolo | niccolo.russino@gmail.com (cc sales@waltersmirror.com) | ✅ 10/1 | ✅ payroll + 401k signed — SUBMITTED 10/2 · Q1 NOT FILED — accountant reconciling (Stephen 10/5); incomplete ANSWERED 10/5 (Q2 docs + SSN forms sent; Q1 to follow) | ✅ 10/2 |
 | 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | ✅ 10/2 | ✅ signed — SUBMITTED 10/6 | ✅ Truist 10/6 |
