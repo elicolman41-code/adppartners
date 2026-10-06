@@ -230,3 +230,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-05: NEW-CLIENT PROCESS (first: North Star Works / Christina Pellicane, cpellicane321@gmail.com). Onboarding via Platinum (normal onboarding). Stephen sends SS-4 (legal name, address, EIN). Eli needs only: business bank acct (routing/account) + employee info. Intro email = schedule quick call + prep list. Template reused for all new-business clients.
 
 - 2026-10-06: Onchain incomplete — NV MBT acct 0000-3636-0845 (Paychex Q3 MBT return, $0 wages). Q1 NV UI page 1 + Q3 $0 now in hand. Only bank proof (routing #) outstanding from Robert.
+
+- 2026-10-06: ONCHAIN incomplete answered (bank proof, NV MBT 0000-3636-0845, Q1 NV UI pg1, no CQ).
