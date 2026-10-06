@@ -236,3 +236,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-06: Complete Merchant (CMC) Doug Morgan mobile (302) 359-8918. Called 10/6, no answer; texted.
 
 - 2026-10-06: RJC SUBMITTED (7th). Walters Q1 confirmation email drafted for Stephen to send back (client ID 32637631).
+
+- 2026-10-06: Eli — FRG has NO 401(k). New-401k count now 4 (B333, AJG, Kapstone, North Star). Stephen new-plan comp 4 x $300 = $1,200.
