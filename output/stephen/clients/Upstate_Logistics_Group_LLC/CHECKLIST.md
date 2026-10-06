@@ -77,3 +77,12 @@ All three remote, one per state. Nobody works in NJ (the business address).
 
 ## Owner contact (Eli, 10/1)
 - Bob (Robert) Tupe · (215) 850-4386 · bob.tupe@unishippers.com
+
+## Outside-ADP tax agency plan (Fable 5.1, 2026-10-06)
+1. Bob: pay skipped OH withholding (55-5045759) on Ohio Business Gateway — $276.48 due 10/15 + $133.77 (10/02) + any earlier; verify total vs Cash Req.
+2. Bob/Stephen: Paychex — terminate after 10/02, cancel 10/16 run, written confirmation of Q3 filings per agency + removal as TPA.
+3. Bob + ADP impl: sign 8655/POA package; add ADP as TPA online: MiWAM (MI UIA 2420085, ADP TPA 50000003 — verify), Ohio ERIC (JFS 2000160999), AZ UI portal (once acct issued).
+4. Bob: get AZ DES UI # (applied for); register Robson's Madeira OH municipal tax (RITA? verify) — Paychex withheld none.
+5. Stephen/Eli: Q3 unemployment catch-up MI/OH/AZ — Paychex never started UI Taxpay there; decide CPA vs ADP prior-quarter service.
+- NJ: no NJ wages; CPA closes or leaves dormant NJ WH/UI 334-154-077/000; confirm $381.92 reversal zeroed. Don't set up NJ in ADP.
+- 401(k) conversion separate (ADP Retirement / McKenzie).
