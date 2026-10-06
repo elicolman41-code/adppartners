@@ -232,3 +232,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-06: Onchain incomplete — NV MBT acct 0000-3636-0845 (Paychex Q3 MBT return, $0 wages). Q1 NV UI page 1 + Q3 $0 now in hand. Only bank proof (routing #) outstanding from Robert.
 
 - 2026-10-06: ONCHAIN incomplete answered (bank proof, NV MBT 0000-3636-0845, Q1 NV UI pg1, no CQ).
+
+- 2026-10-06: Complete Merchant (CMC) Doug Morgan mobile (302) 359-8918. Called 10/6, no answer; texted.
