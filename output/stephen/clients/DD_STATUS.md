@@ -12,7 +12,7 @@ _Note 10/7: container reset wiped EMPLOYEES_PRIVATE.csv + Paychex uploads → ne
 | Wisdom | Robert Shaul | ✅ HAVE full (Chase …8453) — EEPROFILE_8 |
 | Kranz | Heather + Joseph (shared Wells Fargo …8135) · Joel (Navy FCU …6599) | ✅ HAVE full — EEPROFILE_3/4/5 |
 | Walters | Carlos, Richard, Niccolo | ⚠️ Unknown/lost — re-upload profiles |
-| Backfin | 5 EEs | ⚠️ ALL on DD (DD Detail report 4/15–9/30). Routing + last digits only: Chrysler 3-way split (…401 rt 084301767 = 8% net · …466 rt 063100277 = $92.42 flat · …503 rt 042015422 = remainder) · Katyal …499 rt 124003116 · Richards …419 rt 042000314 · Schmidt …193 rt 054000030 · Stansberry …969 rt 044000037. NEED full acct #s (worker profiles) |
+| Backfin | 5 EEs | ✅ HAVE full (Info Change Report 10/7; last digits match DD Detail). Chrysler 3-way: Huntington …8503 remainder · BofA …2466 $92.42 · Merrill …8401 8% |
 | Auction | Omar Abu Iqab | ✅ HAVE full (BofA …8340) — EEPROFILE_13 |
 | Broadway | Ben | ❌ Unknown (annual payroll) — ask Ben |
 | Complete Merchant · FRG | Gusto | ❌ Need from Gusto / owner |
