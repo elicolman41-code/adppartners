@@ -16,9 +16,6 @@ Source: Eli's dictation 2026-10-07. **Eli's notes override the "Notes" column in
 - Really nice, dealt with before. Likes to TEXT; needs constant touch points. One of the better partners, ~3–4 referrals/yr. Wants to work with Eli.
 - 2026 referrals: Frank (security co.) · Jewel/Jeriel — Healthify Care (home health).
 - TODO: reschedule Jewel (called 10/7, no answer) · **check in with Maurice Fri 10/9 (else Mon 10/12)**.
-### Bryn Associates — Annette, Shannon (owner Lex — don't deal with him)
-- **Annette working toward Eli — keep constant communication.** 2026 referrals: Fourth Quarter LLC (Chat), Island Burger.
-- Shannon works with Paychex — firm did an in-house accelerated rev-share with Paychex. TODO: **ask Shannon if they're allowed to convert those back to ADP.** Money-motivated.
 ### Kharrubi Insurance & Tax Services — Mohammed · PW57464
 - Older, new firm. ~10 referrals — all his in-house clients, all set up. TODO: **check in next week (wk of 10/12).**
 ### Padova Multiservices — Charles Belgrave · PW16700 (Mercedes = controller)
@@ -27,11 +24,17 @@ Source: Eli's dictation 2026-10-07. **Eli's notes override the "Notes" column in
 
 ### GH Stephen — Geoffrey · PW29465 · 96 Ralph Ave (Tier 2)
 - Older; has clients on ADP, worked with ADP a long time. 1–2 referrals last year. Barely worked so far — **Tier 2: regular check-ins.**
+### Emil Services Inc — Emil · PW54618 (Tier 2)
+- Signed on **rev share Dec 2025**. Gave a huge first unit, then one more; two other Patriot units fell through. Says he has more. **Keep warm — ask for the next ones.**
+### Eagle Income Tax — Fatri Nesimi · PW55240 · 15 Bay 35th St (Tier 2)
+- Never had a meeting — set one (after 10/15). Referred Ermela (646) 377-1167.
+
 ## Tier 3 — steady / maintain
+### Bryn Associates — Annette, Shannon (owner Lex — don't deal with him)
+- **Annette working toward Eli — keep constant communication.** 2026 referrals: Fourth Quarter LLC (Chat), Island Burger.
+- Shannon works with Paychex — firm did an in-house accelerated rev-share with Paychex. TODO: **ask Shannon if they're allowed to convert those back to ADP.** Money-motivated.
 ### ASR Consulting — Aldo · PW25766 · 2610 E 18th St
 - Most consistent historically (~10+ referrals last year) but slowed; few new clients. All 1-EE monthlies. Very nice. **Keep in constant contact, not a main focus.**
-### Emil Services Inc — Emil · PW54618 (Tier 2–3)
-- Signed on **rev share Dec 2025**. Gave a huge first unit, then one more; two other Patriot units fell through. Says he has more. **Keep warm — ask for the next ones.**
 ### Irwin Kaufman — ~78 · PW13762
 - Gave referrals this year; selling off a bunch of clients. TODO **after 10/15: go out in person — help with his brother and Perry, get them set to automatic.** Also switch one account to Blima (see Blima). Referral: Kevin Fulch (follow up 10/21).
 
