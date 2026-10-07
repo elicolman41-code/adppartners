@@ -28,7 +28,7 @@ _Updated Wed 10/7 AM._
 | Wk of 10/12 | Shannon — Bryn | Can Paychex accelerated rev-share clients convert back? |
 | Wk of 10/12 | Blima | Sinclair Equities: Q2 zero filings (NYS notice) + owner's other business = first referral |
 | Wk of 10/12 | Elena Mosiash | Connect to her client in Accountant Connect |
-| After 10/15 | Batch (see PARTNER BOOK) | Irwin in person (brother + Perry automatic), Eagle/Fatri meeting, Joel, Big Orange, ADIO, New Lots, Otis/Express Dental, Alan Lorman, William Fonfeder |
+| After 10/15 | Batch (see PARTNER BOOK) | Emil Services (ask for next units), GH Stephen (check-in), Irwin in person (brother + Perry automatic), Eagle/Fatri meeting, Joel, Big Orange, ADIO, New Lots, Otis/Express Dental, Alan Lorman, William Fonfeder |
 | Wed 10/21 | Kevin Fulch (516) 695-2970 — Irwin Kaufman referral · S-Corp, 1 EE · referred ~early Sept | Called 10/7 (just back from wedding/honeymoon) → reach back out (reminder set) |
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
 | 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
