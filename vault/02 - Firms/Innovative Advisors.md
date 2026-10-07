@@ -252,3 +252,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-07: BACKFIN SUBMITTED (8th). Health benefits opp: Dave has a plan covering him + Alex Chrysler; Alex asked to attach premiums to payroll — set convo wk of 10/12.
 
 - 2026-10-07: AUCTION + TYREE SUBMITTED (10 total). Left to sign: Kranz (next wk), Complete Merchant, FRG.
+
+- 2026-10-07: Tyree salary confirmed $3,750/month going forward.
