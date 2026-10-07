@@ -20,6 +20,15 @@ _Updated Wed 10/7 AM._
 | Fri 10/9 | Kranz Paychex run | RUNS (pushed) — pull updated Paychex report after |
 | 10/16 | Upstate first ADP check | Confirm Paychex 10/16 cancelled by Wed/Thu |
 | 10/20 | Upstate | Paychex $243 Q3 OTL debit — let it go through |
+| Fri 10/9 (else Mon 10/12) | Maurice — Taxpros & Realty | Check-in text (likes texting); reschedule Jewel |
+| Wk of 10/12 | Mohammed — Kharrubi | Check in |
+| Wk of 10/12 | Mercedes — Padova | 3 months bank proofs for Mila's (restart 2nd payroll) |
+| Wk of 10/12 | Vicky — Amberstone | S-Corp coming in October |
+| Wk of 10/12 | David — Amberstone → Wei (WJZ) | Still needs NYS-45 applied |
+| Wk of 10/12 | Shannon — Bryn | Can Paychex accelerated rev-share clients convert back? |
+| Wk of 10/12 | Blima | Sinclair Equities: Q2 zero filings (NYS notice) + owner's other business = first referral |
+| Wk of 10/12 | Elena Mosiash | Connect to her client in Accountant Connect |
+| After 10/15 | Batch (see PARTNER BOOK) | Irwin in person (brother + Perry automatic), Eagle/Fatri meeting, Joel, Big Orange, ADIO, New Lots, Otis/Express Dental, Alan Lorman, William Fonfeder |
 | Wed 10/21 | Kevin Fulch (516) 695-2970 — Irwin Kaufman referral · S-Corp, 1 EE · referred ~early Sept | Called 10/7 (just back from wedding/honeymoon) → reach back out (reminder set) |
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
 | 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
@@ -37,6 +46,7 @@ _Updated Wed 10/7 AM._
 | Spencer | 401(k) e-sign? Entity type; 2nd company needs EOR ~10 EEs |
 
 ## 🟢 When you have downtime (no deadline)
+_Also: Smolin + Altamura (property mgmt co — big op), Dixon (ghosted), Annette/Aldo touch points. Ranked partners: vault/03 - PARTNER BOOK.md_
 | Who | Source | Status | Next step |
 |---|---|---|---|
 | Ermela (646) 377-1167 | Referral from Eagle Income | Haven't reached her yet (logged 10/7) | Reach out / intro call |
