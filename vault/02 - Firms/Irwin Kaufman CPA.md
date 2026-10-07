@@ -23,3 +23,5 @@ $1,270 check paid. Young Israel setup. Client service: brother, bakery (teach RU
 - **Mark Kaufman is away** — affects timing
 - **Mohammed** sits under Erwin — confirm his account is up and running
 - **Blima Salgo** transfer: Accountant Connect for Mourad Inc. (client 29147827) moving from Irwin (Accountant ID 22820595) to Blima (28832217). Email drafted for Irwin to send.
+
+- 2026-10-07: Referral from Irwin — Kevin Fulch (516) 695-2970, S-Corp 1 EE (referred ~early Sept, slipped). Called 10/7, just back from wedding/honeymoon; follow up 10/21. Irwin is selling off a bunch of his clients.

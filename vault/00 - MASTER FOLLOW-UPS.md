@@ -20,6 +20,7 @@ _Updated Wed 10/7 AM._
 | Fri 10/9 | Kranz Paychex run | RUNS (pushed) — pull updated Paychex report after |
 | 10/16 | Upstate first ADP check | Confirm Paychex 10/16 cancelled by Wed/Thu |
 | 10/20 | Upstate | Paychex $243 Q3 OTL debit — let it go through |
+| Wed 10/21 | Kevin Fulch (516) 695-2970 — Irwin Kaufman referral · S-Corp, 1 EE · referred ~early Sept | Called 10/7 (just back from wedding/honeymoon) → reach back out (reminder set) |
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
 | 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
 | 11/2 | Wisdom | Paychex run must be cancelled |
