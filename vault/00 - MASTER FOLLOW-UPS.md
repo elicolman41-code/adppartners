@@ -40,7 +40,7 @@ _Updated Wed 10/7 AM._
 | Stephen | Walters Q1 confirmation email (copy-paste sent); SS-4s + intros for B333, AJG, Kapstone, Atlas Opera; batch Paychex cancellations (file Q3, not Q4) |
 | Bob — Upstate (215) 850-4386 | Stop Paychex 10/16, cancel Paychex, MiWAM TPA → ADP, bank verification, AZ UI #, manual 401k remit to Paychex HRS |
 | Christina — North Star | Reply with call time (new payroll, Platinum) |
-| Ben — Broadway (646) 387-3809 | DOB; incomplete answered 10/7 (KYC + bank) |
+| Ben — Broadway (646) 387-3809 | 📝 Update Ben's DOB in RUN once account is set up; incomplete answered 10/7 (KYC + bank) |
 | Kevin | Wants payroll for 5 EEs — texted 10/6 |
 | Keisha | Employee info — texted 10/6 |
 | Spencer | 401(k) e-sign? Entity type; 2nd company needs EOR ~10 EEs |

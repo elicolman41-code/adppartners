@@ -15,7 +15,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 10 | RJC Holdings | Ricardo | rjcholdingsllc@gmail.com | ✅ 10/2 | ✅ signed — SUBMITTED 10/6 | ✅ Truist 10/6 |
 | 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ✅ 10/5 (intro + Gusto directions PDF; NV; new 401k later) | | |
 | 12 | FRG Advisory | Frank | frank@lionadvsry.com | ✅ 10/5 (payroll now; new 401k later; EIN 40-0020506; called 10/6 no answer; said he'd do it 10/6, didn't; texted 10/7 offering walkthrough) | | |
-| 13 | Broadway 2000 | Ben | ben@bens.world | ✅ 10/5 (payroll now; new 401k later) | ✅ signed — SUBMITTED 10/5 · ⚠️ INCOMPLETE 10/7 (KYC + bank routing) — answered 10/7 (NYS KYC + BofA screenshot + 9/30 stmt) to Sbseastorders · IID 32638027 | ✅ bank statement 10/5 |
+| 13 | Broadway 2000 | Ben | ben@bens.world | ✅ 10/5 (payroll now; new 401k later) | ✅ signed — SUBMITTED 10/5 · ⚠️ INCOMPLETE 10/7 (KYC + bank routing) — answered 10/7 (NYS KYC + BofA screenshot + 9/30 stmt) to Sbseastorders · IID 32638027 · 📝 ADD BEN DOB in RUN once account is set up | ✅ bank statement 10/5 |
 | 14 | B333 Trading Group | Oliver | NEED EMAIL | | | |
 | 15 | AJG Trading | Anthony | NEED EMAIL | | | |
 | 16 | Kapstone Digital | Alexander | NEED EMAIL | | | |
