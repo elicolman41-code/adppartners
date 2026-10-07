@@ -72,3 +72,6 @@ Social Security and Medicare are set **exempt (Family/Children)** and federal in
 ## Owner contact (Eli, 10/1)
 - Spencer Thwaytes · (850) 766-9736 · spencer.thwaytes@gmail.com
 - Children-employee FICA/FUTA/FL RT exemption explains $0 taxes — confirm entity type (sole prop/parent partnership vs corp)
+
+## Address (Eli 10/7)
+- Company + check delivery address ON FILE: 1500 Weston Rd, Fort Lauderdale, FL 33326 (printed on Paychex checks). Kids' home: 1524 Bayview Dr, 33306.
