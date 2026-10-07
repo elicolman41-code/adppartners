@@ -43,3 +43,6 @@ This vault is the persistent memory for Eli Colman's ADP partner-sales project. 
 ## Email drafts rule (Eli, 2026-10-05)
 - ALWAYS address drafts to Eli's WORK email: Eli.Colman@adp.com (he forwards from work). Never to clients directly.
 - ALWAYS show the draft text in chat first; only put it in Gmail drafts after Eli approves.
+
+## Master follow-up file (Eli, 2026-10-07)
+- vault/00 - MASTER FOLLOW-UPS.md is Eli's master list. Log every lead/follow-up Eli mentions there (Island Burger format) and set a send_later reminder on the due day.
