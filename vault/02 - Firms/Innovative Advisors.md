@@ -248,3 +248,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-06 EOD: 7 submitted (Walters, Upstate, Wisdom, Onchain, Spencer, Broadway, RJC). Upstate first ADP payroll processed for 10/16. Onchain incomplete answered; assigned Rushitosh Borde (IID 32637837). Spencer back-office Q answered (Bryan). Wisdom assigned Grazel. Unsigned: Kranz, Backfin, Auction, Tyree, CMC, FRG. New lead Island Burger (Annette ref) callback 10/7 AM.
 
 - 2026-10-07: RULE CHANGE — Stephen (10/6): ASSUME ALL CLIENTS DIRECT DEPOSIT. Supersedes 10/1 "all cash" rule. Status: output/stephen/clients/DD_STATUS.md. Container reset wiped EMPLOYEES_PRIVATE.csv + uploads.
+
+- 2026-10-07: BACKFIN SUBMITTED (8th). Health benefits opp: Dave has a plan covering him + Alex Chrysler; Alex asked to attach premiums to payroll — set convo wk of 10/12.

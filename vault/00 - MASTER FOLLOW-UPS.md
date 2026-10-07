@@ -22,6 +22,7 @@ _Updated Wed 10/7 AM._
 | 10/20 | Upstate | Paychex $243 Q3 OTL debit — let it go through |
 | Fri 10/9 (else Mon 10/12) | Maurice — Taxpros & Realty | Check-in text (likes texting); reschedule Jewel |
 | Wk of 10/12 | Mohammed — Kharrubi | Check in |
+| Wk of 10/12 | Dave — Backfin (410) 598-1527 | 🔔 Health benefits convo: plan covers Dave + Alex; Alex asked to attach to payroll (deductions / ADP benefits) |
 | Wk of 10/12 | Mercedes — Padova | 3 months bank proofs for Mila's (restart 2nd payroll) |
 | Wk of 10/12 | Vicky — Amberstone | S-Corp coming in October |
 | Wk of 10/12 | David — Amberstone → Wei (WJZ) | Still needs NYS-45 applied |
@@ -51,7 +52,7 @@ _Also: Smolin + Altamura (property mgmt co — big op), Dixon (ghosted), Annette
 |---|---|---|---|
 | Ermela (646) 377-1167 | Referral from Eagle Income | Haven't reached her yet (logged 10/7) | Reach out / intro call |
 
-## ✅ Submitted (7): Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
+## ✅ Submitted (8): Backfin (10/7) · Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
 Detail: output/stephen/clients/ESIGN_TRACKER.md
 
 ## 📈 Pipeline (from 10/5 sweep)
