@@ -3,7 +3,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 
 | # | Company | Greeting | Send to | Intro sent | E-sign signed | Bank proof |
 |---|---|---|---|---|---|---|
-| 1 | Kranz Motorcars LLC | Heather | heather@kranzmotorcars.com | ✅ 10/1 | ⏳ Heather: signing tonight 10/5 (weekend slipped) | |
+| 1 | Kranz Motorcars LLC | Heather | heather@kranzmotorcars.com | ✅ 10/1 | ⏳ PUSHED to next week (10/7): Paychex 10/9 runs — pull new Paychex report after 10/9; just need signature + bank proof | |
 | 2 | Backfin Logistics LLC | Dave | dave.truscello@unishippers.com | ✅ 10/1 | ⏳ Dave in meetings all day 10/5 — spoke 10/6; called 10/7 no answer, texted | |
 | 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | ✅ 10/6 | | |
 | 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | ✅ 10/2 (combined payroll+401k) | ✅ payroll + 401k signed — SUBMITTED 10/2 · 🟢 FIRST ADP PAYROLL PROCESSED 10/6 for 10/16 ($17,766.36). Bob to-do: stop Paychex 10/16, MI UIA TPA → ADP, AZ UI # | ✅ 10/2 |

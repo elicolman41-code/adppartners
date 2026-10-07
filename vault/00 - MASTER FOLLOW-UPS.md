@@ -6,7 +6,7 @@ _Updated Wed 10/7 AM._
 | Who | Source | Status / last touch | Next step |
 |---|---|---|---|
 | Island Burger | Annette referral · was Paychex → new provider | Callback scheduled this AM | Call: which provider, why left Paychex, # EEs, renewal. Thank Annette after |
-| Heather — Kranz (484) 731-2656 | Stephen | Didn't sign 10/5 or 10/6 | ❗ Sign + bank proof before Paychex runs FRI 10/9; cancel 10/9 run |
+| Heather — Kranz (484) 731-2656 | Stephen | PUSHED to next week (10/7) — Paychex 10/9 will run | Get signature + bank proof; pull new Paychex report (incl. 10/9 payroll); then cancel next Paychex run |
 | Dave — Backfin (410) 598-1527 | Stephen | Spoke 10/6; called 10/7 AM no answer; texted "shoot me a call" | Resend e-sign to top of inbox; sign + bank proof |
 | Hani — Auction (225) 401-8991 | Stephen | Texted 10/7 AM ("no computer needed") | Walk through on call; sign + bank proof |
 | Frank — FRG (no phone on file) | Stephen | Said 10/6 he'd do it; didn't. Texted 10/7 AM offering walkthrough | Sign + bank proof |
@@ -17,7 +17,7 @@ _Updated Wed 10/7 AM._
 ## 📅 Dated reminders (reminder set)
 | Date | Who | Next step |
 |---|---|---|
-| Fri 10/9 | Kranz Paychex run | Must be cancelled |
+| Fri 10/9 | Kranz Paychex run | RUNS (pushed) — pull updated Paychex report after |
 | 10/16 | Upstate first ADP check | Confirm Paychex 10/16 cancelled by Wed/Thu |
 | 10/20 | Upstate | Paychex $243 Q3 OTL debit — let it go through |
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
