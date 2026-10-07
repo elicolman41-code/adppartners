@@ -11,7 +11,7 @@ _Note 10/7: container reset wiped EMPLOYEES_PRIVATE.csv + Paychex uploads → ne
 | Tyree | Ty | ⚠️ Paychex DD checking …136 — profile not uploaded yet; need full |
 | Wisdom | Robert Shaul | ✅ HAVE full (Chase …8453) — EEPROFILE_8 |
 | Kranz | Heather + Joseph (shared Wells Fargo …8135) · Joel (Navy FCU …6599) | ✅ HAVE full — EEPROFILE_3/4/5 |
-| Walters | Carlos, Richard, Niccolo | ⚠️ Unknown/lost — re-upload profiles |
+| Walters | Carlos (…709) · Richard (…629, stubs 5/27–9/30) · Niccolo (?) | ⚠️ All DD — last digits only; need Info Change Report for full #s. Both paid by paper check earlier in 2026 |
 | Backfin | 5 EEs | ✅ HAVE full (Info Change Report 10/7; last digits match DD Detail). Chrysler 3-way: Huntington …8503 remainder · BofA …2466 $92.42 · Merrill …8401 8% |
 | Auction | Omar Abu Iqab | ✅ HAVE full (BofA …8340) — EEPROFILE_13 |
 | Broadway | Ben | ❌ Unknown (annual payroll) — ask Ben |
