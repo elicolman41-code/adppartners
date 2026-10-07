@@ -1,19 +1,42 @@
 # MASTER FOLLOW-UPS — Eli's single to-do / reminder file
-Rule (Eli 2026-10-07): Eli tells Fable everything here; Fable logs it in this file AND sets a reminder (send_later) for the day it's due. Format: Lead/Client · Source · Status · Next step · Date.
+Rule (Eli 2026-10-07): Eli tells Fable everything; Fable logs it here AND sets a send_later reminder for the due day. Format: Who · Source · Status · Next step · Date.
+_Updated Wed 10/7 AM._
 
-## Dated reminders (reminder set)
-| Date | Who | Source | Next step | Reminder |
-|---|---|---|---|---|
-| 10/7 AM | Island Burger | Annette referral · was Paychex, now new provider | Call back — which provider, why left, # EEs | ✅ fired 10/7 |
-| Wk of 10/19 | Fourth Quarter LLC (Chat) | — | Inspection 10/19 → reach out that week | ✅ Mon 10/19 9:30 AM ET |
+## 🔴 TODAY — Wed 10/7
+| Who | Source | Status / last touch | Next step |
+|---|---|---|---|
+| Island Burger | Annette referral · was Paychex → new provider | Callback scheduled this AM | Call: which provider, why left Paychex, # EEs, renewal. Thank Annette after |
+| Heather — Kranz (484) 731-2656 | Stephen | Didn't sign 10/5 or 10/6 | ❗ Sign + bank proof before Paychex runs FRI 10/9; cancel 10/9 run |
+| Dave — Backfin (410) 598-1527 | Stephen | Spoke 10/6; called 10/7 AM no answer; texted "shoot me a call" | Resend e-sign to top of inbox; sign + bank proof |
+| Hani — Auction (225) 401-8991 | Stephen | Texted 10/7 AM ("no computer needed") | Walk through on call; sign + bank proof |
+| Frank — FRG (no phone on file) | Stephen | Said 10/6 he'd do it; didn't. Texted 10/7 AM offering walkthrough | Sign + bank proof |
+| Jewel — Healthify Care | Maurice referral | Fri mtg cancelled; Mon 10:30 moved | Text to reschedule (today/tomorrow); battlecard: reports/PayPro home care battlecard.md |
+| Doug — Complete Merchant (302) 359-8918 | Stephen | Called + texted 10/6 | Sign + bank proof + Gusto reports |
+| Ty — Tyree (717) 579-5300 | Stephen | Intro sent 10/6 ($20 off → $51.92/mo) | Sign + bank proof |
 
-## Open, no date yet
-| Who | Source | Next step |
+## 📅 Dated reminders (reminder set)
+| Date | Who | Next step |
 |---|---|---|
-| Kevin | direct | Wants payroll for 5 EEs — texted 10/6, awaiting reply |
-| Keisha | direct | Waiting on employee info (texted 10/6) |
-| Jewel / Healthify Care | Maurice referral | ⏰ TODAY 10/7: reach out to reschedule (draft offered Wed 10:30) |
-| Spencer — 2nd company | Stephen client | Needs EOR ~10 EEs — get details |
+| Fri 10/9 | Kranz Paychex run | Must be cancelled |
+| 10/16 | Upstate first ADP check | Confirm Paychex 10/16 cancelled by Wed/Thu |
+| 10/20 | Upstate | Paychex $243 Q3 OTL debit — let it go through |
+| Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
+| 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
+| 11/2 | Wisdom | Paychex run must be cancelled |
 
-## Stephen (Innovative Advisors) conversion
-See output/stephen/clients/ESIGN_TRACKER.md
+## ⏳ Waiting on others
+| Who | Waiting for |
+|---|---|
+| Stephen | Walters Q1 confirmation email (copy-paste sent); SS-4s + intros for B333, AJG, Kapstone, Atlas Opera; batch Paychex cancellations (file Q3, not Q4) |
+| Bob — Upstate (215) 850-4386 | Stop Paychex 10/16, cancel Paychex, MiWAM TPA → ADP, bank verification, AZ UI #, manual 401k remit to Paychex HRS |
+| Christina — North Star | Reply with call time (new payroll, Platinum) |
+| Ben — Broadway (646) 387-3809 | DOB; incomplete answered 10/7 (KYC + bank) |
+| Kevin | Wants payroll for 5 EEs — texted 10/6 |
+| Keisha | Employee info — texted 10/6 |
+| Spencer | 401(k) e-sign? Entity type; 2nd company needs EOR ~10 EEs |
+
+## ✅ Submitted (7): Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
+Detail: output/stephen/clients/ESIGN_TRACKER.md
+
+## 📈 Pipeline (from 10/5 sweep)
+Innovative Accounting (718) 336-3100 (106 Gusto) · Husney CPA (71) · Stepanchuk CPA (92) · Op Taxes (347) 663-5354 · Black Ink (718) 859-4555
