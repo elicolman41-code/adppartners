@@ -25,13 +25,13 @@ Source: Eli's dictation 2026-10-07. **Eli's notes override the "Notes" column in
 - Charles is intense — **go in person**. Mercedes not the sharpest.
 - 2026 referral: Mila's (Myah). TODO: **get 3 months of bank proofs from Mercedes for Mila's** to restart (second payroll). Charles mentioned a lady with two businesses — follow up.
 
+### GH Stephen — Geoffrey · PW29465 · 96 Ralph Ave (Tier 2)
+- Older; has clients on ADP, worked with ADP a long time. 1–2 referrals last year. Barely worked so far — **Tier 2: regular check-ins.**
 ## Tier 3 — steady / maintain
 ### ASR Consulting — Aldo · PW25766 · 2610 E 18th St
 - Most consistent historically (~10+ referrals last year) but slowed; few new clients. All 1-EE monthlies. Very nice. **Keep in constant contact, not a main focus.**
 ### Emil Services Inc — Emil · PW54618 (Tier 2–3)
 - Signed on **rev share Dec 2025**. Gave a huge first unit, then one more; two other Patriot units fell through. Says he has more. **Keep warm — ask for the next ones.**
-### GH Stephen — Geoffrey · PW29465 · 96 Ralph Ave (Tier 3)
-- Older; has clients on ADP, worked with ADP a long time. 1–2 referrals last year. Not a main focus, barely worked — **periodic check-in.**
 ### Irwin Kaufman — ~78 · PW13762
 - Gave referrals this year; selling off a bunch of clients. TODO **after 10/15: go out in person — help with his brother and Perry, get them set to automatic.** Also switch one account to Blima (see Blima). Referral: Kevin Fulch (follow up 10/21).
 
