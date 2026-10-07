@@ -6,7 +6,7 @@ _Note 10/7: container reset wiped EMPLOYEES_PRIVATE.csv + Paychex uploads → ne
 |---|---|---|
 | Upstate | Brogan · Reid · Robson | ✅ HAVE full (Flagstar …186 · BECU …687 · Fifth Third …484) — Fable-verified 10/6 |
 | RJC | Ricardo Decarvalho | ✅ HAVE full (Truist, acct …0547) from worker profile 10/2 |
-| Onchain | Robert Watson | ❌ No DD on profile (re-confirmed EEPROFILE_12) — ask Robert |
+| Onchain | Robert Watson | ⚠️ Had DD Chase …8179 (12/20/25) — ENDED 3/24/26 by Paychex; paid by check since. Confirm with Robert if still valid for ADP. Note: 401k ER match set 0% |
 | Spencer | Gregory, Hazel, Ruby (kids) | 💵 Paper checks (Cash Req: "Non-Electronic Payments"; no DD on profiles) — ask Spencer if DD at ADP |
 | Tyree | Ty | ⚠️ Paychex DD checking …136 — profile not uploaded yet; need full |
 | Wisdom | Robert Shaul | ✅ HAVE full (Chase …8453) — EEPROFILE_8 |
