@@ -250,3 +250,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-07: RULE CHANGE — Stephen (10/6): ASSUME ALL CLIENTS DIRECT DEPOSIT. Supersedes 10/1 "all cash" rule. Status: output/stephen/clients/DD_STATUS.md. Container reset wiped EMPLOYEES_PRIVATE.csv + uploads.
 
 - 2026-10-07: BACKFIN SUBMITTED (8th). Health benefits opp: Dave has a plan covering him + Alex Chrysler; Alex asked to attach premiums to payroll — set convo wk of 10/12.
+
+- 2026-10-07: AUCTION + TYREE SUBMITTED (10 total). Left to sign: Kranz (next wk), Complete Merchant, FRG.

@@ -52,7 +52,7 @@ _Also: Smolin + Altamura (property mgmt co — big op), Dixon (ghosted), Annette
 |---|---|---|---|
 | Ermela (646) 377-1167 | Referral from Eagle Income | Haven't reached her yet (logged 10/7) | Reach out / intro call |
 
-## ✅ Submitted (8): Backfin (10/7) · Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
+## ✅ Submitted (10): Auction (10/7) · Tyree (10/7) · Backfin (10/7) · Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
 Detail: output/stephen/clients/ESIGN_TRACKER.md
 
 ## 📈 Pipeline (from 10/5 sweep)

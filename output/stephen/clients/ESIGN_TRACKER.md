@@ -5,9 +5,9 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 |---|---|---|---|---|---|---|
 | 1 | Kranz Motorcars LLC | Heather | heather@kranzmotorcars.com | ✅ 10/1 | ⏳ PUSHED to next week (10/7): Paychex 10/9 runs — pull new Paychex report after 10/9; just need signature + bank proof | |
 | 2 | Backfin Logistics LLC | Dave | dave.truscello@unishippers.com | ✅ 10/1 | ✅ signed — SUBMITTED 10/7 · 🔔 Health benefits: Dave has a plan for him + Alex; Alex asked to attach to payroll — convo wk of 10/12 | ✅ 10/7 · DD all 5 on file |
-| 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | ✅ 10/6 | | |
+| 3 | Tyree Advisory Group LLC | Ty | ty@tyreetavern.com | ✅ 10/6 | ✅ signed — SUBMITTED 10/7 ($51.92/mo; confirm salary 6,000 vs 3,750) | ✅ DD AmeriChoice |
 | 4 | Upstate Logistics Group LLC | Bob | bob.tupe@unishippers.com | ✅ 10/2 (combined payroll+401k) | ✅ payroll + 401k signed — SUBMITTED 10/2 · 🟢 FIRST ADP PAYROLL PROCESSED 10/6 for 10/16 ($17,766.36). Bob to-do: stop Paychex 10/16, MI UIA TPA → ADP, AZ UI # | ✅ 10/2 |
-| 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | ⏳ 10/6: Hani done for the day, not signed — texted 10/7 AM; tried to sign; called 10/7 PM no answer | |
+| 5 | Auction Time Pieces | Hani | hani@auctiontimepieces.com | ✅ 10/1 | ✅ signed — SUBMITTED 10/7 (EE form w/ DD built) | ✅ DD BofA |
 | 6 | Onchain Strategies LLC | Robert (Watson) | rwatso5@gmail.com | ✅ 10/2 | ✅ payroll + 401k signed 10/5 — SUBMITTED 10/5 · ⚠️ INCOMPLETE 10/6: MBT ✅ 0000-3636-0845, Q1 NV ✅, no CQ ✅ — bank proof ✅ — incomplete ANSWERED to back office 10/6 | ✅ 10/2 |
 | 7 | Spencer Thwaytes & Co LLC | Spencer | spencer.thwaytes@gmail.com | ✅ 10/1 | ✅ payroll signed — SUBMITTED 10/5 · back office Q (minors exempt + Q1) answered 10/6 (401k e-sign pending?) | ✅ 10/5 (full acct) · 🔔 2nd co. needs EOR ~10 EEs |
 | 8 | Wisdom by Woods LLC | Robert (Shaul) | robovo23@gmail.com (cc wisdombywoods@gmail.com) | ✅ 10/1 (sent to wisdombywoods@gmail.com) | ✅ SUBMITTED 10/2 · incomplete CLEARED 10/5 (new CAA + routing proof) | ✅ |
