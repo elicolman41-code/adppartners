@@ -22,6 +22,7 @@ _Updated Wed 10/7 AM._
 | 10/20 | Upstate | Paychex $243 Q3 OTL debit — let it go through |
 | Fri 10/9 (else Mon 10/12) | Maurice — Taxpros & Realty | Check-in text (likes texting); reschedule Jewel |
 | Wk of 10/12 | Mohammed — Kharrubi | Check in |
+| Wk of 10/12 | Ty — Tyree (717) 579-5300 | Confirm Ty cancelled Paychex (texted steps 10/7: cancel future payrolls after 10/9, close acct, still file Q3, ADP from Q4) · pull new Paychex report w/ 10/9 · confirm 1st ADP check ~11/9 |
 | Wk of 10/12 | Dave — Backfin (410) 598-1527 | 🔔 Health benefits convo: plan covers Dave + Alex; Alex asked to attach to payroll (deductions / ADP benefits) |
 | Wk of 10/12 | Mercedes — Padova | 3 months bank proofs for Mila's (restart 2nd payroll) |
 | Wk of 10/12 | Vicky — Amberstone | S-Corp coming in October |

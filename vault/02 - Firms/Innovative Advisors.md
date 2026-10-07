@@ -254,3 +254,5 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-07: AUCTION + TYREE SUBMITTED (10 total). Left to sign: Kranz (next wk), Complete Merchant, FRG.
 
 - 2026-10-07: Tyree salary confirmed $3,750/month going forward.
+
+- 2026-10-07: TYREE — Paychex 10/9 ran; ADP starts Nov. Texted Ty cancel steps for next week (cancel payrolls after 10/9, close acct, Paychex files Q3 not Q4).
