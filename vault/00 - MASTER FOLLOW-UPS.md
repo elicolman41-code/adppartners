@@ -38,7 +38,7 @@ _Updated Wed 10/7 AM._
 ## 🟢 When you have downtime (no deadline)
 | Who | Source | Status | Next step |
 |---|---|---|---|
-| Ermela | Referral from Eagle Income | Haven't reached her yet (logged 10/7) | Reach out / intro call |
+| Ermela (646) 377-1167 | Referral from Eagle Income | Haven't reached her yet (logged 10/7) | Reach out / intro call |
 
 ## ✅ Submitted (7): Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
 Detail: output/stephen/clients/ESIGN_TRACKER.md
