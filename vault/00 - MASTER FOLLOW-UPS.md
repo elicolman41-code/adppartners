@@ -35,6 +35,11 @@ _Updated Wed 10/7 AM._
 | Keisha | Employee info — texted 10/6 |
 | Spencer | 401(k) e-sign? Entity type; 2nd company needs EOR ~10 EEs |
 
+## 🟢 When you have downtime (no deadline)
+| Who | Source | Status | Next step |
+|---|---|---|---|
+| Ermela | Referral from Eagle Income | Haven't reached her yet (logged 10/7) | Reach out / intro call |
+
 ## ✅ Submitted (7): Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
 Detail: output/stephen/clients/ESIGN_TRACKER.md
 

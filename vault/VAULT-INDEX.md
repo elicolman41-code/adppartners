@@ -46,3 +46,6 @@ This vault is the persistent memory for Eli Colman's ADP partner-sales project. 
 
 ## Master follow-up file (Eli, 2026-10-07)
 - vault/00 - MASTER FOLLOW-UPS.md is Eli's master list. Log every lead/follow-up Eli mentions there (Island Burger format) and set a send_later reminder on the due day.
+
+## Downtime list rule (Eli 10/7)
+- Items in "When you have downtime" get surfaced when Eli says it's slow / asks what to do — not on a dated reminder.
