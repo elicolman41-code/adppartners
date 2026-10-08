@@ -275,3 +275,4 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-08: UPSTATE: NOT Run & Done. Bob has commissions, so each biweekly payroll needs manual entry. Schedule a RUN walkthrough with Bob before the 10/30 payroll (input ~10/27–28). 10/16 was processed by ADP.
 - 2026-10-08: UPSTATE walkthrough is for the 10/23 payroll per Eli (⚠️ the biweekly schedule from 10/16 would give 10/30; confirm whether 10/23 is an off-cycle commission run or the schedule changed).
 - 2026-10-08: WALTERS: workers' comp intro email (Rose, ADP WC partner; she'll move the Paychex WC policy to ADP) drafted and sent to Eli's work email to forward to Niccolo. Don't cancel the Paychex WC until the ADP policy is bound.
+- 2026-10-08 PM status: TYREE needs CAA. BACKFIN: schedule first payroll w/ Dave wk of 10/12. WALTERS: first payroll scheduled Mon 10/12 10 AM. RJC + BROADWAY: in review. ONCHAIN: set up in RUN, process first payroll tomorrow 10/9.
