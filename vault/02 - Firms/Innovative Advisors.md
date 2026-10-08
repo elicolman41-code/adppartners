@@ -277,3 +277,4 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-08: WALTERS: workers' comp intro email (Rose, ADP WC partner; she'll move the Paychex WC policy to ADP) drafted and sent to Eli's work email to forward to Niccolo. Don't cancel the Paychex WC until the ADP policy is bound.
 - 2026-10-08 PM status: TYREE needs CAA. BACKFIN: schedule first payroll w/ Dave wk of 10/12. WALTERS: first payroll scheduled Mon 10/12 10 AM. RJC + BROADWAY: in review. ONCHAIN: set up in RUN, process first payroll tomorrow 10/9.
 - 2026-10-08: WALTERS workers' comp call with Rose set for Fri 10/9 morning.
+- 2026-10-08: FRG price lowered to $68/mo (was $81.87 at 35% off; Eli spoke to Stephen). W-2 $31.45 one-time still applies. Text sent to Frank. Order needs re-cutting at $68 before he signs (discount now ~46%).
