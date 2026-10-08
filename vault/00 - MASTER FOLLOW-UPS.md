@@ -34,7 +34,8 @@ _Updated Wed 10/7 AM._
 | Wed 10/21 | Kevin Fulch (516) 695-2970 — Irwin Kaufman referral · S-Corp, 1 EE · referred ~early Sept | Called 10/7 (just back from wedding/honeymoon) → reach back out (reminder set) |
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
 | 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
-| 10/22 | Wisdom | FIRST ADP CHECK (Oct period). Paychex 11/2 run MUST be cancelled before 10/29 or October is paid twice |
+| 10/22 | Wisdom | ADP check date (payroll RUN 10/8). Paychex 11/2 run MUST be cancelled before 10/29 or October is paid twice |
+| 10/16 | Spencer | ADP check date (cash payroll RUN 10/8). Paychex 10/28 run MUST be cancelled |
 
 ## ⏳ Waiting on others
 | Who | Waiting for |
@@ -53,7 +54,7 @@ _Also: Smolin + Altamura (property mgmt co — big op), Dixon (ghosted), Annette
 |---|---|---|---|
 | Ermela (646) 377-1167 | Referral from Eagle Income | Haven't reached her yet (logged 10/7) | Reach out / intro call |
 
-## ✅ Submitted (10): Auction (10/7) · Tyree (10/7) · Backfin (10/7) · Upstate (LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway · RJC
+## ✅ Submitted (10): Auction (10/7) · Tyree (10/7) · Backfin (10/7) · Upstate (LIVE 10/16) · Spencer (LIVE 10/16) · Wisdom (LIVE 10/22) · Walters · Onchain · Broadway · RJC
 Detail: output/stephen/clients/ESIGN_TRACKER.md
 
 ## 📈 Pipeline (from 10/5 sweep)

@@ -1,5 +1,5 @@
 # Wisdom by Woods LLC — MASTER SHEET (updated 2026-10-08)
-**Status: READY FOR PAYROLL** (IID 32637773). Hold cleared 10/8. First ADP check Thu 10/22.
+**Status: 🟢 LIVE on ADP**: first payroll run 10/8 for check date Thu 10/22 (IID 32637773).
 
 ## Company
 | | |
