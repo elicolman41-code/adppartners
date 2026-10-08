@@ -35,7 +35,7 @@ _Updated Wed 10/7 AM._
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
 | 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
 | 10/8 | Wisdom | ON HOLD: get the 10/01 Cash Requirements (tax deposit proof) from Stephen and send it to the back office |
-| 11/2 | Wisdom | Paychex run must be cancelled |
+| 10/22 | Wisdom | FIRST ADP CHECK (Oct period). Paychex 11/2 run MUST be cancelled before 10/29 or October is paid twice |
 
 ## ⏳ Waiting on others
 | Who | Waiting for |

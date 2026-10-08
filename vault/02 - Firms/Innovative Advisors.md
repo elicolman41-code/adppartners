@@ -265,3 +265,4 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-08: WISDOM confirmation call sheet (Upstate format) sent to Eli's work email. First ADP check 11/2 (period 10/1–10/31).
 - 2026-10-08: WISDOM FL RT account # 4283069 @ 2.7% (from Paychex-prepared Q3 FL SUI return: 1 worker each month, gross 45,000, taxable 7,000, tax $189). Return is client-filed (Cash Req said 'refer to your records'); Rob must file + pay $189 by 10/31 (penalty after).
 - 2026-10-08: WISDOM company bank confirmed by Eli (Chase, routing 267084131 checksum OK, account ending 918; full number in the gitignored COMPANY_BANK_PRIVATE.csv). Updated call sheet sent to work email.
+- 2026-10-08: WISDOM first ADP check set to THU 10/22/26 (period 10/1–10/31), per Eli. Paychex 11/2 run covers the same October period, so it MUST be cancelled before the 10/29 input date or October is paid twice.
