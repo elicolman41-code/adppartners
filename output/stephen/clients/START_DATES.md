@@ -11,7 +11,7 @@ A client who started in July has no Q1 or Q2 filings. Asking for them stalls the
 | Walters Mirrors | **Q1 2026** | Q2 YTD $158,973.68 − QTD $86,399.57 = $72,574.11 Q1 wages | Q1, Q2 filed | **Q1** |
 | Spencer Thwaytes | **Q2 2026** | Q2 report YTD = QTD = $7,500.00 | Q2 filed | **none — complete** |
 | Tyree Advisory | **Jun 2026 (Q2)** | first check 6/30/26 on payroll journal | Q2 filed | **Q2** |
-| Wisdom by Woods | **Jun 2026 (Q2)** *likely* | $200 setup fee on 6/24/26 invoice | Q2 filed | **Q2** |
+| Wisdom by Woods | **Jul 2026 (Q3)** CONFIRMED | Q3 Quarterly Report QTD = YTD = $45,000 (first check 7/01) | none filed | **none** |
 | Auction Time Pieces | **Jul 2026 (Q3)** | first check 7/31/26 on payroll journal | **none filed** | **none ever** |
 | Upstate Logistics | **Jul 2026 (Q3)** *unconfirmed* | Taxpay active 7/10 + 7/24 | **none filed** (if July holds) | **none ever** |
 
@@ -28,7 +28,7 @@ So the entire remaining filed-return ask is **three documents**:
 |---|---|
 | Walters Mirrors | Q1 2026 941 + Q1 quarterly report |
 | Tyree Advisory | Q2 2026 941 + Q2 quarterly report |
-| Wisdom by Woods | Q2 2026 941 + Q2 quarterly report |
+| Wisdom by Woods | none (Q3 start) |
 
 - **Onchain, Backfin and Spencer are complete** on filed returns.
 - **Auction and Upstate need no filed returns at all** — nothing was ever filed for them,

@@ -16,17 +16,17 @@
 ## Owner / only employee: Robert Shaul
 - (561) 762-4157 · robovo23@gmail.com (cc wisdombywoods@gmail.com)
 - Home: 5320 Blue Reed Lane, Lake Worth FL 33467 · DOB 10/23/96 · hire 6/23/26 · SSN ending 2482
-- Salary $15,000/mo ($180K/yr), monthly · Single, 0 · no state tax · no 401k
+- Salary $15,000/mo ($180K/yr), monthly · Single or MFS, 0 (2020+ W-4; not 'allowances') · no state tax · no 401k
 - DD: Chase 267084131, acct ending 8453, checking, 100% (full # in DD_PRIVATE.csv)
 
 ## ADP
 - **First ADP check: Thu 10/22/2026** (period 10/1–10/31)
-- Pricing: Paychex $1,557.36/yr vs ADP Enhanced book $1,511.40 (Grid flagged: revenue reduction, the $45.96 excess is excluded)
+- Pricing ⚠️: Grid used Paychex $1,557.36/yr ($129.78/run × 12, incl. $19.50 delivery, from Jul/Aug invoices). BUT the 9/29 invoice for the 10/01 run is $110.28 (137.85 − 27.57 discount, no delivery line) → × 12 = $1,323.36, BELOW ADP Enhanced book $1,511.40. Re-derive before quoting; the Grid's 'revenue reduction' flag may not hold.
 
 ## Paychex history (2026)
 | Check | Gross | SS (EE) | Med (EE) | FIT | Net |
 |---|---|---|---|---|---|
-| 7/01, 8/03, 9/01 (Q3) | 45,000 | 2,790 | 652.50 | 7,983.51 | — |
+| 7/01, 8/03, 9/01 (Q3; dates from the EER, not re-verified) | 45,000 | 2,790 | 652.50 | 7,983.51 | — |
 | 10/01 (Sept period, Q4) | 15,000 | 930 | 217.50 | 2,661.17 | 11,191.33 DD |
 | **YTD** | **60,000** | 3,720 | 870 | 10,644.68 | 44,765.32 |
 - Q3 941 liability $14,868.51 · Q3 FUTA $42 · Q3 FL UI $189. **FUTA + FL wage bases are maxed for 2026**, so verify ADP's YTD load stops Q4 unemployment tax.
@@ -41,7 +41,7 @@
 ## OPEN
 - [ ] Calvin releases hold
 - [ ] **Cancel Paychex 11/2 run before 10/29** (same Oct period, or October is paid twice) + Paychex files Q3 federal
-- [ ] **Q3 FL RT $189**: Paychex did NOT pay ("refer to your records"). Rob files + pays by 10/31
+- [ ] **Q3 FL RT $189** (RT-6 due 10/1, penalty after 10/31): PROBABLY not paid by Paychex — the 9/30 Cash Req said "refer to your records", there's no Taxpay line, and the RT-6 is formatted for the client to mail with payment. Confirm with Stephen; Rob files + pays by 10/31
 - [ ] Get copies of Paychex's filed Q3 returns after 10/31
 - [ ] Fix Grid EIN to 99-2638378
 
