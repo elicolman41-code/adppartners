@@ -35,7 +35,7 @@ _Updated Wed 10/7 AM._
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
 | 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
 | 10/19 | Upstate | Schedule RUN walkthrough w/ Bob (commissions, NOT Run & Done) before the 10/23 payroll (⚠️ biweekly would be 10/30, confirm) · (215) 850-4386 |
-| 10/19 | Wisdom | Confirm ~$16,150 in Chase …918 before the ADP debit (~10/20). Text Rob (561) 762-4157 |
+| 10/19 | Wisdom | Confirm ~$16,150 in Chase …918 before the ADP debit (~10/20), Rob (561) 762-4157 · DOUBLE-CHECK EIN in RUN = 93-3723791 |
 | 10/22 | Wisdom | ADP check date (payroll RUN 10/8). Paychex 11/2 run MUST be cancelled before 10/29 or October is paid twice |
 | Fri 10/9 AM | Walters | WORKERS COMP call w/ Rose (Paychex WC → ADP). Niccolo (718) 366-0777. Keep Paychex WC active until ADP policy is bound |
 | Fri 10/9 | Onchain | Set up in RUN. PROCESS FIRST PAYROLL (Watson $7,500/mo; confirm Chase DD still valid, Paychex ended it 3/24) |
