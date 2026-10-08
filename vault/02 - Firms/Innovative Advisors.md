@@ -263,3 +263,4 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-08: WISDOM hold is owned by CALVIN (not Grazel). Proof sent via Webex.
 - 2026-10-08: WISDOM: waiting on Calvin to release the hold.
 - 2026-10-08: WISDOM confirmation call sheet (Upstate format) sent to Eli's work email. First ADP check 11/2 (period 10/1–10/31).
+- 2026-10-08: WISDOM FL RT account # 4283069 @ 2.7% (from Paychex-prepared Q3 FL SUI return: 1 worker each month, gross 45,000, taxable 7,000, tax $189). Return is client-filed (Cash Req said 'refer to your records'); Rob must file + pay $189 by 10/31 (penalty after).
