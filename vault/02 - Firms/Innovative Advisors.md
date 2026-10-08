@@ -274,3 +274,4 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-08: UPSTATE 401k: Bob says Paychex wants a $1,500 fee to transfer the 401k. Stephen is working on getting it waived. Told Bob to hold the transfer until after 10/15. ADP gave 10 months free on the new plan.
 - 2026-10-08: UPSTATE: NOT Run & Done. Bob has commissions, so each biweekly payroll needs manual entry. Schedule a RUN walkthrough with Bob before the 10/30 payroll (input ~10/27–28). 10/16 was processed by ADP.
 - 2026-10-08: UPSTATE walkthrough is for the 10/23 payroll per Eli (⚠️ the biweekly schedule from 10/16 would give 10/30; confirm whether 10/23 is an off-cycle commission run or the schedule changed).
+- 2026-10-08: WALTERS: workers' comp intro email (Rose, ADP WC partner; she'll move the Paychex WC policy to ADP) drafted and sent to Eli's work email to forward to Niccolo. Don't cancel the Paychex WC until the ADP policy is bound.
