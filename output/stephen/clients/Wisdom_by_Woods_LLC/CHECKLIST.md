@@ -1,5 +1,5 @@
 # Wisdom by Woods LLC — MASTER SHEET (updated 2026-10-08)
-**Status: SUBMITTED 10/2 · ON HOLD with Calvin** (IID 32637773, LJ/2A5): 10/1 deposit proof sent 10/8, asked to release ASAP.
+**Status: READY FOR PAYROLL** (IID 32637773). Hold cleared 10/8. First ADP check Thu 10/22.
 
 ## Company
 | | |
@@ -39,7 +39,6 @@
 - `FL_SUI_Return_Q3_2026_reference.pdf`: Q3 FL RT-6, $189 (client must file + pay)
 
 ## OPEN
-- [ ] Calvin releases hold
 - [ ] **Cancel Paychex 11/2 run before 10/29** (same Oct period, or October is paid twice) + Paychex files Q3 federal
 - [ ] **Q3 FL RT $189** (RT-6 due 10/1, penalty after 10/31): PROBABLY not paid by Paychex — the 9/30 Cash Req said "refer to your records", there's no Taxpay line, and the RT-6 is formatted for the client to mail with payment. Confirm with Stephen; Rob files + pays by 10/31
 - [ ] Get copies of Paychex's filed Q3 returns after 10/31
