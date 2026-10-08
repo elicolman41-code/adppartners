@@ -261,3 +261,4 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-08: KRANZ: texted Heather at 8:30 AM about the e-sign and bank proof. No answer. Paychex 10/9 runs as planned; cancel 10/16 once she signs.
 - 2026-10-08: WISDOM: Stephen sent the 10/01 Paychex packet. Cash Requirements shows Taxpay federal deposit $4,956.17 (SS 930+930, Med 217.50+217.50, FIT 2,661.17), due 10/7, with 'record of payment' language; $0 remaining liabilities; DD net $11,191.33. FL has no SIT. Built a 4-page proof (Cash Req, Payroll Journal, Dept Summary, GL) at output/stephen/clients/Wisdom_by_Woods_LLC/Wisdom_10-01_Deposit_Proof.pdf. Paychex next run 11/2 (input 10/29); still needs cancelling. Federal deposit frequency: semi-weekly.
 - 2026-10-08: WISDOM hold is owned by CALVIN (not Grazel). Proof sent via Webex.
+- 2026-10-08: WISDOM: Eli sent the on-call confirmation email. Waiting on Calvin to release the hold.
