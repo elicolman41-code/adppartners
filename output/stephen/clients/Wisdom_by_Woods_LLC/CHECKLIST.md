@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Legal name | Wisdom by Woods LLC |
-| FEIN | **99-2638378** (the 93-3723791 on Stephen's sheet is WRONG; fix the Grid) |
+| FEIN | **93-3723791** (CONFIRMED by Stephen 10/8). ⚠️ Paychex used 99-2638378 for ALL 2026 filings/deposits + FL RT 4283069. MyCorporation (7/2026) flagged that FL SOS L23000446317 shows a different EIN than 93-. Get IRS CP 575/147C for 93- |
 | Address for ADP | 10710 Pelican Dr, Wellington, FL 33414-6154 |
 | Old Paychex address | 5320 Blue Reed Lane, Lake Worth, FL 33467 |
 | Bank | Chase, routing 267084131, acct ending 918 (full # in COMPANY_BANK_PRIVATE.csv, gitignored) |
@@ -43,8 +43,10 @@
 - [ ] **Cancel Paychex 11/2 run before 10/29** (same Oct period, or October is paid twice) + Paychex files Q3 federal
 - [ ] **Q3 FL RT $189** (RT-6 due 10/1, penalty after 10/31): PROBABLY not paid by Paychex — the 9/30 Cash Req said "refer to your records", there's no Taxpay line, and the RT-6 is formatted for the client to mail with payment. Confirm with Stephen; Rob files + pays by 10/31
 - [ ] Get copies of Paychex's filed Q3 returns after 10/31
-- [ ] Fix Grid EIN to 99-2638378
+- [ ] Get IRS EIN letter (CP 575/147C) for 93-3723791 from Stephen
+- [ ] Stephen: reconcile 2026 Paychex deposits/filings made under 99-2638378 (IRS + FL RT acct) — CPA's job, ADP can't move them
+- [ ] Confirm the EIN in RUN is 93-3723791 (likely already, since the Grid/submission used 93-)
 
 ## Timeline
 - 10/1 intro sent · 10/2 signed + bank proof + SUBMITTED · 10/5 incomplete (blank CAA bank) → Rob re-signed, CLEARED
-- 10/7 9:57 PM on hold: need 10/1 deposit proof · 10/8 proof received from Stephen, sent to Calvin, call sheet emailed to Eli (work)
+- 10/7 9:57 PM on hold: need 10/1 deposit proof · 10/8 proof received from Stephen, sent to Calvin, call sheet emailed to Eli (work) · 10/8 EIN: Stephen confirmed 93-3723791 is correct; Paychex used the wrong 99-
