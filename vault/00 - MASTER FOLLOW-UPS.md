@@ -17,6 +17,7 @@ _Updated Wed 10/7 AM._
 ## 📅 Dated reminders (reminder set)
 | Date | Who | Next step |
 |---|---|---|
+| Fri 10/9 9:15 AM | ALL REFERRALS roundup (reminder set) | Island Burger, Jewel + Maurice, Kevin/Keisha nudges, Ermela intro; Mila's, Sinclair, Vicky/David wk of 10/12; Kevin Fulch 10/21; Fourth Quarter wk of 10/19 |
 | Fri 10/9 | Kranz Paychex run | RUNS (pushed) — pull updated Paychex report after |
 | 10/16 | Upstate first ADP check | Confirm Paychex 10/16 cancelled by Wed/Thu |
 | 10/20 | Upstate | Paychex $243 Q3 OTL debit — let it go through |
