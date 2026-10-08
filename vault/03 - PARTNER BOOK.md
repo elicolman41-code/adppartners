@@ -28,7 +28,7 @@ Source: Eli's dictation 2026-10-07. **Eli's notes override the "Notes" column in
 ### Kharrubi Insurance & Tax Services — Mohammed · PW57464
 - Older, new firm. ~10 referrals — all his in-house clients, all set up. TODO: **check in next week (wk of 10/12).**
 ### Irwin Kaufman — ~78 · PW13762
-- Gave referrals this year; selling off a bunch of clients. TODO **after 10/15: go out in person — help with his brother and Perry, get them set to automatic.** Also switch one account to Blima (see Blima). Referral: Kevin Fulch (follow up 10/21).
+- Gave referrals this year; selling off a bunch of clients. TODO **after 10/15: go out in person — help with his brother and Perry, get them set to automatic.** Also switch one account to Blima (see Blima). Referral: Kevin Fulch — DEAD (10/8).
 
 ## Tier 3 — steady / maintain
 ### Eagle Income Tax — Fatri Nesimi · PW55240 · 15 Bay 35th St
