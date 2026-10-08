@@ -34,7 +34,7 @@ _Updated Wed 10/7 AM._
 | Wed 10/21 | Kevin Fulch (516) 695-2970 — Irwin Kaufman referral · S-Corp, 1 EE · referred ~early Sept | Called 10/7 (just back from wedding/honeymoon) → reach back out (reminder set) |
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
 | 10/31 | Stephen | 2x Grid credit ends · Q3 returns due |
-| 10/19 | Upstate | Schedule RUN walkthrough w/ Bob (commissions, NOT Run & Done) before 10/30 payroll · (215) 850-4386 |
+| 10/19 | Upstate | Schedule RUN walkthrough w/ Bob (commissions, NOT Run & Done) before the 10/23 payroll (⚠️ biweekly would be 10/30, confirm) · (215) 850-4386 |
 | 10/19 | Wisdom | Confirm ~$16,150 in Chase …918 before the ADP debit (~10/20). Text Rob (561) 762-4157 |
 | 10/22 | Wisdom | ADP check date (payroll RUN 10/8). Paychex 11/2 run MUST be cancelled before 10/29 or October is paid twice |
 | 10/16 | Spencer | ADP check date (cash payroll RUN 10/8). Paychex 10/28 run MUST be cancelled |
