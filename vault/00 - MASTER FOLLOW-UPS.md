@@ -37,6 +37,7 @@ _Updated Wed 10/7 AM._
 | 10/19 | Upstate | Schedule RUN walkthrough w/ Bob (commissions, NOT Run & Done) before the 10/23 payroll (⚠️ biweekly would be 10/30, confirm) · (215) 850-4386 |
 | 10/19 | Wisdom | Confirm ~$16,150 in Chase …918 before the ADP debit (~10/20). Text Rob (561) 762-4157 |
 | 10/22 | Wisdom | ADP check date (payroll RUN 10/8). Paychex 11/2 run MUST be cancelled before 10/29 or October is paid twice |
+| Fri 10/9 AM | Walters | WORKERS COMP call w/ Rose (Paychex WC → ADP). Niccolo (718) 366-0777. Keep Paychex WC active until ADP policy is bound |
 | Fri 10/9 | Onchain | Set up in RUN. PROCESS FIRST PAYROLL (Watson $7,500/mo; confirm Chase DD still valid, Paychex ended it 3/24) |
 | Mon 10/12 10 AM | Walters | FIRST PAYROLL RUN w/ Niccolo (3 EE, biweekly; 401k conversion) |
 | Wk of 10/12 | Backfin | Schedule first payroll run w/ Dave (410) 598-1527 (semi-monthly, 5 EE DD) + health benefits convo |
