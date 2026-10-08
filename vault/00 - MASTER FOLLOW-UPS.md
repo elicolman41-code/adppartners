@@ -17,6 +17,7 @@ _Updated Wed 10/7 AM._
 ## 📅 Dated reminders (reminder set)
 | Date | Who | Next step |
 |---|---|---|
+| Fri 10/9 2:30 PM | Kevin Howard's son (reminder 2:15) | Meeting/call. Likely the Kevin 5-EE payroll lead. Get: business, # EEs, provider, next step |
 | Fri 10/9 9:15 AM | ALL REFERRALS roundup (reminder set) | Island Burger, Jewel + Maurice, Kevin/Keisha nudges, Ermela intro; Mila's, Sinclair, Vicky/David wk of 10/12; Fourth Quarter wk of 10/19 |
 | Fri 10/9 | Kranz Paychex run | RUNS (pushed) — pull updated Paychex report after |
 | 10/16 | Upstate first ADP check | Confirm Paychex 10/16 cancelled by Wed/Thu |
@@ -51,7 +52,7 @@ _Updated Wed 10/7 AM._
 | Bob — Upstate (215) 850-4386 | Stop Paychex 10/16, cancel Paychex, MiWAM TPA → ADP, bank verification, AZ UI #, manual 401k remit to Paychex HRS |
 | Christina — North Star | Reply with call time (new payroll, Platinum) |
 | Ben — Broadway (646) 387-3809 | 📝 Update Ben's DOB in RUN once account is set up; incomplete answered 10/7 (KYC + bank) |
-| Kevin | Wants payroll for 5 EEs — texted 10/6 |
+| Kevin (Howard?) | Wants payroll for 5 EEs — texted 10/6 · his son: Fri 10/9 2:30 PM |
 | Keisha | Employee info — texted 10/6 |
 | Spencer | 401(k) e-sign? Entity type; 2nd company needs EOR ~10 EEs |
 
