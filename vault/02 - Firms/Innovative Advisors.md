@@ -258,3 +258,4 @@ Note: RJC Holdings was an ADP client over a year ago before Stephen moved them t
 - 2026-10-07: TYREE — Paychex 10/9 ran; ADP starts Nov. Texted Ty cancel steps for next week (cancel payrolls after 10/9, close acct, Paychex files Q3 not Q4).
 
 - 2026-10-08: WISDOM back on HOLD (ADP Service Support, 10/7 9:57 PM, IID 32637773 LJ/2A5): the code was pulled back because the docs don't show the deposits for the 10/1 payroll. That's the Paychex 10/01 check ($15,000, September period). We do NOT have the 10/01 Cash Requirements in the repo (uploads were wiped). We asked Stephen to pull the 10/01 Cash Requirements (Taxpay lines) and Payroll Journal from Paychex Flex. Caution: FL RT ($189) showed "refer to your records" on the 9/30 Cash Requirements, so Paychex may not have remitted all of it.
+- 2026-10-08: KRANZ: texted Heather at 8:30 AM about the e-sign and bank proof. No answer. Paychex 10/9 runs as planned; cancel 10/16 once she signs.
