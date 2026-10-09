@@ -40,6 +40,7 @@ _Updated Wed 10/7 AM._
 | 10/22 | Wisdom | ADP check date (payroll RUN 10/8). Paychex 11/2 run MUST be cancelled before 10/29 or October is paid twice |
 | Fri 10/9 AM | Walters | WORKERS COMP call w/ Rose (Paychex WC → ADP). Niccolo (718) 366-0777. Keep Paychex WC active until ADP policy is bound |
 | Fri 10/9 | Onchain | Set up in RUN. PROCESS FIRST PAYROLL (Watson $7,500/mo; confirm Chase DD still valid, Paychex ended it 3/24) |
+| Tue 10/13 11 AM | North Star | SETUP CALL w/ Christina (WebEx; send invite) |
 | Mon 10/12 10 AM | Walters | FIRST PAYROLL RUN w/ Niccolo (3 EE, biweekly; 401k conversion) |
 | Wk of 10/12 | Backfin | Schedule first payroll run w/ Dave (410) 598-1527 (semi-monthly, 5 EE DD) + health benefits convo |
 | Now | Tyree | Get CAA signed by Ty (717) 579-5300 |
@@ -50,7 +51,7 @@ _Updated Wed 10/7 AM._
 |---|---|
 | Stephen | Walters Q1 confirmation email (copy-paste sent); SS-4s + intros for AJG, Kapstone, Atlas Opera (B333 intro received 10/9); batch Paychex cancellations (file Q3, not Q4) |
 | Bob — Upstate (215) 850-4386 | Stop Paychex 10/16, cancel Paychex, MiWAM TPA → ADP, bank verification, AZ UI #, manual 401k remit to Paychex HRS |
-| Christina — North Star | Reply with call time (new payroll, Platinum) |
+| Christina — North Star | ✅ CALL SET Tue 10/13 11 AM WebEx (Eli sends invite) |
 | Ben — Broadway (646) 387-3809 | 📝 Update Ben's DOB in RUN once account is set up; incomplete answered 10/7 (KYC + bank) |
 | Kevin (Howard?) | Wants payroll for 5 EEs — texted 10/6 · his son: Fri 10/9 2:30 PM |
 | Keisha | Employee info — texted 10/6 |

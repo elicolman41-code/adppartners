@@ -20,4 +20,4 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 15 | AJG Trading | Anthony | NEED EMAIL | | | |
 | 16 | Kapstone Digital | Alexander | NEED EMAIL | | | |
 | 17 | Atlas Opera | John | NEED EMAIL | | | |
-| 18 | North Star Works | Christina | cpellicane321@gmail.com | ✅ 10/5 scheduling email sent (call tmrw 11 AM or PM) — NEW payroll, Platinum | | |
+| 18 | North Star Works | Christina (Pellicane) | cpellicane321@gmail.com | ✅ 10/5 scheduling email · 10/9 she replied: 📅 SETUP CALL TUE 10/13 11:00 AM (WebEx, Eli sends invite) — NEW payroll, Platinum, new 401k later | | |
