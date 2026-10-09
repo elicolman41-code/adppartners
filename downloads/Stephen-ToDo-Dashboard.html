@@ -1,76 +1,93 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Stephen To-Do Board</title>
+<title>Stephen Client Board</title>
 <style>
-:root{--bg:#f6f5f2;--card:#fff;--ink:#1c1c1c;--slate:#5c6066;--hair:#e2e0da;--red:#c8291c;--amber:#b7791f;--green:#2f7d4f;--blue:#2b5ea7}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151618;--card:#1e2023;--ink:#ecebe8;--slate:#9aa0a6;--hair:#2e3135}}
-:root[data-theme="dark"]{--bg:#151618;--card:#1e2023;--ink:#ecebe8;--slate:#9aa0a6;--hair:#2e3135}
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1c1c1c;--slate:#5c6066;--hair:#e2e0da;--red:#c8291c;--amber:#b7791f;--green:#2f7d4f;--blue:#2b5ea7;--live:#e6f4ea;--hold:#fdecea;--wait:#fff6e0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151618;--card:#1e2023;--ink:#ecebe8;--slate:#9aa0a6;--hair:#2e3135;--live:#1d3326;--hold:#3a1f1c;--wait:#3a3020}}
+:root[data-theme="dark"]{--bg:#151618;--card:#1e2023;--ink:#ecebe8;--slate:#9aa0a6;--hair:#2e3135;--live:#1d3326;--hold:#3a1f1c;--wait:#3a3020}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,Segoe UI,Roboto,Arial,sans-serif}
-.wrap{max-width:980px;margin:0 auto;padding:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:16px}
 h1{font-size:1.35rem;margin:.25rem 0}.sub{color:var(--slate);font-size:.85rem;margin-bottom:12px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:10px 0 16px}
-.stat{background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:10px}.stat b{display:block;font-size:1.4rem}.stat span{color:var(--slate);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin:10px 0 16px}
+.stat{background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:10px}.stat b{display:block;font-size:1.4rem}.stat span{color:var(--slate);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
 section{background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:12px 14px;margin-bottom:12px}
 section h2{margin:0 0 8px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
-.urgent h2{color:var(--red)}.calls h2{color:var(--amber)}.sub2 h2{color:var(--blue)}.done h2{color:var(--green)}
-ul{list-style:none;margin:0;padding:0}li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--hair)}li:first-child{border-top:0}
+.live h2{color:var(--green)}.hold h2{color:var(--red)}.sub2 h2{color:var(--blue)}.calls h2{color:var(--amber)}
+table{width:100%;border-collapse:collapse;font-size:.86rem}th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--slate);padding:4px 6px;border-bottom:1px solid var(--hair)}
+td{padding:6px;border-top:1px solid var(--hair);vertical-align:top}td:first-child{white-space:nowrap;font-weight:650}
+.pill{display:inline-block;font-size:.68rem;border-radius:99px;padding:1px 8px;white-space:nowrap;font-weight:600}
+.p-live{background:var(--live);color:var(--green)}.p-hold{background:var(--hold);color:var(--red)}.p-wait{background:var(--wait);color:var(--amber)}.p-rev{background:var(--hair);color:var(--slate)}
+ul{list-style:none;margin:0;padding:0}li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-top:1px solid var(--hair)}li:first-child{border-top:0}
 input[type=checkbox]{margin-top:3px;width:17px;height:17px;flex:none;accent-color:var(--green)}
-li.chk .t{text-decoration:line-through;color:var(--slate)}
-.t b{font-weight:650}.t small{display:block;color:var(--slate)}
-.tag{font-size:.68rem;border:1px solid var(--hair);border-radius:99px;padding:1px 7px;margin-left:6px;color:var(--slate);white-space:nowrap}
-a{color:var(--blue)}
+li.chk .t{text-decoration:line-through;color:var(--slate)}.t b{font-weight:650}.t small{display:block;color:var(--slate)}
 .foot{color:var(--slate);font-size:.75rem;margin-top:8px}
+@media(max-width:640px){table,thead,tbody,tr,td,th{display:block}thead{display:none}td{border:0;padding:2px 0}tr{border-top:1px solid var(--hair);padding:8px 0}td:first-child{padding-top:4px}}
 </style></head><body><div class="wrap">
-<h1>Stephen / Innovative Advisors: To-Do</h1>
-<div class="sub">As of Wed Oct 7, 2026. Checkboxes save in this browser only.</div>
+<h1>Stephen / Innovative Advisors: Client Board</h1>
+<div class="sub">As of Fri Oct 9, 2026, 11 AM. 2x Grid (CBA Lightning 05539) ends Oct 31. Checkboxes save in this browser only.</div>
 <div class="stats">
+ <div class="stat"><b>3</b><span>Live</span></div>
  <div class="stat"><b>7</b><span>Submitted</span></div>
- <div class="stat"><b>6</b><span>Need signature</span></div>
- <div class="stat"><b>1</b><span>Live (Upstate)</span></div>
- <div class="stat"><b>5</b><span>New clients pending</span></div>
+ <div class="stat"><b>2</b><span>Unsigned</span></div>
+ <div class="stat"><b>1</b><span>Signed, not submitted</span></div>
+ <div class="stat"><b>5</b><span>New clients</span></div>
  <div class="stat"><b>Oct 31</b><span>2x Grid ends</span></div>
 </div>
 
-<section class="urgent"><h2>🔴 Urgent: this week</h2><ul>
-<li><input type="checkbox" id="u2b"><div class="t"><b>Upstate (LIVE 10/16): Bob to-do</b><span class="tag">before 10/16</span><small>Stop Paychex 10/16 run · cancel Paychex (file Q3, not Q4) · MiWAM TPA → ADP · bank verification · AZ UI # · manual 401(k) remit to Paychex HRS · let $243 Q3 debit go 10/20 · (215) 850-4386</small></div></li>
-<li><input type="checkbox" id="u6"><div class="t"><b>Walters: Stephen's Q1 confirmation email</b><small>Copy-paste sent to him 10/6 (client ID 32637631)</small></div></li>
-<li><input type="checkbox" id="u7"><div class="t"><b>Broadway: incomplete answered 10/7</b><small>KYC + BofA screenshot + 9/30 stmt → Sbseastorders (IID 32638027). 📝 Update Ben's DOB in RUN once set up</small></div></li>
-<li><input type="checkbox" id="u5"><div class="t"><b>Stephen: Paychex terminations</b><small>File Q3, not Q4 · Upstate 10/16 · Wisdom 11/2 · Kranz after it moves</small></div></li>
+<section class="live"><h2>🟢 Live on ADP (3)</h2><table><thead><tr><th>Client</th><th>Check date</th><th>Open items</th></tr></thead><tbody>
+<tr><td>Upstate Logistics<br><span class="pill p-live">LIVE</span></td><td>Fri 10/16 (biweekly, DD)</td><td>Bob (215) 850-4386: cancel Paychex 10/16 (Stephen's termination letter), MiWAM TPA → ADP, bank verify, AZ UI #, manual 401k remit. Paychex $1,500 401k transfer fee: Stephen seeking waiver, Bob holding until after 10/15. <b>Has commissions, not Run &amp; Done: schedule RUN walkthrough before the 10/23 payroll.</b> Let $243 Q3 debit go 10/20.</td></tr>
+<tr><td>Spencer Thwaytes<br><span class="pill p-live">LIVE</span></td><td>Fri 10/16 (cash, paper checks)</td><td>Cancel Paychex 10/28 run. Confirm entity type (kids' FICA exemption). 401k e-sign. Checks to 1500 Weston Rd. EOR lead: 2nd company ~10 EEs.</td></tr>
+<tr><td>Wisdom by Woods<br><span class="pill p-live">LIVE</span></td><td>Thu 10/22 (monthly, DD)</td><td>EIN confirmed 93-3723791. Mon 10/19: confirm ~$16K in Chase …918 + double-check EIN in RUN. Cancel Paychex 11/2 run before 10/29. $189 Q3 FL RT: Rob files + pays by 10/31.</td></tr>
+</tbody></table></section>
+
+<section class="hold"><h2>📋 Submitted (7)</h2><table><thead><tr><th>Client</th><th>Status</th><th>Next</th></tr></thead><tbody>
+<tr><td>Walters Mirrors<br><span class="pill p-hold">ON HOLD</span></td><td>Jennifer Starling (2AJ, IID 32637631). Incomplete: consolidated Q1 report. Reply + Q1 journal in work inbox.</td><td>Forward reply w/ PDF + Webex Jennifer. <b>First payroll run Mon 10/12 10 AM.</b> WC call w/ Rose this AM. 401k conversion.</td></tr>
+<tr><td>Onchain Strategies<br><span class="pill p-rev">SET UP</span></td><td>Rushitosh Borde (IID 32637837). Incomplete answered 10/6. Set up in RUN 10/8.</td><td><b>Process first payroll TODAY.</b> Confirm Chase DD still valid (Paychex ended DD 3/24). Ex-ADP client (left Apr 2025): check win-back rules on Grid. ~$450 2025 NV UI unpaid. Cancel Paychex 10/30.</td></tr>
+<tr><td>RJC Holdings<br><span class="pill p-rev">IN REVIEW</span></td><td>Joann Amri Bernal (IID 32638183). Incomplete reply sent to work inbox 10/7.</td><td>Add IID to subject + forward to Sbseastorders. Cancel Paychex 10/20. Truist proof had no business name: watch for kickback.</td></tr>
+<tr><td>Broadway 2000<br><span class="pill p-rev">IN REVIEW</span></td><td>Collin Davis (IID 32638027). KYC + bank answered 10/7.</td><td>Order shows Quarterly frequency: confirm. Add Ben's DOB in RUN once set up. (646) 387-3809.</td></tr>
+<tr><td>Backfin Logistics<br><span class="pill p-wait">SUBMITTED 10/7</span></td><td>Signed + bank proof. 5 EEs DD. Semi-monthly.</td><td><b>Schedule first payroll run w/ Dave wk of 10/12</b> (410) 598-1527. Health benefits convo (Dave + Alex). ~$26K unremitted taxes Q: KY UI #.</td></tr>
+<tr><td>Auction Time Pieces<br><span class="pill p-wait">SUBMITTED 10/7</span></td><td>Signed. EE form w/ DD built (Omar, BofA).</td><td>Cancel Paychex 10/30. Grid says 2 EEs, register shows 1.</td></tr>
+<tr><td>Tyree Advisory<br><span class="pill p-wait">SUBMITTED 10/7</span></td><td>$3,750/mo salary, $51.92/mo. Paychex 10/9 ran.</td><td><b>Needs CAA from Ty</b> (717) 579-5300. Ty cancels Paychex wk of 10/12. First ADP check ~11/9. Pull new Paychex report incl. 10/9.</td></tr>
+</tbody></table></section>
+
+<section class="calls"><h2>✍️ Signatures (3)</h2><table><thead><tr><th>Client</th><th>Status</th><th>Next</th></tr></thead><tbody>
+<tr><td>FRG Advisory<br><span class="pill p-live">SIGNED 10/9</span></td><td>Frank signed at $68/mo (+ $31.45 W-2). Fresh setup, no priors.</td><td>Bank screenshot (business name, routing, acct) → SUBMIT. Fix order at $68 before submitting.</td></tr>
+<tr><td>Kranz Motorcars<br><span class="pill p-hold">UNSIGNED</span></td><td>Heather (484) 731-2656 pushed to wk of 10/12. Texted 10/8, no answer. Paychex 10/9 ran.</td><td>Signature + bank proof. Pull new Paychex report after 10/9. Cancel 10/16 once there's an ADP date. 3 EEs weekly; Joel Edwards PSD code missing.</td></tr>
+<tr><td>Complete Merchant<br><span class="pill p-hold">UNSIGNED</span></td><td>Doug (302) 359-8918. On Gusto. Intro 10/5, called + texted 10/6, silent.</td><td>Signature + Gusto reports + bank proof. Call.</td></tr>
+</tbody></table></section>
+
+<section class="sub2"><h2>🆕 New clients (5)</h2><table><thead><tr><th>Client</th><th>Status</th><th>Next</th></tr></thead><tbody>
+<tr><td>B333 Trading<br><span class="pill p-wait">INTRO 10/9</span></td><td>Oliver Beirne, oliver@ombcap.com. Boca Raton, 2 EE monthly. Never ran on Paychex.</td><td>Forward scheduling email (work inbox): call Mon 10/12 after 2 PM. New 401k later.</td></tr>
+<tr><td>North Star Works<br><span class="pill p-wait">WAITING</span></td><td>Christina, cpellicane321@gmail.com. Scheduling email 10/5, no reply.</td><td>Nudge for a call time. New payroll, Platinum. New 401k later.</td></tr>
+<tr><td>AJG Trading</td><td>Anthony. No email yet.</td><td rowspan="3">Waiting on Stephen's SS-4s + intro emails (asked 10/6). Chase.</td></tr>
+<tr><td>Kapstone Digital</td><td>Alexander. No email yet.</td></tr>
+<tr><td>Atlas Opera</td><td>John. No email yet.</td></tr>
+</tbody></table></section>
+
+<section class="hold"><h2>🗓 Paychex runs to cancel</h2><ul>
+<li><input type="checkbox" id="k1"><div class="t"><b>Upstate 10/16</b><small>Stephen's termination letter (sends by ~10/12). Reminder Wed 10/14.</small></div></li>
+<li><input type="checkbox" id="k2"><div class="t"><b>RJC 10/20</b></div></li>
+<li><input type="checkbox" id="k3"><div class="t"><b>Spencer 10/28</b><small>Same Oct period as ADP 10/16</small></div></li>
+<li><input type="checkbox" id="k4"><div class="t"><b>Auction 10/30 · Onchain 10/30</b></div></li>
+<li><input type="checkbox" id="k5"><div class="t"><b>Wisdom 11/2</b><small>Must cancel before 10/29 input or October is paid twice</small></div></li>
+<li><input type="checkbox" id="k6"><div class="t"><b>Kranz 10/16</b><small>Once Heather signs</small></div></li>
+<li><input type="checkbox" id="k7"><div class="t"><b>Tyree</b><small>Ty cancels wk of 10/12 (nothing scheduled after 10/9)</small></div></li>
 </ul></section>
 
-<section class="calls"><h2>📞 Signatures to chase</h2><ul>
-<li><input type="checkbox" id="c0"><div class="t"><b>Kranz: Heather</b> (484) 731-2656<small>PUSHED to next week. Paychex 10/9 runs → pull new Paychex report after; just need signature + bank proof</small></div></li>
-<li><input type="checkbox" id="c1"><div class="t"><b>Backfin: Dave</b> (410) 598-1527<small>Spoke 10/6; texted 10/7 — he'll call. Ask: ~$26K unremitted taxes paid? KY UI #?</small></div></li>
-<li><input type="checkbox" id="c2"><div class="t"><b>Auction: Hani</b> (225) 401-8991<small>Texted 10/7 AM — no computer needed, walk him through by phone.</small></div></li>
-<li><input type="checkbox" id="c3"><div class="t"><b>Complete Merchant: Doug</b> (302) 359-8918<small>Called + texted 10/6. Also needs Gusto reports (PDF directions sent).</small></div></li>
-<li><input type="checkbox" id="c4"><div class="t"><b>FRG: Frank</b> <small>Said he'd do it 10/6, didn't. Texted 10/7 offering walkthrough. Fix 60.3% discount before submitting.</small></div></li>
-<li><input type="checkbox" id="c5"><div class="t"><b>Tyree: Ty</b> (717) 579-5300<small>Intro sent 10/6. Pay rate $6,000 vs $3,750? Stephen promised $20/mo off.</small></div></li>
+<section class="calls"><h2>📅 This week and next</h2><ul>
+<li><input type="checkbox" id="d1"><div class="t"><b>Fri 10/9</b><small>Walters WC call (Rose) · Process Onchain · Tyree CAA · Forward Walters Q1 reply + Webex Jennifer · Forward B333 email · Kevin Howard's son 2:30</small></div></li>
+<li><input type="checkbox" id="d2"><div class="t"><b>Mon 10/12</b><small>10:00 Walters first payroll run (Niccolo) · B333 call after 2 PM · Schedule Backfin run w/ Dave · Chase Heather</small></div></li>
+<li><input type="checkbox" id="d3"><div class="t"><b>Wed 10/14</b><small>Confirm Upstate Paychex 10/16 cancelled</small></div></li>
+<li><input type="checkbox" id="d4"><div class="t"><b>Fri 10/16</b><small>Upstate + Spencer first ADP checks</small></div></li>
+<li><input type="checkbox" id="d5"><div class="t"><b>Mon 10/19</b><small>Wisdom funds + EIN check · Upstate RUN walkthrough w/ Bob before 10/23</small></div></li>
+<li><input type="checkbox" id="d6"><div class="t"><b>Thu 10/22</b><small>Wisdom first ADP check</small></div></li>
+<li><input type="checkbox" id="d7"><div class="t"><b>Fri 10/31</b><small>2x Grid ends · Q3 returns due (Paychex files for converted clients)</small></div></li>
 </ul></section>
 
-<section class="sub2"><h2>📋 Submitted: open items</h2><ul>
-<li><input type="checkbox" id="s1"><div class="t"><b>Walters: Stephen's Q1 confirmation email</b><small>Texted him the copy-paste (client ID 32637631). Forward to back office when he sends it.</small></div></li>
-<li><input type="checkbox" id="s2"><div class="t"><b>Broadway: Ben's DOB</b><small>(646) 387-3809</small></div></li>
-<li><input type="checkbox" id="s3"><div class="t"><b>Spencer: 401(k) e-sign + entity type</b><small>Also: 🔔 second company needs EOR, ~10 EEs</small></div></li>
-<li><input type="checkbox" id="s4"><div class="t"><b>RJC: watch for bank-proof kickback</b><small>Truist screenshot had no business name</small></div></li>
-<li><input type="checkbox" id="s5"><div class="t"><b>Upstate: Q3 unemployment catch-up (MI/OH/AZ)</b><small>Paychex likely never filed. Decide who: CPA or ADP prior-quarter.</small></div></li>
-</ul></section>
-
-<section class="sub2"><h2>🆕 New clients</h2><ul>
-<li><input type="checkbox" id="n1"><div class="t"><b>North Star: Christina</b><small>Waiting on call time reply · cpellicane321@gmail.com</small></div></li>
-<li><input type="checkbox" id="n2"><div class="t"><b>B333 · AJG · Kapstone · Atlas Opera</b><small>Waiting on Stephen's SS-4s + intro emails (asked 10/6)</small></div></li>
-</ul></section>
-
-<section class="sub2"><h2>Other</h2><ul>
-<li><input type="checkbox" id="o1"><div class="t"><b>Kevin: 5-employee payroll</b><small>Texted check-in 10/6</small></div></li>
-<li><input type="checkbox" id="o2"><div class="t"><b>Jewel / Healthify: send reschedule email</b><small>In Gmail drafts. Battlecard ready (PayPro).</small></div></li>
-<li><input type="checkbox" id="o3"><div class="t"><b>Call new Brooklyn Gusto books</b><small>Innovative Accounting (718) 336-3100 · Husney CPA · Stepanchuk CPA</small></div></li>
-</ul></section>
-
-<section class="done"><h2>✅ Submitted (7)</h2><div class="t">Upstate (🟢 LIVE 10/16) · Walters · Wisdom · Onchain · Spencer · Broadway 2000 · RJC</div></section>
-<div class="foot">Built by Fable · source: output/stephen/clients/ESIGN_TRACKER.md</div>
+<div class="foot">Built by Fable · source: output/stephen/clients/ESIGN_TRACKER.md + vault/00 - MASTER FOLLOW-UPS.md</div>
 </div>
 <script>
-const K="stephen_todo_v1";let s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
+const K="stephen_board_v2";let s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
 document.querySelectorAll('input[type=checkbox]').forEach(c=>{c.checked=!!s[c.id];c.closest('li').classList.toggle('chk',c.checked);
 c.addEventListener('change',()=>{s[c.id]=c.checked;c.closest('li').classList.toggle('chk',c.checked);try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}})});
 </script></body></html>
