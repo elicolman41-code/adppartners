@@ -26,3 +26,5 @@
 
 ## Log
 - 2026-08-20: Call prep created. Call tomorrow morning.
+- 2026-10-07: Blima sent an NYS notice for **Sinclair Equities Group** (terminated ADP client): needs **zero filings for Q2 2026**. Sinclair's owner has **another business not set up yet → Blima's first referral / first rev-share unit**.
+- 2026-10-09: Eli: look into the Sinclair items next week. Reminder set Tue 10/13 10 AM. Open: who files the Q2 zeros (ADP termination team vs Blima); get the new business's name/EIN/EE count; Mourad Inc Accountant Connect transfer from Irwin.

@@ -30,7 +30,7 @@ _Updated Wed 10/7 AM._
 | Wk of 10/12 | Vicky — Amberstone | S-Corp coming in October |
 | Wk of 10/12 | David — Amberstone → Wei (WJZ) | Still needs NYS-45 applied |
 | Wk of 10/12 | Shannon — Bryn | Can Paychex accelerated rev-share clients convert back? |
-| Wk of 10/12 | Blima | Sinclair Equities: Q2 zero filings (NYS notice) + owner's other business = first referral |
+| Tue 10/13 10 AM (reminder set) | Blima | Sinclair Equities: Q2 zero filings (NYS notice), who files? + owner's other business = first referral (name/EIN/EEs) + Mourad Accountant Connect transfer |
 | Wk of 10/12 | Elena Mosiash | Connect to her client in Accountant Connect |
 | After 10/15 (reminder Fri 10/16) | Batch (see PARTNER BOOK) | EMIL SERVICES (ask for next units), GH Stephen (check-in), Irwin in person (brother + Perry automatic), Eagle/Fatri meeting, Joel, Big Orange, ADIO, New Lots, Otis/Express Dental, Alan Lorman, William Fonfeder |
 | Wk of 10/19 | Fourth Quarter LLC — Chat | Inspection 10/19 → reach out that week (reminder Mon 10/19 9:30 AM ET) |
