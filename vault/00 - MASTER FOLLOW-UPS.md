@@ -9,7 +9,7 @@ _Updated Wed 10/7 AM._
 | Heather — Kranz (484) 731-2656 | Stephen | PUSHED to next week (10/7) — Paychex 10/9 will run | Get signature + bank proof; pull new Paychex report (incl. 10/9 payroll); then cancel next Paychex run |
 | Dave — Backfin (410) 598-1527 | Stephen | Spoke 10/6; called 10/7 AM no answer; texted "shoot me a call" | Resend e-sign to top of inbox; sign + bank proof |
 | Hani — Auction (225) 401-8991 | Stephen | Texted 10/7 AM ("no computer needed") | Walk through on call; sign + bank proof |
-| Frank — FRG (no phone on file) | Stephen | Said 10/6 he'd do it; didn't. Texted 10/7 AM offering walkthrough | Sign + bank proof |
+| Frank — FRG | Stephen | ✅ SIGNED 10/9 ($68/mo) | Get bank screenshot (business name + routing + acct), then SUBMIT |
 | Jewel — Healthify Care | Maurice referral | Fri mtg cancelled; Mon 10:30 moved | Text to reschedule (today/tomorrow); battlecard: reports/PayPro home care battlecard.md |
 | Doug — Complete Merchant (302) 359-8918 | Stephen | Called + texted 10/6 | Sign + bank proof + Gusto reports |
 | Ty — Tyree (717) 579-5300 | Stephen | Intro sent 10/6 ($20 off → $51.92/mo) | Sign + bank proof |
