@@ -16,7 +16,7 @@ Reply-all on Stephen's bank-proof email, Stephen cc'd. Updated 2026-10-01.
 | 11 | Complete Merchant Services | Doug | douglas@cmscus.com | ✅ 10/5 (intro + Gusto directions PDF; NV; new 401k later) | | |
 | 12 | FRG Advisory | Frank | frank@lionadvsry.com | ✅ 10/5 (payroll now; new 401k later; EIN 40-0020506) | ✅ SIGNED 10/9 at $68/mo (+ $31.45 W-2) · submit once bank proof is in | ⏳ need bank screenshot |
 | 13 | Broadway 2000 | Ben | ben@bens.world | ✅ 10/5 (payroll now; new 401k later) | ✅ signed — SUBMITTED 10/5 · ⚠️ INCOMPLETE 10/7 (KYC + bank routing) — answered 10/7 (NYS KYC + BofA screenshot + 9/30 stmt) to Sbseastorders · IID 32638027 · 10/8: IN REVIEW · 📝 ADD BEN DOB in RUN once account is set up | ✅ bank statement 10/5 |
-| 14 | B333 Trading Group | Oliver | NEED EMAIL | | | |
+| 14 | B333 Trading Group LLC | Oliver (Beirne) | oliver@ombcap.com | ✅ 10/9 Stephen intro received; scheduling email sent to work email to forward (call Mon 10/12 PM) — NEW payroll (Paychex set up, never ran), Boca Raton FL, 2 EE monthly, new 401k later | | |
 | 15 | AJG Trading | Anthony | NEED EMAIL | | | |
 | 16 | Kapstone Digital | Alexander | NEED EMAIL | | | |
 | 17 | Atlas Opera | John | NEED EMAIL | | | |
