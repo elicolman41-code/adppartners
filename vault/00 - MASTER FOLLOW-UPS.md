@@ -41,6 +41,7 @@ _Updated Wed 10/7 AM._
 | Fri 10/9 AM | Walters | WORKERS COMP call w/ Rose (Paychex WC → ADP). Niccolo (718) 366-0777. Keep Paychex WC active until ADP policy is bound |
 | Fri 10/9 | Onchain | Set up in RUN. PROCESS FIRST PAYROLL (Watson $7,500/mo; confirm Chase DD still valid, Paychex ended it 3/24) |
 | Tue 10/13 11 AM | North Star | SETUP CALL w/ Christina (WebEx; send invite) |
+| Mon 10/12 | Brian (contractors, company ?) | Help his contractors register for ADP Mobile Solutions (Employee Access on, registration code from RUN). Reminder 9:30 |
 | Mon 10/12 10 AM | Walters | FIRST PAYROLL RUN w/ Niccolo (3 EE, biweekly; 401k conversion) |
 | Wk of 10/12 | Backfin | Schedule first payroll run w/ Dave (410) 598-1527 (semi-monthly, 5 EE DD) + health benefits convo |
 | Now | Tyree | Get CAA signed by Ty (717) 579-5300 |
